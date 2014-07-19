@@ -1,6 +1,9 @@
 en:
   projects:
     list:
+      page_title:           'Projects List'
+      title:                'Projects List'
+      copy:                 'No matter the size, tinkering on new projects keeps one active and sharp, and all deserve a little recognition.'
 
 
     # Full List of projects, by year
@@ -79,4 +82,84 @@ en:
           name:             'Daqiao'
           media:            'website'
       2011:
-        
+        # Stop SOPA/PIPA Blackout Link
+        # JavaScript widget
+        # The "AH-HA!" Moment - Ideas, Research, and Creative Output Link
+        # presentation
+        # Dash Out, The Kardashian Blocker Link
+        # browser extensions
+        # Occupy The Internet 
+        # F.A.T. Lab collaboration
+        # website, browser extensions, JavaScript widget
+        # I Hurricane NY Link
+        # [removed by C&D request]
+        # image
+        # Digital Purchase Takedown Notice Link
+        # website
+        # China Blocker Link
+        # browser extensions
+        # MyFriend.is
+        # website
+        # Tinted Sheen Link
+        # browser extensions
+        # Facebook Dislike Link
+        # code example
+        # Limited Edition: Shaved Bieber 3D VIP Movie Pass Link
+        # sculpture
+        # How-to: Animate Your Twitter Avatar Link
+        # website
+      2010:
+        # Single Topic Twitter Queue Link
+        # code
+        # Tumblr Video Add-on Link
+        # Rocketboom
+        # browser extensions
+        # Addon Server Link
+        # code
+        # TSA Undergarments Link
+        # sculpture
+        # Shaved Bieber Fan Mail Link
+        # documentation
+        # Shaved Bieber Link Case Study
+        # browser extensions
+        # Meme Generator Surge Link
+        # code
+        # Twitter Kiosk Follow Link
+        # code
+        # 99 Accounts Link
+        # website, code
+        # Twitter Fileshare Link
+        # website, code
+        # Google Streetview Car Link
+        # F.A.T. Lab collaboration
+        # website, code
+        # fuckCAPTCHA Link
+        # code
+        # Dr. Google Link
+        # website
+      2009:
+        # Retweet Game Link
+        # website
+        # Speed Project Widget Link
+        # website
+        # 'Imma Let Ya Finish...' Kanye West Interrupt Bookmarklet Link
+        # bookmarklet
+        # Ctrl+F'd, Censoring Bookmarklet Link
+        # bookmarklet
+        # Lowercase Kanye Link
+        # w/ Evan Roth
+        # website
+        # Kanyefy Bookmarklet Link
+        # bookmarklet
+        # TumblRSS Link
+        # code
+      2008:
+        # Projections of Hurtsboro Identity
+        # interactive
+        # Abductive Reasoning and the Creative Mind
+        # sculpture
+        # WILL PAINT 4 FOOD
+        # installation
+        # FuckFlickr Link
+        # F.A.T. Lab collaboration
+        # code

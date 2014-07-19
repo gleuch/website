@@ -1,2 +1,18 @@
 en:
   name:           'Greg Leuch'
+
+
+
+  footer:         '&copy; 2003–%{year} Greg Leuch, unless noted differently.'
+
+
+  twitter:        'Twitter'
+  twitter_name:   '@gleuch'
+  github:         'Github'
+  facebook:       'Facebook'
+  instagram:      'Instagram'
+  linkedin:       'LinkedIn'
+
+
+
+

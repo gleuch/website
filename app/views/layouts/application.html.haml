@@ -5,7 +5,16 @@
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
+
+
+
+
   %body{class: @body_classes}
 
     = yield
 
+
+
+    %footer
+      %p
+        %small= t(:footer, year: Date.today.year).html_safe
