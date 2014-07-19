@@ -1,0 +1,82 @@
+en:
+  projects:
+    list:
+
+
+    # Full List of projects, by year
+    full_list:
+      2014:
+      2013:
+        sometimes:
+          name:             'Sometimes You See It'
+          category:         'net art'
+          media:            'HTML'
+          url:              'http://projects.gleu.ch/2013/sometimes-you-see-it/'
+        techobaby:
+          name:             'Technobaby'
+          category:         'net art'
+          media:            'HTML5 / CSS3'
+          url:              '/fun/technobaby'
+        wayback_gem:
+          name:             'Wayback Gem'
+          partners:         'XOlator'
+          media:            'Ruby gem'
+          url:              'https://rubygems.org/gems/wayback'
+        wayback_wifi:
+          name:             'Wayback WiFi'
+          category:         'interactive/environmental net art'
+          partners:         'Jiashan Wu'
+          support:          'Eyebeam'
+          media:            'wireless router, Internet'
+          url:              'https://github.com/XOlator/wayback_proxy_server'
+        whatcoloristheinternet:
+          name:             'WhatColor.IsTheInter.net'
+          category:         'net art'
+          partners:         'Jiashan Wu'
+          support:          'Eyebeam'
+          media:            'Internet'
+          url:              'http://whatcolor.istheinter.net/?'
+        fartsy:
+          name:             'FFFFFFartsy'
+          category:         'web site, net art'
+          partners:         'Evan Roth'
+          url:              'http://fffffartsy.com'
+      2012:
+        pop_block:
+          name:             'Pop Block'
+          partners:         'XOlator'
+          role:             'design, develop'
+          media:            'Rails app, browser extensions'
+          url:              'https://pop-block.com'
+          project_url:      '/projects/pop-block'
+        display_mode:
+          name:             'Display Mode'
+          partners:         'XOlator'
+          media:            'web app'
+        metafetch:
+          name:             'Metafetch'
+          partners:         'XOlator'
+          role:             'design, develop'
+          media:            'Rails app, browser extensions'
+          url:              'http://metafetch.com'
+        olwimpics:
+          name:             'Olwimpics, the Olympics Blocker'
+          media:            'browser extensions'
+          url:              ''
+        greed:
+          name:             'G.R.E.E.D.'
+          media:            'website, browser extensions'
+          url:              ''
+        shit_people_say_Search:
+          name:             '"Shit People Say…" Live Search'
+          partners:         'Tanner Ringerud, Lindsey Weber'
+          media:            'website'
+          url:              ''
+        is_there_snow_in:
+          name:             'In There Snow In...?'
+          media:            'website'
+        daqiao:
+          name:             'Daqiao'
+          media:            'website'
+      2011:
+        
