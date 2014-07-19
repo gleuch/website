@@ -82,84 +82,123 @@ en:
           name:             'Daqiao'
           media:            'website'
       2011:
-        # Stop SOPA/PIPA Blackout Link
-        # JavaScript widget
-        # The "AH-HA!" Moment - Ideas, Research, and Creative Output Link
-        # presentation
-        # Dash Out, The Kardashian Blocker Link
-        # browser extensions
-        # Occupy The Internet 
-        # F.A.T. Lab collaboration
-        # website, browser extensions, JavaScript widget
-        # I Hurricane NY Link
-        # [removed by C&D request]
-        # image
-        # Digital Purchase Takedown Notice Link
-        # website
-        # China Blocker Link
-        # browser extensions
-        # MyFriend.is
-        # website
-        # Tinted Sheen Link
-        # browser extensions
-        # Facebook Dislike Link
-        # code example
-        # Limited Edition: Shaved Bieber 3D VIP Movie Pass Link
-        # sculpture
-        # How-to: Animate Your Twitter Avatar Link
-        # website
+        stop_sopa:
+          name:             'Stop SOPA/PIPA Blackout'
+          media:            'JavaScript widget'
+        ah_ha_presentation:
+          name:             'The "AH-HA!" Moment - Ideas, Research, and Creative Output'
+          category:         'presentation'
+        dash_out:
+          name:             'Dash Out, The Kardashian Blocker'
+          media:            'browser extensions'
+        occupy_internet:
+          name:             'Occupy The Internet'
+          partners:         'F.A.T. Lab collaboration'
+          media:            'website, browser extensions, JavaScript widget'
+        i_hurricane_ny:
+          name:             'I Hurricane NY'
+          note:             '[removed by C&D request]'
+          media:            'image'
+        digital_purchase_takedown_notice:
+          name:             'Digital Purchase Takedown Notice'
+          media:            'website'
+        china_blocker:
+          name:             'China Blocker'
+          media:            'browser extensions'
+        myfriend_is:
+          name:             'MyFriend.is'
+          media:            'website'
+        tinted_sheen:
+          name:             'Tinted Sheen'
+          media:            'browser extensions'
+        facebook_dislike:
+          name:             'Facebook Dislike'
+          category:         'code example'
+        bieber_3d:
+          name:             'Limited Edition: Shaved Bieber 3D VIP Movie Pass Link'
+          media:            'sculpture'
+        twitter_gif:
+          name:             'How-to: Animate Your Twitter Avatar'
+          note:             '[removed by C&D]'
+          media:            'website'
       2010:
-        # Single Topic Twitter Queue Link
-        # code
-        # Tumblr Video Add-on Link
-        # Rocketboom
-        # browser extensions
-        # Addon Server Link
-        # code
-        # TSA Undergarments Link
-        # sculpture
-        # Shaved Bieber Fan Mail Link
-        # documentation
-        # Shaved Bieber Link Case Study
-        # browser extensions
-        # Meme Generator Surge Link
-        # code
-        # Twitter Kiosk Follow Link
-        # code
-        # 99 Accounts Link
-        # website, code
-        # Twitter Fileshare Link
-        # website, code
-        # Google Streetview Car Link
-        # F.A.T. Lab collaboration
-        # website, code
-        # fuckCAPTCHA Link
-        # code
-        # Dr. Google Link
-        # website
+        single_topic_twitter_queue:
+          name:             'Single Topic Twitter Queue'
+          media:            'code'
+        tumblr_video_addon:
+          name:             'Tumblr Video Add-on'
+          client:           'Rocketboom'
+          media:            'browser extensions'
+        addon_server:
+          name:             'Browser Addon Self-hosted Server'
+          media:            'code'
+        tsa_undergarmets:
+          name:             'TSA Undergarments'
+          media:            'sculpture'
+        shaved_bieber_fan_mail:
+          name:             'Shaved Bieber Fan Mail'
+          media:            'documentation'
+        shaved_bieber:
+          name:             'Shaved Bieber'
+          media:            'browser extensions'
+        meme_generator_surge:
+          name:             'Meme Generator Surge'
+          media:            'code'
+        twitter_kiosk_follow:
+          name:             'Twitter Kiosk Follow'
+          media:            'code'
+        99_accounts:
+          name:             '99 Accounts'
+          media:            'website, code'
+        twitter_fileshare:
+          name:             'Twitter Fileshare'
+          media:            'website, code'
+        google_streeview_car:
+          name:             'Google Street View Car'
+          partners:         'F.A.T. Lab collaboration'
+          media:            'website, code'
+        fuckcaptcha:
+          name:             'fuckCAPTCHA'
+          media:            'code'
+        dr_google:
+          name:             'Dr. Google'
+          note:             '[removed by C&D request]'
+          media:            'website'
       2009:
-        # Retweet Game Link
-        # website
-        # Speed Project Widget Link
-        # website
-        # 'Imma Let Ya Finish...' Kanye West Interrupt Bookmarklet Link
-        # bookmarklet
-        # Ctrl+F'd, Censoring Bookmarklet Link
-        # bookmarklet
-        # Lowercase Kanye Link
-        # w/ Evan Roth
-        # website
-        # Kanyefy Bookmarklet Link
-        # bookmarklet
-        # TumblRSS Link
-        # code
+        retweet_game:
+          name:             'Retweet Game'
+          media:            'website'
+        speed_project_widget:
+          name:             'Speed Project Widget'
+          media:            'website'
+        kanye_interrupt:
+          name:             "'Imma Let Ya Finish...' Kanye West Interrupt Bookmarklet"
+          media:            'bookmarklet'
+        ctrl_fd:
+          name:             "Ctrl+F'd, Censoring Bookmarklet"
+          media:            'bookmarklet'
+        lowercase_kanye:
+          name:             'Lowercase Kanye'
+          partners:         'Evan Roth'
+          media:            'website'
+        kanyefy:
+          name:             'Kanyefy Bookmarklet'
+          media:            'bookmarklet'
+        tumblrss:
+          name:             'TumblRSS'
+          media:            'code'
       2008:
-        # Projections of Hurtsboro Identity
-        # interactive
-        # Abductive Reasoning and the Creative Mind
-        # sculpture
-        # WILL PAINT 4 FOOD
-        # installation
-        # FuckFlickr Link
-        # F.A.T. Lab collaboration
-        # code
+        hurtsboro:
+          name:             'Projections of Hurtsboro Identity'
+          media:            'interactive'
+        ah_ha:
+          name:             'Abductive Reasoning and the Creative Mind'
+          media:            'sculpture'
+        paint4food:
+          name:             'WILL PAINT 4 FOOD'
+          media:            'installation'
+        fuckflickr:
+          name:             'FuckFlickr'
+          partners:         'F.A.T. Lab collaboration'
+          media:            'code'
+          url:              'http://fffff.at/fuck-flickr'
