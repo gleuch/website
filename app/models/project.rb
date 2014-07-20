@@ -4,8 +4,7 @@ class Project < ActiveRecord::Base
   include Pageable
 
   # Tableless records, so that we can use impressionist
-  has_no_table database: :pretend_success
-  column :id, :string
+  include TablelessPageable
 
   # Impressionist
   is_impressionable
