@@ -12,6 +12,7 @@ gem 'scrypt',                         '1.2.1'
 
 
 # --- MODELS & CONTROLLERS ---
+gem 'activerecord-tableless',         '1.3.4'
 gem 'paperclip',                      '4.1.1'
 gem 'paperclip-compression',          '0.3.6'
 gem 'friendly_id',                    '5.0.4'

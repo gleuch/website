@@ -9,7 +9,7 @@ class StaticPagesController < ApplicationController
   end
 
   def show
-    show_static_page
+    show_static_page(@static_page)
   end
 
   # Livestream page for Samsung + WT contest.

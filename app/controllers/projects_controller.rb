@@ -6,26 +6,37 @@ class ProjectsController < ApplicationController
   # layout 'post'
 
   def index
-    load_and_show_static_page(id: 'home', format: request.format.symbol.to_s, view_path: 'projects')
+    load_resource(id: 'home', format: request.format.symbol.to_s)
+    show_static_page(@project)
   end
 
+  def show
+    impressionist(@project) unless request_is_self?
+    show_static_page(@project)
+  end
+
+
+  # Custom Project Pages
   def list
     @projects_list = t('projects.full_list')
   end
 
-  def show
-    show_static_page
-  end
 
 
 protected
 
   def projects_init
-    # @_static_page_options[:layout] = 'projects'
+    #
   end
 
-  def load_resource
-    load_static_page_resource(view_path: 'projects')
+  def load_resource(*args)
+    opts = {view_path: 'projects'}.merge(args.extract_options!).merge(project_params)
+    @project = Project.new(opts)
+    raise ActiveRecord::RecordNotFound unless @project.exists?
+  end
+
+  def project_params
+    params.permit(:id, :format)
   end
 
 end
