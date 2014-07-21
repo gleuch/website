@@ -1,12 +1,24 @@
 !!!
-%html{locale: 'en-us'}
-  %head
-    %title= @page_title
+%html{lang: 'en', 'xmlns:fb' => 'http://www.facebook.com/2008/fbml', 'xmlns:og' => 'http://opengraphprotocol.org/schema/', 'xmlns' => 'http://www.w3.org/1999/xhtml'}
+  %head{prefix: 'og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#'}
+    /
+      \
+      All work is copyrighted 2014 by Greg Leuch and/or its respective owners.
+      \
+      All other non-copyrighted or non-licensed work is licensed under a Creative Commons 
+      Attribution-Share Alike 3.0 United States License <http://creativecommons.org/licenses/by-sa/3.0/us>.
+      \
+      Permissions beyond the scope of this license may be available at: http://gleu.ch/contact.
+      \
+    %meta{charset: 'UTF-8'}
+
+    %title= page_title
+
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
 
-
+    = render 'layouts/static/meta_tags'
 
 
   %body{class: @body_classes}

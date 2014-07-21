@@ -8,11 +8,14 @@ class ProjectsController < ApplicationController
 
   def index
     load_resource(id: 'home', format: request.format.symbol.to_s)
+
+    @page_type = 'project'
     impressionist(@project) unless request_is_self?
     show_static_page(@project)
   end
 
   def show
+
     impressionist(@project) unless request_is_self?
     show_static_page(@project)
   end

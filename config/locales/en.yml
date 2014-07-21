@@ -1,7 +1,10 @@
 en:
   name:           'Greg Leuch'
 
-
+  me:
+    name:         'Greg Leuch'
+    first_name:   'Greg'
+    last_name:    'Leuch'
 
   footer:         '&copy; 2003–%{year} Greg Leuch, unless noted differently.'
 
@@ -10,9 +13,18 @@ en:
   twitter_name:   '@gleuch'
   github:         'Github'
   facebook:       'Facebook'
+  facebook_name:  'gleuch'
   instagram:      'Instagram'
   linkedin:       'LinkedIn'
 
 
+  nav:
+    about:        'About'
 
-
+  meta:
+    name:         'Greg Leuch : Creative & Interactive'
+    author:       'Greg Leuch at %{url}'
+    description:  'Greg Leuch is a user interface designer, interaction designer, visual designer, front-end web developer, and open-source artist.'
+    keywords:     'greg leuch, gleuch, halvfet, interface, interaction, visual, design, designer, user experience, art, programming, web, css, html, php, rails, javascript, code, general'
+    copyright:    'Copyright 2003–%{year} Greg Leuch, unless noted differently.'
+    generator:    'Hand-coded with love and Ruby on Rails by Greg Leuch, 2014.'
