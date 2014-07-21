@@ -1,0 +1,31 @@
+- @page_title = t('.page_title')
+
+
+.page-header
+  %h1= t('.title')
+  %p= t('.copy')
+
+#client-works-list.container-fluid
+  - unless @client_works_list.blank?
+    - @client_works_list.each do |yr,list|
+      .container-fluid
+        - unless list.blank?
+          %h2= yr
+          - list.values.each do |work,i|
+            .col-md-3.col-sm-4.col-xs-6
+              %h3
+                - if work[:url].present?
+                  = link_to work[:name], work[:url], target: '_blank'
+                - elsif work[:work_url].present?
+                  = link_to work[:name], work[:work_url]
+                - else
+                  = work[:name]
+              %dl
+                - [:note, :category, :partners, :client, :support, :role, :media].each do |n|
+                  - unless work[n].blank?
+                    %dd{class: "list-#{n}"}= work[n]
+
+    %p= t('.disclaimer')
+
+  - else
+    %p.text-center= t('.none')

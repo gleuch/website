@@ -1,0 +1,35 @@
+%h3 gleu.ch contact message:
+%h2= @contact_message.subject_text
+
+%p
+  %strong Name:
+  = @contact_message.name
+  %br
+  %strong Phone: 
+  = @contact_message.phone
+  %br
+  %strong Email: 
+  = @contact_message.email
+
+%div{style: 'background-color: rgb(245,247,249); padding: 1em 2em;'}
+  = simple_format( Sanitize.clean(@contact_message.message) )
+
+%p
+  %br
+  You can reply to this email to respond directly to #{@contact_message.name} &lt;#{@contact_message.email}&gt;.
+
+%hr
+
+%p{style: 'font-size: .75em;'}
+  %br
+  %strong Session ID: 
+  = @contact_message.session_id
+  %br
+  %strong IP Address: 
+  = @contact_message.ip_address
+  %br
+  %strong Browser: 
+  = @contact_message.browser
+  %br
+  %strong Referrer: 
+  = @contact_message.referrer

@@ -4,6 +4,8 @@ class ApplicationController < ActionController::Base
 
   before_filter :app_init
 
+  rescue_from Gleuch::Unauthorized, with: :unauthorized_request
+
 
   # Initialize variables and other items for use on page.
   def app_init
@@ -17,6 +19,9 @@ class ApplicationController < ActionController::Base
     false # Rails.env.production?
   end
 
+  def unauthorized_request
+    render file: "public/401.html", layout: false, status: :unauthorized
+  end
 
 private
 

@@ -1,4 +1,4 @@
-class StaticPage < ActiveRecord::Base
+class ClientWork < ActiveRecord::Base
 
   # Act like a static page
   include Pageable

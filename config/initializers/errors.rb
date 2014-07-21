@@ -1,0 +1,1 @@
+class Gleuch::Unauthorized < StandardError; end

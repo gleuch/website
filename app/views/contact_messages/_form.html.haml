@@ -1,0 +1,13 @@
+- contact_message ||= ContactMessage.new(referrer: request.referrer)
+
+
+= simple_form_for @contact_message do |f|
+  = f.error_notification
+  = f.input :subject, collection: ContactMessage.subjects_text
+  = f.input :referrer, as: :hidden
+  = f.input :name, required: true
+  = f.input :email, as: :email, required: true
+  = f.input :phone, input_html: {data: {type: :phone} }
+  = f.input :message, required: true, input_html: {rows: 6}
+
+  = f.submit t('.send')

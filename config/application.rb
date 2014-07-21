@@ -2,7 +2,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 Bundler.require(*Rails.groups)
 
-module GleuchWebSite
+module Gleuch
   class Application < Rails::Application
     config.time_zone = 'Eastern Time (US & Canada)'
     config.active_record.default_timezone = :utc
@@ -16,6 +16,8 @@ module GleuchWebSite
 
     config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
     config.assets.paths << Rails.root.join('vendor', 'assets', 'fonts')
+
+    config.action_mailer.preview_path = "#{Rails.root}/lib/mailer_previews"
   end
 end
 

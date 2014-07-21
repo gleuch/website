@@ -5,18 +5,15 @@ class StaticPagesController < ApplicationController
   # layout 'post'
 
   def index
-    load_and_show_static_page(id: 'home', format: request.format.symbol.to_s)
-  end
-
-  def show
+    load_static_page_resource(id: 'home', format: request.format.symbol.to_s)
+    impressionist(@static_page) unless request_is_self?
     show_static_page(@static_page)
   end
 
-  # Livestream page for Samsung + WT contest.
-  # def hope4children
-  #   @_static_page_options[:layout] = false
-  #   @_hide_ads = true
-  # end
+  def show
+    impressionist(@static_page) unless request_is_self?
+    show_static_page(@static_page)
+  end
 
 
 protected

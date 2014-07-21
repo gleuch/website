@@ -11,7 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140720190824) do
+ActiveRecord::Schema.define(version: 20140721145627) do
+
+  create_table "contact_messages", force: true do |t|
+    t.string   "uuid"
+    t.string   "session_id"
+    t.integer  "subject",    default: 0
+    t.string   "name"
+    t.string   "email"
+    t.string   "phone"
+    t.text     "message"
+    t.string   "ip_address"
+    t.string   "browser"
+    t.string   "referrer"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "contact_messages", ["uuid"], name: "index_contact_messages_on_uuid", unique: true, using: :btree
 
   create_table "impressions", force: true do |t|
     t.string   "impressionable_type"

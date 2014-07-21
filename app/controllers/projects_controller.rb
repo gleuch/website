@@ -5,8 +5,10 @@ class ProjectsController < ApplicationController
 
   # layout 'post'
 
+
   def index
     load_resource(id: 'home', format: request.format.symbol.to_s)
+    impressionist(@project) unless request_is_self?
     show_static_page(@project)
   end
 

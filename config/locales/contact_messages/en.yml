@@ -1,0 +1,32 @@
+en:
+  # --- ACTIVERECORD ---
+  activerecord:
+    attributes:
+      contact_message:
+        subject:            'Subject'
+        name:               'Name'
+        email:              'Email'
+        phone:              'Phone Number'
+        message:            'Message'
+        referrer:           'Referrer'
+        session_id:         'Session ID'
+        ip_address:         'IP Address'
+        browser:            'Browser Type'
+    enums:
+      contact_message:
+        subject:
+          hello:            'Saying hello!'
+          collaboration:    'Wanna collaborate on a project?'
+          question:         'Seeking answers to questions'
+          work:             'Opportunities (freelance)'
+          hate:             'Hate mail, death threats, etc.'
+
+
+  # --- VIEWS ---
+  contact_messages:
+    index:
+      page_title:           'Contact Greg Leuch'
+      title:                'Contact'
+      copy:                 'No matter the size, tinkering on new projects keeps one active and sharp, and all deserve a little recognition.'
+    form:
+      send:                 'Send'

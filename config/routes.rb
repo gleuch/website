@@ -5,7 +5,10 @@ Rails.application.routes.draw do
   resources :projects, only: [:index, :show]
 
   # Client Work ---
-  resources :clients, only: [:index, :show]
+  resources :client_works, path: 'works', only: [:index, :show]
+
+  # Contact ---
+  resources :contact_messages, path: 'contact', only: [:index, :new, :create]
 
 
   # Static pages routing, use StaticPage to check if exists as constraint
@@ -17,7 +20,7 @@ end
 
 
 # Now this is much better!
-GleuchWebSite::Application.routes.named_routes.module.module_eval do
+Gleuch::Application.routes.named_routes.module.module_eval do
 
   # Social Media URLs
   def facebook_url;   'https://facebook.com/gleuch'; end
