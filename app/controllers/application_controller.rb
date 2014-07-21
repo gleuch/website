@@ -50,13 +50,6 @@ private
   end
 
 
-  # Load a static page item
-  def load_static_page_resource(*args)
-    opts = (args.extract_options!).merge(params)
-    @static_page = StaticPage.new(opts)
-    raise ActiveRecord::RecordNotFound unless @static_page.exists?
-  end
-
   # Render actions for showing an available static page
   def show_static_page(page=nil, *args)
     @_static_page_options.merge!(args.extract_options!)
@@ -76,12 +69,6 @@ private
       }
       format.any { render_not_found }
     end
-  end
-
-  # Method to lad and show a static page
-  def load_and_show_static_page(*args)
-    load_static_page_resource(*args)
-    show_static_page(@static_page)
   end
 
 

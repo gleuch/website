@@ -1,0 +1,19 @@
+.page-header
+  %h1= t('.title')
+  %p= t('.copy')
+
+
+#about
+  = simple_format( t('.bio') )
+
+
+
+#info-list
+  - [:exhibitions, :residencies, :awards, :c_and_d].each do |g|
+    - list = t(g, scope: 'static_pages.about') rescue nil
+    - unless list.blank? || list[:list].blank?
+      .list
+        %h3= list[:title]
+        %ul.list-unstyled
+          - list[:list].each do |n|
+            %li= n
