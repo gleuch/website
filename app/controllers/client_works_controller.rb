@@ -19,7 +19,7 @@ class ClientWorksController < ApplicationController
 
 
   # Custom Project Pages
-  def list
+  def all
     @client_works_list = t('client_works.full_list')
   end
 

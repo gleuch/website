@@ -1,19 +1,25 @@
 en:
   client_works:
-    list:
-      page_title:           'Projects List'
-      title:                'Projects List'
-      copy:                 'No matter the size, tinkering on new projects keeps one active and sharp, and all deserve a little recognition.'
+    home:
+      page_title:           'Client Work'
+      title:                'Client Work'
+      copy:                 'A varied list of creative, design, & development work.'
+      list:                 'View list of all client work'
+
+    all:
+      page_title:           'Client List'
+      title:                'All Client Work'
+      copy:                 'Nothing better explains the skills and expertise of a true professional then by the quality of work they produce and a willingness to show it.'
       disclaimer:           'Some employed and contract work have been omitted from this list due to disclosure agreements, lack of substantial work, employment situations, or other various reasons. Work listed with a company underneath the title indicates work done as an employee, company member/owner, or under contract with the company listed. All other work is considered freelanced.'
 
 
-    # Full List of client work, by year
+    # Full list of client work, by year
     full_list:
       2014:
-        whatstrending:
+        - # whatstrending
           name:             "What's Trending"
           client:           'XOlator'
-          role:             'design, develop, manage'
+          role:             'project management, design, develop'
           media:            'Rails app'
           url:              'http://whatstrending.com'
 
@@ -24,97 +30,104 @@ en:
         # TODO : ADD MORE!
 
       2012:
-        your_excuse_sucks:
+        - # your_excuse_sucks
           name:             'Your Excuse Sucks'
           client:           'Cultivated Wit / Ford Foundation'
           role:             'design, develop'
           media:            'Rails app, browser extensions'
           url:              ''
-        xcz:
+        - # xcz
           name:             '想采摘 (Xiang Cai Zhai)'
           role:             'design, develop'
-        fever_keeper:
+        - # fever_keeper
           name:             'Heineken Fever Keeper'
           client:           'Heineken / The Vidal Partnership'
           role:             'develop'
           media:            'Rails app, browser extensions'
-        mod_primate:
+        - # mod_primate
           name:             'Modern Primate Link'
           client:           'My Damn Channel'
           role:             'develop'
           media:            'WordPress'
       2011:
-        buzzfeed:
+        - # buzzfeed
           name:             'BuzzFeed'
           client:           'BuzzFeed'
           role:             'design, develop'
-        blue_box:
+        - # blue_box
           name:             'Blue Box Gallery'
           role:             'design, develop'
-        mtv_o_awards:
+        - # mtv_o_awards
           name:             'MTV O Music Awards – Best Music Hack Award Presentation'
           client:           'MTV / JESS3'
           role:             'develop'
           media:            'browser extensions'
       2010:
-        kym:
+        - # kym
           name:             'Know Your Meme'
           client:           'Rocketboom'
           role:             'design, develop'
           media:            'Rails app'
           url:              'http://knowyourmeme.com'
-        rocketboom:
+        - # rocketboom
           name:             'Rocketboom'
           client:           'Rocketboom'
           role:             'design, develop'
-        zagat_food_trucks:
+        - # zagat_food_trucks
           name:             'Zagat Food Trucks'
           client:           'JESS3'
           role:             'develop'
           media:            'Rails app'
-        urdb:
+        - # urdb
           name:             'The URDB Book of World Records'
           client:           'URDB'
           role:             'design, develop'
-        karate:
+        - # karate
           name:             'K.A.R.A.T.E (Kids are Rallying Against the Empire)'
           role:             'design, develop'
-        block_your_ex:
+        - # block_your_ex
           name:             'Block Your Ex'
           client:           'JESS3'
           role:             'develop'
           media:            'Sinatra app, browser extensions'
-        oil_spill:
+        - # oil_spill
           name:             'Oil Spill Browser Plugin'
           client:           'JESS3'
           role:             'develop'
           media:            'browser extensions'
-        humanwire:
+        - # humanwire
           name:             'Humanwire'
           client:           'Rocketboom'
           role:             'design, develop'
       2009:
-        # Happy HallowMEME Costume Party
-        # Know Your Meme / Urlesque
-        # design, develop
-        # Know Your Meme Online Store
-        # Rocketboom
-        # project management, design, develop
-        # Magma Link
-        # Rocketboom
-        # design, develop
-        # Rails app
+        - # hallowmeme
+          name:             'Happy HallowMEME Costume Party'
+          client:           'Know Your Meme / Urlesque'
+          role:             'design, develop'
+        - # kym_store
+          name:             'Know Your Meme Online Store'
+          client:           'Rocketboom'
+          role:             'project management, design, develop'
+        - # magma
+          name:             'Magma'
+          client:           'Rocketboom'
+          role:             'design, develop'
+          media:            'Rails app'
         # Brandon Dean
         # design, develop
-        # A Night to ReMEMEber
-        # Know Your Meme / Urlesque
-        # design, develop
-        # Know Your Meme Link
-        # Rocketboom
-        # design, develop
-        # Rails app
-        # Artzilla.org Link
-        # design, develop
+        - #meme_party
+          name:             'A Night to ReMEMEber'
+          client:           'Know Your Meme / Urlesque'
+          role:             'design, develop'
+        - #kym
+          name:             'Know Your Meme'
+          client:           'Rocketboom'
+          role:             'design, develop'
+          media:            'Rails app'
+          url:              'http://knowyourmeme.com'
+        - # artzilla
+          name:           'Artzilla.org'
+          role:           'design, develop'
       2008:
         # thesa.me
         # brainstorm, research, design

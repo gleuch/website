@@ -15,14 +15,13 @@ class ProjectsController < ApplicationController
   end
 
   def show
-
     impressionist(@project) unless request_is_self?
     show_static_page(@project)
   end
 
 
   # Custom Project Pages
-  def list
+  def all
     @projects_list = t('projects.full_list')
   end
 

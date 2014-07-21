@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
 
   # Client Work ---
-  resources :client_works, path: 'works', only: [:index, :show]
+  resources :client_works, path: 'work', only: [:index, :show]
 
 
   # Contact ---

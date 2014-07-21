@@ -1,246 +1,252 @@
 en:
   projects:
-    list:
+    home:
+      page_title:           'Projects'
+      title:                'Projects'
+      copy:                 'Creative & artistic projects combining technology and design.'
+      list:                 'View list of all projects'
+
+    all:
       page_title:           'Projects List'
       title:                'Projects List'
       copy:                 'No matter the size, tinkering on new projects keeps one active and sharp, and all deserve a little recognition.'
 
 
-    # Full List of projects, by year
+    # Full list of projects, by year
     full_list:
       2014:
-        dood_remove:
+        - # dood_remove
           name:             'DOOD Remove'
           partners:         'Aram Bartholl'
           category:         'net art'
           media:            'browser extensions'
           url:              'http://fffff.at/dood-remove/'
-        internet_sign:
+        - # internet_sign
           name:             'WhatColorIsTheInter.net/?'
           category:         'net art'
           media:            'sculpture'
           url:              'http://animalnewyork.com/2014/artists-notebook-greg-leuch/'
       2013:
-        sometimes:
+        - # sometimes
           name:             'Sometimes You See It'
           category:         'net art'
           media:            'HTML'
           url:              'http://projects.gleu.ch/2013/sometimes-you-see-it/'
-        techobaby:
+        - # techobaby
           name:             'Technobaby'
           category:         'net art'
           media:            'HTML5 / CSS3'
           url:              '/fun/technobaby'
-        wayback_gem:
+        - # wayback_gem
           name:             'Wayback Gem'
           partners:         'XOlator'
           media:            'Ruby gem'
           url:              'https://rubygems.org/gems/wayback'
-        wayback_wifi:
+        - # wayback_wifi
           name:             'Wayback WiFi'
           category:         'interactive/environmental net art'
           partners:         'Jiashan Wu'
           support:          'Eyebeam'
           media:            'wireless router, Internet'
           url:              'https://github.com/XOlator/wayback_proxy_server'
-        whatcoloristheinternet:
+        - # whatcoloristheinternet
           name:             'WhatColor.IsTheInter.net/?'
           category:         'net art'
           partners:         'Jiashan Wu'
           support:          'Eyebeam'
           media:            'Internet'
           url:              'http://whatcolor.istheinter.net/?'
-        fartsy:
+        - # fartsy
           name:             'FFFFFFartsy'
           category:         'web site, net art'
           partners:         'Evan Roth'
           url:              'http://fffffartsy.com'
-        mihi:
+        - # mihi
           name:             'Museum of Internet History International (MIHI)'
           category:         'prototype'
           partners:         'Jiashan Wu'
           media:            'website'
       2012:
-        pop_block:
+        - # pop_block
           name:             'Pop Block'
           partners:         'XOlator'
           role:             'design, develop'
           media:            'Rails app, browser extensions'
           url:              'https://pop-block.com'
           project_url:      '/projects/pop-block'
-        display_mode:
+        - # display_mode
           name:             'Display Mode'
           partners:         'XOlator'
           media:            'web app'
-        metafetch:
+        - # metafetch
           name:             'Metafetch'
           partners:         'XOlator'
           role:             'design, develop'
           media:            'Rails app, browser extensions'
           url:              'http://metafetch.com'
-        olwimpics:
+        - # olwimpics
           name:             'Olwimpics, the Olympics Blocker'
           media:            'browser extensions'
           url:              'http://fffff.at/olwimpics/'
-        greed:
+        - # greed
           name:             'G.R.E.E.D.'
           media:            'website, browser extensions'
           url:              'http://fffff.at/g-r-e-e-d/'
-        shit_people_say_Search:
+        - # shit_people_say_Search
           name:             '"Shit People Say…" Live Search'
           partners:         'Tanner Ringerud, Lindsey Weber'
           media:            'website'
-        is_there_snow_in:
+        - # is_there_snow_in
           name:             'In There Snow In...?'
           media:            'website'
-        daqiao:
+        - # daqiao
           name:             'Daqiao'
           media:            'website'
       2011:
-        stop_sopa:
+        - # stop_sopa
           name:             'Stop SOPA/PIPA Blackout'
           media:            'JavaScript widget'
-        ah_ha_presentation:
+        - # ah_ha_presentation
           name:             'The "AH-HA!" Moment - Ideas, Research, and Creative Output'
           category:         'presentation'
-        dash_out:
+        - # dash_out
           name:             'Dash Out, The Kardashian Blocker'
           media:            'browser extensions'
-        occupy_internet:
+        - # occupy_internet
           name:             'Occupy The Internet'
           partners:         'F.A.T. Lab collaboration'
           media:            'website, browser extensions, JavaScript widget'
-        i_hurricane_ny:
+        - # i_hurricane_ny
           name:             'I Hurricane NY'
           note:             '[removed by C&D request]'
           media:            'image'
-        digital_purchase_takedown_notice:
+        - # digital_purchase_takedown_notice
           name:             'Digital Purchase Takedown Notice'
           media:            'website'
           url:              'http://fffff.at/digital-purchase-takedown-notice/'
-        china_blocker:
+        - # china_blocker
           name:             'China Blocker'
           media:            'browser extensions'
           url:              'http://fffff.at/chinablocker/'
-        myfriend_is:
+        - # myfriend_is
           name:             'MyFriend.is'
           media:            'website'
-        tinted_sheen:
+        - # tinted_sheen
           name:             'Tinted Sheen'
           media:            'browser extensions'
           url:              'http://fffff.at/tinted-sheen/'
-        facebook_dislike:
+        - # facebook_dislike
           name:             'Facebook Dislike'
           category:         'code example'
           url:              'http://fffff.at/fb-disliek/example.html'
-        bieber_3d:
+        - # bieber_3d
           name:             'Limited Edition: Shaved Bieber 3D VIP Movie Pass Link'
           media:            'sculpture'
           url:              'http://fffff.at/limited-edition-shaved-bieber-3d-vip-movie-pass/'
-        twitter_gif:
+        - # twitter_gif
           name:             'How-to: Animate Your Twitter Avatar'
           note:             '[removed by C&D]'
           media:            'website'
           url:              'http://fffff.at/how-to-animate-your-twitter-avatar/'
       2010:
-        single_topic_twitter_queue:
+        - # single_topic_twitter_queue
           name:             'Single Topic Twitter Queue'
           media:            'code'
           url:              'https://github.com/gleuch/single-topic-twitter-queue'
-        tumblr_video_addon:
+        - # tumblr_video_addon
           name:             'Tumblr Video Add-on'
           client:           'Rocketboom'
           media:            'browser extensions'
           url:              'http://blog.rocketboom.com/post/1344827486/make-videos-show-up-in-your-tumblr-dashboard-get'
-        addon_server:
+        - # addon_server
           name:             'Browser Addon Self-hosted Server'
           media:            'code'
-        tsa_undergarmets:
+        - # tsa_undergarmets
           name:             'TSA Undergarments'
           media:            'sculpture'
           url:              'http://fffff.at/patriotism-and-privates-tsa-undergarments/'
-        shaved_bieber_fan_mail:
+        - # shaved_bieber_fan_mail
           name:             'Shaved Bieber Fan Mail'
           media:            'documentation'
           url:              'http://shavedbieber.tumblr.com/'
-        shaved_bieber:
+        - # shaved_bieber
           name:             'Shaved Bieber'
           media:            'browser extensions'
           url:              'http://fffff.at/shaved-bieber/'
-        meme_generator_surge:
+        - # meme_generator_surge
           name:             'Meme Generator Surge'
           media:            'code'
           url:              'http://fffff.at/meme-generator-surge/'
-        twitter_kiosk_follow:
+        - # twitter_kiosk_follow
           name:             'Twitter Kiosk Follow'
           media:            'code'
-        99_accounts:
+        - # 99_accounts
           name:             '99 Accounts'
           media:            'website, code'
           url:              'http://fffff.at/99-accounts/'
-        twitter_fileshare:
+        - # twitter_fileshare
           name:             'Twitter Fileshare'
           media:            'website, code'
           url:              'http://fffff.at/twitter-fileshare-or-how-to-tweet-any-file-on-twitter/'
-        google_streeview_car:
+        - # google_streeview_car
           name:             'Google Street View Car'
           partners:         'F.A.T. Lab collaboration'
           media:            'website, code'
           url:              'http://fffff.at/google-streetcar-berlin/'
-        fuckcaptcha:
+        - # fuckcaptcha
           name:             'fuckCAPTCHA'
           media:            'code'
           url:              'http://fffff.at/fuckcaptcha/'
-        dr_google:
+        - # dr_google
           name:             'Dr. Google'
           note:             '[removed by C&D request]'
           media:            'website'
           url:              'http://fffff.at/dr-google/'
       2009:
-        retweet_game:
+        - # retweet_game
           name:             'Retweet Game'
           media:            'website'
           url:              'http://fffff.at/retweet-game/'
-        speed_project_widget:
+        - # speed_project_widget
           name:             'Speed Project Widget'
           media:            'website'
           url:              'http://fffff.at/speed-project-widget/'
-        kanye_interrupt:
+        - # kanye_interrupt
           name:             "'Imma Let Ya Finish...' Kanye West Interrupt Bookmarklet"
           media:            'bookmarklet'
           url:              'http://fffff.at/imma-let-you-finish-but-kanye-west-interrupt-bookmarklet/'
-        ctrl_fd:
+        - # ctrl_fd
           name:             "Ctrl+F'd, Censoring Bookmarklet"
           media:            'bookmarklet'
           url:              'http://fffff.at/ctrlfd-censoring-the-interwebs/'
-        lowercase_kanye:
+        - # lowercase_kanye
           name:             'Lowercase Kanye'
           partners:         'Evan Roth'
           media:            'website'
           url:              'http://fffff.at/lowercase-kanye/'
-        kanyefy:
+        - # kanyefy
           name:             'Kanyefy Bookmarklet'
           media:            'bookmarklet'
           url:              'http://fffff.at/kanyefy-text-bookmarklet/'
-        tumblrss:
+        - # tumblrss
           name:             'TumblRSS'
           media:            'code'
           url:              'https://github.com/gleuch/tumblrss'
       2008:
-        hurtsboro:
+        - # hurtsboro
           name:             'Projections of Hurtsboro Identity'
           media:            'interactive'
-        ah_ha:
+        - # ah_ha
           name:             'Abductive Reasoning and the Creative Mind'
           media:            'sculpture'
-        paint4food:
+        - # paint4food
           name:             'WILL PAINT 4 FOOD'
           media:            'installation'
-        fuckflickr:
+        - # fuckflickr
           name:             'FuckFlickr'
           partners:         'F.A.T. Lab collaboration'
           media:            'code'
           url:              'http://fffff.at/fuckflickr-info/'
-        not_butter:
+        - # not_butter
           name:             "Not Today's Butter"
           media:            'poster media'

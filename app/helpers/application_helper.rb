@@ -1,15 +1,15 @@
 module ApplicationHelper
 
   def page_title
-    @page_title # TODO
+    (@page_title.present? && @page_title) || t(:name)
   end
 
   def page_meta_description
-    @_page_meta_description || t('meta.description')
+    (@page_meta_description.present? && @page_meta_description) || t('meta.description')
   end
 
   def page_meta_keywords
-    @_page_meta_keywords || t('meta.keywords')
+    (@page_meta_keywords.present? && @page_meta_keywords) || t('meta.keywords')
   end
 
   def page_meta_robots
@@ -21,15 +21,15 @@ module ApplicationHelper
   end
 
   def page_canonical_url
-    @canonical_url || request.url
+    (@canonical_url.present? && @canonical_url) || request.url
   end
 
   def page_share_title
-    '' # TODO
+    @page_share_title
   end
 
   def page_share_description
-    '' # TODO
+    @page_share_description
   end
 
   def page_category

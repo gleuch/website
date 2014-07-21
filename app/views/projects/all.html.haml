@@ -11,7 +11,7 @@
       .container-fluid
         - unless list.blank?
           %h2= yr
-          - list.values.each do |project,i|
+          - list.each_with_index do |project,i|
             .col-md-3.col-sm-4.col-xs-6
               %h3
                 - if project[:url].present?

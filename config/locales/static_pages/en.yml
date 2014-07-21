@@ -1,15 +1,13 @@
 en:
   static_pages:
-    list:
-      page_title:           'Projects List'
-      title:                'Projects List'
-      copy:                 'No matter the size, tinkering on new projects keeps one active and sharp, and all deserve a little recognition.'
-      disclaimer:           'Some employed and contract work have been omitted from this list due to disclosure agreements, lack of substantial work, employment situations, or other various reasons. Work listed with a company underneath the title indicates work done as an employee, company member/owner, or under contract with the company listed. All other work is considered freelanced.'
-
-
+    home:
+      title:                'Greg Leuch'
 
     about:
       page_title:           'About Greg Leuch'
+      meta:
+        description:        ''
+        keywords:           ''
       title:                'A Little Bit About Greg Leuch'
       copy:                 'Who, what, where, and why…'
       bio: |
@@ -21,279 +19,118 @@ en:
 
         He currently resides in Brooklyn, NY.
 
+      info:
+        link:               'Link'
+
 
       exhibitions:
         title:              'Major Exhibitions'
         list:
-          - '"F.A.T. GOLD: Five Years of Free Art & Technology". Eyebeam, NYC, Apr 2013.'
-          - '"C.R.E.A.M.," Art Micro-Patronage. Internet, Apr 2012'
-          - '"Distributed Collectives," Little Berlin. Philadelphia, Aug 2011'
-          - '"Futurity Now!," transmediale.10. Berlin, Germany, Feb 2010.'
-          - '"Community Collaborations Invitational Exhibition", York, Alabama. Jul 2008'
+          -
+            name:           '"Eyebeam Annual Showcase"'
+            place:          'Eyebeam'
+            location:       'NYC'
+            date:           'Jan 2014'
+          -
+            name:           '"F.A.T. GOLD EUROPE"'
+            place:          'MU'
+            location:       'Eindhoven, Netherlands'
+            date:           'Nov 2013'
+          -
+            name:           '"F.A.T. GOLD: Five Years of Free Art & Technology"'
+            place:          'Eyebeam'
+            location:       'NYC'
+            date:           'Apr 2013'
+          - 
+            name:           '"C.R.E.A.M."'
+            place:          'Art Micro-Patronage'
+            location:       'Internet'
+            date:           'Apr 2012'
+          - 
+            name:           '"Distributed Collectives"'
+            place:          'Little Berlin'
+            location:       'Philadelphia'
+            date:           'Aug 2011'
+          - 
+            name:           '"Futurity Now!"'
+            place:          'transmediale.10'
+            location:       'Berlin, Germany'
+            date:           'Feb 2010'
+          - 
+            name:           '"Community Collaborations Invitational Exhibition"'
+            place:          'Coleman Arts Center'
+            location:       'York, Alabama'
+            date:           'Jul 2008'
       residencies:
         title:              'Residencies, Presentations, Discussions, & Panels'
         list:
-          - 'Residency, Eyebeam, 2013. [Link]'
-          - 'Artist Talk on Art Micro Patronage. uStream, Apr 2012. [Watch]'
-          - "\"The 'AH HA!' Moment - Ideas, Research, and Creative Output\", Wuhan University, China. Nov 2011. [Slides]"
-          - '"The Behavior Gap Between Companies and People", RESPECT THE INTERNET. Dec 2010.'
-          - '"Shaved Bieber", Ignite NYC. Jun 2010. [Watch]'
+          - 
+            name:           'Residency'
+            place:          'Eyebeam'
+            year:           '2013'
+            url:            'http://www.eyebeam.org/people/greg-leuch'
+          - 
+            name:           'Artist Talk on Art Micro Patronage'
+            location:       'uStream'
+            date:           'Apr 2012'
+            url:            'http://www.ustream.tv/recorded/22100570'
+            url_text:       'Watch'
+          - 
+            name:           "\"The 'AH HA!' Moment - Ideas, Research, and Creative Output\""
+            place:          'Wuhan University, China'
+            date:           'Nov 2011'
+            url:            'http://blog.gleu.ch/post/35650337943/gleuch-the-ah-ha-moment-is-very-exciting'
+            url_text:       'Slides'
+          -
+            name:           '"The Behavior Gap Between Companies and People"'
+            place:          'RESPECT THE INTERNET'
+            date:           'Dec 2010'
+          - 
+            name:           '"Shaved Bieber"'
+            place:          'Ignite NYC'
+            date:           'Jun 2010'
+            url:            'http://www.youtube.com/watch?v=VhvtAvFBwSk'
+            url_text:       'Watch'
       awards:
         title:              'Awards, Highlights, & Distinctions'
         list:
-          - 'Interactive Award – Social, Communication Arts, 2013. [Source]'
-          - '"11 Net Artists You Should Know," Flavorpill, 2012. [Read]'
-          - 'An "all-round viral heavyweight". [Source]'
-          - "\"Shaved Bieber,\" 2010 Urlies Peoples' Choice Award. Urlesque, 2010."
-          - 'Labeled a "Web Boffin" by The Guardian. 2010. [Source]'
-          - '"Superfluous Mention in Everything I Write", Helen A.S Popkin Journalism Award. 2010.'
+          - 
+            name:           'Interactive Award – Social, Communication Arts'
+            year:           '2013'
+            url:            'http://www.commarts.com/interactive/cai13/heinekenkeepitlegendary.html'
+            url_text:       'Source'
+          - 
+            name:           '"11 Net Artists You Should Know"'
+            source:         'Flavorpill'
+            year:           '2012'
+            url:            'http://www.flavorwire.com/324680/10-net-artists-you-should-know#4'
+            url_text:       'Source'
+          - 
+            name:           'An "all-round viral heavyweight"'
+            url:            'http://adissertationblog.tumblr.com/post/16782867534/working-the-buzzfeed-contact-sheet'
+            url_text:       'Source'
+          - 
+            name:           '"Shaved Bieber"'
+            source:         "2010 Urlies Peoples' Choice Award"
+            place:          'Urlesque'
+            date:           '2010'
+          - 
+            name:           'Labeled a "Web Boffin" by The Guardian'
+            date:           '2010'
+            url:            'http://www.guardian.co.uk/music/2010/may/27/justin-bieber-erased-internet'
+            url_text:       'Source'
+          - 
+            name:           '"Superfluous Mention in Everything I Write"'
+            source:         'Helen A.S Popkin Journalism Award'
+            date:           '2010'
       c_and_d:
         title:              'Cease and Desist Letters (C&Ds)'
         list:
-          - 'Google, 2013. [Documentation]'
-          - 'CMG Worldwide (I ♥ NY™), 2011.'
-
-
-
-    # Full List of client work, by year
-    full_list:
-      2014:
-        whatstrending:
-          name:             "What's Trending"
-          client:           'XOlator'
-          role:             'design, develop, manage'
-          media:            'Rails app'
-          url:              'http://whatstrending.com'
-
-        # TODO : ADD MORE!
-
-      2013:
-
-        # TODO : ADD MORE!
-
-      2012:
-        your_excuse_sucks:
-          name:             'Your Excuse Sucks'
-          client:           'Cultivated Wit / Ford Foundation'
-          role:             'design, develop'
-          media:            'Rails app, browser extensions'
-          url:              ''
-        xcz:
-          name:             '想采摘 (Xiang Cai Zhai)'
-          role:             'design, develop'
-        fever_keeper:
-          name:             'Heineken Fever Keeper'
-          client:           'Heineken / The Vidal Partnership'
-          role:             'develop'
-          media:            'Rails app, browser extensions'
-        mod_primate:
-          name:             'Modern Primate Link'
-          client:           'My Damn Channel'
-          role:             'develop'
-          media:            'WordPress'
-      2011:
-        buzzfeed:
-          name:             'BuzzFeed'
-          client:           'BuzzFeed'
-          role:             'design, develop'
-        blue_box:
-          name:             'Blue Box Gallery'
-          role:             'design, develop'
-        mtv_o_awards:
-          name:             'MTV O Music Awards – Best Music Hack Award Presentation'
-          client:           'MTV / JESS3'
-          role:             'develop'
-          media:            'browser extensions'
-      2010:
-        kym:
-          name:             'Know Your Meme'
-          client:           'Rocketboom'
-          role:             'design, develop'
-          media:            'Rails app'
-          url:              'http://knowyourmeme.com'
-        rocketboom:
-          name:             'Rocketboom'
-          client:           'Rocketboom'
-          role:             'design, develop'
-        zagat_food_trucks:
-          name:             'Zagat Food Trucks'
-          client:           'JESS3'
-          role:             'develop'
-          media:            'Rails app'
-        urdb:
-          name:             'The URDB Book of World Records'
-          client:           'URDB'
-          role:             'design, develop'
-        karate:
-          name:             'K.A.R.A.T.E (Kids are Rallying Against the Empire)'
-          role:             'design, develop'
-        block_your_ex:
-          name:             'Block Your Ex'
-          client:           'JESS3'
-          role:             'develop'
-          media:            'Sinatra app, browser extensions'
-        oil_spill:
-          name:             'Oil Spill Browser Plugin'
-          client:           'JESS3'
-          role:             'develop'
-          media:            'browser extensions'
-        humanwire:
-          name:             'Humanwire'
-          client:           'Rocketboom'
-          role:             'design, develop'
-      2009:
-        # Happy HallowMEME Costume Party
-        # Know Your Meme / Urlesque
-        # design, develop
-        # Know Your Meme Online Store
-        # Rocketboom
-        # project management, design, develop
-        # Magma Link
-        # Rocketboom
-        # design, develop
-        # Rails app
-        # Brandon Dean
-        # design, develop
-        # A Night to ReMEMEber
-        # Know Your Meme / Urlesque
-        # design, develop
-        # Know Your Meme Link
-        # Rocketboom
-        # design, develop
-        # Rails app
-        # Artzilla.org Link
-        # design, develop
-      2008:
-        # thesa.me
-        # brainstorm, research, design
-        # Politics4All
-        # Politics4All
-        # design, develop
-        # Rails app
-        # Water Resources Link
-        # Virticle Corp
-        # design, develop
-        # Century 21 Paramount Real Estate
-        # Virticle Corp
-        # design, develop
-        # University of Alabama at Birmingham School of Dentistry Link
-        # Virticle Corp
-        # design, develop
-        # Parker-Burns Environmental Engineering & Erosion Control
-        # Virticle Corp
-        # design, develop
-        # Safe Partnership, Ltd.
-        # Virticle Corp
-        # design, develop
-        # Red Mountain Market
-        # Virticle Corp
-        # design, develop
-      2007:
-        # Auburn University Graphic Design Department
-        # Auburn University
-        # design, develop
-        # CollegeFootballArt.com Link
-        # Virticle Corp
-        # design, develop
-        # Lyman Ward Military Academy
-        # Virticle Corp
-        # design, develop
-        # AuburnArt.com Link
-        # Virticle Corp
-        # design, develop
-        # Chattahoochee Valley Community College
-        # Virticle Corp
-        # design, develop
-        # The Money Financial Group
-        # Virticle Corp
-        # design, develop
-        # CoachComm
-        # Virticle Corp
-        # design, develop
-      2006:
-        # Joys of Blue
-        # Amanda Foran
-        # design, develop
-        # Skanska USA
-        # Virticle Corp
-        # design, develop
-        # Hospice Family Care
-        # Virticle Corp
-        # design, develop
-        # Archangel Systems
-        # Virticle Corp
-        # design, develop
-        # Summit Hospital
-        # Virticle Corp
-        # design, develop
-        # Southern States Communication Association
-        # Virticle Corp
-        # design, develop
-        # Domin Gloves
-        # Virticle Corp
-        # design, develop
-      2005:
-        # Canine American
-        # Alexander Scott Designs & Virticle Corp
-        # develop
-        # Auburn City Limits
-        # Virticle Corp
-        # develop
-        # College Football Art
-        # Virticle Corp
-        # design, develop
-        # Three Notch EMC
-        # Virticle Corp
-        # design, develop
-        # TeamMax
-        # Virticle Corp
-        # design, develop
-        # The Auburn Circle
-        # Auburn University
-        # print design, web design
-        # The Charter Companies
-        # Virticle Corp
-        # design, develop
-        # The Buffalo Connection
-        # Virticle Corp
-        # design, develop
-      2004:
-        # AuburnArt.com
-        # Virticle Corp
-        # develop
-        # Harmonex.us
-        # Virticle Corp
-        # develop
-        # Auburn Area Community Theatre
-        # Virticle Corp
-        # design, develop
-        # Alabama Book Center
-        # Virticle Corp
-        # develop
-        # Auburn University School of Nursing
-        # Virticle Corp
-        # design, develop
-        # KICKER 97.7 FM – Qantum Communications
-        # Virticle Corp
-        # design, develop
-        # MIX 96.7 FM – Qantum Communications
-        # Virticle Corp
-        # design, develop
-        # UnwiredLINC, LLC
-        # Virticle Corp
-        # develop
-        # WSWS TV 66
-        # Virticle Corp
-        # design, develop
-        # AFLAC
-        # Virticle Corp
-        # develop
-      2003:
-        # Terra Naomi
-        # develop
-        # Interlude Magazine
-        # design, develop
-        # Deckaboyz
-        # design, develop
-        # Charlotte Martin E-team
-        # design, develop, promote
+          -
+            name:           'Google'
+            year:           '2013'
+            url:            'http://fffff.at/dr-google'
+            url_text:       'Documentation'
+          - 
+            name:           'CMG Worldwide (I ♥ NY™)'
+            year:           '2011'

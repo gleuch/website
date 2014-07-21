@@ -1,19 +1,32 @@
+- @page_title = t('.page_title')
+- @page_type = 'profile'
+- @page_meta_description = t('.meta.description')
+- @page_meta_keywords = t('.meta.keywords')
+- @page_share_title = t('.page_title')
+- @page_share_description = t('.meta.description')
+
+
 .page-header
   %h1= t('.title')
   %p= t('.copy')
 
 
-#about
+#about.container-fluid
   = simple_format( t('.bio') )
 
-
-
-#info-list
+#info-list.container-fluid
   - [:exhibitions, :residencies, :awards, :c_and_d].each do |g|
-    - list = t(g, scope: 'static_pages.about') rescue nil
+    - list = t(g, scope: 'static_pages.about', default: '') rescue nil
     - unless list.blank? || list[:list].blank?
-      .list
+      .col-md-3.col-sm-2.col-xs-1
         %h3= list[:title]
         %ul.list-unstyled
           - list[:list].each do |n|
-            %li= n
+            %li
+              - if n.is_a?(Hash)
+                - a = ([[:name, :source, :place, :year], [:location, :date]].map{|v| v.map{|s| n[s]}.compact.join(', ').gsub(/\",/, ',"')}.reject(&:blank?) + ['']).flatten.join('. ')
+                - if n[:url].present?
+                  - a << link_to("[#{n[:url_text] || t('.info.link')}]", n[:url], target: '_blank')
+                = a.html_safe
+              - else
+                = n
