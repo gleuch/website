@@ -10,4 +10,7 @@ module TablelessPageable
   end
 
 
+  # Hack to trick impressionist into saving on a tableless record
+  def new_record?; false; end
+
 end
