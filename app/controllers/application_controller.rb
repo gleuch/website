@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   # Initialize variables and other items for use on page.
   def app_init
     @body_classes = []
-    @_static_page_options = {}.with_indifferent_access
+    @_static_page_options = {cache: true}.with_indifferent_access
     @page_title = t(:name)
   end
 
@@ -56,16 +56,29 @@ private
 
     respond_to do |format|
       format.html {
-        begin
-          send(page.page)
-        rescue ActiveRecord::RecordNotFound => err
-          raise err
-        rescue => err
-          nil
-        end if respond_to?(page.page)
+        results = -> {
+          begin
+            send(page.page)
+          rescue ActiveRecord::RecordNotFound => err
+            raise err
+          rescue => err
+            nil
+          end if respond_to?(page.page)
 
-        @body_classes << "page-#{page.page.gsub(/\/|\-/m, '_').gsub(/("|')/m, '')}"
-        render page.file, @_static_page_options
+          @body_classes << "page-#{page.page.gsub(/\/|\-/m, '_').gsub(/("|')/m, '')}"
+
+          render_to_string page.file, @_static_page_options
+        }
+        
+        if @_static_page_options[:cache]
+          cache_key = @_static_page_options[:cache_key] unless @_static_page_options[:cache_key].blank?
+          cache_key ||= [page.class.to_s.underscore, page.id, page.format,'2']
+          html = cache(cache_key, expires_in: @_static_page_options[:cache_expires_in]) { results.call }
+        else
+          html = results.call
+        end
+
+        render text: html, layout: false
       }
       format.any { render_not_found }
     end
