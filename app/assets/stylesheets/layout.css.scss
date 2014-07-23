@@ -3,11 +3,17 @@ body {background-color: $gleuch-white;}
 
 // HEADER
 #header { position: fixed; top: 0; left: 0; right: 0; z-index: 888888; background-color: $gleuch-white; border-top: 10px solid $gleuch-logo; padding: 0 $gleuch-lg-frame-padding; height: 90px;
+  #brand {margin-top: 30px;
+    a {display: block; width: 105px; height: 40px; text-indent:-999px; background: image-url('logo.png') center center no-repeat; background-size: 100% 100%; overflow: hidden; -webkit-transition: opacity .2s ease-out, -webkit-filter .2s ease-out; -moz-transition: opacity .2s ease-out, -moz-filter .2s ease-out; -ms-transition: opacity .2s ease-out, -ms-filter .2s ease-out; transition: opacity .2s ease-out, filter .2s ease-out;
+      @include hidpi(1.5) { background-image: image-url('logo@2x.png');}
+      &:hover {opacity: .8; -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -ms-filter: grayscale(1); filter: grayscale(1);}
+    }
+  }
   #breadcrumbs {position: absolute; top: 50px; left: $gleuch-lg-frame-padding; @include transition(left .12s ease-out);
     body.nav-open & {left: $gleuch-lg-frame-padding + 125px + 15px; @include transition(left .2s .1s ease-out);}
   }
   #menu-icon {float: left; width: 15px; overflow: hidden; @include transition(opacity .1s ease-out);
-    .menu-bar {display: block; background-color: $gleuch-text-grey; height: 3px; width: 15px; margin: 0 0 2px 0; line-height: 0;
+    .menu-bar {display: block; background-color: $gleuch-text-grey; height: 3px; width: 15px; margin: 0 0 2px 0; line-height: 0; 
       -webkit-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -webkit-transform .2s .5s ease-out, margin .2s .3s ease-out;
       -moz-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -moz-transform .2s .5s ease-out, margin .2s .3s ease-out;
       -ms-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -ms-transform .2s .5s ease-out, margin .2s .3s ease-out;
@@ -24,20 +30,22 @@ body {background-color: $gleuch-white;}
     }
   }
   .divider {float: left; margin: 0 15px; width: 1px; height: 15px; overflow: hidden; background-color: rgba($gleuch-black,.2); vertical-align: top;}
-  a.close-menu {text-indent: -150px; z-index: 0; opacity: 0; float: left; font-size: 1.8rem; color: rgba($gleuch-text-grey,.7); text-transform: lowercase; line-height: 15px;
+  a.close-menu {text-indent: -150px; pointer-events: none; opacity: 0; float: left; font-size: 1.8rem; color: rgba($gleuch-text-grey,.7); text-transform: lowercase; line-height: 15px;
     &:focus, &.hover {text-decoration: none; color: $gleuch-text-grey; cursor: pointer;}
-    body.nav-open & {text-indent: 0px; opacity: 1; z-index: 1;}
+    body.nav-open & {text-indent: 0px; opacity: 1; pointer-events: visible;}
   }
-  ul {float: left;  text-indent: 0; opacity: 1; z-index: 1;
+  ul {float: left;  text-indent: 0; opacity: 1; pointer-events: visible;
     li {float: left; display: inline-block;
       &, a {color: rgba($gleuch-text-grey,.7); font-size: 1.8rem; line-height: 15px; text-transform: lowercase;  @include transition(color .1s ease-out);}
       a:focus, a:hover {text-decoration: none; color: $gleuch-text-grey;}
-      &:before {content: "->";}
+      &:before {content: ""; display: inline-block; margin: 0 4px 0 8px; width: 10px; height: 9px; background: image-url('breadcrumb-arrow.png') center center no-repeat;
+        @include hidpi(1.5) {background-image: image-url('breadcrumb-arrow@2x.png'); background-size: 10px 9px;}
+      }
       &:first-child:before {display: none;}
     }
-    body.nav-open & {text-indent: -150px; opacity: 0; z-index: 0;}
+    body.nav-open & {text-indent: -150px; opacity: 0; pointer-events: none;}
   }
-  a.close-menu, ul {  @include transition(color .1s ease-out, text-indent .3s ease-out, opacity .1s ease-out);
+  a.close-menu, ul {@include transition(color .1s ease-out, text-indent .3s ease-out, opacity .1s ease-out);
     body.nav-open & {@include transition(color .1s ease-out, text-indent .3s .2s ease-out, opacity .1s .3s ease-out);}
   }
 }
@@ -54,4 +62,15 @@ body {background-color: $gleuch-white;}
     &:after {content: ''; position: fixed; display: block; top: 0; left: 0; height: 100%; max-height: 0; background: image-url('bg/pixel-bg.png') 0 0 repeat; opacity: 0; @include transition(opacity .3s ease-out);}
     body.nav-open &:after {max-height: 100%; right: 0; bottom: 0; opacity: .5;}
   }
+}
+
+
+
+// PROJECT / WORK INTRO AREA
+#intro-area { position: relative; min-height: 325px; background-color: rgba($gleuch-text-grey,.12);
+  .intro-box { position: absolute; z-index: 20; left: 25px; bottom: -25px; width: 375px; padding: 30px 30px 170px 30px; background-color: rgba($gleuch-text-grey,.6);
+    h1 {position: absolute; z-index: 30; bottom: 50px; left: -55px; padding: 30px; margin: 0; background-color: $gleuch-logo; text-transform: uppercase; color: $gleuch-white;}
+    h4 {color: $gleuch-white; font-weight: 500;}
+  }
+  .divider {position: absolute; bottom: 25px; left: 0; right: 0; padding: 30px 0; height: 99px; background: image-url('bg/pixel-bg-bar.png') top right repeat; z-index: 10;}
 }

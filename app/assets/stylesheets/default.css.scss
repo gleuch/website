@@ -27,15 +27,49 @@ $gleuch-xs-frame-padding: 15px;
 
 
 
-// FONT FAMILIEIS
+// WEB FONTS
+$gleuch-webfont-social: 'Mono Social Icons Font';
+$gleuch-webfont-sans:   Adrianna,Helvetica,Arial,sans-serif;
+
+// Mono Social Icons
 @font-face {
-    font-family: 'Mono Social Icons Font';
-    src: font-url('MonoSocialIconsFont-1.10.eot');
-    src: font-url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
-         font-url('MonoSocialIconsFont-1.10.woff') format('woff'),
-         font-url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
-         font-url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
-    src: font-url('MonoSocialIconsFont-1.10.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Mono Social Icons Font';
+  src: font-url('MonoSocialIconsFont-1.10.eot');
+  src: font-url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+       font-url('MonoSocialIconsFont-1.10.woff') format('woff'),
+       font-url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+       font-url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+  src: font-url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+// Adrianna
+@font-face {
+  font-family: 'Adrianna'; font-weight: 500; font-style: normal; font-variant: normal;
+  src: font-url('Adrianna-Regular-webfont.eot'); 
+  src: font-url('Adrianna-Regular-webfont.eot?#iefix') format('embedded-opentype'), 
+       font-url('Adrianna-Regular-webfont.woff') format('woff'), 
+       font-url('Adrianna-Regular-webfont.ttf') format('truetype'), 
+       font-url('Adrianna-Regular-webfont.svg#AdriannaRegular') format('svg'); 
+  src: font-url('Adrianna-Regular-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Adrianna'; font-weight: 600; font-style: normal; font-variant: normal;
+  src: font-url('Adrianna-DemiBold-webfont.eot');
+  src: font-url('Adrianna-DemiBold-webfont.eot?#iefix') format('embedded-opentype'), 
+       font-url('Adrianna-DemiBold-webfont.woff') format('woff'), 
+       font-url('Adrianna-DemiBold-webfont.ttf') format('truetype'), 
+       font-url('Adrianna-DemiBold-webfont.svg#AdriannaDemiBold') format('svg');
+  src: font-url('Adrianna-DemiBold-webfont.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Adrianna'; font-weight: 700; font-style: normal; font-variant: normal;
+  src: font-url('Adrianna-Bold-webfont.eot'); 
+  src: font-url('Adrianna-Bold-webfont.eot?#iefix') format('embedded-opentype'), 
+       font-url('Adrianna-Bold-webfont.woff') format('woff'), 
+       font-url('Adrianna-Bold-webfont.ttf') format('truetype'), 
+       font-url('Adrianna-Bold-webfont.svg#AdriannaRegular') format('svg'); 
+  src: font-url('Adrianna-Bold-webfont.ttf') format('truetype');
+}
+

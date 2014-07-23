@@ -1,7 +1,6 @@
 %header#header
-  #brand
-    = link_to root_url, class: 'pull-right' do
-      = image_tag 'logo.png', title: t(:name)
+  #brand.pull-right
+    = link_to t(:name), root_url, title: t(:name)
 
   #breadcrumbs
     %a#menu-icon{href: 'javascript:;'}
