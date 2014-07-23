@@ -5,13 +5,24 @@ $ ->
 
 
   $(document).ready ->
-    $('#menu-icon').on 'click', ->
-      $('body').toggleClass 'nav-open'
-    $('a.close-menu').on 'click', ->
-      $('body').toggleClass 'nav-open', false
+    menu_toggle = (r) ->
+      $(this).trigger('mouseout')
+      $('body').toggleClass 'nav-open', r
 
+    $('#menu-icon').removeAttr('href').on 'click', ->
+      menu_toggle.bind(this).call()
+
+    $('a.close-menu').removeAttr('href').on 'click', ->
+      menu_toggle.bind(this).call(null, false)
+
+    $('#menu-icon, a.close-menu').on('mouseover', ->
+      $(this).addClass('hover')
+    ).on('mouseout', ->
+      $(this).removeClass('hover')
+    )
 
     $(window).on('resize load', ->
-      h = $(window).height() - $('#header').outerHeight()
-      $('#content').css('min-height', h)
+      h = $(window).height() - $('#content').offset().top
+      if h > 0
+        $('#content').css('min-height', h)
     ).trigger 'resize'

@@ -6,8 +6,8 @@ body {background-color: $gleuch-white;}
   #breadcrumbs {position: absolute; top: 50px; left: $gleuch-lg-frame-padding; @include transition(left .12s ease-out);
     body.nav-open & {left: $gleuch-lg-frame-padding + 125px + 15px; @include transition(left .2s .1s ease-out);}
   }
-  #menu-icon {float: left; width: 15px; overflow: hidden;
-    span.menu-bar {display: block; background-color: $gleuch-text-grey; height: 3px; width: 15px; margin: 0 0 2px 0; line-height: 0;
+  #menu-icon {float: left; width: 15px; overflow: hidden; @include transition(opacity .1s ease-out);
+    .menu-bar {display: block; background-color: $gleuch-text-grey; height: 3px; width: 15px; margin: 0 0 2px 0; line-height: 0;
       -webkit-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -webkit-transform .2s .5s ease-out, margin .2s .3s ease-out;
       -moz-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -moz-transform .2s .5s ease-out, margin .2s .3s ease-out;
       -ms-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -ms-transform .2s .5s ease-out, margin .2s .3s ease-out;
@@ -15,19 +15,17 @@ body {background-color: $gleuch-white;}
       &:nth-child(1) {@include transform-origin(top left);}
       &:nth-child(3) {@include transform-origin(bottom left);}
     }
-    &:hover {
-      span.menu-bar {background-color: rgba($gleuch-text-grey,.5);}
-    }
+    &.hover {opacity: .5; cursor: pointer;}
     body.nav-open & {
-      span.menu-bar:nth-child(2) {opacity: 0; width: 0; @include transition(background-color .2s ease-out, opacity .2s .3s ease-out, width .2s .3s ease-out);}
-      span.menu-bar:nth-child(1), span.menu-bar:nth-child(3) {opacity: 1; margin-left: 3px;}
-      span.menu-bar:nth-child(3) {@include transform(rotate(-45deg));}
-      span.menu-bar:nth-child(1) {@include transform(rotate(45deg));}
+      .menu-bar:nth-child(2) {opacity: 0; width: 0; @include transition(background-color .2s ease-out, opacity .2s .3s ease-out, width .2s .3s ease-out);}
+      .menu-bar:nth-child(1), .menu-bar:nth-child(3) {opacity: 1; margin-left: 3px;}
+      .menu-bar:nth-child(3) {@include transform(rotate(-45deg));}
+      .menu-bar:nth-child(1) {@include transform(rotate(45deg));}
     }
   }
   .divider {float: left; margin: 0 15px; width: 1px; height: 15px; overflow: hidden; background-color: rgba($gleuch-black,.2); vertical-align: top;}
-  a.close-menu {text-indent: -300px; z-index: 0; opacity: 0; float: left; font-size: 1.8rem; color: rgba($gleuch-text-grey,.7); text-transform: lowercase; line-height: 15px;
-    &:focus, &:hover {text-decoration: none; color: $gleuch-text-grey;}
+  a.close-menu {text-indent: -150px; z-index: 0; opacity: 0; float: left; font-size: 1.8rem; color: rgba($gleuch-text-grey,.7); text-transform: lowercase; line-height: 15px;
+    &:focus, &.hover {text-decoration: none; color: $gleuch-text-grey; cursor: pointer;}
     body.nav-open & {text-indent: 0px; opacity: 1; z-index: 1;}
   }
   ul {float: left;  text-indent: 0; opacity: 1; z-index: 1;
@@ -37,7 +35,7 @@ body {background-color: $gleuch-white;}
       &:before {content: "->";}
       &:first-child:before {display: none;}
     }
-    body.nav-open & {text-indent: -300px; opacity: 0; z-index: 0;}
+    body.nav-open & {text-indent: -150px; opacity: 0; z-index: 0;}
   }
   a.close-menu, ul {  @include transition(color .1s ease-out, text-indent .3s ease-out, opacity .1s ease-out);
     body.nav-open & {@include transition(color .1s ease-out, text-indent .3s .2s ease-out, opacity .1s .3s ease-out);}
@@ -52,5 +50,8 @@ body {background-color: $gleuch-white;}
 
 // CONTENT CONTAINER
 #container {padding: 0 $gleuch-lg-frame-padding; background-color: $gleuch-white; margin-top: 100px;
-  #content {background-color: $gleuch-grey-bg; padding-left: 0; padding-right: 0;}
+  #content {position: relative; background-color: $gleuch-white; padding-left: 0; padding-right: 0;
+    &:after {content: ''; position: fixed; display: block; top: 0; left: 0; height: 100%; max-height: 0; background: image-url('bg/pixel-bg.png') 0 0 repeat; opacity: 0; @include transition(opacity .3s ease-out);}
+    body.nav-open &:after {max-height: 100%; right: 0; bottom: 0; opacity: .5;}
+  }
 }
