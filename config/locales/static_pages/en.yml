@@ -2,6 +2,7 @@ en:
   static_pages:
     home:
       title:                'Greg Leuch'
+      breadcrumb_title:     'Hello!'
 
     about:
       page_title:           'About Greg Leuch'

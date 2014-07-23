@@ -44,11 +44,11 @@ module ApplicationHelper
     about_types, article_types = %w(about profile), %w(project client_work post work lab)
     case type.to_s
       when 'profile'
-        about_types.include?(@page_type)
+        about_types.include?(@page_meta_type.to_s)
       when 'article'
-        article_types.include?(@page_type)
+        article_types.include?(@page_meta_type.to_s)
       else #when 'website'
-        !(about_types + project_types).include?(@page_type)
+        !(about_types + project_types).include?(@page_meta_type.to_s)
     end
   end
 

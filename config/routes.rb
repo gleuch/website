@@ -35,6 +35,7 @@ Gleuch::Application.routes.named_routes.module.module_eval do
     instagram_url:        'http://instagram.com/gleuch',
     linkedin_url:         'http://www.linkedin.com/in/gleuch',
     google_plus_url:      'https://plus.google.com/100780866870324876908',
+    email_url:            'mailto:contact@gleu.ch',
 
     # Common URLs
     xolator_url:          'http://xolator.com',

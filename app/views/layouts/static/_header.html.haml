@@ -1,8 +1,21 @@
-%header
-  %ul
-    %li= link_to t('nav.home'), root_url
-    %li= link_to t('nav.projects'), projects_url
-    %li= link_to t('nav.client_work'), client_works_url
-    %li= link_to t('nav.about'), static_page_url(:about)
-    %li= link_to t('nav.contact'), contact_messages_url
-    
+%header#header
+  #brand
+    = link_to root_url, class: 'pull-right' do
+      = image_tag 'logo.png', title: t(:name)
+
+  #breadcrumbs
+    %a#menu-icon{href: 'javascript:;'}
+      %span.menu-bar
+      %span.menu-bar
+      %span.menu-bar
+    .divider
+    %a.close-menu{href: 'javascript:;'}= t(:close)
+
+    - unless @breadcrumbs.blank?
+      %ul.list-unstyled
+        - @breadcrumbs.each do |v|
+          %li
+            - unless v[:url].blank?
+              = link_to v[:name], v[:url]
+            - else
+              = v[:name]

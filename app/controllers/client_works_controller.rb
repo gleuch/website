@@ -28,7 +28,7 @@ class ClientWorksController < ApplicationController
 protected
 
   def client_works_init
-    #
+    @section, @page_meta_type = :client_work, :work
   end
 
   def load_resource(*args)

@@ -8,8 +8,6 @@ class ProjectsController < ApplicationController
 
   def index
     load_resource(id: 'home', format: request.format.symbol.to_s)
-
-    @page_type = 'project'
     impressionist(@project) unless request_is_self?
     show_static_page(@project)
   end
@@ -26,11 +24,11 @@ class ProjectsController < ApplicationController
   end
 
 
-
 protected
 
   def projects_init
-    #
+    @section, @page_meta_type = :projects, :project
+    @breadcrumbs << {name: t('breadcrumbs.projects'), url: projects_url}
   end
 
   def load_resource(*args)

@@ -3,6 +3,8 @@
   %head{prefix: 'og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#'}
     /
       \
+      [TODO : ASCII NAME HERE]
+      \
       All work is copyrighted 2014 by Greg Leuch and/or its respective owners.
       \
       All other non-copyrighted or non-licensed work is licensed under a Creative Commons 
@@ -25,10 +27,8 @@
 
     = render 'layouts/static/header'
 
-    = yield
+    #container
+      #content.container-fluid
+        = yield
 
-
-
-    %footer
-      %p
-        %small= t(:footer, year: Date.today.year).html_safe
+    = render 'layouts/static/footer'

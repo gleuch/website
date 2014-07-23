@@ -1,0 +1,20 @@
+// Social Icons
+.socialicon {
+  &:before {display: inline; font-size: 2.0em; line-height: 0; vertical-align: middle; font-family: 'Mono Social Icons Font'; -webkit-text-rendering: optimizeLegibility; -moz-text-rendering: optimizeLegibility; -ms-text-rendering: optimizeLegibility; -o-text-rendering: optimizeLegibility; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-smoothing: antialiased; text-transform: none;}
+  &.socialicon-facebook:before {content: '\E027';}
+  &.socialicon-twitter:before {content: '\E086';}
+  &.socialicon-tumblr:before {content: '\E085';}
+  &.socialicon-pinterest:before {content: '\E064';}
+  &.socialicon-github:before {content: '\E037';}
+  &.socialicon-googleplus:before, .socialicon-gplus:before {content: '\E039';}
+  &.socialicon-linkedin:before {content: '\E052';}
+  &.socialicon-youtube:before {content: '\E099';}
+  &.socialicon-email:before {content: '\E024';}
+  &.socialicon-rss:before {content: '\E071';}
+  &.socialicon-stumbleupon:before {content: '\E083';}
+  &.socialicon-reddit:before {content: '\E069';}
+  &.socialicon-podcast:before {content: '\E065';}
+  &.socialicon-instagram:before {content: '\E100';}
+  &.socialicon-share:before {content: '\E073';}
+  &.socialicon-comment:before, .socialicon-comments:before {content: '\E049';}
+}

@@ -1,0 +1,41 @@
+// DEFAULT COLORS
+$gleuch-logo:       rgb(39,209,209);  // Logo blue
+$gleuch-white:      rgb(255,255,255);
+$gleuch-black:      rgb(14,15,16);
+$gleuch-grey-bg:    rgb(247,248,249);
+$gleuch-text-grey:  rgb(110,111,112); // ~60% gleuch-black
+
+
+// SOCIAL BRAND COLORS
+$social-facebook: #3b5998;
+$social-twitter: #00aced;
+$social-googleplus: #dd4b39;
+$social-youtube: #C4302B; //bb0000;
+$social-podcast: #8c1222;
+$social-pinterest: #cb2027;
+$social-linkedin: #007bb6;
+$social-instagram: #517fa4;
+$social-rss: #fa9b39;
+$social-reddit: #ff5700;
+$social-stumbleupon: #eb4924;
+$social-tumblr: #34526f;
+
+
+// PADDING, WIDTHS, ETC
+$gleuch-lg-frame-padding: 75px;
+$gleuch-xs-frame-padding: 15px;
+
+
+
+// FONT FAMILIEIS
+@font-face {
+    font-family: 'Mono Social Icons Font';
+    src: font-url('MonoSocialIconsFont-1.10.eot');
+    src: font-url('MonoSocialIconsFont-1.10.eot?#iefix') format('embedded-opentype'),
+         font-url('MonoSocialIconsFont-1.10.woff') format('woff'),
+         font-url('MonoSocialIconsFont-1.10.ttf') format('truetype'),
+         font-url('MonoSocialIconsFont-1.10.svg#MonoSocialIconsFont') format('svg');
+    src: font-url('MonoSocialIconsFont-1.10.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

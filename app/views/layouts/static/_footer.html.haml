@@ -1,0 +1,14 @@
+%nav#nav-pullout
+  %ul#menu-items.list-unstyled
+    - {home: root_url, projects: projects_url, client_work: client_works_url, about: static_page_url(:about), contact: contact_messages_url}.each do |name, url|
+      %li{class: (@section == name ? 'active' : '')}
+        = link_to t(name, scope: [:nav]), url
+    
+  %footer#nav-footer
+    %ul.list-unstyled
+      - {twitter: twitter_url, github: github_url, linkedin: linkedin_url, instagram: instagram_url, email: email_url}.each do |name,url|
+        %li
+          = link_to url, class: "socialicon socialicon-#{name}", title: t(name), target: '_blank' do
+            %span= t(name)
+    %p
+      = t(:footer, year: Date.today.year).html_safe

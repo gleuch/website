@@ -16,6 +16,7 @@ en:
   facebook_name:  'gleuch'
   instagram:      'Instagram'
   linkedin:       'LinkedIn'
+  email:          'Email'
 
 
   nav:
@@ -28,3 +29,14 @@ en:
     keywords:     'greg leuch, gleuch, halvfet, interface, interaction, visual, design, designer, user experience, art, programming, web, css, html, php, rails, javascript, code, general'
     copyright:    'Copyright 2003–%{year} Greg Leuch, unless noted differently.'
     generator:    'Hand-coded with love and Ruby on Rails by Greg Leuch, 2014.'
+
+  breadcrumbs:
+    home:         'Home'
+    projects:     'Projects'
+    works:        'Client Work'
+    about:        'About'
+    contact:      'Contact'
+
+
+  open:           'Open'
+  close:          'Close'

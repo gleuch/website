@@ -1,9 +1,12 @@
-- @page_title = t('.page_title')
-- @page_type = 'profile'
-- @page_meta_description = t('.meta.description')
-- @page_meta_keywords = t('.meta.keywords')
-- @page_share_title = t('.page_title')
-- @page_share_description = t('.meta.description')
+- @page_title = t('.page_title', default: '')
+- @page_meta_description = t('.meta.description', default: '')
+- @page_meta_keywords = t('.meta.keywords', default: '')
+- @page_share_title = t('.page_title', default: '')
+- @page_share_description = t('.meta.description', default: '')
+
+- @breadcrumbs << {name: t('.title')}
+- @page_meta_type = :profile
+- @section = :about
 
 
 .page-header

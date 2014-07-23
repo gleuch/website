@@ -30,7 +30,7 @@ class ContactMessagesController < ApplicationController
 protected
 
   def contact_messages_init
-    #
+    @section = :contact
   end
 
   def load_new_resource
