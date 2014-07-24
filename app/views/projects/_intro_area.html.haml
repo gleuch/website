@@ -4,14 +4,14 @@
 
 
 #intro-area
-  .intro-box
+  %header.intro-box
     - if heading.present?
       %h1= heading
     - if subheading.present?
       %h4= subheading
 
   - unless carousel_images.blank?
-    #intro-carousel.carousel.slide{'data-ride' => :carousel}
+    %section#intro-carousel.carousel.slide{'data-ride' => :carousel}
       %ol.carousel-indicators
         - carousel_images.each_with_index do |img,i|
           %li{'data-target' => '#intro-carousel', 'data-slide-to' => i, class: (i == 0 ? 'active' : '')}

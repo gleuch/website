@@ -1,4 +1,4 @@
-- # Meta & Page setup
+- # Meta & Page Setup
 - @page_title = t('.page_title', default: '')
 - @page_meta_description = t('.meta.description', default: '')
 - @page_meta_keywords = t('.meta.keywords', default: '')
@@ -14,10 +14,7 @@
 
 
 - # Page Content
-
-= render 'projects/intro_area', heading: t('.heading'), subheading: t('.subheading'), carousel_images: carousel_images
-
-
-
-= render 'projects/exhibitions', exhibitions: t('.exhibitions')
-= render 'projects/awards', awards: t('.awards')
+%article
+  = render 'projects/intro_area', heading: t('.heading'), subheading: t('.subheading'), carousel_images: carousel_images
+  = render 'projects/exhibitions', exhibitions: t('.exhibitions')
+  = render 'projects/awards', awards: t('.awards')

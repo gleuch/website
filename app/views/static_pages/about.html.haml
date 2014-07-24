@@ -1,35 +1,47 @@
+- # Meta & Page Setup
 - @page_title = t('.page_title', default: '')
 - @page_meta_description = t('.meta.description', default: '')
 - @page_meta_keywords = t('.meta.keywords', default: '')
 - @page_share_title = t('.page_title', default: '')
 - @page_share_description = t('.meta.description', default: '')
-
-- @breadcrumbs << {name: t('.title')}
+- @breadcrumbs << {name: t('.breadcrumbs')}
 - @page_meta_type = :profile
 - @section = :about
 
 
-.page-header
-  %h1= t('.title')
-  %p= t('.copy')
+- # Upper Page Content
+- content_for(:upper_container) do
+  .feature-area
+    .feature-item
+      .feature-content
 
+- # Page Content
+%article
+  .intro-box
+    %header
+      %h1= t('.heading')
+    %aside#latest-activity
+      %h3= t('.latest.twitter')
+      %q The make out couple is at Starbucks, and they are sitting across from me again.... #aww #gross
+      %h4
+        %a.socialicon.socialicon-twitter{href: '#', target: '_blank'}
 
-#about.container-fluid
-  = simple_format( t('.bio') )
+  %section#biography
+    = simple_format( t('.bio') )
 
-#info-list.container-fluid
-  - [:exhibitions, :residencies, :awards, :c_and_d].each do |g|
-    - list = t(g, scope: 'static_pages.about', default: '') rescue nil
-    - unless list.blank? || list[:list].blank?
-      .col-md-3.col-sm-2.col-xs-1
-        %h3= list[:title]
-        %ul.list-unstyled
-          - list[:list].each do |n|
-            %li
-              - if n.is_a?(Hash)
-                - a = ([[:name, :source, :place, :year], [:location, :date]].map{|v| v.map{|s| n[s]}.compact.join(', ').gsub(/\",/, ',"')}.reject(&:blank?) + ['']).flatten.join('. ')
-                - if n[:url].present?
-                  - a << link_to("[#{n[:url_text] || t('.info.link')}]", n[:url], target: '_blank')
-                = a.html_safe
-              - else
-                = n
+  #info-list.container-fluid
+    - [:exhibitions, :residencies, :awards, :c_and_d].each do |g|
+      - list = t(g, scope: 'static_pages.about', default: '') rescue nil
+      - unless list.blank? || list[:list].blank?
+        %section.col-md-3.col-sm-2.col-xs-1{id: g}
+          %h3= list[:title]
+          %ul.list-unstyled
+            - list[:list].each do |n|
+              %li
+                - if n.is_a?(Hash)
+                  - a = ([[:name, :source, :place, :year], [:location, :date]].map{|v| v.map{|s| n[s]}.compact.join(', ').gsub(/\",/, ',"')}.reject(&:blank?) + ['']).flatten.join('. ')
+                  - if n[:url].present?
+                    - a << link_to("[#{n[:url_text] || t('.info.link')}]", n[:url], target: '_blank')
+                  = a.html_safe
+                - else
+                  = n

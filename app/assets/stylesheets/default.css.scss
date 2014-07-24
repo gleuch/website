@@ -73,3 +73,11 @@ $gleuch-webfont-sans:   Adrianna,Helvetica,Arial,sans-serif;
   src: font-url('Adrianna-Bold-webfont.ttf') format('truetype');
 }
 
+
+// MIXINS
+@mixin calc($property, $expression, $fallback: false) {
+  @if ($fallback) { #{$property}: #{$fallback}; }
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}

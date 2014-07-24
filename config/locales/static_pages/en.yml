@@ -9,8 +9,11 @@ en:
       meta:
         description:        ''
         keywords:           ''
-      title:                'A Little Bit About Greg Leuch'
+      breadcrumbs:          'About Greg Leuch'
+      heading:              'I make things.'
       copy:                 'Who, what, where, and why…'
+      latest:
+        twitter:            'From the Fingertips'
       bio: |
         Greg Leuch is a creative & user interaction designer, specializing in user interface design, usability, front-end development, and feature research. He has worked on a variety of projects in the past, large and small, with emphasis on web startups and e-commerce. Greg is presently working as a creative freelancer. He was previously Senior Designer at BuzzFeed and Director of Research & Development at Rocketboom, working on such projects like Know Your Meme and Magma. He was also a freelance creative with JESS3.
 

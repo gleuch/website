@@ -40,8 +40,13 @@
 
     = render 'layouts/static/header'
 
-    #container
-      #content.container-fluid
-        = yield
+    #wrapper
+      - if content_for?(:upper_container)
+        #upper-container.container-fluid
+          = yield :upper_container
+
+      #container
+        #content.container-fluid
+          = yield
 
     = render 'layouts/static/footer'
