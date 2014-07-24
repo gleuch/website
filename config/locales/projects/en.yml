@@ -12,14 +12,12 @@ en:
       copy:                 'No matter the size, tinkering on new projects keeps one active and sharp, and all deserve a little recognition.'
 
 
-    # Shaved Bieber
-    shaved_bieber:
-      page_title:           'Shaved Bieber'
-      meta:
-        description:        ''
-        keywords:           ''
-      title:                'Shaved Bieber'
+    # INDIVIDUL PROJECTS ARE SAVED INTO THEIR OWN .yml FILES
 
+    awards:
+      heading:              'Awards'
+    exhibitions:
+      heading:              'Exhibitions'
 
     # Full list of projects, by year
     full_list:

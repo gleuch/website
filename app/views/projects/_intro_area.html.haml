@@ -1,0 +1,34 @@
+- heading ||= nil
+- subheading ||= nil
+- carousel_images ||= []
+
+
+#intro-area
+  .intro-box
+    - if heading.present?
+      %h1= heading
+    - if subheading.present?
+      %h4= subheading
+
+  - unless carousel_images.blank?
+    #intro-carousel.carousel.slide{'data-ride' => :carousel}
+      %ol.carousel-indicators
+        - carousel_images.each_with_index do |img,i|
+          %li{'data-target' => '#intro-carousel', 'data-slide-to' => i, class: (i == 0 ? 'active' : '')}
+
+      .carousel-inner
+        - carousel_images.each_with_index do |img,i|
+          .item{class: (i == 0 ? 'active' : '')}
+            .item-container
+              .item-content{style: "background-image: url('#{img[:img]}');"}
+            - if img[:caption].present?
+              .carousel-caption= img[:caption]
+
+      - if carousel_images.size > 1
+        %a.left.carousel-control{href: '#intro-carousel', role: :button, 'data-slide' => :prev}
+          [<]
+        %a.right.carousel-control{href: '#intro-carousel', role: :button, 'data-slide' => :next}
+          [>]
+
+  - if heading.present?
+    .divider

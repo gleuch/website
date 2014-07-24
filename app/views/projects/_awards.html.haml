@@ -1,0 +1,15 @@
+- heading ||= t('.heading')
+- awards ||= nil
+
+- unless awards.blank?
+  %h3= heading
+  %ul.project-awards.list-unstyled
+    - awards.each do |award|
+      - next if award.blank?
+      %li
+        %dl
+          - unless award[:name].blank?
+            %dt= award[:name]
+          - [:category, :place, :date].each do |type|
+            - next if award[type].blank?
+            %dd= award[type]

@@ -1,0 +1,55 @@
+en:
+  projects:
+    shaved_bieber:
+      page_title:           'Shaved Bieber'
+      meta:
+        description:        ''
+        keywords:           ''
+
+      heading:              'Shaved Bieber'
+      subheading:           'An innovative tool to clean up the lower regions of web pages from unwanted Justin Bieber mentions.'
+
+      statement: |
+        Shaved Bieber is a JavaScript project converted into a browser bookmarklet and Firefox Add-on. This project, capitalizing on the success of Ctrl+F'd, and aims to provide tools to consumers to control, adapt, and modify the contents of the internet from their browser, allowing individuals them to hide content they choose not to see.
+        
+        Personal censorship is an emerging idea in response to government and business censorship; an approach to providing a free, open, and neutral web that can still be censored by the individual.
+
+        The code is an adoption of the Ctrl+F'd project, modified so that only specific keyword matches are hidden from the user.
+
+      explanation: |
+        This piece began as a simple idea and has spurned a public outcry of polar views on technology, pop culture, and online messaging mediums. In two weeks time, the popularity of this piece has garnered over 100,000 video views, 85,000 blog views, hundreds of comments, multiple press mentions, and tens of thousands of tweets.
+
+        After the piece began to grown in popularity, the hate mail and fan mail began to pour in through comments, tweets, and emails. Documentation of fan mail became important dialogical reminder of the effects of censorship, and the <a href="http://shavedbieber.tumblr.com/" target="_blank">Tumblr blog</a> was created for this documentation effort, from the accolades to the death threats.
+
+      carousel:
+        captions:
+          -                 'Caption 1'
+          -                 'Caption 2'
+
+      exhibitions:
+        -
+          name:             'FAT GOLD Europe'
+          place:            'MU'
+          location:         'Eindhoven, Netherlands'
+          date:             'Nov 2013'
+        -
+          name:             'FAT GOLD: Five Years of Free Art & Technology'
+          place:            'Eyebeam'
+          location:         'NYC'
+          date:             'Apr 2013'
+        -
+          name:             "SPEED SHOW vol.4: 'Super Niche'"
+          place:            '90 Bowery Internet Cafe'
+          location:         'NYC'
+          date:             'Oct 2010'
+        -
+          name:             'SPEED SHOW vol.2: who the fuck do you think you are talking to?'
+          place:            'Äussere Mariahilferstr. 178'
+          location:         'Vienna, Austria'
+          date:             'Jul 2010'
+
+      awards:
+        -
+          name:             '2010 Urlies'
+          category:         "Peoples' Choice"
+          place:            'URLesque'

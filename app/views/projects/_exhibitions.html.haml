@@ -1,0 +1,15 @@
+- heading ||= t('.heading')
+- exhibitions ||= nil
+
+- unless exhibitions.blank?
+  %h3= heading
+  %ul.project-exhibitions.list-unstyled
+    - exhibitions.each do |exhibition|
+      - next if exhibition.blank?
+      %li
+        %dl
+          - unless exhibition[:name].blank?
+            %dt= exhibition[:name]
+          - [:place, :location, :date].each do |type|
+            - next if exhibition[type].blank?
+            %dd= exhibition[type]
