@@ -9,7 +9,22 @@
     h3, h4, q, blockquote {color: $gleuch-white; font-weight: 500; font-size: 2.2rem; line-height: 1.2em; text-shadow: 0 1px 1px rgba($gleuch-black,.12);}
     h3 {font-weight: 700; text-transform: uppercase;}
   }
-  #biography {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: -100px 3% 0 315px;
+  #biography {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: -100px 30px 0 315px;
     p {font-size: 1.9rem; line-height: 1.42em;}
+  }
+
+  // TABLET
+  @media ($tablet-max-size) {
+    .intro-box {
+      h1 {font-size: 3.2rem; padding: 25px 25px 25px $gleuch-sm-frame-padding;}
+    }
+  }
+
+  // MOBILE
+  @media ($mobile-max-size) {
+    .intro-box { padding: 0; margin-bottom: -60px;
+      h1 {font-size: 2.0rem; padding: 15px; top: auto; left: -$gleuch-xs-frame-padding; width: auto;}
+    }
+    #biography {padding: 35px 15px 15px 30px; z-index: 10; margin: 0;}
   }
 }

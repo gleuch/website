@@ -26,8 +26,12 @@ $gleuch-lg-frame-padding: 75px;
 $gleuch-sm-frame-padding: 30px;
 $gleuch-xs-frame-padding: 15px;
 
-$tablet-size: 'max-width: 992px';
-$mobile-size: 'max-width: 768px';
+$tablet-width: 992px;
+$mobile-width: 768px;
+//$phone-width:  350px;
+$tablet-max-size: 'max-width: ' + $tablet-width;
+$mobile-max-size: 'max-width: ' + $mobile-width;
+//$phone-max-size:  'max-width: ' + $phone-width;
 
 
 

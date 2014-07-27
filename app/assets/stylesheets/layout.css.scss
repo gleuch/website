@@ -1,4 +1,4 @@
-body {background-color: $gleuch-white;}
+body {background-color: $gleuch-white; overflow-x: hidden;}
 
 
 // HEADER
@@ -66,7 +66,7 @@ body {background-color: $gleuch-white;}
 
 
 // CONTENT CONTAINER
-#wrapper {margin-top: 90px;}
+#wrapper {margin-top: 90px; overflow-x: hidden;}
 #upper-container {padding-left: 0; padding-right: 0;}
 #container {padding: 0 $gleuch-lg-frame-padding; background-color: $gleuch-white;
   #content {position: relative; background-color: $gleuch-grey-bg; padding-left: 0; padding-right: 0; left: 0; @include transition(left .3s ease-out);
@@ -78,7 +78,7 @@ body {background-color: $gleuch-white;}
 }
 
 // TABLET RESPONSIVE
-@media ($tablet-size) {
+@media ($tablet-max-size) {
   #header, #container {padding: 0 $gleuch-sm-frame-padding;}
   #header {
     #breadcrumbs {left: $gleuch-sm-frame-padding;
@@ -93,7 +93,7 @@ body {background-color: $gleuch-white;}
 }
 
 // MOBILE RESPONSIVE
-@media ($mobile-size) {
+@media ($mobile-max-size) {
   #header, #container {padding: 0 $gleuch-xs-frame-padding;}
   #header { border-top-width: 5px; min-height: 55px;
     #brand { margin-top: 10px;

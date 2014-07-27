@@ -6,7 +6,7 @@ en:
     first_name:   'Greg'
     last_name:    'Leuch'
 
-  footer:         '&copy; 2003–%{year} Greg Leuch, unless noted differently.'
+  footer:         '&copy; 2003–%{year} Greg Leuch, unless noted differently.<br/><a href="https://github.com/gleuch/website" target="_blank">View source code</a>'
 
 
   twitter:        'Twitter'
