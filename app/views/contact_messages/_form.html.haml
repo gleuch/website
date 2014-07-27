@@ -3,15 +3,15 @@
 
 = simple_form_for @contact_message, wrapper: :vertical_form, html: {class: 'form-vertical'} do |f|
   = f.error_notification
-  = f.input :subject, collection: ContactMessage.subjects_text
+  = f.input :subject, collection: ContactMessage.subjects_text, include_blank: t('.placeholder.subject')
   = f.input :referrer, as: :hidden
   = f.input :name, required: true, placeholder: t('.placeholder.name')
   = f.input :email, as: :email, required: true, placeholder: t('.placeholder.email')
   = f.input :phone, input_html: {data: {type: :phone} }, placeholder: t('.placeholder.phone')
   = f.input :message, required: true, input_html: {rows: 6}, placeholder: t('.placeholder.message')
  
-  .row
-    .col-xs-12.col-sm-9
-      [newsletter]
-    .col-xs-12.col-sm-3.text-right
+  .buttons.row
+    .col-xs-12.col-md-9
+      = f.input :newsletter_subscribe, as: :boolean, inline_label: t('.placeholder.newsletter')
+    .col-xs-12.col-md-3.text-right
       = f.submit t('.send'), class: 'btn btn-lg btn-default', 'data-disable-with' => t('.sending')

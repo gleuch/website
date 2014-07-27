@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140721145627) do
+ActiveRecord::Schema.define(version: 20140727082143) do
 
   create_table "contact_messages", force: true do |t|
     t.string   "uuid"
@@ -54,6 +54,21 @@ ActiveRecord::Schema.define(version: 20140721145627) do
   add_index "impressions", ["impressionable_type", "impressionable_id", "session_hash"], name: "poly_session_index", using: :btree
   add_index "impressions", ["impressionable_type", "message", "impressionable_id"], name: "impressionable_type_message_index", length: {"impressionable_type"=>nil, "message"=>255, "impressionable_id"=>nil}, using: :btree
   add_index "impressions", ["user_id"], name: "index_impressions_on_user_id", using: :btree
+
+  create_table "newsletter_subscribers", force: true do |t|
+    t.string   "uuid"
+    t.integer  "list",       default: 0
+    t.string   "email"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "referral"
+    t.integer  "status",     default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "newsletter_subscribers", ["list", "email"], name: "index_newsletter_subscribers_on_list_and_email", unique: true, using: :btree
+  add_index "newsletter_subscribers", ["uuid"], name: "index_newsletter_subscribers_on_uuid", unique: true, using: :btree
 
   create_table "settings", force: true do |t|
     t.string   "var",                   null: false

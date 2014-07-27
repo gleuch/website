@@ -44,7 +44,7 @@ protected
   end
 
   def contact_messages_params
-    params.require(:contact_message).permit(:subject, :name, :email, :phone, :message, :referrer).merge(
+    params.require(:contact_message).permit(:subject, :name, :email, :phone, :message, :referrer, :newsletter_subscribe).merge(
       ip_address: request.remote_ip,
       browser:    request.user_agent,
       session_id: session[:id]

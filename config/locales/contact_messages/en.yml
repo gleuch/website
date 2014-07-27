@@ -44,7 +44,9 @@ en:
       send:                 'Send'
       sending:              'Sending…'
       placeholder:
+        subject:            'What’s the deal?'
         name:               'Your name (& biz)'
         email:              'Email addy'
         phone:              "Yo' digits"
         message:            'What you wanna say?'
+        newsletter:         'Subscribe to gleu.ch newsletter?'

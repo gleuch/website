@@ -19,11 +19,28 @@
     }
   }
   .contact-box {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: 30px 3% 30px 315px;}
-  #contact-form {;
+  #contact-form {
+    h2 {margin: 0; padding: 0 0 15px 0; text-transform: lowercase; font-size: 2.8rem; line-height: 1.0em;}
+    form {padding: 15px 0 0 0; margin: 0;}
     p {font-size: 1.9rem; line-height: 1.42em;}
-    label {display: none;}
+    select {
+      &, option {text-transform: lowercase;}
+    }
+    label {display: none; text-transform: lowercase;
+      &.checkbox {display: block; font-size: 1.6rem; padding: 0 0 8px 0;
+        input[type=checkbox] {margin-left: 0; margin-right: 4px; position: relative;}
+      }
+    }
   }
   #contact-success {
     p {font-size: 1.9rem; line-height: 1.42em;}
+  }
+
+  // Tablet and smaller
+  @media (max-width: 992px) {
+    #contact-form {
+      .buttons .col-xs-12 {text-align: left;}
+      label.checkbox {padding: 0 0 10px 0;}
+    }
   }
 }
