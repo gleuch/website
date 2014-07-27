@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/plataformatec/simple_form.git
+  revision: ed3de1c2b566a962697529e824953f6b280e2867
+  branch: master
+  specs:
+    simple_form (3.1.0.rc2)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -320,9 +329,6 @@ GEM
       redis (>= 3.0.6)
       redis-namespace (>= 1.3.1)
     simple-random (0.10.0)
-    simple_form (3.0.2)
-      actionpack (~> 4.0)
-      activemodel (~> 4.0)
     simple_oauth (0.2.0)
     simplecov (0.8.2)
       docile (~> 1.1.0)
@@ -458,7 +464,7 @@ DEPENDENCIES
   scrypt (= 1.2.1)
   sdoc
   selenium-webdriver (= 2.42.0)
-  simple_form (= 3.0.2)
+  simple_form (~> 3.1.0.rc1)!
   simplecov (= 0.8.2)
   sinatra (= 1.4.5)
   sitemap_generator (= 5.0.4)

@@ -47,7 +47,7 @@ gem 'bourbon',                        '3.1.8'
 
 
 # --- FORM & RENDER HELPERS ---
-gem 'simple_form',                    '3.0.2'
+gem 'simple_form',                      '~> 3.1.0.rc1',   github: 'plataformatec/simple_form',  branch: 'master'
 # gem 'render_anywhere',                '0.0.9'
 # gem 'cocoon',                         '1.2.6'
 # gem 'select2-rails',                  '3.5.7'

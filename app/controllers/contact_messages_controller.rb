@@ -3,6 +3,7 @@ class ContactMessagesController < ApplicationController
   before_filter :block_spam_forms
   before_filter :load_new_resource
   before_filter :contact_messages_init
+  after_filter  :clear_session, only: [:index, :new]
 
   # layout 'post'
 
@@ -18,7 +19,7 @@ class ContactMessagesController < ApplicationController
   def create
     @contact_message.assign_attributes(contact_messages_params)
     if @contact_message.save
-      flash[:alert] = t('.success')
+      session[:contacted] = Time.now.to_i
       redirect_to contact_messages_url
     else
       render :index
@@ -31,6 +32,11 @@ protected
 
   def contact_messages_init
     @section = :contact
+    @body_classes << 'page-contact'
+  end
+
+  def clear_session
+    session.delete(:contacted) rescue nil
   end
 
   def load_new_resource

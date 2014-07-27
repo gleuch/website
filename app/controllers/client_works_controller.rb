@@ -29,6 +29,7 @@ protected
 
   def client_works_init
     @section, @page_meta_type = :client_work, :work
+    @breadcrumbs << {name: t('breadcrumbs.works'), url: client_works_url}
   end
 
   def load_resource(*args)

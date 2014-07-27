@@ -1,5 +1,31 @@
-.page-header
-  %h1= t('.title')
-  %p= t('.copy')
+- # Meta & Page Setup
+- @page_title = t('.page_title', default: '')
+- @page_meta_description = t('.meta.description', default: '')
+- @page_meta_keywords = t('.meta.keywords', default: '')
+- @page_share_title = t('.page_title', default: '')
+- @page_share_description = t('.meta.description', default: '')
+- @breadcrumbs << {name: t('.breadcrumbs')}
+- @page_meta_type = :profile
 
-  = render 'form', contact_message: @contact_message
+
+%article
+  .intro-box
+    %header
+      %h1= t('.heading')
+    %aside#latest-activity
+      %p.hidden-xs= t('.copy')
+      %ul.list-unstyled
+        - {twitter: twitter_url, github: github_url, linkedin: linkedin_url, instagram: instagram_url, email: email_url}.each do |name,url|
+          %li
+            = link_to url, class: "socialicon socialicon-#{name}", title: t(name), target: '_blank' do
+              %span= t(name)
+
+  - if session[:contacted]
+    %section#contact-success.contact-box
+      %h2= t('.success.heading')
+      = simple_format t('.success.copy', email_url: email_url, twitter_url: twitter_url, good_link_url: Setting.good_link_url, good_gif_url: Setting.good_gif_url)
+
+  - else
+    %section#contact-form.contact-box
+      %h2= t('.form.heading')
+      = render 'form', contact_message: @contact_message

@@ -8,7 +8,11 @@ en:
 
     all:
       page_title:           'Projects List'
-      title:                'Projects List'
+      meta:
+        description:        ''
+        keywords:           ''
+      breadcrumbs:          'List'
+      heading:              'Projects List'
       copy:                 'No matter the size, tinkering on new projects keeps one active and sharp, and all deserve a little recognition.'
 
 

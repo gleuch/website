@@ -35,8 +35,11 @@
 
     = render 'layouts/static/meta_tags'
 
+    = render 'layouts/header'
+
 
   %body{class: @body_classes}
+    = render 'layouts/body_header'
 
     = render 'layouts/static/header'
 
@@ -44,9 +47,12 @@
       - if content_for?(:upper_container)
         #upper-container.container-fluid
           = yield :upper_container
+          .clearfix
 
       #container
         #content.container-fluid
           = yield
+          .clearfix
 
     = render 'layouts/static/footer'
+    = render 'layouts/footer'

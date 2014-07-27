@@ -2,10 +2,19 @@ body {background-color: $gleuch-white;}
 
 
 // HEADER
-#header { position: fixed; top: 0; left: 0; right: 0; z-index: 888888; background-color: $gleuch-white; border-top: 10px solid $gleuch-logo; padding: 0 $gleuch-lg-frame-padding; height: 90px;
+#header { position: fixed; top: 0; left: 0; right: 0; z-index: 888888; background-color: $gleuch-white; border-top: 10px solid $gleuch-logo; padding: 0 $gleuch-lg-frame-padding; min-height: 90px;
+//  #notices {
+////    position: absolute; top: 0px; left: $gleuch-lg-frame-padding; right: $gleuch-lg-frame-padding; padding: 0 200px;
+//    margin-top: 85px; margin-bottom: 20px;
+//    .flash {background-color: rgba($gleuch-text-grey,.12); text-align: center; padding: 8px 20px; font-size: 1.6rem;}
+//  }
   #brand {margin-top: 30px;
     a {display: block; width: 105px; height: 40px; text-indent:-999px; background: image-url('logo.png') center center no-repeat; background-size: 100% 100%; overflow: hidden; -webkit-transition: opacity .2s ease-out, -webkit-filter .2s ease-out; -moz-transition: opacity .2s ease-out, -moz-filter .2s ease-out; -ms-transition: opacity .2s ease-out, -ms-filter .2s ease-out; transition: opacity .2s ease-out, filter .2s ease-out;
       @include hidpi(1.5) { background-image: image-url('logo@2x.png');}
+      
+      html.can-css-mask & {background-image: none; background-color: $gleuch-logo;mask: image-url('logo.png') center center / cover; -webkit-mask: image-url('logo.png') center center / cover; -ms-mask: image-url('logo.png') center center / cover;
+        @include hidpi(1.5) {background-image: none; mask-image: image-url('logo@2x.png'); -webkit-mask-image: image-url('logo@2x.png'); -ms-mask-image: image-url('logo@2x.png');}
+      }
       &:hover {opacity: .8; -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -ms-filter: grayscale(1); filter: grayscale(1);}
     }
   }
@@ -57,7 +66,7 @@ body {background-color: $gleuch-white;}
 
 
 // CONTENT CONTAINER
-#wrapper {margin-top: 100px;}
+#wrapper {margin-top: 90px;}
 #upper-container {padding-left: 0; padding-right: 0;}
 #container {padding: 0 $gleuch-lg-frame-padding; background-color: $gleuch-white;
   #content {position: relative; background-color: $gleuch-grey-bg; padding-left: 0; padding-right: 0; left: 0; @include transition(left .3s ease-out);

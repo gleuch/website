@@ -18,3 +18,8 @@
               = link_to v[:name], v[:url]
             - else
               = v[:name]
+
+  - unless flash.blank?
+    %aside#notices
+      - flash.each do |type,msg|
+        .flash{class: "flash-#{type}"}= msg.html_safe

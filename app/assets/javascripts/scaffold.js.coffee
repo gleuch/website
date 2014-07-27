@@ -26,3 +26,14 @@ $ ->
       if h > 0
         $('#content').css('min-height', h)
     ).trigger 'resize'
+
+
+
+    # CSS / JS Ability checks (simpler than using modernizer, etc.)
+    test_can = document.createElement('div');
+    unless test_can.style['mask'] == undefined
+      $('html').addClass('can-css-mask')
+    else
+      'Webkit Moz O ms Khtml'.replace /([A-Za-z]*)/g, (v) ->
+        unless test_can.style[v + 'Mask'] == undefined
+          $('html').addClass('can-css-mask')

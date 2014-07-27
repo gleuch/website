@@ -1,0 +1,29 @@
+.page-contact {
+  #upper-container {
+    .feature-item {position: relative; padding-top: 40.5%;
+      .feature-content {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba($gleuch-text-grey,.12);}
+    }
+  }
+  .intro-box { position: absolute; z-index: 20; left: 0; top: 30px; width: 315px; padding: 170px 30px 30px 30px;
+    h1 {position: absolute; z-index: 30; top: 30px; left: -30px; width: 345px; padding: 30px; margin: 0; background-color: $gleuch-logo; font-size: 3.6rem; line-height: 1.0em; text-transform: uppercase; color: $gleuch-white;}
+    h3, h4, q, blockquote {color: $gleuch-white; font-weight: 500; font-size: 2.2rem; line-height: 1.2em; text-shadow: 0 1px 1px rgba($gleuch-black,.12);}
+    h3 {font-weight: 700; text-transform: uppercase;}
+    p {font-size: 1.8rem; line-height: 1.28em; color: $gleuch-text-grey;}
+    ul {margin: 0; padding: 15px 0 0 0;
+      li {display: inline-block;
+        a { color: $gleuch-text-grey; font-size: 2.4rem; margin-left: -8px; margin-right: 5px;
+          &:hover {color: $gleuch-logo;}
+          span {display: none;}
+        }
+      }
+    }
+  }
+  .contact-box {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: 30px 3% 30px 315px;}
+  #contact-form {;
+    p {font-size: 1.9rem; line-height: 1.42em;}
+    label {display: none;}
+  }
+  #contact-success {
+    p {font-size: 1.9rem; line-height: 1.42em;}
+  }
+}

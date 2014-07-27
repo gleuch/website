@@ -8,7 +8,11 @@ en:
 
     all:
       page_title:           'Client List'
-      title:                'All Client Work'
+      meta:
+        description:        ''
+        keywords:           ''
+      breadcrumbs:          'List'
+      heading:              'All Client Work'
       copy:                 'Nothing better explains the skills and expertise of a true professional then by the quality of work they produce and a willingness to show it.'
       disclaimer:           'Some employed and contract work have been omitted from this list due to disclosure agreements, lack of substantial work, employment situations, or other various reasons. Work listed with a company underneath the title indicates work done as an employee, company member/owner, or under contract with the company listed. All other work is considered freelanced.'
 
