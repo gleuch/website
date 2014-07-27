@@ -16,7 +16,7 @@
       %p.hidden-xs= t('.copy')
       %ul.list-unstyled
         - {twitter: twitter_url, github: github_url, linkedin: linkedin_url, instagram: instagram_url, email: email_url}.each do |name,url|
-          %li
+          %li{'data-platform' => name}
             = link_to url, class: "socialicon socialicon-#{name}", title: t(name), target: '_blank' do
               %span= t(name)
 

@@ -6,12 +6,13 @@ en:
     first_name:   'Greg'
     last_name:    'Leuch'
 
-  footer:         '&copy; 2003–%{year} Greg Leuch, unless noted differently.<br/><a href="https://github.com/gleuch/website" target="_blank">View source code</a>'
+  footer:         '&copy; 2003–%{year} Greg Leuch, unless noted differently.<br/><a href="https://github.com/gleuch/website" target="_blank">Browse source code</a>'
 
 
   twitter:        'Twitter'
   twitter_name:   '@gleuch'
   github:         'Github'
+  githublogo:     'Github'
   facebook:       'Facebook'
   facebook_name:  'gleuch'
   instagram:      'Instagram'
@@ -20,7 +21,11 @@ en:
 
 
   nav:
+    home:         'Home'
+    projects:     'Projects'
+    client_work:  'Client Work'
     about:        'About'
+    contact:      'Contact'
 
   meta:
     name:         'Greg Leuch : Creative & Interactive'

@@ -33,7 +33,7 @@
     - [:exhibitions, :residencies, :awards, :c_and_d].each do |g|
       - list = t(g, scope: 'static_pages.about', default: '') rescue nil
       - unless list.blank? || list[:list].blank?
-        %section.col-md-3.col-sm-2.col-xs-1{id: g}
+        %section.col-md-3.col-sm-6.col-xs-12{id: g}
           %h3= list[:title]
           %ul.list-unstyled
             - list[:list].each do |n|
