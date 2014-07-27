@@ -5,7 +5,7 @@
     }
   }
   .intro-box { position: absolute; z-index: 20; left: 0; top: 30px; width: 315px; padding: 170px 30px 30px 30px;
-    h1 {position: absolute; z-index: 30; top: 30px; left: -30px; width: 345px; padding: 30px; margin: 0; background-color: $gleuch-logo; font-size: 3.6rem; line-height: 1.0em; text-transform: uppercase; color: $gleuch-white;}
+    h1 {position: absolute; z-index: 30; top: 30px; left: -30px; width: 345px; padding: 30px; margin: 0; font-weight: 700; background-color: $gleuch-logo; font-size: 3.6rem; line-height: 1.0em; text-transform: uppercase; color: $gleuch-white;}
     h3, h4, q, blockquote {color: $gleuch-white; font-weight: 500; font-size: 2.2rem; line-height: 1.2em; text-shadow: 0 1px 1px rgba($gleuch-black,.12);}
     h3 {font-weight: 700; text-transform: uppercase;}
     p {font-size: 1.8rem; line-height: 1.28em; color: $gleuch-text-grey;}
@@ -18,7 +18,7 @@
       }
     }
   }
-  .contact-box {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: 30px 3% 30px 315px;}
+  .contact-box {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: 30px 30px 30px 315px;}
   #contact-form {
     h2 {margin: 0; padding: 0 0 15px 0; text-transform: lowercase; font-size: 2.8rem; line-height: 1.0em;}
     form {padding: 15px 0 0 0; margin: 0;}
@@ -36,11 +36,27 @@
     p {font-size: 1.9rem; line-height: 1.42em;}
   }
 
-  // Tablet and smaller
-  @media (max-width: 992px) {
+  // TABLET
+  @media ($tablet-size) {
+    .intro-box {
+      h1 {font-size: 3.2rem; padding: 25px 25px 25px $gleuch-sm-frame-padding;}
+    }
     #contact-form {
+      h2 {font-size: 2.4rem;}
       .buttons .col-xs-12 {text-align: left;}
       label.checkbox {padding: 0 0 10px 0;}
     }
+  }
+
+  @media ($mobile-size) {
+    .intro-box { top: 15px; padding: 60px 15px 30px 15px;
+      h1 {font-size: 2.0rem; padding: 15px; top: 0; left: -$gleuch-xs-frame-padding; width: auto;}
+      ul {margin: 0; padding: 0;
+        li {display: block; padding: 7px 0;
+          a {font-size: 1.8rem;}
+        }
+      }
+    }
+    .contact-box {z-index: 10; margin: 38px 0 15px 50px; padding-top: 50px; padding-right: 0;}
   }
 }
