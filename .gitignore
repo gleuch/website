@@ -20,3 +20,4 @@ config/mailchimp.yml
 /public/production/assets
 .sass-cache/*
 .env
+config/deploy/*

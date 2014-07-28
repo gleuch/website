@@ -6,7 +6,7 @@ gem 'therubyracer',                   '0.12.1',       platforms: :ruby
 gem 'turbolinks',                     '2.2.2'
 gem 'jbuilder',                       '2.1.1'
 gem 'unf',                            '0.1.4'
-gem 'asset_sync',                     '1.0.0'
+# gem 'asset_sync',                     '1.0.0'
 gem 'mysql2',                         '0.3.16'
 gem 'scrypt',                         '1.2.1'
 
