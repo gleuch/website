@@ -18,18 +18,17 @@
       }
     }
   }
-  .contact-box {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: 30px 30px 30px 315px;}
-  #contact-form {
+  .contact-box {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: 30px 30px 30px 315px;
     h2 {margin: 0; padding: 0 0 15px 0; text-transform: lowercase; font-size: 2.8rem; line-height: 1.0em;}
+  }
+  #contact-form {
     form {padding: 15px 0 0 0; margin: 0;}
     p {font-size: 1.9rem; line-height: 1.42em;}
     select {
       &, option {text-transform: lowercase;}
     }
     label {display: none; text-transform: lowercase;
-      &.checkbox {display: block; font-size: 1.6rem; padding: 0 0 8px 0;
-        input[type=checkbox] {margin-left: 0; margin-right: 4px; position: relative;}
-      }
+      &.checkbox {display: block;}
     }
   }
   #contact-success {
@@ -44,19 +43,25 @@
     #contact-form {
       h2 {font-size: 2.4rem;}
       .buttons .col-xs-12 {text-align: left;}
-      label.checkbox {padding: 0 0 10px 0;}
     }
   }
 
   @media ($mobile-max-size) {
-    .intro-box { top: 15px; padding: 60px 15px 30px 15px;
-      h1 {font-size: 2.0rem; padding: 15px; top: 0; left: -$gleuch-xs-frame-padding; width: auto;}
+    .intro-box { top: 15px; padding: 60px 15px 30px 15px; width: auto;
+      h1 {font-size: 2.0rem; padding: 15px; top: 0; left: -$gleuch-xs-frame-padding; width: auto; white-space: pre;}
       ul {margin: 0; padding: 0;
         li {display: block; padding: 7px 0;
           a {font-size: 1.8rem;}
         }
       }
     }
-    .contact-box {z-index: 10; margin: 38px 0 15px 50px; padding-top: 50px; padding-right: 0;}
+    .contact-box {z-index: 10; margin: 38px 0 15px 50px; padding-top: 45px; padding-right: 0;}
+    #contact-success {
+      p {font-size: 1.6rem;}
+    }
+    #contact-form {
+      .buttons .text-right {text-align: centr;}
+      .btn {padding: 10px; font-size: 1.5em; display: block; width: 100%; margin-top: 5px;}
+    }
   }
 }

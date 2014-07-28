@@ -33,6 +33,7 @@ a {color: darken($gleuch-logo, 5%); @include transition(color .2s ease-out);
   &:focus, &:hover {color: $gleuch-text-grey; text-decoration: none;}
 }
 
+body ::selection {background: rgba($gleuch-text-grey,.24);}
 
 form {
   .form-control {border-radius: 0; color: $gleuch-text-grey; font-size: 2.0rem; padding: 8px 10px; border-color: rgba($gleuch-black, .25); height: auto;
@@ -40,6 +41,10 @@ form {
     &:focus {border-color: rgba($gleuch-black,.5); outline: none; box-shadow: 0 0 5px rgba($gleuch-black,.12);}
   }
   textarea.form-control {line-height: 1.33em;}
+  label.checkbox {display: block; font-size: 1.6rem; padding: 0 0 8px 24px;
+    input[type=checkbox] {margin-left: -24px; margin-right: 0; position: absolute;}
+  }
+
 }
 
 .btn {
