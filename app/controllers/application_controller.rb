@@ -72,7 +72,7 @@ private
         
         if @_static_page_options[:cache]
           cache_key = @_static_page_options[:cache_key] unless @_static_page_options[:cache_key].blank?
-          cache_key ||= [page.class.to_s.underscore, page.id, page.format,'2']
+          cache_key ||= ['page',page.class.to_s.underscore, page.id, page.format]
           html = cache(cache_key, expires_in: @_static_page_options[:cache_expires_in]) { results.call }
         else
           html = results.call
