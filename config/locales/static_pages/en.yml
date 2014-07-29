@@ -22,6 +22,12 @@ en:
         He is fluent in XHTML/CSS, Ruby (Rails), JavaScript, and PHP, with extensive experience with browser extension development.
         
         He currently resides in Brooklyn, NY.
+      bio_stats:
+        github:             'Commits on Github'
+        tweets:             'Tweets'
+        favorited_tweets:   'Favorited tweets'
+        miles:              'Miles flown this year'
+        allnighters:        'All-nighters pulled'
 
       info:
         link:               'Link'

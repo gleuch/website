@@ -46,6 +46,13 @@ en:
   open:           'Open'
   close:          'Close'
 
+  short_count:
+    thousand: 'K'
+    million:  'M'
+    billion:  'B'
+    unit:     ''
+
+
   simple_form:
     "yes": 'Yes'
     "no": 'No'

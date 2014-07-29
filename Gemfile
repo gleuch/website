@@ -73,12 +73,13 @@ gem 'whenever',                       '0.9.2',        require: false
 
 # --- OAUTH / APIS ---
 gem 'aws-sdk',                        '1.49.0'
+gem 'github_api',                     '0.12.0'
 # gem 'gibbon',                         '1.1.3'
 # gem 'omniauth-facebook',              '1.6.0'
 # gem 'omniauth-twitter',               '1.0.1'
 # gem 'omniauth-google-oauth2',        '0.2.4'
 # gem 'rest-client',                    '1.6.7'
-# gem 'twitter',                        '5.11.0'
+gem 'twitter',                        '5.11.0'
 # gem 'fb_graph',                       '2.7.15'
 
 

@@ -18,7 +18,7 @@
         - unless list.blank?
           %h2= yr
           - list.each_with_index do |project,i|
-            .col-md-3.col-sm-4.col-xs-6
+            .item.col-md-3.col-sm-4.col-xs-6
               %h3
                 - if project[:url].present?
                   = link_to project[:name], project[:url], target: '_blank'

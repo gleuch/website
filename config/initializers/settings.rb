@@ -10,6 +10,15 @@ begin
   ]
   Setting.facebook_app_id = ''
 
+  # Personal Stats
+  Setting.stats_github_commits    ||= 0
+  Setting.stats_github_repos      ||= 0
+  Setting.stats_miles_flown       ||= 0
+  Setting.stats_favorited_tweets  ||= 0
+  Setting.stats_tweets            ||= 0
+  Setting.stats_all_nighters      ||= 0
+
+
 rescue => err
   puts "Settings Initializer Error: #{err}"
   nil

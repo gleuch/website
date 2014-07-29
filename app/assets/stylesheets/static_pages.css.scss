@@ -1,3 +1,4 @@
+// ABOUT PAGE
 .page-about {
   #upper-container {
     .feature-item {position: relative; padding-top: 40.5%;
@@ -9,9 +10,33 @@
     h3, h4, q, blockquote {color: $gleuch-white; font-weight: 500; font-size: 2.2rem; line-height: 1.2em; text-shadow: 0 1px 1px rgba($gleuch-black,.12);}
     h3 {font-weight: 700; text-transform: uppercase;}
   }
-  #biography {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: -100px 30px 0 315px;
-    p {font-size: 1.9rem; line-height: 1.42em;}
+  #biography_content { margin-bottom: 30px;
+    #biography {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: -100px 30px 0 315px;
+      p {font-size: 1.9rem; line-height: 1.42em;}
+    }
+    #biography_stats {position: absolute; top: 110px; left: 30px; max-width: 300px;
+      a {
+        &:hover, &:focus {
+          dt, dd {color: $gleuch-logo; @include transition(color .2s ease-out);}
+        }
+        // dd:after{content: ">";}
+      }
+      dl { padding: 10px 0 3px 0; margin: 0;
+        dt, dd {padding: 0; margin: 0; line-height: 1.0em;}
+        dt {font-size: 2.4rem; font-weight: 600;}
+        dd {padding-top: 1px; font-size: 1.6rem; text-transform: lowercase;}
+      }
+    }
+    & + hr {margin: 45px 30px 30px; height: 15px; border-width: 15px; border-color: transparent; background: $gleuch-text-grey;}
   }
+
+  #info-list {
+    section {padding: 15px 30px; margin: 0 30px 15px 30px; background-color: $gleuch-white;
+      h3 {padding: 0 0 5px 0; margin: 0;}
+      .item {padding-bottom: 5px;}
+    }
+  }
+
 
   // TABLET
   @media ($tablet-max-size) {

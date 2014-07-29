@@ -9,6 +9,17 @@
 - @section = :about
 
 
+:coffee
+  $(document).ready ->
+    $(window).on 'resize', ->
+      h = $('#biography_stats').height() + $('#biography_stats').position().top
+      m = parseInt $('#biography').css('margin-top')
+      h -= m unless m > 0
+      $('#biography_content').css 'min-height', h
+
+    $(window).trigger 'resize'
+
+
 - # Upper Page Content
 - content_for(:upper_container) do
   .feature-area
@@ -26,18 +37,37 @@
       %h4
         %a.socialicon.socialicon-twitter{href: '#', target: '_blank'}
 
-  %section#biography
-    = simple_format( t('.bio') )
+  #biography_content
+    %section#biography
+      = simple_format( t('.bio') )
+    %aside#biography_stats
+      - stats = {}
 
-  #info-list.container-fluid
+      - stats[:github] = {setting: :stats_github_commits, url: github_url}
+      - #stats[:tweets] = {setting: :stats_tweets, url: twitter_url}
+      - stats[:favorited_tweets] = {setting: :stats_favorited_tweets, url: twitter_favorites_url}
+      - stats[:miles] = {setting: :stats_miles_flown}
+      - stats[:allnighters] = {setting: :stats_all_nighters}
+
+      - stats.each do |stat,val|
+        - stat, name = number_to_human(Setting.send(val[:setting]) || 0, precision: 1, significant: false, units: :short_count, format: '%n%u'), t(".bio_stats.#{stat}")
+
+        = content_tag((val[:url].present? ? :a : :div), (val[:url].present? ? {href: val[:url], target: '_blank'} : nil) ) do
+          %dl
+            %dt= stat
+            %dd= name
+
+  %hr
+
+  #info-list
     - [:exhibitions, :residencies, :awards, :c_and_d].each do |g|
       - list = t(g, scope: 'static_pages.about', default: '') rescue nil
       - unless list.blank? || list[:list].blank?
-        %section.col-md-3.col-sm-6.col-xs-12{id: g}
+        %section.container-fluid{id: g}
           %h3= list[:title]
-          %ul.list-unstyled
-            - list[:list].each do |n|
-              %li
+          .row
+            - list[:list].each_with_index do |n,i|
+              .item.col-md-3.col-sm-6.col-xs-12
                 - if n.is_a?(Hash)
                   - a = ([[:name, :source, :place, :year], [:location, :date]].map{|v| v.map{|s| n[s]}.compact.join(', ').gsub(/\",/, ',"')}.reject(&:blank?) + ['']).flatten.join('. ')
                   - if n[:url].present?
@@ -45,3 +75,10 @@
                   = a.html_safe
                 - else
                   = n
+              - if (i+1) % 4 == 0
+                .clearfix.visible-md-block.visible-lg-block
+              - if (i+1) % 3 == 0
+                .clearfix.visible-sm-block
+              - if (i+1) % 2 == 0
+                .clearfix.visible-xs-block
+            .clearfix
