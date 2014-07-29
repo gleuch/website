@@ -1,5 +1,5 @@
 // PROJECT / WORK INTRO AREA
-#intro-area { position: relative; min-height: 325px; margin: 0 0 50px 0; background-color: rgba($gleuch-text-grey,.12);
+#intro-area { position: relative; min-height: 325px; margin: 0 0 50px 0; background-color: rgba($gleuch-black,.05);
   .intro-box { position: absolute; z-index: 20; left: 25px; bottom: -25px; width: 375px; padding: 30px 30px 170px 30px; background-color: rgba($gleuch-text-grey,.6);
     h1 {position: absolute; z-index: 30; bottom: 50px; left: -55px; padding: 30px; margin: 0; background-color: $gleuch-logo; font-size: 3.6rem; line-height: 1.0em; text-transform: uppercase; color: $gleuch-white;}
     h4 {color: $gleuch-white; font-weight: 500; font-size: 2.2rem; line-height: 1.2em; text-shadow: 0 1px 1px rgba($gleuch-black,.12);}

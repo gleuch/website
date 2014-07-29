@@ -25,13 +25,17 @@
   .feature-area
     .feature-item
       .feature-content
+        .hidden-xs
+          [VIDEO]
+        .visible-xs-block
+          [IMG]
 
 - # Page Content
 %article
   .intro-box
     %header
       %h1= t('.heading')
-    %aside#latest-activity
+    %aside#latest-activity.hidden-xs
       %h3= t('.latest.twitter')
       %q The make out couple is at Starbucks, and they are sitting across from me again.... #aww #gross
       %h4
@@ -40,7 +44,7 @@
   #biography_content
     %section#biography
       = simple_format( t('.bio') )
-    %aside#biography_stats
+    %aside#biography_stats.hidden-xs
       - stats = {}
 
       - stats[:github] = {setting: :stats_github_commits, url: github_url}
@@ -50,12 +54,11 @@
       - stats[:allnighters] = {setting: :stats_all_nighters}
 
       - stats.each do |stat,val|
-        - stat, name = number_to_human(Setting.send(val[:setting]) || 0, precision: 1, significant: false, units: :short_count, format: '%n%u'), t(".bio_stats.#{stat}")
-
+        - num = Setting.send(val[:setting]) || 0
         = content_tag((val[:url].present? ? :a : :div), (val[:url].present? ? {href: val[:url], target: '_blank'} : nil) ) do
           %dl
-            %dt= stat
-            %dd= name
+            %dt= number_to_human(num, precision: 1, significant: false, units: :short_count, format: '%n%u')
+            %dd{'data-stat-value' => "#{number_with_delimiter(num)} #{stat}"}= t(".bio_stats.#{stat}")
 
   %hr
 

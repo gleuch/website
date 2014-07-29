@@ -25,7 +25,7 @@ html, html * {font-family: $gleuch-webfont-sans; font-weight: 500;
   -webkit-text-rendering: optimizeLegibility; -moz-text-rendering: optimizeLegibility; -ms-text-rendering: optimizeLegibility; -o-text-rendering: optimizeLegibility; text-rendering: optimizeLegibility; 
   -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased; -ms-font-smoothing: antialiased; -o-font-smoothing: antialiased; font-smoothing: antialiased;
 }
-h1, h2, h3, h4, h5, h6, strong, b, th, dt {font-weight: 600; color: $gleuch-text-grey;
+h1, h2, h3, h4, h5, h6, strong, b, th, dt {font-weight: 600; color: $gleuch-mid-black;
   & a, & span {font-weight: 600;}
 }
 p, div, li, td, dd {color: $gleuch-text-grey;}
@@ -33,11 +33,11 @@ a {color: darken($gleuch-logo, 5%); @include transition(color .2s ease-out);
   &:focus, &:hover {color: $gleuch-text-grey; text-decoration: none;}
 }
 
-body ::selection {background: rgba($gleuch-text-grey,.24);}
+body ::selection {background: rgba($gleuch-mid-black,.24);}
 
 form {
   .form-control {border-radius: 0; color: $gleuch-text-grey; font-size: 2.0rem; padding: 8px 10px; border-color: rgba($gleuch-black, .25); height: auto;
-    @include placeholder {color: rgba($gleuch-text-grey,.5); text-transform: lowercase;}
+    @include placeholder {color: rgba($gleuch-text-black,.2); text-transform: lowercase;}
     &:focus {border-color: rgba($gleuch-black,.5); outline: none; box-shadow: 0 0 5px rgba($gleuch-black,.12);}
   }
   textarea.form-control {line-height: 1.33em;}
@@ -49,12 +49,12 @@ form {
 
 .btn {
   &.btn-lg {padding: 15px; font-size: 2.25rem; line-height: 1.0em;}
-  &.btn-default {border-radius: 0; border: 1px solid transparent; text-transform: uppercase; color: $gleuch-white; background-color: $gleuch-logo; font-weight: 700; text-shadow: 0 1px 1px rgba($gleuch-text-grey,.2); @include transition(background-color .2s ease-out);
+  &.btn-default {border-radius: 0; border: 1px solid transparent; text-transform: uppercase; color: $gleuch-white; background-color: $gleuch-logo; font-weight: 700; text-shadow: 0 1px 1px rgba($gleuch-black,.05); @include transition(background-color .2s ease-out);
     &:hover, &:focus {background-color: lighten($gleuch-logo,10%); color: $gleuch-white; outline: none; box-shadow: none;}
     &:focus {box-shadow: 0 0 8px rgba($gleuch-black,.32);}
-    &:active {background-color: $gleuch-text-grey;}
+    &:active {background-color: rgba($gleuch-mid-black,.5);}
   }
   &[disabled], &.disabled {opacity: .5; @include transition(none); box-shadow: none;
-    &, &:hover, &:focus, &:active {background-color: $gleuch-text-grey !important;}
+    &, &:hover, &:focus, &:active {background-color: rgba($gleuch-mid-black,.5) !important;}
   }
 }

@@ -22,7 +22,7 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
     body.nav-open & {left: $gleuch-lg-frame-padding + 125px + 15px; @include transition(left .2s .1s ease-out);}
   }
   #menu-icon {float: left; width: 15px; overflow: hidden; @include transition(opacity .1s ease-out);
-    .menu-bar {display: block; background-color: $gleuch-text-grey; height: 3px; width: 15px; margin: 0 0 2px 0; line-height: 0; 
+    .menu-bar {display: block; background-color: $gleuch-mid-black; height: 3px; width: 15px; margin: 0 0 2px 0; line-height: 0; 
       -webkit-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -webkit-transform .2s .5s ease-out, margin .2s .3s ease-out;
       -moz-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -moz-transform .2s .5s ease-out, margin .2s .3s ease-out;
       -ms-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -ms-transform .2s .5s ease-out, margin .2s .3s ease-out;
@@ -39,14 +39,14 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
     }
   }
   .divider {float: left; margin: 0 15px; width: 1px; height: 15px; overflow: hidden; background-color: rgba($gleuch-black,.2); vertical-align: top;}
-  a.close-menu {text-indent: -150px; pointer-events: none; opacity: 0; float: left; font-size: 1.8rem; color: rgba($gleuch-text-grey,.7); text-transform: lowercase; line-height: 15px;
-    &:focus, &.hover {text-decoration: none; color: $gleuch-text-grey; cursor: pointer;}
+  a.close-menu {text-indent: -150px; pointer-events: none; opacity: 0; float: left; font-size: 1.8rem; color: $gleuch-text-grey; text-transform: lowercase; line-height: 15px;
+    &:focus, &.hover {text-decoration: none; color: $gleuch-mid-black; cursor: pointer;}
     body.nav-open & {text-indent: 0px; opacity: 1; pointer-events: visible;}
   }
   ul {float: left;  text-indent: 0; opacity: 1; pointer-events: visible; margin: 0; padding: 0;
     li {float: left; display: inline-block;
-      &, a {color: rgba($gleuch-text-grey,.7); font-size: 1.8rem; line-height: 15px; text-transform: lowercase;  @include transition(color .1s ease-out);}
-      a:focus, a:hover {text-decoration: none; color: $gleuch-text-grey;}
+      &, a {color: $gleuch-text-grey; font-size: 1.8rem; line-height: 15px; text-transform: lowercase;  @include transition(color .1s ease-out);}
+      a:focus, a:hover {text-decoration: none; color: $gleuch-mid-black;}
       &:before {content: ""; display: inline-block; margin: 0 4px 0 8px; width: 10px; height: 9px; background: image-url('breadcrumb-arrow.png') center center no-repeat;
         @include hidpi(1.5) {background-image: image-url('breadcrumb-arrow@2x.png'); background-size: 10px 9px;}
       }
@@ -60,9 +60,27 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
 }
 
 // NAV PULLOUT
-#nav-pullout { position: fixed; top: -15px; left: -200px; bottom: -15px; padding: 15px 0; z-index: 999999; max-width: 200px; background-color: $gleuch-grey-bg; box-shadow: inset 0 4px 18px rgba($gleuch-black, 0.12); @include transition(left .3s ease-out);
+#nav-pullout { position: fixed; top: -15px; left: -200px; bottom: -15px; padding: 15px 0; z-index: 999999; width: 200px; background-color: $gleuch-grey-bg; box-shadow: inset 0 4px 18px rgba($gleuch-black, 0.12); @include transition(left .3s ease-out);
   body.nav-open & {left: 0;}
-  #nav-footer {
+  #menu-items {padding: 90px 15px 50px 15px;
+    li { border-top: 1px solid rgba($gleuch-black,.05); padding: 10px 15px;
+      a {display: block; color: $gleuch-text-grey; text-transform: lowercase; font-size: 1.8rem; text-indent: -50px; opacity: 0; @include transition(text-indent .2s .1s ease-out, opacity .3s .1s ease-out);
+        &:hover, &:focus {color: $gleuch-logo;}
+        body.nav-open & {text-indent: 0; opacity: 1;}
+      }
+      &:first-child {border-top: none;}
+      body.nav-open & {
+        &:nth-child(1) a {@include transition-delay(.3s);}
+        &:nth-child(2) a {@include transition-delay(.4s);}
+        &:nth-child(3) a {@include transition-delay(.5s);}
+        &:nth-child(4) a {@include transition-delay(.6s);}
+        &:nth-child(5) a {@include transition-delay(.7s);}
+        &:nth-child(6) a {@include transition-delay(.8s);}
+        &:nth-child(7) a {@include transition-delay(.9s);}
+      }
+    }
+  }
+  #nav-footer { position: absolute; bottom: 30px; left: 15px; right: 15px;
     ul {display: block; margin: 0; padding: 0;
       li {display: inline-block;
         a {color: $gleuch-text-grey; font-size: 1.6rem;
@@ -80,7 +98,7 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
 #upper-container {padding-left: 0; padding-right: 0;}
 #container {padding: 0 $gleuch-lg-frame-padding; background-color: $gleuch-white;
   #content {position: relative; background-color: $gleuch-grey-bg; padding-left: 0; padding-right: 0; left: 0; @include transition(left .3s ease-out);
-    &:after {content: ''; position: fixed; display: block; top: 0; left: 0; height: 100%; max-height: 0; background: image-url('bg/pixel-bg.png') 0 0 repeat; opacity: 0; @include transition(opacity .3s ease-out);}
+    &:after {content: ''; position: fixed; z-index: 777777; display: block; top: 0; left: 0; height: 100%; max-height: 0; background: image-url('bg/pixel-bg.png') 0 0 repeat; opacity: 0; @include transition(opacity .3s ease-out);}
     body.nav-open & {left: $gleuch-lg-frame-padding;
       &:after {max-height: 100%; right: 0; bottom: 0; opacity: .5;}
     }
@@ -127,10 +145,10 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
     }
   }
   // NAV PULLOUT
-  #nav-pullout { position: fixed; top: 55px; left: -$gleuch-xs-frame-padding; right: -$gleuch-xs-frame-padding; bottom: 100%; overflow: scroll; max-height: 0; padding: 0 (2 * $gleuch-xs-frame-padding); max-width: none; background-color: rgba($gleuch-grey-bg,.9); box-shadow: inset 0 0 18px rgba($gleuch-black, 0.12); @include transition(bottom .3s ease-out, max-height .3s ease-out);
+  #nav-pullout { position: fixed; top: 55px; left: -$gleuch-xs-frame-padding; right: -$gleuch-xs-frame-padding; bottom: 100%; width: auto; overflow: scroll; max-height: 0; padding: 0 (2 * $gleuch-xs-frame-padding); max-width: none; background-color: rgba($gleuch-grey-bg,.9); box-shadow: inset 0 0 18px rgba($gleuch-black, 0.12); @include transition(bottom .3s ease-out, max-height .3s ease-out);
     body.nav-open & {bottom: 0; max-height: 100%; left: -$gleuch-xs-frame-padding;}
     #menu-items {padding: 15px 0;
-      li {display: block; border-top: 1px solid rgba($gleuch-text-grey,.12); text-align: center; opacity: 0; @include transition(opacity .3s .1s ease-out);
+      li {display: block; border-top: 1px solid rgba($gleuch-black,.05); text-align: center; opacity: 0; @include transition(opacity .3s .1s ease-out);
         body.nav-open & {opacity: 1;}
         &:first-child {border-top: none;}
         a {text-transform: uppercase; display: block; font-size: 1.8rem; line-height: 1.0em; padding: 12px 0; color: $gleuch-text-grey; font-weight: 600;
@@ -161,7 +179,7 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
     }
   }
   footer#mobile-footer {margin: 0 $gleuch-xs-frame-padding; padding: $gleuch-xs-frame-padding; background-color: $gleuch-grey-bg;
-    .container-fluid {margin: 0; padding: $gleuch-xs-frame-padding 0 0 0; border-top: 1px solid rgba($gleuch-text-grey,.12);}
+    .container-fluid {margin: 0; padding: $gleuch-xs-frame-padding 0 0 0; border-top: 1px solid rgba($gleuch-black,.05);}
     p {padding: 0; margin: 0; font-size: 0.9rem; line-height: 1.25em; text-align: left; color: $gleuch-text-grey;
       a {color: $gleuch-text-grey;
         &:hover, &:focus {color: $gleuch-logo;}

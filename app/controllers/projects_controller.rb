@@ -3,8 +3,6 @@ class ProjectsController < ApplicationController
   before_filter :load_resource, only: [:show]
   before_filter :projects_init
 
-  # layout 'post'
-
 
   def index
     load_resource(id: 'home', format: request.format.symbol.to_s)
