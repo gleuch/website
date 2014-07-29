@@ -69,7 +69,7 @@ namespace :social_stats do
 
 
     # CACHE CLEAR (/about page)
-    Rails.cache.delete_matched('pages/*/about/*') rescue nil
+    Rails.cache.delete_matched('page/.*/about/.*') rescue nil
 
 
     # DONE!
