@@ -22,7 +22,7 @@ gem 'will_paginate',                  '3.0.7'
 gem 'authlogic',                      '3.4.2'         #branch: 'master',   git: 'git://github.com/binarylogic/authlogic.git'
 gem 'cancan',                         '1.6.10'
 gem 'wilson_score',                   '0.1.0'
-gem 'sanitize',                       '2.1.0'
+gem 'sanitize',                       '3.0.0'
 gem 'awesome_nested_set',             '3.0.0.rc.5'
 gem 'remotipart',                     '1.2.1'
 gem 'addressable',                    '2.3.6'
@@ -31,12 +31,12 @@ gem 'addressable',                    '2.3.6'
 # --- FORMATTING, STYLING, DISPLAY ---
 gem 'haml',                           '4.0.5'
 gem 'sass-rails',                     '4.0.3'
-gem 'uglifier',                       '2.5.1'
+gem 'uglifier',                       '2.5.3'
 gem 'coffee-rails',                   '4.0.1'
 gem 'jquery-rails',                   '3.1.1'
 gem 'jquery-ui-rails',                '4.2.1'
 gem 'will_paginate-bootstrap',        '1.0.1'
-gem 'bootstrap-sass',                 '3.2.0.0'
+gem 'bootstrap-sass',                 '3.2.0.1'
 gem 'bourbon',                        '3.1.8'
 
 
@@ -95,23 +95,23 @@ group :development do
   gem 'capistrano-rvm',               '0.1.1'
   gem 'capistrano-rails',             '1.1.1'
   gem 'capistrano-bundler',           '1.1.2'
-  gem 'capistrano-sidekiq',           '0.3.2'
+  # gem 'capistrano-sidekiq',           '0.3.2'
   gem 'quiet_assets',                 '1.0.3'
 
   gem 'sinatra',                      '1.4.5',        require: false
-  gem 'slim',                         '2.0.2'
+  gem 'slim',                         '2.0.3'
 end
 
 group :test do
-  gem 'capybara',                     '2.3.0'
+  gem 'capybara',                     '2.4.1'
   gem 'capybara-webkit',              '1.1.0'
-  gem 'simplecov',                    '0.8.2',        require: false
+  gem 'simplecov',                    '0.9.0',        require: false
   gem 'selenium-webdriver',           '2.42.0'
-  gem 'sqlite3'
+  gem 'sqlite3',                      '1.3.9'
 end
 
 group :development, :test do
-  gem 'rspec-rails',                  '2.14.2'        # TODO : upgrade to 3.0.1
+  gem 'rspec-rails',                  '3.0.2'
   gem 'database_cleaner',             '1.3.0'
   gem 'ffaker',                       '1.24.0'
   gem 'factory_girl_rails',           '4.4.1'
@@ -120,5 +120,5 @@ end
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc',                                       require: false
 end
