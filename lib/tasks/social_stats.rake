@@ -1,13 +1,13 @@
 namespace :social_stats do
 
   task fetch: :environment do
-    require 'github_api'
-
+    time_start = Time.now
     tokens = YAML.load_file(File.join(Rails.root, 'config', 'secrets.yml'))[Rails.env].symbolize_keys rescue nil
 
+
     # GITHUB
-    if false #tokens[:github].present?
-      puts "", "GITHUB", "", ""
+    if tokens[:github].present?
+      puts "", "GITHUB"
       repos_ct, commits_ct = 0, 0
       username = tokens[:github]['username']
 
@@ -43,12 +43,12 @@ namespace :social_stats do
       Setting.stats_github_repos = repos_ct
       Setting.stats_github_commits = commits_ct
 
-      puts "Congrats! You've commited #{Setting.stats_github_commits} times into #{Setting.stats_github_repos} repos.",""
-
+      puts "","","Congrats! You've commited #{Setting.stats_github_commits} times into #{Setting.stats_github_repos} repos.",""
     end
 
     # TWITTER
     if tokens[:twitter].present?
+      puts "", "TWITTER", ""
       @twitter = Twitter::REST::Client.new do |config|
         config.consumer_key        = tokens[:twitter]['api_key']
         config.consumer_secret     = tokens[:twitter]['secret_key']
@@ -67,7 +67,13 @@ namespace :social_stats do
       puts "Congrats! You've tweeted #{Setting.stats_tweets} times and favorited #{Setting.stats_favorited_tweets} times.",""
     end
 
-    # ...
+
+    # CACHE CLEAR (/about page)
+    Rails.cache.delete_matched('pages/*/about/*') rescue nil
+
+
+    # DONE!
+    puts "", "Done! (#{(Time.now-time_start).to_f} sec)",""
 
   end
 
