@@ -1,0 +1,26 @@
+en:
+  projects:
+    fffffartsy:
+      page_title:           'FFFFFartsy '
+      meta:
+        description:        ''
+        keywords:           ''
+
+      heading:              'FFFFFartsy'
+      subheading:           'Open access & open-source public virtual art gallery.'
+
+      statement:            TODO
+
+      explanation:          TODO
+
+      carousel:
+        captions:
+          -                 'Caption 1'
+          -                 'Caption 2'
+
+      exhibitions:
+        -
+          name:             'FAT GOLD Europe'
+          place:            'MU'
+          location:         'Eindhoven, Netherlands'
+          date:             'Nov 2013'

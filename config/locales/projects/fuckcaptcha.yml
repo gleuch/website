@@ -1,0 +1,29 @@
+en:
+  projects:
+    fuckcaptcha:
+      page_title:           fuckCAPTCHA
+      meta:
+        description:        
+        keywords:           
+
+      heading:              fuckCAPTCHA
+      subheading:           fuckCAPTCHA, an open-source alternative to the spam prevention and evil humanization of human brain cycles for corporate pet projects.
+
+      statement: |
+        fuckCAPTCHA, an open-source alternative to the spam prevention & evil humanization of human brain cycles for corporate pet projects.
+
+      explanation: |
+        The founder of reCAPTCHA created their tool to prevent spam and help humanize OCR scanning errors, later noting that he had "unwittingly created a system that was frittering away, in ten-second increments, millions of hours of a most precious resource: human brain cycles."
+
+        In Sept 2009, Google bought reCAPTCHA, assumingly to help with the work of their book scanning project.
+
+        So why support them when you can reaffirm your efforts of enforcing the fuck corporate culture by typing it in for every time to need to verify yourself as a non-evil human.
+
+        <strong>Includes hearing impared audio captchas!</strong>
+
+      exhibitions:
+        -
+          name:             Futurity Now!, transmediale.10
+          place:            Haus der Kulturen der Welt
+          location:         Berlin, Germany
+          date:             Feb 2010

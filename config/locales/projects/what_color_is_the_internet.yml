@@ -1,0 +1,31 @@
+en:
+  projects:
+    what_color_is_the_internet:
+      page_title:           WhatColor.IsTheInter.net/?
+      meta:
+        description:        
+        keywords:           
+
+      heading:              WhatColor.IsTheInter.net/?
+      subheading:           
+
+      statement:            TODO
+
+      explanation:          TODO
+
+      exhibitions:
+        -
+          name:             'Eyebeam Annual Showcase'
+          place:            'Eyebeam'
+          location:         'NYC'
+          date:             'Jan 2014'
+        -
+          name:             'FAT GOLD Europe'
+          place:            'MU'
+          location:         'Eindhoven, Netherlands'
+          date:             'Nov 2013'
+
+      press:
+        -
+          name:             'Animal New York'
+          url:              ''

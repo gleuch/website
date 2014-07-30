@@ -23,7 +23,7 @@ RSpec.describe ProjectsController, type: :controller do
   end
 
   describe "show" do
-    %w(shaved-bieber).each do |p|
+    %w(shaved-bieber greed what-color-is-the-internet twitter-fileshare dr-google).each do |p|
       describe "page #{p}" do
         it "GET should succeed" do
           get :show, id: p

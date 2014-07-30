@@ -1,0 +1,29 @@
+en:
+  projects:
+    pop_block:
+      page_title:           Pop Block
+      meta:
+        description:        
+        keywords:           
+
+      heading:              Pop Block
+      subheading:           
+
+      statement: |
+        <a href="https://pop-block.com" target="_blank">Pop Block</a> wants to help users manage their content bubble, by allowing them to control content visibility while browsing the web. Blocking and hiding content is notably achieved through advertising blocking extensions, but the everyday web content we consume contains many more things we may not wish to see.
+        
+        By launching a customizable keyword blocker through browser extensions, Pop Block gives users the ability to control their engagement with content while browsing. This approach allows users to manage a list of keywords that synchronize wherever they have installed the extension.
+
+      press:
+        -
+          name:             The Creators Project
+          url:              http://thecreatorsproject.com/blog/get-rid-of-things-on-the-internet-you-dont-want-to-see-with-pop-block
+        -
+          name:             Animal New York
+          url:              http://animalnewyork.com/2012/block-everything-and-anyone-with-a-magical-blissful-ignorance-internet-plug-in/
+        -
+          name:             AUX.tv
+          url:              http://www.aux.tv/2012/12/remove-anything-you-want-from-your-browsing-experience-with-pop-block/
+        -
+          name:             MTV O Music Awards
+          url:              http://blog.omusicawards.com/2012/12/sick-of-gangnam-style-chris-brown-andor-drake-heres-the-solution/

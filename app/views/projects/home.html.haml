@@ -10,6 +10,11 @@
   %p= t('.copy')
 
 
+%h3 TMP, FOR TESTING PAGES
+%ul
+  - %w(what-color-is-the-internet wayback-wifi fffffartsy shaved-bieber pop-block greed twitter-fileshare dr-google ctrl-f-d fuckCAPTCHA projections-of-hurtsboro-identity will-paint-4-food).each do |page|
+    %li= link_to page.humanize.titleize, project_url(page)
+
 %hr
 
 %p

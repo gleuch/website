@@ -1,0 +1,35 @@
+en:
+  projects:
+    ctrl_f_d:
+      page_title:           "Ctrl+F'd"
+      meta:
+        description:        
+        keywords:           
+
+      heading:              "Ctrl+F'd"
+      subheading:           A playful experiment in "censoring" a web page by hiding text and images behind blocks.
+
+      statement: |
+        With recent mistakes by companies and organizations not knowing how to properly censor online documents, its easy to see why people believe the text they can't see can't be read. And with computer illiterate people like <a href="http://mediamatters.org/research/200902130016" target="_blank">Rush Limbaugh</a>, it is easy to befuddle them with the appearance of censored text on the web pages they commonly visit.
+        
+        Try it out on your fffffavorite web pages. Grab the bookmarklet below and drag into the bookmarklet bar (or right-click as 'Bookmark/Favorite this Link').
+
+      exhibitions:
+        - 
+          name:             Versions
+          place:            Netherlands Media Arts Institute
+          location:         Amsterdam, Netherlands
+          date:             Nov 2009
+        -
+          name:             Futurity Now!, transmediale.10
+          place:            Haus der Kulturen der Welt
+          location:         Berlin, Germany
+          date:             Feb 2010
+
+      press:
+        -
+          name:             Rhizome
+          url:              http://www.rhizome.org/editorial/2914
+        -
+          name:             PSFK
+          url:              http://www.psfk.com/2009/08/fat-fatlab-grl-graffitiresearchlab-internet-censorship-rush-limbaugh-china-twitte.html

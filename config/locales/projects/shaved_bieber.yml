@@ -1,0 +1,163 @@
+en:
+  projects:
+    shaved_bieber:
+      page_title:           Shaved Bieber
+      meta:
+        description:        
+        keywords:           
+
+      heading:              Shaved Bieber
+      subheading:           An innovative tool to clean up the lower regions of web pages from unwanted Justin Bieber mentions.
+
+      statement: |
+        Shaved Bieber is a JavaScript project converted into a browser bookmarklet and Firefox Add-on. This project, capitalizing on the success of Ctrl+F'd, and aims to provide tools to consumers to control, adapt, and modify the contents of the internet from their browser, allowing individuals them to hide content they choose not to see.
+        
+        Personal censorship is an emerging idea in response to government and business censorship; an approach to providing a free, open, and neutral web that can still be censored by the individual.
+        
+        The code is an adoption of the Ctrl+F'd project, modified so that only specific keyword matches are hidden from the user.
+
+      explanation: |
+        This piece began as a simple idea and has spurned a public outcry of polar views on technology, pop culture, and online messaging mediums. In two weeks time, the popularity of this piece has garnered over 100,000 video views, 85,000 blog views, hundreds of comments, multiple press mentions, and tens of thousands of tweets.
+        
+        After the piece began to grown in popularity, the hate mail and fan mail began to pour in through comments, tweets, and emails. Documentation of fan mail became important dialogical reminder of the effects of censorship, and the <a href="http://shavedbieber.tumblr.com/" target="_blank">Tumblr blog</a> was created for this documentation effort, from the accolades to the death threats.
+
+      exhibitions:
+        -
+          name:             FAT GOLD Europe
+          place:            MU
+          location:         Eindhoven, Netherlands
+          date:             Nov 2013
+        -
+          name:             'FAT GOLD: Five Years of Free Art & Technology'
+          place:            Eyebeam
+          location:         NYC
+          date:             Apr 2013
+        -
+          name:             "SPEED SHOW vol.4: 'Super Niche'"
+          place:            90 Bowery Internet Cafe
+          location:         NYC
+          date:             Oct 2010
+        -
+          name:             'SPEED SHOW vol.2: who the fuck do you think you are talking to?'
+          place:            Äussere Mariahilferstr. 178
+          location:         Vienna, Austria
+          date:             Jul 2010
+
+      awards:
+        -
+          name:             2010 Urlies
+          category:         "Peoples' Choice"
+          place:            URLesque
+
+      press:
+        -
+          name:             PopEater
+          url:              http://www.popeater.com/2010/05/28/shaved-bieber-justin-bieber-fan/
+        -
+          name:             Telegraph
+          url:              http://www.telegraph.co.uk/technology/twitter/7759457/Justin-Bieber-scrubbed-from-the-internet-by-new-Shaved-Bieber-browser-tool.html
+        -
+          name:             The Guardian
+          url:              http://www.guardian.co.uk/music/2010/may/27/justin-bieber-erased-internet
+        -
+          name:             Toronto Sun (Interview)
+          url:              http://www.torontosun.com/news/torontoandgta/2010/05/27/14157081.html
+        -
+          name:             Toronto Sun (Review)
+          url:              http://www.torontosun.com/entertainment/celebrities/2010/05/25/14085601.html
+        -
+          name:             Vanity Fair
+          url:              http://www.vanityfair.com/online/daily/2010/05/shaved-bieber-app-rids-the-internet-of-justin-bieber-but-whats-left.html
+        -
+          name:             Geekology
+          url:              http://www.geekosystem.com/justin-bieber-censor-app-shaved-bieber
+        -
+          name:             Nerdcore
+          url:              http://www.nerdcore.de/wp/2010/05/17/shave-bieber-justin-bieber-censorship-tool
+        -
+          name:             Urlesque
+          url:              http://www.urlesque.com/2010/05/21/shaved-bieber-firefox-add-on/
+        -
+          name:             Rocketboom
+          url:              http://www.rocketboom.com/news-5-27-10/
+        -
+          name:             Sydney Morning Herald
+          url:              http://www.smh.com.au/digital-life/digital-life-news/bieber-banished-from-the-web-with-new-tool-20100526-wc73.html
+        -
+          name:             News.com.au
+          url:              http://www.news.com.au/technology/shaved-bieber-lets-you-surf-the-web-without-seeing-canadian-teenypopper/story-e6frfro0-1225871615314
+        -
+          name:             Stuff.co.nz
+          url:              http://www.stuff.co.nz/technology/digital-living/3740817/Sick-of-Justin-Bieber-Remove-him/
+        -
+          name:             Gizmodo
+          url:              http://gizmodo.com/5547026/rid-the-internet-of-all-mentions-of-justin-bieber-with-a-firefox-add+on
+        -
+          name:             Gizmodo Australia
+          url:              http://www.gizmodo.com.au/2010/05/rid-the-internet-of-all-mentions-of-justin-bieber-with-a-firefox-add-on/
+        -
+          name:             CNET Australia
+          url:              http://www.cnet.com.au/bye-bye-bieber-339303437.htm
+        -
+          name:             CNET
+          url:              http://news.cnet.com/8301-13506_3-20005847-17.html
+        -
+          name:             National Post
+          url:              http://arts.nationalpost.com/2010/05/28/imagine-a-world-without-justin-bieber/
+        -
+          name:             Exclaim.ca
+          url:              http://www.exclaim.ca/articles/generalarticlesynopsfullart.aspx?csid1=115&amp;csid2=844&amp;fid1=46862
+        -
+          name:             CBC.ca
+          url:              http://www.cbc.ca/q/blog/2010/05/19/mio-on-the-down-lo-shaved-bieber/
+        -
+          name:             Europa Press (Estonian)
+          url:              http://www.europapress.es/chance/tendencias/noticia-elimina-justin-bieber-vida-20100528111150.html
+        -
+          name:             Perez Hilton
+          url:              http://perezhilton.com/2010-05-25-even-more-bieber-backlash
+        -
+          name:             MTV UK
+          url:              http://www.mtv.co.uk/artists/justin-bieber/news/222797-justin-bieber
+        -
+          name:             MTV Buzzworthy
+          url:              http://buzzworthy.mtv.com/2010/05/21/new-firefox-add-on-blocks-bieber-tough-week-for-justin/
+        -
+          name:             CANOE
+          url:              http://technology.canoe.ca/2010/05/25/14085536.html
+        -
+          name:             ZDNet
+          url:              http://www.zdnet.com/news/firefox-tool-erases-justin-bieber-from-web/427637
+        -
+          name:             US Post Today
+          url:              http://www.usposttoday.com/justin-bieber-scrubbed-from-the-internet-by-new-shaved-bieber-browser-tool/
+        -
+          name:             Courier Mail
+          url:              http://www.couriermail.com.au/entertainment/confidential/justin-bieber-fans-put-david-koch-on-most-hated-list/story-e6freq7o-1225872697645
+        -
+          name:             Metro.co.uk
+          url:              http://www.metro.co.uk/tech/828548-anti-justin-bieber-software-death-threats-for-programmer?utm_source=twitterfeed&amp;utm_medium=twitter
+        -
+          name:             Toronto Life
+          url:              http://www.torontolife.com/daily/hype/leave-it-to-bieber/2010/05/26/developers-attempt-to-remove-justin-bieber-from-internet/
+        -
+          name:             The Daily What
+          url:              http://thedailywh.at/post/610822687/firefox-addon-of-the-day-f-a-t-s-justin-bieber
+        -
+          name:             Geekophone (French)
+          url:              http://www.geekophone.fr/2010/05/26/bye-bye-justin-bieber/
+        -
+          name:             Be Geek (French)
+          url:              http://www.begeek.fr/supprimez-justin-bieber-de-votre-internet-11947
+        -
+          name:             Rolling Stone Brazil (Spanish)
+          url:              http://www.rollingstone.com.br/blog/2010/05/102/
+        -
+          name:             106.9 Virgin Radio Ottawa (Radio Interview)
+          url:              http://ottawa.virginradio.ca
+        -
+          name:             Art Fag City
+          url:              http://www.artfagcity.com/2012/04/27/c-r-e-a-m-review/2/
+        -
+          name:             Times of India
+          url:              http://m.timesofindia.com/life-style/people/How-to-block-annoying-celebs-online/articleshow/16821128.cms

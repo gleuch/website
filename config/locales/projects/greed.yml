@@ -1,0 +1,38 @@
+en:
+  projects:
+    greed:
+      page_title:           G.R.E.E.D.
+      meta:
+        description:        
+        keywords:           
+
+      heading:              G.R.E.E.D.
+      subheading:           Greed powers our economy through restrictive licensing deals and claims of copyright.
+
+      statement: |
+        Greed powers our economy through restrictive licensing deals and claims of copyright. What enables this demand is the ability to control access or demand incentives as compensation for their work. The Internet, built without these restrictions, is being threatened to include protections for licensed and copyrighted content.
+        
+        G.R.E.E.D. (Glom & Restrict Entities on Existing Domains) demonstrates how a web user's browsing experience and anonymity can be threatened through restrictions, take-downs, censorship, and monetary blackmail if such license and copyright restrictions are imposed on the Internet.
+
+      exhibitions:
+        -
+          name:             C.R.E.A.M.
+          place:            Art Micro Patronage
+          location:         Internet
+          date:             Apr 2012
+
+      presentations:
+        -
+          name:             Art Micro Patronage
+          type:             Virtual Presentation
+          date:             Apr 2012
+          url:              http://www.ustream.tv/recorded/22100570
+          url_text:         [Watch]
+
+      press:
+        -
+          name:             ARTInfo
+          url:              http://blogs.artinfo.com/artintheair/2012/04/09/internet-art-subverts-the-monetary-ecosystem-with-viruses-spyware-and-leaks/
+        -
+          name:             Art Fag City
+          url:              http://www.artfagcity.com/2012/04/27/c-r-e-a-m-review/

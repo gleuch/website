@@ -1,0 +1,17 @@
+- heading ||= t('.heading')
+- press ||= nil
+
+- unless press.blank?
+  %section#press
+    %h3= heading
+    %ul.project-press.list-unstyled
+      - press.each do |article|
+        - next if article.blank?
+        %li
+          = link_to article[:url], target: '_blank' do
+            %dl
+              - unless article[:name].blank?
+                %dt= article[:name]
+              - [:category, :place, :date].each do |type|
+                - next if article[type].blank?
+                %dd= article[type]

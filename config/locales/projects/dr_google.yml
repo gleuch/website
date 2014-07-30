@@ -1,0 +1,29 @@
+en:
+  projects:
+    dr_google:
+      page_title:           Dr. Google
+      meta:
+        description:        
+        keywords:           
+
+      heading:              Dr. Google
+      subheading:           Feeling sick? Not sure what you've come down with? Let Google diagnose you!
+
+      announcement: |
+        <em>UPDATE:</em> On October 1st, 2013, The Google Trademark team send FAT Lab a cease and desist letter on use of logo, trademark, and likeness of the site. To comply with the request, the Dr. Google site has been taken down and replaced with the contents of the C&D letter.
+
+      statement: |
+        In the digital age of instant access to information, searching for health information has become commonplace for millions, helping people self-diagnose their conditions before treatment or consultation from official medical personnel. While most people search for symptoms and cures for common ailments, many reports have surfaced of people relying too much on the web site results produced by Google. A search on Twitter for "Dr. Google" will show hundreds of tweets daily for people thanking the invisibile "Dr. Google" in their search for cures to their illnesses.
+        
+        Dr. Google spoofs the Google search interface by providing a one-click diagnostic result ("I'm Feeling Icky") to whatever search a person may have. These results are entirely fictitious and do not represent a true diagnosis, however, all viewers have the option for second opinions for their ailments.
+        
+        <em>(Not intended for actual medical consultation.)</em>
+      
+
+
+      exhibitions:
+        -
+          name:             Futurity Now!, transmediale.10
+          place:            Haus der Kulturen der Welt
+          location:         Berlin, Germany
+          date:             Feb 2010

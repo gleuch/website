@@ -1,0 +1,21 @@
+en:
+  projects:
+    wayback_wifi:
+      page_title:           Wayback WiFi
+      meta:
+        description:        
+        keywords:           
+
+      heading:              Wayback WiFi
+      subheading:           
+
+      statement:            TODO
+
+      explanation:          TODO
+
+      exhibitions:
+        -
+          name:             'Eyebeam Annual Showcase'
+          place:            'Eyebeam'
+          location:         'NYC'
+          date:             'Jan 2014'
