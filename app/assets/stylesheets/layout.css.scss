@@ -148,7 +148,7 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
   #nav-pullout { position: fixed; top: 55px; left: -$gleuch-xs-frame-padding; right: -$gleuch-xs-frame-padding; bottom: 100%; width: auto; overflow: scroll; max-height: 0; padding: 0 (2 * $gleuch-xs-frame-padding); max-width: none; background-color: rgba($gleuch-grey-bg,.9); box-shadow: inset 0 0 18px rgba($gleuch-black, 0.12); @include transition(bottom .3s ease-out, max-height .3s ease-out);
     body.nav-open & {bottom: 0; max-height: 100%; left: -$gleuch-xs-frame-padding;}
     #menu-items {padding: 15px 0;
-      li {display: block; border-top: 1px solid rgba($gleuch-black,.05); text-align: center; opacity: 0; @include transition(opacity .3s .1s ease-out);
+      li {display: block; padding: 0; border-top: 1px solid rgba($gleuch-black,.05); text-align: center; opacity: 0; @include transition(opacity .3s .1s ease-out);
         body.nav-open & {opacity: 1;}
         &:first-child {border-top: none;}
         a {text-transform: uppercase; display: block; font-size: 1.8rem; line-height: 1.0em; padding: 12px 0; color: $gleuch-text-grey; font-weight: 600;
