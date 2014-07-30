@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6, strong, b, th, dt {font-weight: 600; color: $gleuch-mid-
 }
 p, div, li, td, dd {color: $gleuch-text-grey;}
 a {color: darken($gleuch-logo, 5%); @include transition(color .2s ease-out);
-  &:focus, &:hover {color: $gleuch-text-grey; text-decoration: none;}
+  &:focus, &:hover {color: $gleuch-mid-black; text-decoration: none;}
 }
 
 body ::selection {background: rgba($gleuch-mid-black,.24);}

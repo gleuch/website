@@ -1,8 +1,11 @@
 // ABOUT PAGE
 .page-about {
   #upper-container {
-    .feature-item {position: relative; padding-top: 40.5%;
-      .feature-content {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba($gleuch-black,.05);}
+    .feature-item {position: relative; padding-top: 40%;
+      .feature-content {position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; background: rgba($gleuch-black,.05);
+        img, video {width: 100%; height: auto; display: block;}
+        video {background: #ff0;}
+      }
     }
   }
   .intro-box { position: absolute; z-index: 20; left: 25px; bottom: 100%; margin-bottom: -94px; width: 375px; padding: 30px 30px 170px 30px; background-color: rgba($gleuch-mid-black,.6);
@@ -30,9 +33,9 @@
     & + hr {margin: 45px 30px 30px; height: 15px; border-width: 15px; border-color: transparent; background: $gleuch-text-grey;}
   }
 
-  #info-list {
-    section {padding: 15px 30px; margin: 0 30px 15px 30px; background-color: $gleuch-white;
-      h3 {padding: 0 0 5px 0; margin: 0;}
+  #info-list {padding: 0 0 15px 0;
+    section {padding: 25px 30px; margin: 0 30px 15px 30px; background-color: $gleuch-white;
+      h3 {padding: 0 0 10px 0; margin: 0;}
       .item {padding-bottom: 5px;}
     }
   }
@@ -47,6 +50,13 @@
 
   // MOBILE
   @media ($mobile-max-size) {
+    #upper-container {
+      .feature-item {
+        .feature-content {
+          img {width: 100%; height: auto; display: block;}
+        }
+      }
+    }
     .intro-box { padding: 0; margin-bottom: -75px; left: 0;
       h1 {font-size: 2.0rem; padding: 15px; top: auto; left: -$gleuch-xs-frame-padding; width: auto;}
     }

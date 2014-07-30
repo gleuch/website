@@ -28,6 +28,7 @@ en:
         favorited_tweets:   'Favorited tweets'
         miles:              'Miles flown this year'
         allnighters:        'All-nighters pulled'
+        c_and_ds:           'Cease & desists received'
 
       info:
         link:               'Link'

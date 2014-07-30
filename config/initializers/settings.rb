@@ -17,6 +17,7 @@ begin
   Setting.stats_favorited_tweets  ||= 0
   Setting.stats_tweets            ||= 0
   Setting.stats_all_nighters      ||= 0
+  Setting.stats_c_and_ds          = 2
 
 
 rescue => err

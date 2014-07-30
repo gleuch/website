@@ -40,8 +40,8 @@ namespace :social_stats do
         end
       end
 
-      Setting.stats_github_repos = repos_ct
-      Setting.stats_github_commits = commits_ct
+      Setting.stats_github_repos = [repos_ct, Setting.stats_github_repos].max
+      Setting.stats_github_commits = [commits_ct, Setting.stats_github_commits].max
 
       puts "","","Congrats! You've commited #{Setting.stats_github_commits} times into #{Setting.stats_github_repos} repos.",""
     end
@@ -58,8 +58,8 @@ namespace :social_stats do
 
       begin
         user = @twitter.user(username)
-        Setting.stats_tweets = user.statuses_count || 0
-        Setting.stats_favorited_tweets = user.favorites_count || 0
+        Setting.stats_tweets = [user.statuses_count || 0, Setting.stats_tweets].max
+        Setting.stats_favorited_tweets = [user.favorites_count || 0, Setting.stats_favorited_tweets].max
       rescue => err
         puts "ERROR: Unable to fetch Twitter info. #{err}"
       end

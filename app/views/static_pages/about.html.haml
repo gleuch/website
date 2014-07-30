@@ -26,9 +26,13 @@
     .feature-item
       .feature-content
         .hidden-xs
-          [VIDEO]
+          %video
+            - # We do not want to keep videos in the repo, so these are hosted on CDN.
+            / %source{src: '', type: "video/mp4"}
+            / %source{src: '', type: "video/ogg"}
+            = image_tag 'static_pages/about/me_mobile.png', title: '', alt: '' # Unsupported video
         .visible-xs-block
-          [IMG]
+          = image_tag 'static_pages/about/me_mobile.png', title: '', alt: ''
 
 - # Page Content
 %article
@@ -50,8 +54,9 @@
       - stats[:github] = {setting: :stats_github_commits, url: github_url}
       - #stats[:tweets] = {setting: :stats_tweets, url: twitter_url}
       - stats[:favorited_tweets] = {setting: :stats_favorited_tweets, url: twitter_favorites_url}
-      - stats[:miles] = {setting: :stats_miles_flown}
-      - stats[:allnighters] = {setting: :stats_all_nighters}
+      - #stats[:miles] = {setting: :stats_miles_flown}
+      - #stats[:allnighters] = {setting: :stats_all_nighters}
+      - stats[:c_and_ds] = {setting: :stats_c_and_ds}
 
       - stats.each do |stat,val|
         - num = Setting.send(val[:setting]) || 0
