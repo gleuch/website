@@ -7,6 +7,8 @@ module TablelessPageable
     has_no_table database: :pretend_success
     column :id, :string
 
+    alias_method :slug, :id
+
   end
 
 

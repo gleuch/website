@@ -8,6 +8,7 @@ module Pageable
 
   attr_accessor :view_path, :format
 
+
   def initialize(*args)
     set_options(*args)
     super

@@ -1,0 +1,24 @@
+- heading ||= t('projects.headings.presentations')
+- presentations ||= nil
+- presentations.reject!(&:blank?)
+
+- unless presentations.blank?
+  %section#presentations
+    %h3= heading
+    .row
+      - presentations.each_with_index do |presentation,i|
+        %dl.col-md-3.col-sm-4.col-xs-6
+          - unless presentation[:name].blank?
+            %dt= presentation[:name]
+          - [:category, :place, :date].each do |type|
+            - next if presentation[type].blank?
+            %dd= presentation[type]
+
+        - if (i+1) % 4 == 0
+          .clearfix.visible-md-block.visible-lg-block
+        - if (i+1) % 3 == 0
+          .clearfix.visible-sm-block
+        - if (i+1) % 2 == 0
+          .clearfix.visible-xs-block
+
+      .clearfix

@@ -1,16 +1,24 @@
-- heading ||= t('.heading')
+- heading ||= t('projects.headings.exhibitions')
 - exhibitions ||= nil
+- exhibitions.reject!(&:blank?)
 
 - unless exhibitions.blank?
   %section#exhibitions
     %h3= heading
-    %ul.project-exhibitions.list-unstyled
-      - exhibitions.each do |exhibition|
-        - next if exhibition.blank?
-        %li
-          %dl
-            - unless exhibition[:name].blank?
-              %dt= exhibition[:name]
-            - [:place, :location, :date].each do |type|
-              - next if exhibition[type].blank?
-              %dd= exhibition[type]
+    .row
+      - exhibitions.each_with_index do |exhibition,i|
+        %dl.col-md-3.col-sm-4.col-xs-6
+          - unless exhibition[:name].blank?
+            %dt= exhibition[:name]
+          - [:place, :location, :date].each do |type|
+            - next if exhibition[type].blank?
+            %dd.hidden-xs= exhibition[type]
+
+        - if (i+1) % 4 == 0
+          .clearfix.visible-md-block.visible-lg-block
+        - if (i+1) % 3 == 0
+          .clearfix.visible-sm-block
+        - if (i+1) % 2 == 0
+          .clearfix.visible-xs-block
+
+      .clearfix

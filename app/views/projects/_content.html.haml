@@ -1,0 +1,54 @@
+- subheading ||= nil
+- statement ||= nil
+- explanation ||= nil
+- content_rails ||= nil
+- share_link ||= nil
+- website_link ||= nil
+- github_link ||= nil
+
+.container-fluid
+  - unless subheading.blank?
+    %section#description.col-md-8.col-xs-12
+      %h2= subheading
+
+  - if website_link.present? || github_link.present? || share_link.present?
+    #project-links.col-md-4.col-xs-12.pull-right
+      - if website_link.present? || github_link.present?
+        %ul.link-buttons.list-unstyled.pull-left
+          %li [LINK]
+      - unless share_link.blank?
+        %ul.share-buttons.list-unstyled.pull-right
+          %li
+            [fb]
+          %li
+            [tw]
+          %li
+            [...]
+        .clearfix
+
+  #project-info.col-md-8.col-xs-12
+    - unless statement.blank?
+      %section#statement.feature-box
+        %h3= t('projects.headings.statement')
+        = simple_format( statement )
+
+    - unless explanation.blank?
+      %section#explanation
+        %h3= t('projects.headings.explanation')
+        = simple_format( explanation )
+
+  - unless content_rails.blank?
+    #project-details.col-md-4.col-xs-12
+      .row
+        - content_rails.each do |col|
+          - next if col.blank?
+          .col-md-6.col-xs-12
+            - col = [col] unless col.is_a?(Array)
+            - col.each do |box|
+              - unless box[:title].blank?
+                %h4= box[:title]
+              - unless box[:content].blank?
+                = simple_format(box[:content])
+              - unless box[:content_html].blank?
+                = box[:content_html].html_safe
+          

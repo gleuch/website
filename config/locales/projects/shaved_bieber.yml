@@ -21,6 +21,24 @@ en:
         
         After the piece began to grown in popularity, the hate mail and fan mail began to pour in through comments, tweets, and emails. Documentation of fan mail became important dialogical reminder of the effects of censorship, and the <a href="http://shavedbieber.tumblr.com/" target="_blank">Tumblr blog</a> was created for this documentation effort, from the accolades to the death threats.
 
+      content_rails:
+        - # Column 1
+          -
+            content: |
+              Fan mail blog can be found at <a href="http://shavedbieber.tumblr.com" target="_blank">here</a>.
+            
+              Special thanks to <a href="http://twitter.com/straythenomad" target="_blank">Chris Menning</a>, <a href="http://jamiedubs.com" target="_blank">Jamie Wilkinson</a>, <a href="https://github.com/infragoblin" target="_blank">Zen Lin</a>, and <a href="http://www.youtube.com/watch?v=We-fpnZy_jw" target="_blank">J Bigga</a>.
+            
+              Released under <a href="http://creativecommons.org/licenses/MIT" target="_blank">MIT License</a>.
+        - # Column 2
+          -
+            title:            Download
+            content_html: |
+              <ul>
+                <li><a href="https://chrome.google.com/extensions/detail/hohkcfiapflpfbfpjeahdfbmhpmbhcod" target="_blank">Chrome</a></li>
+                <li><a href="http://assets.gleuch.com/projects/shaved-bieber/master.xpi" target="_blank">Firefox</a></li>
+              </ul>
+
       exhibitions:
         -
           name:             FAT GOLD Europe

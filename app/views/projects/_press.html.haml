@@ -1,17 +1,25 @@
-- heading ||= t('.heading')
+- heading ||= t('projects.headings.press')
 - press ||= nil
+- press.reject!(&:blank?)
 
 - unless press.blank?
   %section#press
     %h3= heading
-    %ul.project-press.list-unstyled
-      - press.each do |article|
-        - next if article.blank?
-        %li
-          = link_to article[:url], target: '_blank' do
-            %dl
-              - unless article[:name].blank?
-                %dt= article[:name]
-              - [:category, :place, :date].each do |type|
-                - next if article[type].blank?
-                %dd= article[type]
+    .row
+      - press.each_with_index do |article,i|
+        = link_to article[:url], class: 'col-md-3 col-sm-4 col-xs-6', target: '_blank' do
+          %dl
+            - unless article[:name].blank?
+              %dt= article[:name]
+            - [:category, :place, :date].each do |type|
+              - next if article[type].blank?
+              %dd.hidden-xs= article[type]
+
+        - if (i+1) % 4 == 0
+          .clearfix.visible-md-block.visible-lg-block
+        - if (i+1) % 3 == 0
+          .clearfix.visible-sm-block
+        - if (i+1) % 2 == 0
+          .clearfix.visible-xs-block
+
+      .clearfix

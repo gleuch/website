@@ -9,13 +9,22 @@
 
 - # Carousel Images
 - carousel_images = []
-- carousel_images << {img: image_tag('projects/shaved-bieber/carousel-1.jpg', alt: ''), caption: t('.carousel.captions')[0]}
-- carousel_images << {img: image_tag('projects/shaved-bieber/carousel-2.jpg', alt: ''), caption: t('.carousel.captions')[1]}
+- carousel_images << {vimeo: 'http://player.vimeo.com/video/11800814'}
+- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-1.jpg', alt: ''), caption: t('.carousel.captions')[0]}
+- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-2.jpg', alt: ''), caption: t('.carousel.captions')[1]}
 
 
 - # Page Content
+- content_opts = {}
+- content_opts[:subheading] = t('.subheading', default: '')
+- content_opts[:statement] = t('.statement')
+- content_opts[:explanation] = t('.explanation')
+- content_opts[:content_rails] = t('.content_rails', default: '')
+- content_opts[:share_link] = @canonical_url
+
 %article
-  = render 'projects/intro_area', heading: t('.heading'), subheading: t('.subheading'), carousel_images: carousel_images
+  = render 'projects/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images
+  = render 'projects/content', content_opts
   = render 'projects/exhibitions', exhibitions: t('.exhibitions')
   = render 'projects/awards', awards: t('.awards')
   = render 'projects/press', press: t('.press')

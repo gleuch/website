@@ -15,6 +15,11 @@ en:
 
       exhibitions:
         -
+          name:             'NYC Resistor Interactive Show'
+          place:            'NYC Resistor'
+          location:         'NYC'
+          date:             'Jul 2013'
+        -
           name:             'Eyebeam Annual Showcase'
           place:            'Eyebeam'
           location:         'NYC'

@@ -1,11 +1,22 @@
 en:
   projects:
+    # Common headings
+    headings:
+      statement:          'Statement'
+      explanation:        'Explanation'
+      presentations:      'Presentations'
+      awards:             'Awards'
+      press:              'Press'
+      exhibitions:        'Exhibitions'
+
+    # Project index
     home:
       page_title:           'Projects'
       title:                'Projects'
       copy:                 'Creative & artistic projects combining technology and design.'
       list:                 'View list of all projects'
 
+    # Project full list
     all:
       page_title:           'Projects List'
       meta:
@@ -16,12 +27,11 @@ en:
       copy:                 'No matter the size, tinkering on new projects keeps one active and sharp, and all deserve a little recognition.'
 
 
-    # INDIVIDUL PROJECTS ARE SAVED INTO THEIR OWN .yml FILES
-
-    awards:
-      heading:              'Awards'
-    exhibitions:
-      heading:              'Exhibitions'
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
+    #         INDIVIDUL PROJECTS ARE SAVED INTO THEIR OWN .yml FILES
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
     # Full list of projects, by year
     full_list:

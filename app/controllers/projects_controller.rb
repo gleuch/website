@@ -2,6 +2,7 @@ class ProjectsController < ApplicationController
 
   before_filter :load_resource, only: [:show]
   before_filter :projects_init
+  before_filter :project_init, only: [:show]
 
 
   def index
@@ -27,6 +28,10 @@ protected
   def projects_init
     @section, @page_meta_type = :projects, :project
     @breadcrumbs << {name: t('breadcrumbs.projects'), url: projects_url}
+  end
+
+  def project_init
+    @canonical_url = project_url(@project.slug)
   end
 
   def load_resource(*args)

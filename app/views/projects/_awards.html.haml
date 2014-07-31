@@ -1,16 +1,24 @@
-- heading ||= t('.heading')
+- heading ||= t('projects.headings.awards')
 - awards ||= nil
+- awards.reject!(&:blank?)
 
 - unless awards.blank?
   %section#awards
     %h3= heading
-    %ul.project-awards.list-unstyled
-      - awards.each do |award|
-        - next if award.blank?
-        %li
-          %dl
-            - unless award[:name].blank?
-              %dt= award[:name]
-            - [:category, :place, :date].each do |type|
-              - next if award[type].blank?
-              %dd= award[type]
+    .row
+      - awards.each_with_index do |award,i|
+        %dl.col-md-3.col-sm-4.col-xs-6
+          - unless award[:name].blank?
+            %dt= award[:name]
+          - [:category, :place, :date].each do |type|
+            - next if award[type].blank?
+            %dd= award[type]
+
+        - if (i+1) % 4 == 0
+          .clearfix.visible-md-block.visible-lg-block
+        - if (i+1) % 3 == 0
+          .clearfix.visible-sm-block
+        - if (i+1) % 2 == 0
+          .clearfix.visible-xs-block
+
+      .clearfix
