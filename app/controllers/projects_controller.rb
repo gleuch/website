@@ -31,7 +31,8 @@ protected
   end
 
   def project_init
-    @canonical_url = project_url(@project.slug)
+    @body_classes << 'project'
+    @canonical_url = project_url(@project.slug, host: 'gleu.ch', port: nil)
   end
 
   def load_resource(*args)

@@ -21,6 +21,7 @@
 - content_opts[:explanation] = t('.explanation')
 - content_opts[:content_rails] = t('.content_rails', default: '')
 - content_opts[:share_link] = @canonical_url
+- content_opts[:github_link] = 'https://github.com/gleuch/shaved-bieber'
 
 %article
   = render 'projects/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images

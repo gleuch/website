@@ -2,6 +2,8 @@
 - statement ||= nil
 - explanation ||= nil
 - content_rails ||= nil
+- share_text ||= nil
+- share_text = @page_title if share_text.blank?
 - share_link ||= nil
 - website_link ||= nil
 - github_link ||= nil
@@ -15,15 +17,28 @@
     #project-links.col-md-4.col-xs-12.pull-right
       - if website_link.present? || github_link.present?
         %ul.link-buttons.list-unstyled.pull-left
-          %li [LINK]
+          - unless website_link.blank?
+            %li
+              = link_to website_link, target: '_blank', class: 'btn btn-website' do
+                %i.icon-site-link
+                = t('.buttons.visit_site')
+          - unless github_link.blank?
+            %li
+              = link_to github_link, target: '_blank', class: 'btn btn-website' do
+                %span.socialicon.socialicon-github
+
       - unless share_link.blank?
         %ul.share-buttons.list-unstyled.pull-right
           %li
-            [fb]
+            - facebook_params = {href: share_link, redirect_uri: share_link, app_id: Setting.facebook_app_id, display: :popup}
+            = link_to "https://www.facebook.com/dialog/share?#{facebook_params.to_param}" do
+              .socialicon.socialicon-facebook
           %li
-            [tw]
+            - twitter_params = {url: share_link, text: share_text, related: t(:twitter_name)}
+            = link_to "https://twitter.com/intent/tweet?#{twitter_params.to_param}" do
+              .socialicon.socialicon-twitter
           %li
-            [...]
+            &hellip;
         .clearfix
 
   #project-info.col-md-8.col-xs-12
