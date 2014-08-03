@@ -14,13 +14,28 @@
 
 
 - # Page Content
+- content_opts = {}
+- content_opts[:subheading] = t('.subheading', default: '')
+- content_opts[:statement] = t('.statement')
+- content_opts[:explanation] = t('.explanation')
+- content_opts[:content_rails] = t('.content_rails', default: '')
+- content_opts[:share_link] = @canonical_url
+- content_opts[:github_link] = 'http://github.com/gleuch/fuckCAPTCHA'
+
+- # Example of fuckCAPTCHA
+- (content_opts[:examples] ||= []) << capture_haml do
+  .captcha-area
+    - # TODO : CONVERT TO SSL BY HOSTING ON SITE
+    %script{type: 'text/javascript', src: 'http://fffff.at/widgets/fuckCAPTCHA/fuckCAPTCHA.js'}
+    %script{type: 'text/javascript'} if (FATLab_fuckCAPTCHA) {FATLab_fuckCAPTCHA.Values.Theme='default'; FATLab_fuckCAPTCHA.Make();}
+
+  :css
+    .captcha-area, .captcha-area > div {text-align: center;}
+    .captcha-area .fuckCAPTCHA {text-align: center; margin: 0 auto; display: inline-block;}
+
+
+
 %article
   = render 'projects/intro_area', heading: t('.heading'), carousel_images: carousel_images
-
-  %h3 EXAMPLE
-  - # TODO : CONVERT TO SSL BY HOSTING ON SITE
-  %script{type: 'text/javascript', src: 'http://fffff.at/widgets/fuckCAPTCHA/fuckCAPTCHA.js'}
-  %script{type: 'text/javascript'} if (FATLab_fuckCAPTCHA) {FATLab_fuckCAPTCHA.Values.Theme='default'; FATLab_fuckCAPTCHA.Make();}
-
+  = render 'projects/content', content_opts
   = render 'projects/exhibitions', exhibitions: t('.exhibitions')
-  = #render 'projects/awards', awards: t('.awards')

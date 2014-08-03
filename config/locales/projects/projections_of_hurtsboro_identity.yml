@@ -1,0 +1,54 @@
+en:
+  projects:
+    projections_of_hurtsboro_identity:
+      page_title:           Projections of Hurtsboro Identity
+      meta:
+        description:        
+        keywords:           
+
+      heading:              Projections of Hurtsboro Identity
+      subheading:           An innovative tool to clean up the lower regions of web pages from unwanted Justin Bieber mentions.
+
+      statement: |
+        Collective identity of a small town can be difficulty to describe. Often the past, present, or future defines a place and those who live in it, with or without their consent. By interviewing community members and discussing the town identity of Hurtsboro, Alabama, there is hope to establish an even stronger sense of community by finding common ground among the inhabitants.
+        
+        Much of the identity of a place resides in the people who live there. By illuminating the history with a street art-based event in which members of the town used projected lasers to make drawings on buildings, the event created a bond in which people were able to express themselves in a public forum under the pretext of creativity and play. The documentation video and photographic slide show shared with the public expands the dialogue to people outside the community in order to facilitate connections between beliefs and understandings of Hurtsboro, uncover the identity of a small town, and help form ideas for the future.
+
+      explanation: |
+        Projections of Hurtsboro Identity was a collaboration between Amanda Foran and myself as a student project for Auburn University. The Community Arts special topics course, taught by visiting professor Suzanne Hagood, was given the task of exploring and practicing relational art-making and new genre public art, with the goal of developing understanding of Russell County, Alabama, and to work closely with the community to design and help make the artworks. Russell County is part the Black Belt, and made up of small communities facing the challenges of rural decline, an under-financed education system, and high unemployment.
+        
+        Amanda and I wanted to bring something unique to the town of Hurtsboro, Alabama (popl. 592) by giving the chance for residents to creatively express themselves and their views "out loud" with members of their community. After much thought and research, we stumbled upon <a href="http://graffitiresearchlab.com/?page_id=76" target="_blank">L.A.S.E.R Tag</a> by the Graffiti Research Lab. Noting that the G.R.L. uses its projection system to allow graffiti writers to create large, innocuous works, we determined this system would be the best method to allow the citizens of Hurtsboro the unique, out-loud experience we desired to create.
+        
+        We performed our piece on the main downtown strip of Hurtsboro on Sat, April 19 2007, in combination with an art exhibition by other members of the class and a large town performance event put together by the local arts council.
+        
+        Amanda and I also took the project to the 4-H Club in Phenix City, Alabama and demonstrated the project at the Coleman Arts Center in York, Alabama.
+
+      content_rails:
+        - # Column 1
+          -
+            content:          A collaboration with Amanda Foran. 2008
+        - # Column 2
+          -
+            title:            More Information
+            content_html: |
+              <dl class="list-unstyled">
+                <dd><a href="http://en.wikipedia.org/wiki/Russell_County,_Alabama" target="_blank">About Russell Co, Alabama</a></dd>
+                <dd><a href="http://maps.google.com/maps?q=hurtsboro,+al&ie=UTF8&oe=utf-8&ll=32.305706,-85.501099&spn=1.339432,2.790527&z=9" target="_blank">Map of Hurtsboro, Alabama</a></dd>
+              </dl>
+
+      exhibitions:
+        -
+          name:             Community Collaborations Invitational Exhibition
+          place:            Coleman Arts Center
+          location:         York, AL
+          date:             Jul 2008
+        -
+          name:             '"Russell County Community Art Collaborators" Student Exhibition'
+          place:            Jule Collins Smith Museum
+          location:         Auburn, AL
+          date:             May 2008
+
+      press:
+        -
+          name:             AU Newsmakers
+          url:              http://www.ocm.auburn.edu/newsmakers/hurtsboro_art/index.html

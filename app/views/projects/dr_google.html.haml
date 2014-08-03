@@ -14,8 +14,16 @@
 
 
 - # Page Content
+- content_opts = {}
+- content_opts[:subheading] = t('.subheading', default: '')
+- content_opts[:statement] = t('.statement')
+- content_opts[:content_rails] = t('.content_rails', default: '')
+- content_opts[:share_link] = @canonical_url
+- content_opts[:website_link] = 'http://fffff.at/dr-google'
+- content_opts[:github_link] = 'http://github.com/gleuch/Dr.-Google'
+
 %article
-  = render 'projects/intro_area', heading: t('.heading'), carousel_images: carousel_images
-  %section#announcement
-    = simple_format( t('.announcement') )
+  = render 'projects/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images
+  %section#announcement= simple_format( t('.announcement') )
+  = render 'projects/content', content_opts
   = render 'projects/exhibitions', exhibitions: t('.exhibitions')

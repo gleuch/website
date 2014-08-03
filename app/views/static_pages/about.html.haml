@@ -51,7 +51,7 @@
     %aside#biography_stats.hidden-xs
       - stats = {}
 
-      - stats[:github] = {setting: :stats_github_commits, url: github_url}
+      - stats[:github] = {setting: :stats_github_commits, url: github_url, stat_count: Setting.stats_github_repos}
       - #stats[:tweets] = {setting: :stats_tweets, url: twitter_url}
       - stats[:favorited_tweets] = {setting: :stats_favorited_tweets, url: twitter_favorites_url}
       - #stats[:miles] = {setting: :stats_miles_flown}
@@ -63,7 +63,7 @@
         = content_tag((val[:url].present? ? :a : :div), (val[:url].present? ? {href: val[:url], target: '_blank'} : nil) ) do
           %dl
             %dt= number_to_human(num, precision: 1, significant: false, units: :short_count, format: '%n%u')
-            %dd{'data-stat-value' => "#{number_with_delimiter(num)} #{stat}"}= t(".bio_stats.#{stat}")
+            %dd{'data-stat-value' => "#{number_with_delimiter(num)} #{stat}"}= t(".bio_stats.#{stat}", count: val[:stat_count])
 
   %hr
 

@@ -21,6 +21,12 @@ en:
 
         <strong>Includes hearing impared audio captchas!</strong>
 
+      content_rails:
+        - # Column 1
+          -
+            content: |
+              A project from the <a href="http://fffff.at/fuck-google/" target="_blank">"Fuck Google"</a> collaboration by <a href="http://fffff.at">Free Art & Technology Lab (F.A.T. Lab)</a> at <a href="http://www.transmediale.de/en/free-art-and-technology-lab-ft-lab" target="_blank">transmediale.10</a>.
+
       exhibitions:
         -
           name:             Futurity Now!, transmediale.10

@@ -14,7 +14,15 @@
 
 
 - # Page Content
+- content_opts = {}
+- content_opts[:subheading] = t('.subheading', default: '')
+- content_opts[:statement] = t('.statement')
+- content_opts[:content_rails] = t('.content_rails', default: '')
+- content_opts[:share_link] = @canonical_url
+- content_opts[:github_link] = 'https://www.github.com/gleuch/ctrl-f-d'
+
 %article
-  = render 'projects/intro_area', heading: t('.heading'), carousel_images: carousel_images
-  = #render 'projects/exhibitions', exhibitions: t('.exhibitions')
-  = #render 'projects/awards', awards: t('.awards')
+  = render 'projects/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images
+  = render 'projects/content', content_opts
+  = render 'projects/exhibitions', exhibitions: t('.exhibitions')
+  = render 'projects/press', press: t('.press')

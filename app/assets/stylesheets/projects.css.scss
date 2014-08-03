@@ -11,7 +11,7 @@
       .item {
         .item-container {position: relative; padding-top: 46%;
           .item-content {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-position: center center; background-repeat: no-repeat; background-size: cover;
-            &.video iframe {display: block; background: $gleuch-black; margin: 0; padding: 30px 30px 68px 30px; width: 100%; height: 100%;}
+            &.video iframe {display: block; background: $gleuch-grey-bg; margin: 0; padding: 30px 30px 68px 30px; width: 100%; height: 100%;}
           }
         }
         .carousel-caption {display: none;}
@@ -21,21 +21,32 @@
     &.no-carousel {min-height: 72px;}
   }
 
+  #announcement { background-color: $gleuch-mid-grey-bg; padding: 30px 30px; margin: 15px -15px; font-weight: 500; border-bottom: 5px solid rgba($gleuch-mid-black,.12);
+    p { padding: 8px 0 0 0; margin: 0; color: $gleuch-mid-black; font-size: 1.8rem; line-height: 1.33em;
+      em {font-style: normal; font-weight: 700; display: inline-block; color: $gleuch-white; background-color: $gleuch-mid-black; padding: 3px 8px; margin: -3px 2px -3px 0; line-height: 1em; overflow: visible;}
+      &:first-child {padding-top: 0;}
+    }
+  }
+
   #description { padding: 15px 0;
     h2 {font-weight: 500; color: $gleuch-mid-black; font-size: 2.6rem; line-height: 1.23em; margin: 0; padding: 0;}
   }
 
-  #statement {margin: 15px 0 30px -30px; padding: 30px 30px 22px 30px; background-color: $gleuch-white;
+  #statement, #examples {margin: 15px 0 30px -30px; padding: 30px 30px 22px 30px; background-color: $gleuch-white;}
+
+  #statement {
     h3 {display: none;}
     p {font-size: 1.7rem; line-height: 1.41em; padding: 0 0 8px 0;}
+    & + #examples {margin-top: -30px; padding-top: 0;}
   }
+
 
   @media ($tablet-max-size) {
   
   }
 
   @media ($mobile-max-size) {
-    #intro-area { min-height: 0; margin: 0 -$gleuch-xs-frame-padding; margin-bottom: 50px;
+    #intro-area { min-height: 0; margin-left: -$gleuch-xs-frame-padding; margin-right: -$gleuch-xs-frame-padding; margin-bottom: 50px;
       .intro-box {
         h1 {bottom: -50px; font-size: 2.0rem; padding: 15px; left: 0; margin-right: $gleuch-xs-frame-padding; white-space: pre-word;}
         & + hr {bottom: -50px; height: 50px;}
@@ -51,6 +62,9 @@
     }
     #description {
       h2 {font-size: 1.8rem;}
+    }
+    #announcement {margin-left: -$gleuch-xs-frame-padding; margin-right: -$gleuch-xs-frame-padding; padding: 25px $gleuch-xs-frame-padding;
+      p {font-size: 1.4rem; line-height: 1.5em;}
     }
   }
 }

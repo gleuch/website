@@ -1,5 +1,6 @@
 - subheading ||= nil
 - statement ||= nil
+- examples ||= []
 - explanation ||= nil
 - content_rails ||= nil
 - share_text ||= nil
@@ -46,6 +47,11 @@
       %section#statement.feature-box
         %h3= t('projects.headings.statement')
         = simple_format( statement )
+
+    - unless examples.blank?
+      %section#examples.feature-box
+        - examples.each do |example|
+          .example-area= example
 
     - unless explanation.blank?
       %section#explanation

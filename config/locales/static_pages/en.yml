@@ -23,7 +23,7 @@ en:
         
         He currently resides in Brooklyn, NY.
       bio_stats:
-        github:             'Commits on Github'
+        github:             'Git commits in %{count}+ repos'
         tweets:             'Tweets'
         favorited_tweets:   'Favorited tweets'
         miles:              'Miles flown this year'
