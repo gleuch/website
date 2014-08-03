@@ -4,11 +4,9 @@ namespace :social_stats do
     time_start = Time.now
     tokens = YAML.load_file(File.join(Rails.root, 'config', 'secrets.yml'))[Rails.env].symbolize_keys rescue nil
 
-
     # GITHUB
     if tokens[:github].present?
       puts "", "GITHUB"
-      repos_ct, commits_ct = 0, 0
       username = tokens[:github]['username']
 
       lists = []
@@ -26,22 +24,23 @@ namespace :social_stats do
         @github.repos.list(list.merge(type: :all, auto_pagination: true)).each do |repo|
           begin
             repo_user, repo_name = repo.full_name.split('/')
-
             @github.repos.stats.contributors(type: :all, auto_pagination: true, user: repo_user, repo: repo_name).each do |contrib|
               next unless contrib.author.login == username
               puts "#{repo.full_name}: #{contrib.total}"
-              commits_ct += contrib.total
-            end
 
+              name, ct = repo.full_name, [Setting.stats_github_repo_list[repo.full_name] || 0, contrib.total].max
+              Setting.merge!(:stats_github_repo_list, name => ct)
+            end
             repos_ct += 1
+
           rescue => err
             "ERROR: Unable to access #{repo.name}. #{err}"
           end
         end
       end
 
-      Setting.stats_github_repos = [repos_ct, Setting.stats_github_repos].max
-      Setting.stats_github_commits = [commits_ct, Setting.stats_github_commits].max
+      Setting.stats_github_repos = [Setting.stats_github_repo_list.keys.count, Setting.stats_github_repos].max
+      Setting.stats_github_commits = [Setting.stats_github_repo_list.values.sum, Setting.stats_github_commits].max
 
       puts "","","Congrats! You've commited #{Setting.stats_github_commits} times into #{Setting.stats_github_repos} repos.",""
     end

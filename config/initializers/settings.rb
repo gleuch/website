@@ -11,6 +11,17 @@ begin
   Setting.facebook_app_id = ''
 
   # Personal Stats
+  Setting.stats_github_repo_list  ||= {
+    'rocketboom/magma'              => 1534,
+    'rocketboom/knowyourmeme'       => 880,
+    'buzzfeed/browser_extension'    => 113,
+    'buzzfeed/anyone_say_search'    => 3,
+    'buzzfeed/ga-tool'              => 16,
+    'buzzfeed/buzzfeed'             => 364,
+    'jess3/oil-plugin'              => 11,
+    'jess3/exblocker'               => 39,
+    'jess3/zagat_trucks'            => 103,
+  }
   Setting.stats_github_commits    ||= 0
   Setting.stats_github_repos      ||= 0
   Setting.stats_miles_flown       ||= 0
