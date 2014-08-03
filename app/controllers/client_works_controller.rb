@@ -1,5 +1,7 @@
 class ClientWorksController < ApplicationController
 
+  force_ssl if: :ssl_configured?
+
   before_filter :load_resource, only: [:show]
   before_filter :client_works_init
 

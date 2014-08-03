@@ -1,5 +1,7 @@
 class ContactMessagesController < ApplicationController
 
+  force_ssl if: :ssl_configured?
+
   before_filter :block_spam_forms
   before_filter :load_new_resource
   before_filter :contact_messages_init

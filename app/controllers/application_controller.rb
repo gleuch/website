@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
 
   # Enable force_ssl where required
   def ssl_configured?
-    false # Rails.env.production?
+    Rails.env.production? || Rails.env.staging?
   end
 
   def unauthorized_request

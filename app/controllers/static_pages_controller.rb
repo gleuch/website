@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
 
+  force_ssl if: :ssl_configured?
+
   before_filter :load_resource, only: [:show]
   before_filter :static_pages_init
 

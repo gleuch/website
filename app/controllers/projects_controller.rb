@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
 
+  force_ssl if: :ssl_configured?
+
   before_filter :load_resource, only: [:show]
   before_filter :projects_init
   before_filter :project_init, only: [:show]
