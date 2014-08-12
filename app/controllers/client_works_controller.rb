@@ -4,8 +4,7 @@ class ClientWorksController < ApplicationController
 
   before_filter :load_resource, only: [:show]
   before_filter :client_works_init
-
-  # layout 'post'
+  before_filter :client_work_init, only: [:show]
 
 
   def index
@@ -26,12 +25,16 @@ class ClientWorksController < ApplicationController
   end
 
 
-
 protected
 
   def client_works_init
     @section, @page_meta_type = :client_work, :work
     @breadcrumbs << {name: t('breadcrumbs.works'), url: client_works_url}
+  end
+
+  def client_work_init
+    @body_classes << 'client-work'
+    @canonical_url = client_work_url(@client_work.slug, host: 'gleu.ch', port: nil)
   end
 
   def load_resource(*args)

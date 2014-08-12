@@ -1,0 +1,75 @@
+- subheading ||= nil
+- statement ||= nil
+- examples ||= []
+- explanation ||= nil
+- content_rails ||= nil
+- share_text ||= nil
+- share_text = @page_title if share_text.blank?
+- share_link ||= nil
+- website_link ||= nil
+- github_link ||= nil
+
+.container-fluid
+  - unless subheading.blank?
+    %section#description.col-md-8.col-xs-12
+      %h2= subheading
+
+  - if website_link.present? || github_link.present? || share_link.present?
+    #client_work-links.col-md-4.col-xs-12.pull-right
+      - if website_link.present? || github_link.present?
+        %ul.link-buttons.list-unstyled.pull-left
+          - unless website_link.blank?
+            %li
+              = link_to website_link, target: '_blank', class: 'btn btn-website' do
+                %i.icon-site-link
+                = t('.buttons.visit_site')
+          - unless github_link.blank?
+            %li
+              = link_to github_link, target: '_blank', class: 'btn btn-website' do
+                %span.socialicon.socialicon-github
+
+      - unless share_link.blank?
+        %ul.share-buttons.list-unstyled.pull-right
+          %li
+            - facebook_params = {href: share_link, redirect_uri: share_link, app_id: Setting.facebook_app_id, display: :popup}
+            = link_to "https://www.facebook.com/dialog/share?#{facebook_params.to_param}" do
+              .socialicon.socialicon-facebook
+          %li
+            - twitter_params = {url: share_link, text: share_text, related: t(:twitter_name)}
+            = link_to "https://twitter.com/intent/tweet?#{twitter_params.to_param}" do
+              .socialicon.socialicon-twitter
+          %li
+            &hellip;
+        .clearfix
+
+  #client_work-info.col-md-8.col-xs-12
+    - unless about.blank?
+      %section#statement.feature-box
+        %h3= t('client_works.headings.about')
+        = simple_format( about )
+
+    - unless examples.blank?
+      %section#examples.feature-box
+        - examples.each do |example|
+          .example-area= example
+
+    - unless solution.blank?
+      %section#explanation
+        %h3= t('client_works.headings.solution')
+        = simple_format( solution )
+
+  - unless content_rails.blank?
+    #client_work-details.col-md-4.col-xs-12
+      .row
+        - content_rails.each do |col|
+          - next if col.blank?
+          .col-md-6.col-xs-12
+            - col = [col] unless col.is_a?(Array)
+            - col.each do |box|
+              - unless box[:title].blank?
+                %h4= box[:title]
+              - unless box[:content].blank?
+                = simple_format(box[:content])
+              - unless box[:content_html].blank?
+                = box[:content_html].html_safe
+          

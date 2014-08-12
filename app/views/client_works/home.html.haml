@@ -10,6 +10,11 @@
   %p= t('.copy')
 
 
+%h3 TMP, FOR TESTING PAGES
+%ul
+  - %w(heineken-fever-keeper whats-trending buzzfeed know-your-meme zagat-food-trucks magma politics4all thesa-me).each do |page|
+    %li= link_to page.humanize.titleize, client_work_url(page)
+
 %hr
 
 %p

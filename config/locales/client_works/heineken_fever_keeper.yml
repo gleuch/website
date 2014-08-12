@@ -1,0 +1,67 @@
+en:
+  client_works:
+    heineken_fever_keeper:
+      page_title:           Heineken Fever Keeper
+      meta:
+        description:        
+        keywords:           
+
+      heading:              Heineken Fever Keeper
+      subheading:           Block the spoilers from tape-delayed UEFA soccer matches.
+
+      about: |
+        The Heineken Fever Keeper was a novel approach to blocking game-revealing spoilers for tape-delayed UEFA soccer matches. As Heineken's target audience was American, often times soccer matches would be aired three to six hours after game play in Europe. Social media and online news can reveal the outcomes of the games, it was a no-brainer to discover a way to hide the outcome. By doing so, Heineken helped preserve the excitement of game watching for American UEFA fans.
+
+      solution: |
+        A unique system was engineered to allow Heineken and The Vidal Partnership to manage a lengthy set of keywords remotely, in which a browser extension could retrieve this list of keywords to block. This idea was inspired by the earlier work <a href="/projects/shaved-bieber">Shaved Bieber</a>. Doing so allowed for updates to be made mid-season without having to re-build and publish new extensions.
+        
+        The final extensions and serving platform for the Fever Keeper were published in both English and Spanish for Chrome, Firefox, Safari, and Internet Explorer.
+
+      content_rails:
+        - # Column 1
+          -
+            title:          Tasks
+            content:        'design, develop'
+          -
+            title:          Client
+            content:        Heineken
+          -
+            title:          Firm
+            content:        The Vidal Partnership
+          -
+            title:          Launched
+            content:        March 2012
+
+      awards:
+        -
+          name:             2013 Interactive Award - Social
+          place:            Communication Arts
+          url:              http://www.commarts.com/interactive/cai13/heinekenkeepitlegendary.html
+        -
+          name:             'Silver Sol, 2013'
+          category:         '"El Sol" Iberoamerican Advertising Awards'
+          place:            Spain
+        -
+          name:           'Best Idea for Innovation, Best Idea for Digital & Mobile, Third Best Idea Overall'
+          place:          USH Idea Awards
+        -
+          name:           'Silver Award, 2012'
+          category:       Mulicultural
+          place:          IAB Mixx Awards
+
+      press:
+        -
+          name:             PSFK
+          url:              http://www.psfk.com/2012/04/heineken-no-game-spoilers.html
+        -
+          name:             Goal!
+          url:              http://www.goal.com/en-us/news/174/uefa-champions-league/2012/03/28/2997765/heineken-invites-you-to-keep-it-legendary
+        -
+          name:             Adverblog
+          url:              http://www.adverblog.com/2012/04/27/heineken-keep-it-legendary
+        -
+          name:             CNET
+          url:              http://crave.cnet.co.uk/software/champions-league-spoilers-tackled-by-score-obscuring-app-50007751
+        -
+          name:             Five Cool Things
+          url:              http://fivecoolthings.blogspot.com/2012/05/heineken-fever-keeper.html
