@@ -16,6 +16,10 @@ en:
       copy:                 'A varied list of creative, design, & development work.'
       list:                 'View list of all client work'
 
+    footer:
+      footer:               '<a href="%{works_url}">Return to featured work</a> or <a href="%{works_list_url}">view a list of all work</a>.'
+      disclaimer:           'Work listed with a firm indicates work done as an employee or under contract with the firm listed. All other work is considered freelanced.'
+
     all:
       page_title:           'Client List'
       meta:
@@ -40,6 +44,12 @@ en:
         # TODO : ADD MORE!
 
       2013:
+        - # listingsproject
+          name:             'Listings Project'
+          client:           'XOlator'
+          role:             'project management, develop'
+          media:            'Rails app'
+          url:              'http://www.listingsproject.com'
 
         # TODO : ADD MORE!
 
