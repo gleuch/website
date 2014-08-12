@@ -1,0 +1,45 @@
+en:
+  client_works:
+    politics4all:
+      page_title:           Politics4All
+      meta:
+        description:        
+        keywords:           
+
+      heading:              Politics4All
+      subheading:           A social network for politics.
+
+      about: |
+        <q>Politics4All is a socially-networked platform that allows candidates, citizens, and political advocacy groups to connect, collaborate, and effect change on every political level.</q>
+        
+        The premise for Politics4All was to create a web sites dedicated to improving communication and awareness between citizens, candidates, elected officials, and political groups. With the introduction of geo-locating based on voting districts to deliver relevant political information, a political questionnaire to match a user with other like-minded individuals, and capturing information on state and national legislative actions are some of the many features available on Politics4All.
+
+      solution: |
+        Project work included identity design, user interface design, user experience design, and front-end development. Project built using XHTML/CSS, JavaScript, and Ruby on Rails. Additional development included design and development of Wordpress Blog and Facebook application.
+
+      content_rails:
+      content_rails:
+        - # Column 1
+          -
+            title:          Tasks
+            content:        'design, develop'
+          -
+            title:          Client
+            content:        Politics4All
+          -
+            title:          Launched
+            content:        Sept 2008
+
+      awards:
+        -
+          name:             2009 Webby Award
+          category:         'Honoree, Blog-Politics Category'
+        -
+          name:             2009 W3 Awards
+          category:         'Politics, Silver Award<br/>Policial Blogging, Silver Award<br/>Social Networking, Silver Award'
+        -
+          name:             2008 Mashable Open Web Awards
+          category:         "People's Choice (Politics)"
+        -
+          name:             TechCrunch50 2008
+          place:            Demo Pit Company

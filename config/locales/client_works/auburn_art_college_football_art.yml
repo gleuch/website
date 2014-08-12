@@ -1,0 +1,41 @@
+en:
+  client_works:
+    auburn_art_college_football_art:
+      page_title:           'Auburn Art & College Football Art'
+      meta:
+        description:        
+        keywords:           
+
+      heading:              'Auburn Art & College Football Art'
+      subheading:           All-in-one shops for your college football art needs.
+
+      about: |
+        AuburnArt.com and CollegeFootballArt.com are two sister web sites that sell collegiate art, framed prints, collectables, and other related products. While AuburnArt.com sells only Auburn University related products, CollegeFooballArt.com sells products for most major colleges & universities. Both web sites have become pillars in their industry for how the manage, sell, and ship their products. CollegeFootballArt.com is uniquely known for themeing each team's section with the team's colors.
+
+      challenge: |
+        Maintaining one site is difficult, but keeping the code consistent between two unique web sites requires dedicated teamwork. Satsuma approached us to redesign and develop AuburnArt.com and its larger sister, CollegeFootballArt.com. They wanted to keep the core customer and administrative features on the site similar. The front-end differences, however, required a some impressive plays. CollegeFootballArt.com not only had 40 teams to manage, but each team section required themeing based on the team's colors.
+
+      solution: |
+        Both AuburnArt.com and CollegeFootballArt.com were analyzed to make the entire checkout process straightforward, allowing for multiple shipping options, payment options, and other configurations. AuburnArt.com took the lead with its design and structuring of code. CollegeFootballArt.com made the next play, taking the completed AuburnArt.com site and building out a more comprehensive templating system to accommodate better category navigation, graphics, and color themes.
+
+      result: |
+        The re-designs of AuburnArt.com and CollegeFootballArt.com made a game-changing touchdown and continue to pull in large numbers of customers on a daily basis while managing over 15,000 collegiate products.
+
+      content_rails:
+        - # Column 1
+          -
+            title:          Tasks
+            content:        'design, develop'
+          -
+            title:          Client
+            content:        Satsuma Enterprises
+          -
+            title:          Firm
+            content:        Virticle Corp
+          -
+            title:          Launched
+            content:        Sept 2007
+          -
+            content: |
+              <a href="http://www.auburnart.com" target="_blank">auburnart.com</a>
+              <a href="http://www.collegefootballart.com" target="_blank">collegefootballart.com</a>

@@ -1,0 +1,41 @@
+en:
+  client_works:
+    zagat_food_trucks:
+      page_title:           Zagat Food Trucks
+      meta:
+        description:        
+        keywords:           
+
+      heading:              Zagat Food Trucks
+      subheading:           Interactive maps for Zagat-rated food trucks.
+
+      about: |
+        Zagat wanted to build a web site application that would track the locations of food trucks and allow visitors to filter search results through cuisine, Zagat rating, and proximity. What we delivered was a great, full-screen map that integrated with a large number of food trucks to allow hungry visitors to find their nearby favorite food trucks.
+
+      solution: |
+        One of the biggest challenges to solve is getting food trucks to announce their openings and locations. With all the available technologies, we chose to have food trucks send out a location-aware tweet. These tweets were scraped through Twitter's API, determined their open status, a location derived from their plan, and marked on a map. However, some food trucks had semi-permanent locations, in which a online schedule was built to accommodate those food trucks.
+        
+        In the end, over 30 food trucks in NYC were participating on the launch of the site, attracting attention for its ease-of-use for lunch-time works wanting a great snack nearby.
+
+      content_rails:
+        - # Column 1
+          -
+            title:          Tasks
+            content:        develop
+          -
+            title:          Client
+            content:        Zagat
+          -
+            title:          Firm
+            content:        JESS3
+          -
+            title:          Launched
+            content:        Nov 2012
+
+      press:
+        -
+          name:             Mashable
+          url:              http://mashable.com/2010/11/09/zagat-food-trucks/
+        -
+          name:             PSFK
+          url:              http://www.psfk.com/2010/11/zagat-announces-food-truck-tracking-site.html

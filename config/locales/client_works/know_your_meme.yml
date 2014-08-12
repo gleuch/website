@@ -1,0 +1,80 @@
+en:
+  client_works:
+    know_your_meme:
+      page_title:           Know Your Meme
+      meta:
+        description:        
+        keywords:           
+
+      heading:              Know Your Meme
+      subheading:           'Documenting Internet phenomena: viral videos, image macros, catchphrases, web celebs and more.'
+
+      about: |
+        Started as a side project by Kenyatta Cheese, Elspeth Rountree, and Jamie Wilkinson, Know Your Meme has grown from a wiki and a few funny videos to a large video and site property of Rocketboom. In a few short months, Know Your Meme has become an important tool for the documentation of internet memes and culture through the use of user-generated content. With the help of a two staff editors and numerous user moderators, the site now features over 2,000 meme entries, nearly 40,000 images, and an enormous user population. Daily traffic now exceeded 100,000 unique daily visitors, over 12.5 million monthly page views, and over 30TB monthly bandwidth, and is ranked around 3,500 by Quantcast (Feb 2010)
+        
+        In March 2011, Know Your Meme was bought by the I Can Haz Cheezburger Network for an undisclosed sum. It is now the highest traffic site in its network.
+
+      solution: |
+        Know Your Meme was built by Jamie Wilkinson and myself at Rocketboom R&D. Numerous features have been built to transform the site from a simple wiki into a community-based web portal for internet memes and culture. Even with the on-and-off cycle of R&D work, simple design and development sprints have allows us to transform Know Your Meme into a very important web platform for internet memes and culture.
+        
+        The design of the website, while stark & plain, is very reminiscent of older website designs. This style of design blends old-school internet culture with the expected web design styles of other important internet culture sites, such as Macrochan, 4chan, YTMND, and Wikipedia, making the site the perfect playground for our audience of 13-34 year olds. Fun tweaks, secret key combos, texts, and images have also contributed to the growth of the community.
+        
+        Built using Ruby on Rails, the website receives enormous amounts of daily traffic, requiring a fast content delivery network to serve images and static files, while extensive page cacheing allows the site to run quickly and smoothly.
+        
+        This project has also required the creation of the Know Your Meme Shop, including the creation of products, site development, inventory management, and order fulfillment through third-party solutions (Shopify & Shipwire). Work also required helping develop the required ad delivery network for the management and serving of site ads within the site, a task that requires management and concern with monetization and community outreach to find acceptable solutions for everyone. Tumblr blog design, Twitter page design, iPhone application design, book layout design, and meme API development have also been required for this project.
+
+      content_rails:
+        - # Column 1
+          -
+            title:          Tasks
+            content:        'design, develop'
+          -
+            title:          Client
+            content:        Rocketboom
+          -
+            title:          Launched
+            content:        Jan 2009<br><a href="http://knowyourmeme.com" target="_blank">knowyourmeme.com</a>
+
+      awards:
+        -
+          name:             '50 Best Websites, 2009'
+          place:            TIME
+          url:              'http://content.time.com/time/specials/packages/article/0,28804,1918031_1918016_1918014,00.html'
+
+      press:
+        -
+          name:             TIME
+          url:              http://www.time.com/time/specials/packages/article/0,28804,1918031_1918016_1918014,00.html
+        -
+          name:             Wired
+          url:              http://www.wired.com/underwire/2009/11/will-auto-tune-ever-die-ask-know-your-meme-and-weird-al/
+        -
+          name:             NPR
+          url:              http://www.npr.org/templates/story/story.php?storyId=121931675
+        -
+          name:             MSNBC
+          url:              http://www.msnbc.msn.com/id/34622705/ns/technology_and_science-tech_and_gadgets?pg=9#Tech_Memes09
+        -
+          name:             The Guardian
+          url:              http://www.guardian.co.uk/technology/2009/apr/11/know-your-meme-internet-review
+        -
+          name:             Wall Street Journal
+          url:              http://blogs.wsj.com/digits/2010/01/11/the-mystery-of-the-facebook-bra-color-meme/
+        -
+          name:             TubeFilter
+          url:              http://news.tubefilter.tv/2009/09/25/know-your-meme-schools-net-newbies-aaaaaaaaaaaaaa/
+        -
+          name:             Geekosystem
+          url:              http://www.geekosystem.com/power-grid/30+Great+Web+Geeks/Know+Your+Meme/
+        -
+          name:             Entertainment Weekly
+          url:              http://popwatch.ew.com/2009/11/15/know-your-meme/
+        -
+          name:             .net magazine
+          url:              http://www.netmag.co.uk/zine/home/the-brains-behind-know-your-meme
+        -
+          name:             Winnipeg Free Press
+          url:              http://www.winnipegfreepress.com/entertainment/the_tab/siteseeing-Tab-Dec31-.html
+        -
+          name:             AppScout
+          url:              http://www.appscout.com/2010/02/know_your_meme_explains_what_t.php

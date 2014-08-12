@@ -1,7 +1,9 @@
 - subheading ||= nil
-- statement ||= nil
+- about ||= nil
 - examples ||= []
-- explanation ||= nil
+- challenge ||= nil
+- solution ||= nil
+- result ||= nil
 - content_rails ||= nil
 - share_text ||= nil
 - share_text = @page_title if share_text.blank?
@@ -53,10 +55,20 @@
         - examples.each do |example|
           .example-area= example
 
+    - unless challenge.blank?
+      %section#explanation
+        %h3= t('client_works.headings.challenge')
+        = simple_format( challenge )
+
     - unless solution.blank?
       %section#explanation
         %h3= t('client_works.headings.solution')
         = simple_format( solution )
+
+    - unless result.blank?
+      %section#explanation
+        %h3= t('client_works.headings.result')
+        = simple_format( result )
 
   - unless content_rails.blank?
     #client_work-details.col-md-4.col-xs-12

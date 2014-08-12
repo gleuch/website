@@ -1,0 +1,28 @@
+- # Meta & Page Setup
+- @page_title = t('.page_title', default: '')
+- @page_meta_description = t('.meta.description', default: '')
+- @page_meta_keywords = t('.meta.keywords', default: '')
+- @page_share_title = t('.page_title', default: '')
+- @page_share_description = t('.meta.description', default: '')
+- @breadcrumbs << {name: t('.heading')}
+
+
+- # Carousel Images
+- carousel_images = []
+- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-1.jpg', alt: ''), caption: t('.carousel.captions')[0]}
+- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-2.jpg', alt: ''), caption: t('.carousel.captions')[1]}
+
+
+- # Page Content
+- content_opts = {}
+- content_opts[:subheading] = t('.subheading', default: '')
+- content_opts[:about] = t('.about', default: '')
+- content_opts[:solution] = t('.solution', default: '')
+- content_opts[:content_rails] = t('.content_rails', default: '')
+- content_opts[:share_link] = @canonical_url
+
+%article
+  = render 'client_works/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images
+  = render 'client_works/content', content_opts
+  = render 'client_works/awards', awards: t('.awards', default: '')
+  = render 'client_works/press', press: t('.press', default: '')

@@ -1,4 +1,4 @@
-- heading ||= t('projects.headings.awards')
+- heading ||= t('client_works.headings.awards')
 - awards ||= nil
 - awards.reject!(&:blank?)
 
@@ -16,7 +16,7 @@
                 = award[:name]
           - [:category, :place, :date].each do |type|
             - next if award[type].blank?
-            %dd= award[type]
+            %dd= award[type].html_safe
 
         - if (i+1) % 4 == 0
           .clearfix.visible-md-block.visible-lg-block

@@ -1,4 +1,4 @@
-- heading ||= t('projects.headings.press')
+- heading ||= t('client_works.headings.press')
 - press ||= nil
 - press.reject!(&:blank?)
 
@@ -7,10 +7,10 @@
     %h3= heading
     .row
       - press.each_with_index do |article,i|
-        = link_to article[:url], class: 'col-md-3 col-sm-4 col-xs-6', target: '_blank' do
+        = content_tag((article[:url].present? ? :a : :div), {class: 'col-md-3 col-sm-4 col-xs-6'}.merge(article[:url].present? ? {href: article[:url], target: '_blank'} : {}) ) do
           %dl
             - unless article[:name].blank?
-              %dt= article[:name]
+              %dt= article[:name].html_safe
             - [:category, :place, :date].each do |type|
               - next if article[type].blank?
               %dd.hidden-xs= article[type]

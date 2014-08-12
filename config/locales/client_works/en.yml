@@ -1,5 +1,15 @@
 en:
   client_works:
+    # Common headings
+    headings:
+      about:              'About'
+      explanation:        'Explanation'
+      challenge:          'Challenge'
+      solution:           'Solution'
+      result:             'Result'
+      awards:             'Awards'
+      press:              'Press'
+
     home:
       page_title:           'Client Work'
       title:                'Client Work'
