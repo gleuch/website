@@ -71,12 +71,12 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
       &:first-child {border-top: none;}
       body.nav-open & {
         &:nth-child(1) a {@include transition-delay(.3s);}
-        &:nth-child(2) a {@include transition-delay(.4s);}
-        &:nth-child(3) a {@include transition-delay(.5s);}
-        &:nth-child(4) a {@include transition-delay(.6s);}
-        &:nth-child(5) a {@include transition-delay(.7s);}
-        &:nth-child(6) a {@include transition-delay(.8s);}
-        &:nth-child(7) a {@include transition-delay(.9s);}
+        &:nth-child(2) a {@include transition-delay(.35s);}
+        &:nth-child(3) a {@include transition-delay(.4s);}
+        &:nth-child(4) a {@include transition-delay(.45s);}
+        &:nth-child(5) a {@include transition-delay(.5s);}
+        &:nth-child(6) a {@include transition-delay(.55s);}
+        &:nth-child(7) a {@include transition-delay(.6s);}
       }
     }
   }
