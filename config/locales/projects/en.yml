@@ -16,6 +16,10 @@ en:
       copy:                 'Creative & artistic projects combining technology and design.'
       list:                 'View list of all projects'
 
+    footer:
+      footer:               '<a href="%{projects_url}">Return to featured projects</a> or <a href="%{projects_list_url}">view a list of all project</a>.'
+      disclaimer:           ''
+
     # Project full list
     all:
       page_title:           'Projects List'
