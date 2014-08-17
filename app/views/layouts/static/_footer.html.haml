@@ -1,6 +1,6 @@
 %nav#nav-pullout
   %ul#menu-items.list-unstyled
-    - {home: root_url, projects: projects_url, client_work: client_works_url, about: static_page_url(:about), contact: contact_messages_url}.each do |name, url|
+    - {home: root_url, client_work: client_works_url, projects: projects_url, about: static_page_url(:about), contact: contact_messages_url}.each do |name, url|
       %li{class: (@section == name ? 'active' : '')}
         = link_to t(name, scope: [:nav]), url
     
