@@ -13,7 +13,7 @@
 #search-result
   - unless @search_results.blank?
     - @search_results.each do |v|
-        = render v[:type], result: v rescue nil
+      = render v[:type], result: v rescue nil
 
   - else
     .none.text-center= t('.none', tag: @search_query)
