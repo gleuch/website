@@ -6,6 +6,6 @@
   - desc ||= result[:subheading]
   - desc ||= result[:meta].present? && result[:meta][:description]
 
-  .result.project
-    %h2= link_to result[:page_title], project_url(result[:id])
+  .result.static-page
+    %h2= link_to result[:page_title], static_page_url(result[:id])
     = simple_format(desc) unless desc.blank?

@@ -16,6 +16,9 @@ en:
       
       none:                 'There are no results for "%{query}".'
 
+    form:
+      search:               'Search'
+
     tags:
       page_title:           'Results tagged "%{tag}"'
       meta:

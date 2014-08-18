@@ -1,11 +1,11 @@
-- client_work ||= nil
+- result ||= nil
 
 
-- unless client_work.blank?
-  - desc = client_work[:description]
-  - desc ||= client_work[:subheading]
-  - desc ||= client_work[:meta].present? && client_work[:meta][:description]
+- unless result.blank?
+  - desc = result[:description]
+  - desc ||= result[:subheading]
+  - desc ||= result[:meta].present? && result[:meta][:description]
 
   .result.client-work
-    %h2= link_to client_work[:page_title], client_work_url(client_work[:id])
+    %h2= link_to result[:page_title], client_work_url(result[:id])
     = simple_format(desc) unless desc.blank?

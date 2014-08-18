@@ -23,9 +23,10 @@ class SearchController < ApplicationController
           begin
             rank = 0
             rank += 5 if v[:page_title].match(search_regexp)
-            rank += 3 if v[:meta].present? && (v[:meta][:description] || '').match(search_regexp)
-            rank += 2 if %w(description solution explanation statement about).map{|a| v[a.to_sym] || nil}.compact.join('').match(search_regexp)
-            rank += 1 if v[:tags].present? && (v[:tags] || []).join('').match(search_regexp)
+            rank += 4 if v[:meta].present? && (v[:meta][:description] || '').match(search_regexp)
+            rank += 3 if %w(description solution explanation statement about).map{|a| v[a.to_sym] || nil}.compact.join('').match(search_regexp)
+            rank += 2 if v[:tags].present? && (v[:tags] || []).join('').match(search_regexp)
+            rank += 1 if v.reject{|k,v| %w(page_title meta tags description solution explanation statement about).include?(k.to_s)}.to_s.match(search_regexp)
             (search_results << v.merge(id: k, rank: rank)) if rank > 0
           rescue
             next
@@ -90,14 +91,16 @@ protected
 
   # Get list of pages to search through. Merged together from client work and projects, tagged accordingly
   def search_list
-    ignored = [:all, :home, :footer, :headings, :full_list]
+    ignored = [:all, :index, :home, :footer, :headings, :full_list]
     projects_list = I18n.t('projects')
     works_list = I18n.t('client_works')
+    pages_list = I18n.t('static_pages')
 
     projects_list = projects_list.select{|v| Project.new(id: v, view_path: Project.view_path).exists? }.each{|k,v| projects_list[k][:type] = 'project'}
     works_list = works_list.select{|v| ClientWork.new(id: v, view_path: ClientWork.view_path).exists? }.each{|k,v| works_list[k][:type] = 'client_work'}
+    pages_list = pages_list.select{|v| StaticPage.new(id: v).exists? }.each{|k,v| pages_list[k][:type] = 'static_page'}
 
-    {}.merge(projects_list).merge(works_list).reject{|k,v| ignored.include?(k.to_sym) }
+    {}.merge(projects_list).merge(works_list).merge(pages_list).reject{|k,v| ignored.include?(k.to_sym) }
   end
 
 end
