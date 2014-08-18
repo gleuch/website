@@ -4,13 +4,14 @@ class SearchController < ApplicationController
 
 
   def index
-    @search_results, @search_query = [], params[:q]
+    @search_results, @search_query = [], (params[:q] || '').strip
 
     @section, @page_meta_type = :projects, :project
     @breadcrumbs << {name: t('breadcrumbs.search'), url: search_url}
+    @canonical_url = search_url
 
     if @search_query.present? && @search_query.length > 2
-      @page_meta_robots = 'noindex,nofollow'
+      @page_meta_robots = 'noindex,follow'
       @breadcrumbs << {name: @search_query}
 
       # Cache this result since it does not change much
@@ -42,6 +43,8 @@ class SearchController < ApplicationController
       end
     end
 
+    @canonical_url = search_url(q: @search_query) unless @search_results.blank?
+
     respond_to do |format|
       format.html { render :index }
       format.any { render_not_found }
@@ -49,14 +52,15 @@ class SearchController < ApplicationController
   end
 
   def tags
-    @search_results, @search_query = [], params[:id]
+    @search_results, @search_query = [], (params[:id] || '').strip
 
     @section, @page_meta_type = :projects, :project
     @breadcrumbs << {name: t('breadcrumbs.tag'), url: search_url}
 
     if @search_query.present? && @search_query.length > 2
-      @page_meta_robots = 'noindex,nofollow'
+      @page_meta_robots = 'noindex,follow'
       @breadcrumbs << {name: @search_query}
+      @canonical_url = search_tag_url(id: @search_query)
 
       # Cache this result since it does not change much
       cache_key = ['search_tags', @search_query.strip.downcase]
