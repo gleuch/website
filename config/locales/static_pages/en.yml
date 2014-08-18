@@ -38,6 +38,11 @@ en:
         title:              'Major Exhibitions'
         list:
           -
+            name:           'F.A.T. Gold'
+            place:          'Gray Area'
+            location:       'San Francisco'
+            date:           'May 2015'
+          -
             name:           '"Eyebeam Annual Showcase"'
             place:          'Eyebeam'
             location:       'NYC'

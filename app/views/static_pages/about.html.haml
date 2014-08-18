@@ -39,11 +39,12 @@
   .intro-box
     %header
       %h1= t('.heading')
-    %aside#latest-activity.hidden-xs
-      %h3= t('.latest.twitter')
-      %q The make out couple is at Starbucks, and they are sitting across from me again.... #aww #gross
-      %h4
-        %a.socialicon.socialicon-twitter{href: '#', target: '_blank'}
+    - unless Setting.about_latest_tweet.blank?
+      %aside#latest-activity.hidden-xs
+        %h3= t('.latest.twitter')
+        %q= Sanitize.fragment( Setting.about_latest_tweet['html'], elements: ['a'], attributes: {'a' => ['href', 'target', 'rel']}, protocols: {'a' => {'href' => ['http', 'https']}}).html_safe
+        %h4
+          %a.socialicon.socialicon-twitter{href: Setting.about_latest_tweet['url'], target: '_blank'}
 
   #biography_content
     %section#biography
@@ -64,6 +65,21 @@
           %dl
             %dt= number_to_human(num, precision: 1, significant: false, units: :short_count, format: '%n%u')
             %dd{'data-stat-value' => "#{number_with_delimiter(num)} #{stat}"}= t(".bio_stats.#{stat}", count: val[:stat_count])
+
+  %hr
+
+  %aside.social-links
+    %ul.list-unstyled.col-md-9.col-xs-12
+      - {twitter: twitter_url, github: github_url, linkedin: linkedin_url, instagram: instagram_url, email: email_url}.each do |name,url|
+        %li{'data-platform' => name}
+          = link_to url, class: "socialicon socialicon-#{name}", title: t(name), target: '_blank' do
+            %span= t(name)
+    - if false
+      %ul.list-unstyled.col-md-3.col-xs-12
+        %li{'data-link' => 'resume'}
+          = link_to resume_url do
+            %span= t('.resume')
+    .clearfix
 
   %hr
 

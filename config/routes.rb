@@ -38,6 +38,9 @@ Gleuch::Application.routes.named_routes.module.module_eval do
     google_plus_url:        'https://plus.google.com/100780866870324876908',
     email_url:              'mailto:contact@gleu.ch',
 
+    # Special URLs
+    resume_url:             '/files/2014/resume.pdf',
+
     # Common URLs
     xolator_url:            'http://xolator.com',
     popblock_url:           'https://pop-block.com',
