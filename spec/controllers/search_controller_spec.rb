@@ -4,7 +4,7 @@ RSpec.describe SearchController, type: :controller do
 
   before :all do
     # Test ill-formatted search item
-    I18n.backend.store_translations :en, projects: {test_bad_i18n: {page_title: 'Test Bieber', tags: 'testtesttest'}}
+    I18n.backend.store_translations :en, projects: {twitter_fileshare: {page_title: 'Test Bad Entry', tags: 1}}
   end
 
   describe "index" do
@@ -25,7 +25,7 @@ RSpec.describe SearchController, type: :controller do
     end
 
     describe "query with result" do
-      {bieber: 2, all: 11}.each do |query,ct|
+      {bieber: 4, all: 13}.each do |query,ct|
         it "GET should succeed" do
           get :index, q: query
           expect(response).to be_successful
