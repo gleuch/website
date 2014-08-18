@@ -6,6 +6,11 @@ en:
         description:        
         keywords:           
 
+      tags:
+        -   ruby
+        -   css
+        -   html
+
       heading:              Shaved Bieber
       subheading:           An innovative tool to clean up the lower regions of web pages from unwanted Justin Bieber mentions.
 

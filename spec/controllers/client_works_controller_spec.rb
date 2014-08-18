@@ -18,7 +18,7 @@ RSpec.describe ClientWorksController, type: :controller do
     end
 
     it "should fail for xml" do
-      lambda { get :index, format: :xml }.should raise_error(ActiveRecord::RecordNotFound)
+      expect{ get :index, format: :xml }.to raise_error(ActiveRecord::RecordNotFound)
     end
   end
 
@@ -40,7 +40,7 @@ RSpec.describe ClientWorksController, type: :controller do
         end
 
         it "should fail for xml" do
-          lambda { get :show, id: p, format: :xml }.should raise_error(ActiveRecord::RecordNotFound)
+          expect{ get :show, id: p, format: :xml }.to raise_error(ActiveRecord::RecordNotFound)
         end
       end
     end

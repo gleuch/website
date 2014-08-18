@@ -1,0 +1,11 @@
+- project ||= nil
+
+
+- unless project.blank?
+  - desc = project[:description]
+  - desc ||= project[:subheading]
+  - desc ||= project[:meta].present? && project[:meta][:description]
+
+  .result.project
+    %h2= link_to project[:page_title], project_url(project[:id])
+    = simple_format(desc) unless desc.blank?

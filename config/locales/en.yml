@@ -42,6 +42,8 @@ en:
     works:        'Client Work'
     about:        'About'
     contact:      'Contact'
+    search:       'Search'
+    tag:          'Tag'
 
 
   open:           'Open'

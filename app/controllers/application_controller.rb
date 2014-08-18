@@ -50,6 +50,10 @@ private
   end
 
 
+  def render_not_found
+    raise ActiveRecord::RecordNotFound
+  end
+
   # Render actions for showing an available static page
   def show_static_page(page=nil, *args)
     @_static_page_options.merge!(args.extract_options!)

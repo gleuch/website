@@ -38,7 +38,7 @@ protected
   end
 
   def load_resource(*args)
-    opts = {view_path: 'client_works'}.merge(args.extract_options!).merge(client_work_params)
+    opts = {view_path: ClientWork.view_path}.merge(args.extract_options!).merge(client_work_params)
     @client_work = ClientWork.new(opts)
     raise ActiveRecord::RecordNotFound unless @client_work.exists?
   end

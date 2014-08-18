@@ -13,7 +13,7 @@ module ApplicationHelper
   end
 
   def page_meta_robots
-    'index,follow' # TODO
+    @page_meta_robots || 'index,follow'
   end
 
   def page_meta_image

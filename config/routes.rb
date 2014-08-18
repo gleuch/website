@@ -3,19 +3,19 @@ Rails.application.routes.draw do
   # Projects ---
   resources :projects, only: [:index, :show]
 
-
   # Client Work ---
   resources :client_works, path: 'work', only: [:index, :show]
-
 
   # Contact ---
   resources :contact_messages, path: 'contact', only: [:index, :new, :create]
 
+  # Search & Tags ---
+  match '/search' => 'search#index', as: :search, via: [:get, :post]
+  match '/tag/:id' => 'search#tags', as: :search_tag, via: [:get, :post]
 
   # Static Pages --- 
   # (Use constraint on StaticPage to check if page exists.)
   get '/*id' => 'static_pages#show', as: :static_page, constraints: StaticPage.new
-
 
   # Homepage
   root 'static_pages#index'
@@ -43,6 +43,7 @@ Gleuch::Application.routes.named_routes.module.module_eval do
     popblock_url:           'https://pop-block.com',
     metafetch_url:          'http://metafetch.com',
     fatlab_url:             'http://fffff.at',
+
   }.each do |name,url|
     define_method(name){ url }
   end

@@ -1,0 +1,34 @@
+- @page_meta_description = t('.meta.description', default: '')
+- @page_meta_keywords = t('.meta.keywords', default: '')
+- @page_share_description = t('.meta.description', default: '')
+
+
+- if @search_query.present?
+  - @page_title = t('.page_title_results', default: '', query: @search_query)
+  - @page_share_title = t('.page_title_results', default: '')
+
+  .page-header
+    %h1= t('.heading_results', query: @search_query)
+    - unless @search_results.blank?
+      %p= t('.subheading_results', query: @search_query, count: @search_results.size)
+
+  #search-results
+    - unless @search_results.blank?
+      - @search_results.each do |v|
+        - case v[:type]
+          - when 'project'
+            = render 'project', project: v
+          - when 'client_work'
+            = render 'client_work', client_work: v
+
+    - else
+      .none.text-center= t('.none', query: @search_query)
+
+- else
+  - @page_share_title = t('.page_title', default: '')
+  - @page_title = t('.page_title', default: '', query: @search_query)
+
+  .page-header
+    %h1= t('.heading', query: @search_query)
+
+  [search]

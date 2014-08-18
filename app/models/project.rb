@@ -10,6 +10,9 @@ class Project < ActiveRecord::Base
   is_impressionable
 
 
+  def self.view_path; 'projects'; end
+
+
 protected
 
 

@@ -32,7 +32,7 @@ module Pageable
 
   # Setups for filename, page, format, and view path folder
   def file; (!self.page.blank? ? File.join(self.view_path, self.page) : nil).downcase; end
-  def page; (@id || '').parameterize.underscore; end
+  def page; (@id || '').to_s.parameterize.underscore; end
   def format; @format; end
   def view_path; @view_path; end
 

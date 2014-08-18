@@ -10,6 +10,9 @@ class ClientWork < ActiveRecord::Base
   is_impressionable
 
 
+  def self.view_path; 'client_works'; end
+
+
 protected
 
 

@@ -38,7 +38,7 @@ protected
   end
 
   def load_resource(*args)
-    opts = {view_path: 'projects'}.merge(args.extract_options!).merge(project_params)
+    opts = {view_path: Project.view_path}.merge(args.extract_options!).merge(project_params)
     @project = Project.new(opts)
     raise ActiveRecord::RecordNotFound unless @project.exists?
   end

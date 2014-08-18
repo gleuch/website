@@ -1,0 +1,30 @@
+en:
+  search:
+    index:
+      page_title:           'Search'
+      page_title_results:   'Results for "%{query}"'
+      meta:
+        description:        
+        keywords:           
+
+      heading:              'Search'
+      heading_results:      'Search Results for "%{query}"'
+      subheading_results:
+        zero:               'No results found.'
+        one:                'Showing one result'
+        other:              'Showing %{count} results'
+      
+      none:                 'There are no results for "%{query}".'
+
+    tags:
+      page_title:           'Results tagged "%{tag}"'
+      meta:
+        description:        
+        keywords:           
+
+      heading:              "%{tag}"
+      subheading:
+        zero:               'No results for "%{query}".'
+        one:                'Showing one result for "%{tag}".'
+        many:               'Showing %{count} results for "%{tag}".'
+      
