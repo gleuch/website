@@ -95,6 +95,16 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
   }
 }
 
+// SEARCH OVERLAY FORM
+aside#search-overlay {opacity: 0; @include transition(opacity .2s ease-out);
+  &.open {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999990; opacity: 1;
+    &:before {content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999991; background: rgba($gleuch-black,.12);}
+    a.search-close {position: fixed; display: block; top: 30px; right: 30px; color: $gleuch-logo; font-weight: 700; font-size: 4.2rem; z-index: 9999992;}
+    #search-form {position: fixed; top: 35%; left: 0; right: 0; margin: 0 auto; max-width: 500px; z-index: 9999992;}
+  }
+}
+
+
 
 // CONTENT CONTAINER
 #wrapper {margin-top: 90px; overflow-x: hidden;}

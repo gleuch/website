@@ -27,6 +27,14 @@ $ ->
         $('#content').css('min-height', h)
     ).trigger 'resize'
 
+    # Search overlay toggle
+    $('#nav-search').on 'click', ->
+      $('#search-overlay').addClass('open')
+      return false
+    $('#search-overlay .search-close').on 'click', ->
+      $('#search-overlay').removeClass('open')
+      return false
+
     try
       @gleuch_haha = @gleuch_haha || {}
       @gleuch_haha.keys = []

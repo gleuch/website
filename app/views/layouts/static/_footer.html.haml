@@ -3,6 +3,9 @@
     - {home: root_url, client_work: client_works_url, projects: projects_url, about: static_page_url(:about), contact: contact_messages_url}.each do |name, url|
       %li{class: (@section == name ? 'active' : '')}
         = link_to t(name, scope: [:nav]), url
+    %li
+      = link_to search_url, id: 'nav-search' do
+        = t('.search', scope: [:nav])
     
   %footer#nav-footer
     %ul.list-unstyled
@@ -22,4 +25,7 @@
             %span= t(name)
     %p= t(:footer, year: Date.today.year).html_safe
     .clearfix
-  
+
+%aside#search-overlay
+  %a.search-close{href: 'javascript:;'} &times;
+  = render 'search/form'
