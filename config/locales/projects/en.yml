@@ -12,13 +12,32 @@ en:
     # Project index
     home:
       page_title:           'Projects'
-      title:                'Projects'
-      copy:                 'Creative & artistic projects combining technology and design.'
       list:                 'View list of all projects'
+      list_mobile:          'View full list'
+      meta:
+        description:        ''
+        keywords:           ''
+      breadcrumbs:          'Projects'
+      heading:              'Projects'
+      subheading:           'Creative & artistic projects combining technology and design.'
 
     footer:
       footer:               '<a href="%{projects_url}">Return to featured projects</a> or <a href="%{projects_list_url}">view a list of all project</a>.'
       disclaimer:           ''
+
+    featured_list:
+      - # pop_block
+        slug:               'pop-block'
+        name:               'Pop Block'
+      - # fffffartsy
+        slug:               'fffffartsy'
+        name:               'Fffffartsy'
+      - # shaved_bieber
+        slug:               'shaved-bieber'
+        name:               'Shaved Bieber'
+      - # wayback_wifi
+        slug:               'wayback-wifi'
+        name:               'Wayback WiFi'
 
     # Project full list
     all:
@@ -33,7 +52,7 @@ en:
 
     # -------------------------------------------------------------------------
     # -------------------------------------------------------------------------
-    #         INDIVIDUL PROJECTS ARE SAVED INTO THEIR OWN .yml FILES
+    #         INDIVIDUAL PROJECTS ARE SAVED INTO THEIR OWN .yml FILES
     # -------------------------------------------------------------------------
     # -------------------------------------------------------------------------
 

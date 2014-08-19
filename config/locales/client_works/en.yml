@@ -12,14 +12,35 @@ en:
 
     home:
       page_title:           'Client Work'
-      title:                'Client Work'
-      copy:                 'A varied list of creative, design, & development work.'
       list:                 'View list of all client work'
+      list_mobile:          'View full list'
+      meta:
+        description:        ''
+        keywords:           ''
+      breadcrumbs:          'Client Work'
+      heading:              'Client Work'
+      subheading:           'A varied list of creative, design, & development work.'
 
     footer:
       footer:               '<a href="%{works_url}">Return to featured work</a> or <a href="%{works_list_url}">view a list of all work</a>.'
       disclaimer:           'Work listed with a firm indicates work done as an employee or under contract with the firm listed. All other work is considered freelanced.'
 
+    featured_list:
+      - # buzzfeed
+        slug:               'buzzfeed'
+        name:               'BuzzFeed'
+      - # fever_keeper
+        slug:               'heineken-fever-keeper'
+        name:               'Heineken Fever Keeper'
+      - # zagat_food_trucks
+        slug:               'zagat-food-trucks'
+        name:               'Zagat Food Trucks'
+      - # know_your_meme
+        slug:               'know-your-meme'
+        name:               'Know Your Meme'
+        
+
+    # Client works full list
     all:
       page_title:           'Client List'
       meta:
@@ -30,6 +51,12 @@ en:
       copy:                 'Nothing better explains the skills and expertise of a true professional then by the quality of work they produce and a willingness to show it.'
       disclaimer:           'Some employed and contract work have been omitted from this list due to disclosure agreements, lack of substantial work, employment situations, or other various reasons. Work listed with a company underneath the title indicates work done as an employee, company member/owner, or under contract with the company listed. All other work is considered freelanced.'
 
+
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
+    #       INDIVIDUAL CLIENT WORKS ARE SAVED INTO THEIR OWN .yml FILES
+    # -------------------------------------------------------------------------
+    # -------------------------------------------------------------------------
 
     # Full list of client work, by year
     full_list:

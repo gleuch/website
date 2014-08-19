@@ -5,38 +5,58 @@
 - @page_share_title = t('.page_title', default: '')
 - @page_share_description = t('.meta.description', default: '')
 - @breadcrumbs << {name: t('.breadcrumbs')}
+- @canonical_url = project_url(:all)
 
 
-.page-header
-  %h1= t('.heading')
-  %p= t('.copy')
 
-#projects-list.container-fluid
-  - unless @projects_list.blank?
-    - @projects_list.each do |yr,list|
-      .container-fluid
-        - unless list.blank?
-          %h2= yr
-          - list.each_with_index do |project,i|
-            .item.col-md-3.col-sm-4.col-xs-6
-              %h3
-                - if project[:url].present?
-                  = link_to project[:name], project[:url], target: '_blank'
-                - elsif project[:project_url].present?
-                  = link_to project[:name], project[:project_url]
-                - else
-                  = project[:name]
-              %dl
-                - [:note, :category, :partners, :client, :support, :media].each do |n|
-                  - unless project[n].blank?
-                    %dd{class: "list-#{n}"}= project[n]
-            - if (i+1) % 4 == 0
-              .clearfix.visible-md-block.visible-lg-block
-            - if (i+1) % 3 == 0
-              .clearfix.visible-sm-block
-            - if (i+1) % 2 == 0
-              .clearfix.visible-xs-block
-          .clearfix
+%article
+  #intro-area.no-carousel
+    %header.intro-box
+      %h1= t('.heading')
+
+  .container-fluid
+    %section#description.col-xs-10
+      %h2= t('.copy')
+    %aside.col-xs-2
+      %ul.share-buttons.list-unstyled.pull-right
+        %li
+          - facebook_params = {href: @canonical_url, redirect_uri: @canonical_url, app_id: Setting.facebook_app_id, display: :popup}
+          = link_to "https://www.facebook.com/dialog/share?#{facebook_params.to_param}" do
+            .socialicon.socialicon-facebook
+        %li
+          - twitter_params = {url: @canonical_url, text: @page_share_description, related: t(:twitter_name)}
+          = link_to "https://twitter.com/intent/tweet?#{twitter_params.to_param}" do
+            .socialicon.socialicon-twitter
+        %li
+          &hellip;
+    .clearfix
+
+    %section#projects-list
+      - unless @projects_list.blank?
+        - @projects_list.each do |yr,list|
+          .container-fluid
+            - unless list.blank?
+              %h2= yr
+              - list.each_with_index do |project,i|
+                .item.col-md-3.col-sm-4.col-xs-6
+                  %h3
+                    - if project[:url].present?
+                      = link_to project[:name], project[:url], target: '_blank'
+                    - elsif project[:project_url].present?
+                      = link_to project[:name], project[:project_url]
+                    - else
+                      = project[:name]
+                  %dl
+                    - [:note, :category, :partners, :client, :support, :media].each do |n|
+                      - unless project[n].blank?
+                        %dd{class: "list-#{n}"}= project[n]
+                - if (i+1) % 4 == 0
+                  .clearfix.visible-md-block.visible-lg-block
+                - if (i+1) % 3 == 0
+                  .clearfix.visible-sm-block
+                - if (i+1) % 2 == 0
+                  .clearfix.visible-xs-block
+              .clearfix
           
-  - else
-    %p.text-center= t('.none')
+      - else
+        %p.text-center= t('.none')

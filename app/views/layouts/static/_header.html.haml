@@ -7,7 +7,7 @@
       %span.menu-bar
       %span.menu-bar
       %span.menu-bar
-    .divider
+    .divider{class: @breadcrumbs.blank? ? 'blank' : ''}
     %a.close-menu{href: 'javascript:;'}= t(:close)
 
     - unless @breadcrumbs.blank?

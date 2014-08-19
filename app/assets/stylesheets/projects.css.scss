@@ -41,6 +41,25 @@
   }
 
 
+  // Homepage
+  &.project-home {
+    .page-header { padding: 30px 20px 30px 30px; margin: 0 -15px; border: none;
+      h1 {margin: 0; padding: 0 0 5px 0; font-size: 3.2rem; line-height: 1.0em;}
+      h4 {margin: 0; padding: 0; font-weight: 300; font-size: 1.8rem; line-height: 1.33em;}
+    }
+
+    #project-list { margin: 0; padding: 0;
+      li {padding: 0;
+        a {position: relative; clear: both; display: block; background: #ff0; min-height: 200px;
+          h1 {margin: 0; padding: 0;}
+          &:hover { background: #f0f;
+          }
+        }
+      }
+    }
+  }
+
+
   @media ($tablet-max-size) {
   
   }

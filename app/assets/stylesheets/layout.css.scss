@@ -38,7 +38,10 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
       .menu-bar:nth-child(1) {@include transform(rotate(45deg));}
     }
   }
-  .divider {float: left; margin: 0 15px; width: 1px; height: 15px; overflow: hidden; background-color: rgba($gleuch-black,.2); vertical-align: top;}
+  .divider {float: left; margin: 0 15px; width: 1px; height: 15px; overflow: hidden; background-color: rgba($gleuch-black,.2); vertical-align: top;  @include transition(opacity .2s 0s ease-out);
+    &.blank {opacity: 0;}
+    body.nav-open & {opacity: 1; @include transition(opacity .3s .2s ease-out);}
+  }
   a.close-menu {text-indent: -150px; pointer-events: none; opacity: 0; float: left; font-size: 1.8rem; color: $gleuch-text-grey; text-transform: lowercase; line-height: 15px;
     &:focus, &.hover {text-decoration: none; color: $gleuch-mid-black; cursor: pointer;}
     body.nav-open & {text-indent: 0px; opacity: 1; pointer-events: visible;}

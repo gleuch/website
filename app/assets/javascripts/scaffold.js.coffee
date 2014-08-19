@@ -27,6 +27,19 @@ $ ->
         $('#content').css('min-height', h)
     ).trigger 'resize'
 
+    try
+      @gleuch_haha = @gleuch_haha || {}
+      @gleuch_haha.keys = []
+      @gleuch_haha.code = '38,38,40,40,37,39,37,39,66,65'
+
+      $(document).on 'keydown', (e)->
+        try
+          @gleuch_haha.keys.push(e.keyCode)
+          if @gleuch_haha.keys.toString().indexOf(@gleuch_haha.code) >= 0
+            @gleuch_haha.keys = []
+            alert('Eep! You caught me with my code down.')
+        catch e
+          #
 
 
     # CSS / JS Ability checks (simpler than using modernizer, etc.)

@@ -10,6 +10,8 @@ class ClientWorksController < ApplicationController
   def index
     load_resource(id: 'home', format: request.format.symbol.to_s)
     impressionist(@client_work) unless request_is_self?
+    @body_classes << 'client-work' << 'client-work-home'
+    @featured_works = t('client_works.featured_list')
     show_static_page(@client_work)
   end
 
