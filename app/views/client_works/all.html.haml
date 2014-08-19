@@ -5,39 +5,62 @@
 - @page_share_title = t('.page_title', default: '')
 - @page_share_description = t('.meta.description', default: '')
 - @breadcrumbs << {name: t('.breadcrumbs')}
+- @canonical_url = client_work_url(:all)
+
+- years = @client_works_list.count rescue 0
+- works_count = ((@client_works_list.to_a.flatten.select{|v| v.is_a?(Hash)}.count rescue 0) / 10.0).ceil * 10
 
 
-.page-header
-  %h1= t('.heading')
-  %p= t('.copy')
+%article
+  #intro-area.no-carousel
+    %header.intro-box
+      %h1= t('.heading')
+    %hr
 
-#client-works-list.container-fluid
-  - unless @client_works_list.blank?
-    - @client_works_list.each do |yr,list|
-      .container-fluid
-        - unless list.blank?
-          %h2= yr
-          - list.each_with_index do |work,i|
-            .item.col-md-3.col-sm-4.col-xs-6
-              %h3
-                - if work[:url].present?
-                  = link_to work[:name], work[:url], target: '_blank'
-                - elsif work[:work_url].present?
-                  = link_to work[:name], work[:work_url]
-                - else
-                  = work[:name]
-              %dl
-                - [:note, :category, :partners, :client, :support, :role, :media].each do |n|
-                  - unless work[n].blank?
-                    %dd{class: "list-#{n}"}= work[n]
-            - if (i+1) % 4 == 0
-              .clearfix.visible-md-block.visible-lg-block
-            - if (i+1) % 3 == 0
-              .clearfix.visible-sm-block
-            - if (i+1) % 2 == 0
-              .clearfix.visible-xs-block
+  .container-fluid
+    %section#description.col-xs-10
+      %h2= t('.copy', years: years, count: works_count)
+    %aside.col-xs-2
+      %ul.share-buttons.list-unstyled.pull-right
+        %li
+          - facebook_params = {href: @canonical_url, redirect_uri: @canonical_url, app_id: Setting.facebook_app_id, display: :popup}
+          = link_to "https://www.facebook.com/dialog/share?#{facebook_params.to_param}" do
+            .socialicon.socialicon-facebook
+        %li
+          - twitter_params = {url: @canonical_url, text: @page_share_description, related: t(:twitter_name)}
+          = link_to "https://twitter.com/intent/tweet?#{twitter_params.to_param}" do
+            .socialicon.socialicon-twitter
+        %li
+          &hellip;
+    .clearfix
 
-    %p= t('.disclaimer')
+    %section#projects-list
+      - unless @client_works_list.blank?
+        - @client_works_list.each do |yr,list|
+          .container-fluid
+            - unless list.blank?
+              %h2= yr
+              - list.each_with_index do |work,i|
+                .item.col-md-3.col-sm-4.col-xs-6
+                  %h3
+                    - if work[:url].present?
+                      = link_to work[:name], work[:url], target: '_blank'
+                    - elsif work[:work_url].present?
+                      = link_to work[:name], work[:work_url]
+                    - else
+                      = work[:name]
+                  %dl
+                    - [:note, :category, :partners, :client, :support, :role, :media].each do |n|
+                      - unless work[n].blank?
+                        %dd{class: "list-#{n}"}= work[n]
+                - if (i+1) % 4 == 0
+                  .clearfix.visible-md-block.visible-lg-block
+                - if (i+1) % 3 == 0
+                  .clearfix.visible-sm-block
+                - if (i+1) % 2 == 0
+                  .clearfix.visible-xs-block
 
-  - else
-    %p.text-center= t('.none')
+        %p= t('.disclaimer')
+
+      - else
+        %p.text-center= t('.none')

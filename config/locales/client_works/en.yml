@@ -48,7 +48,9 @@ en:
         keywords:           ''
       breadcrumbs:          'List'
       heading:              'All Client Work'
-      copy:                 'Nothing better explains the skills and expertise of a true professional then by the quality of work they produce and a willingness to show it.'
+      copy:                 
+        zero:               'Nothing better explains the skills and expertise of a true professional then by the quality of work they produce and a willingness to share it.'
+        other:              'Nothing better explains the %{years} years of skills and expertise on more than %{count} projects then by the quality of work they produce and a willingness to share it.'
       disclaimer:           'Some employed and contract work have been omitted from this list due to disclosure agreements, lack of substantial work, employment situations, or other various reasons. Work listed with a company underneath the title indicates work done as an employee, company member/owner, or under contract with the company listed. All other work is considered freelanced.'
 
 
@@ -67,19 +69,61 @@ en:
           role:             'project management, design, develop'
           media:            'Rails app'
           url:              'http://whatstrending.com'
-
-        # TODO : ADD MORE!
-
+        - # studio_huerta
+          name:             'Studio Huerta'
+          client:           'XOlator'
+          role:             'design, develop'
+        - # interior_design
+          name:             'Interior Design, 2014 Best of Year Awards'
+          client:           'XOlator'
+          role:             'project management, develop'
+          media:            'Rails app, e-commerce'
       2013:
         - # listingsproject
           name:             'Listings Project'
           client:           'XOlator'
           role:             'project management, develop'
-          media:            'Rails app'
+          media:            'Rails app, e-commerce'
           url:              'http://www.listingsproject.com'
-
-        # TODO : ADD MORE!
-
+        - # nike
+          name:             'Nike - Digital Sports Team'
+          client:           'XOlator'
+          role:             'develop'
+          media:            'data analytics, interactive presentations'
+        - # interior_design
+          name:             'Interior Design, 2013 Best of Year Awards'
+          client:           'XOlator'
+          role:             'project management, develop'
+          media:            'Rails app, e-commerce'
+        - # cultivated_wit
+          name:             'Cultivated Wit'
+          client:           'XOlator'
+          role:             'develop'
+        - # selectable media
+          name:             'Selectable Media'
+          client:           'XOlator'
+          role:             'design, develop'
+        - # cloud_catering
+          name:             'Cloud Catering'
+          client:           'XOlator'
+          role:             'design, develop'
+        - # beutler
+          name:             'Beutler Ink'
+          client:           'XOlator'
+          role:             'design, develop'
+        - # treatings
+          name:             'Treatings'
+          client:           'XOlator'
+          role:             'develop'
+          media:            'Rails app'
+        - # knock2x
+          name:             'Knock Twice'
+          client:           'XOlator'
+          role:             'develop'
+        - # little_bird
+          name:             'Little Bird HR'
+          client:           'XOlator & OCD'
+          role:             'develop'
       2012:
         - # your_excuse_sucks
           name:             'Your Excuse Sucks'
@@ -177,139 +221,188 @@ en:
           media:            'Rails app'
           url:              'http://knowyourmeme.com'
         - # artzilla
-          name:           'Artzilla.org'
-          role:           'design, develop'
+          name:             'Artzilla.org'
+          role:             'design, develop'
       2008:
-        # thesa.me
-        # brainstorm, research, design
-        # Politics4All
-        # Politics4All
-        # design, develop
-        # Rails app
-        # Water Resources Link
-        # Virticle Corp
-        # design, develop
-        # Century 21 Paramount Real Estate
-        # Virticle Corp
-        # design, develop
-        # University of Alabama at Birmingham School of Dentistry Link
-        # Virticle Corp
-        # design, develop
-        # Parker-Burns Environmental Engineering & Erosion Control
-        # Virticle Corp
-        # design, develop
-        # Safe Partnership, Ltd.
-        # Virticle Corp
-        # design, develop
-        # Red Mountain Market
-        # Virticle Corp
-        # design, develop
+        - # thesa_me
+          name:             'thesa.me'
+          role:             'brainstorm, research, design'
+        - #politics4all
+          name:             'Politics4All'
+          client:           'Politics4All'
+          role:             'design, develop'
+          media:            'Rails app'
+        - # water_resources
+          name:             'Water Resources'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # c21_paramount
+          name:             'Century 21 Paramount Real Estate'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # uab_dentistry
+          name:             'University of Alabama at Birmingham School of Dentistry'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # parker_burns
+          name:             'Parker-Burns Environmental Engineering & Erosion Control'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # safe_partnership
+          name:             'Safe Partnership, Ltd.'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # red_mountain_market
+          name:             'Red Mountain Market'
+          client:           'Virticle Corp'
+          role:             'design, develop'
       2007:
-        # Auburn University Graphic Design Department
-        # Auburn University
-        # design, develop
-        # CollegeFootballArt.com Link
-        # Virticle Corp
-        # design, develop
-        # Lyman Ward Military Academy
-        # Virticle Corp
-        # design, develop
-        # AuburnArt.com Link
-        # Virticle Corp
-        # design, develop
-        # Chattahoochee Valley Community College
-        # Virticle Corp
-        # design, develop
-        # The Money Financial Group
-        # Virticle Corp
-        # design, develop
-        # CoachComm
-        # Virticle Corp
-        # design, develop
+        - # auburn_graphic_design
+          name:             'Auburn University Graphic Design Department'
+          client:           'Auburn University / One Way Studio'
+          role:             'design, develop'
+        - # college_football_art2
+          name:             'College Football Art'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # lyman_ward_academy
+          name:             'Lyman Ward Military Academy'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # auburn_art2
+          name:             'Auburn Art'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # cvcc
+          name:             'Chattahoochee Valley Community College'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # money_financial_group
+          name:             'The Money Financial Group'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # coachcomm
+          name:             'CoachComm'
+          client:           'Virticle Corp'
+          role:             'design, develop'
       2006:
         # Joys of Blue
         # Amanda Foran
         # design, develop
-        # Skanska USA
-        # Virticle Corp
-        # design, develop
-        # Hospice Family Care
-        # Virticle Corp
-        # design, develop
-        # Archangel Systems
-        # Virticle Corp
-        # design, develop
-        # Summit Hospital
-        # Virticle Corp
-        # design, develop
-        # Southern States Communication Association
-        # Virticle Corp
-        # design, develop
-        # Domin Gloves
-        # Virticle Corp
-        # design, develop
+        - # skanska
+          name:             'Skanska USA'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # hospice_family_care
+          name:             'Hospice Family Care'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # archangel_systems
+          name:             'Archangel Systems'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # summit_hospital
+          name:             'Summit Hospital'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # ssca
+          name:             'Southern States Communication Association'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # domin_gloves
+          name:             'Domin Gloves'
+          client:           'Virticle Corp'
+          role:             'design, develop'
       2005:
-        # Canine American
-        # Alexander Scott Designs & Virticle Corp
-        # develop
-        # Auburn City Limits
-        # Virticle Corp
-        # develop
-        # College Football Art
-        # Virticle Corp
-        # design, develop
-        # Three Notch EMC
-        # Virticle Corp
-        # design, develop
-        # TeamMax
-        # Virticle Corp
-        # design, develop
-        # The Auburn Circle
-        # Auburn University
-        # print design, web design
-        # The Charter Companies
-        # Virticle Corp
-        # design, develop
-        # The Buffalo Connection
-        # Virticle Corp
-        # design, develop
+        - # canine_american
+          name:             'Canine American'
+          client:           'Alexander Scott Designs & Virticle Corp'
+          role:             'develop'
+        - # auburn_city_limits
+          name:             'Auburn City Limits'
+          client:           'Virticle Corp'
+          role:             'develop'
+        - # college_football_art
+          name:             'College Football Art'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # three_notch_emc
+          name:             'Three Notch EMC'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # teammax
+          name:             'TeamMax'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # auburn_circle
+          name:             'The Auburn Circle'
+          client:           'Auburn University'
+          role:             'print design, web design'
+        - # charter_companies
+          name:             'The Charter Companies'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # buffalo_connection
+          name:             'The Buffalo Connection'
+          client:           'Virticle Corp'
+          role:             'design, develop'
       2004:
-        # AuburnArt.com
-        # Virticle Corp
-        # develop
-        # Harmonex.us
-        # Virticle Corp
-        # develop
-        # Auburn Area Community Theatre
-        # Virticle Corp
-        # design, develop
-        # Alabama Book Center
-        # Virticle Corp
-        # develop
-        # Auburn University School of Nursing
-        # Virticle Corp
-        # design, develop
-        # KICKER 97.7 FM – Qantum Communications
-        # Virticle Corp
-        # design, develop
-        # MIX 96.7 FM – Qantum Communications
-        # Virticle Corp
-        # design, develop
-        # UnwiredLINC, LLC
-        # Virticle Corp
-        # develop
-        # WSWS TV 66
-        # Virticle Corp
-        # design, develop
-        # AFLAC
-        # Virticle Corp
-        # develop
+        - # auburn_art
+          name:             'AuburnArt.com'
+          client:           'Virticle Corp'
+          role:             'develop'
+        - # harmonex
+          name:             'Harmonex.us'
+          client:           'Virticle Corp'
+          role:             'develop'
+        - # auburn_area_theatre
+          name:             'Auburn Area Community Theatre'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # alabama_book_center
+          name:             'Alabama Book Center'
+          client:           'Virticle Corp'
+          role:             'develop'
+        - # auburn_nursing_school
+          name:             'Auburn University School of Nursing'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # kicker_977_fm
+          name:             'KICKER 97.7 FM – Qantum Communications'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # mix_967_fm
+          name:             'MIX 96.7 FM – Qantum Communications'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # unwired
+          name:             'UnwiredLINC, LLC'
+          client:           'Virticle Corp'
+          role:             'develop'
+        - # wsws_tv_66
+          name:             'WSWS TV 66'
+          client:           'Virticle Corp'
+          role:             'design, develop'
+        - # aflac
+          name:             'AFLAC'
+          client:           'Virticle Corp'
+          role:             'develop'
       2003:
-        # Terra Naomi
-        # develop
-        # Interlude Magazine
-        # design, develop
-        # Deckaboyz
-        # design, develop
-        # Charlotte Martin E-team
-        # design, develop, promote
+        - # terra_naomi
+          name:             'Terra Naomi'
+          role:             'develop'
+        - # interlude_magazine
+          name:             'Interlude Magazine'
+          role:             'design, develop'
+        - # deckaboyz
+          name:             'Deckaboyz'
+          role:             'design, develop'
+        - # charlotte_martin_eteam
+          name:             'Charlotte Martin E-team'
+          role:             'design, develop, promote'
+      2002:
+        # Do not list
+      2001:
+        # Do not list
+      2000:
+        # Do not list
