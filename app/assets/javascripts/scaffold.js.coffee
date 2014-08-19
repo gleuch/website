@@ -49,6 +49,24 @@ $ ->
         catch e
           #
 
+    # Key navigations
+    $(document).on 'keydown', (e)->
+      # Skip if inside form element
+      if ['input','textarea','select','button'].indexOf(e.target.nodeName.toLowerCase()) >= 0
+        return true
+
+      # 'esc' key, close overlay and menus by priority
+      if e.keyCode == 27
+        # Clear search overlay
+        if $('#search-overlay').hasClass('open')
+          $('#search-overlay').removeClass('open')
+        # Clear open menu
+        else if $('body').hasClass('nav-open')
+          $('body').removeClass('nav-open')
+
+      # 'm' key toggles menu
+      else if e.keyCode == 77
+        $('body').toggleClass('nav-open')
 
     # CSS / JS Ability checks (simpler than using modernizer, etc.)
     test_can = document.createElement('div');
