@@ -1,4 +1,18 @@
-body {background-color: $gleuch-white; overflow-x: hidden;}
+body {background-color: $gleuch-white; overflow-x: hidden;
+  &.unload { background-color: $gleuch-grey-bg;
+    #header #breadcrumbs {left: $gleuch-lg-frame-padding !important;  @include transition(left .1s ease-out !important);
+      .divider, ul, a.close-menu {opacity: 0 !important; @include transition(opacity .1s ease-out !important);}
+      #menu-icon .menu-bar, .menu-bar:nth-child(2) {
+        -webkit-transition: background-color .1s ease-out, opacity .1s ease-out, width .2s .6s ease-out, -webkit-transform .1s ease-out, margin .1s ease-out !important;
+        -moz-transition: background-color .1s ease-out, opacity .1s ease-out, width .2s .6s ease-out, -moz-transform .1s ease-out, margin .1s ease-out !important;
+        -ms-transition: background-color .1s ease-out, opacity .1s ease-out, width .2s .6s ease-out, -ms-transform .1s ease-out, margin .1s ease-out !important;
+        transition: background-color .1s ease-out, opacity .1s ease-out, width .1s ease-out, transform .1s ease-out, margin .1s ease-out !important;
+      }
+    }
+    #nav-pullout {left: -$gleuch-menu-width !important;  @include transition(left .1s ease-out !important);}
+    #wrapper {opacity: 0 !important; @include transition(opacity .1s ease-out !important);}
+  }
+}
 
 
 // HEADER
@@ -12,78 +26,77 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
     a {display: block; width: 105px; height: 40px; text-indent:-999px; background: image-url('logo.png') center center no-repeat; background-size: 100% 100%; overflow: hidden; -webkit-transition: opacity .2s ease-out, -webkit-filter .2s ease-out; -moz-transition: opacity .2s ease-out, -moz-filter .2s ease-out; -ms-transition: opacity .2s ease-out, -ms-filter .2s ease-out; transition: opacity .2s ease-out, filter .2s ease-out;
       @include hidpi(1.5) { background-image: image-url('logo@2x.png');}
       
-      html.can-css-mask & {background-image: none; background-color: $gleuch-logo;mask: image-url('logo.png') center center / cover; -webkit-mask: image-url('logo.png') center center / cover; -ms-mask: image-url('logo.png') center center / cover;
+      html.can-css-mask & {background-image: none; background-color: $gleuch-logo; mask: image-url('logo.png') center center / cover; -webkit-mask: image-url('logo.png') center center / cover; -ms-mask: image-url('logo.png') center center / cover;
         @include hidpi(1.5) {background-image: none; mask-image: image-url('logo@2x.png'); -webkit-mask-image: image-url('logo@2x.png'); -ms-mask-image: image-url('logo@2x.png');}
       }
       &:hover {opacity: .8; -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -ms-filter: grayscale(1); filter: grayscale(1);}
     }
   }
   #breadcrumbs {position: absolute; bottom: 20px; left: $gleuch-lg-frame-padding; @include transition(left .12s ease-out);
-    body.nav-open & {left: $gleuch-lg-frame-padding + 125px + 15px; @include transition(left .2s .1s ease-out);}
-  }
-  #menu-icon {float: left; width: 15px; overflow: hidden; @include transition(opacity .1s ease-out);
-    .menu-bar {display: block; background-color: $gleuch-mid-black; height: 3px; width: 15px; margin: 0 0 2px 0; line-height: 0; 
-      -webkit-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -webkit-transform .2s .5s ease-out, margin .2s .3s ease-out;
-      -moz-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -moz-transform .2s .5s ease-out, margin .2s .3s ease-out;
-      -ms-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -ms-transform .2s .5s ease-out, margin .2s .3s ease-out;
-      transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, transform .2s .5s ease-out, margin .2s .3s ease-out;
-      &:nth-child(1) {@include transform-origin(top left);}
-      &:nth-child(3) {@include transform-origin(bottom left);}
-    }
-    &.hover {opacity: .5; cursor: pointer;}
-    body.nav-open & {
-      .menu-bar:nth-child(2) {opacity: 0; width: 0; @include transition(background-color .2s ease-out, opacity .2s .3s ease-out, width .2s .3s ease-out);}
-      .menu-bar:nth-child(1), .menu-bar:nth-child(3) {opacity: 1; margin-left: 3px;}
-      .menu-bar:nth-child(3) {@include transform(rotate(-45deg));}
-      .menu-bar:nth-child(1) {@include transform(rotate(45deg));}
-    }
-  }
-  .divider {float: left; margin: 0 15px; width: 1px; height: 15px; overflow: hidden; background-color: rgba($gleuch-black,.2); vertical-align: top;  @include transition(opacity .2s 0s ease-out);
-    &.blank {opacity: 0;}
-    body.nav-open & {opacity: 1; @include transition(opacity .3s .2s ease-out);}
-  }
-  a.close-menu {text-indent: -150px; pointer-events: none; opacity: 0; float: left; font-size: 1.8rem; color: $gleuch-text-grey; text-transform: lowercase; line-height: 15px;
-    &:focus, &.hover {text-decoration: none; color: $gleuch-mid-black; cursor: pointer;}
-    body.nav-open & {text-indent: 0px; opacity: 1; pointer-events: visible;}
-  }
-  ul {float: left;  text-indent: 0; opacity: 1; pointer-events: visible; margin: 0; padding: 0;
-    li {float: left; display: inline-block;
-      &, a {color: $gleuch-text-grey; font-size: 1.8rem; line-height: 15px; text-transform: lowercase;  @include transition(color .1s ease-out);}
-      a:focus, a:hover {text-decoration: none; color: $gleuch-mid-black;}
-      &:before {content: ""; display: inline-block; margin: 0 4px 0 8px; width: 10px; height: 9px; background: image-url('breadcrumb-arrow.png') center center no-repeat;
-        @include hidpi(1.5) {background-image: image-url('breadcrumb-arrow@2x.png'); background-size: 10px 9px;}
+    #menu-icon {float: left; width: 15px; overflow: hidden; @include transition(opacity .1s ease-out);
+      .menu-bar {display: block; background-color: $gleuch-mid-black; height: 3px; width: 15px; margin: 0 0 2px 0; line-height: 0; 
+        -webkit-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -webkit-transform .2s .5s ease-out, margin .2s .3s ease-out;
+        -moz-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -moz-transform .2s .5s ease-out, margin .2s .3s ease-out;
+        -ms-transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, -ms-transform .2s .5s ease-out, margin .2s .3s ease-out;
+        transition: background-color .2s ease-out, opacity .2s .6s ease-out, width .2s .6s ease-out, transform .2s .5s ease-out, margin .2s .3s ease-out;
+        &:nth-child(1) {@include transform-origin(top left);}
+        &:nth-child(3) {@include transform-origin(bottom left);}
       }
-      &:first-child:before {display: none;}
+      &.hover {opacity: .5; cursor: pointer;}
     }
-    body.nav-open & {text-indent: -150px; opacity: 0; pointer-events: none;}
-  }
-  a.close-menu, ul {@include transition(color .1s ease-out, text-indent .3s ease-out, opacity .1s ease-out);
-    body.nav-open & {@include transition(color .1s ease-out, text-indent .3s .2s ease-out, opacity .1s .3s ease-out);}
+    .divider {float: left; margin: 0 15px; width: 1px; height: 15px; overflow: hidden; background-color: rgba($gleuch-black,.2); vertical-align: top;  @include transition(opacity .2s 0s ease-out);
+      &.blank {opacity: 0;}
+    }
+    a.close-menu {text-indent: -150px; pointer-events: none; opacity: 0; float: left; font-size: 1.8rem; color: $gleuch-text-grey; text-transform: lowercase; line-height: 15px; @include transition(color .1s ease-out, text-indent .3s ease-out, opacity .1s ease-out);
+      &:focus, &.hover {text-decoration: none; color: $gleuch-mid-black; cursor: pointer;}
+    }
+    ul {float: left;  text-indent: 0; opacity: 1; pointer-events: visible; margin: 0; padding: 0; @include transition(color .1s ease-out, text-indent .3s .2s ease-out, opacity .1s .3s ease-out);
+      li {float: left; display: inline-block;
+        &, a {color: $gleuch-text-grey; font-size: 1.8rem; line-height: 15px; text-transform: lowercase;  @include transition(color .1s ease-out);}
+        a:focus, a:hover {text-decoration: none; color: $gleuch-mid-black;}
+        &:before {content: ""; display: inline-block; margin: 0 4px 0 8px; width: 10px; height: 9px; background: image-url('breadcrumb-arrow.png') center center no-repeat;
+          @include hidpi(1.5) {background-image: image-url('breadcrumb-arrow@2x.png'); background-size: 10px 9px;}
+        }
+        &:first-child:before {display: none;}
+      }
+    }
+
+    body.nav-open & {left: $gleuch-menu-width + 25px; @include transition(left .2s .1s ease-out);
+      #menu-icon {
+        .menu-bar:nth-child(2) {opacity: 0; width: 0; @include transition(background-color .2s ease-out, opacity .2s .3s ease-out, width .2s .3s ease-out);}
+        .menu-bar:nth-child(1), .menu-bar:nth-child(3) {opacity: 1; margin-left: 3px;}
+        .menu-bar:nth-child(3) {@include transform(rotate(-45deg));}
+        .menu-bar:nth-child(1) {@include transform(rotate(45deg));}
+      }
+      .divder {opacity: 1; @include transition(opacity .3s .2s ease-out);}
+      a.close-menu {text-indent: 0px; opacity: 1; pointer-events: visible; @include transition(color .1s ease-out, text-indent .3s .2s ease-out, opacity .1s .3s ease-out);}
+      ul {text-indent: -150px; opacity: 0; pointer-events: none; @include transition(color .1s ease-out, text-indent .3s ease-out, opacity .1s ease-out);}
+    }
   }
 }
 
 // NAV PULLOUT
-#nav-pullout { position: fixed; top: -15px; left: -200px; bottom: -15px; padding: 15px 0; z-index: 999999; width: 200px; background-color: $gleuch-grey-bg; box-shadow: inset 0 4px 18px rgba($gleuch-black, 0.12); @include transition(left .3s ease-out);
-  body.nav-open & {left: 0;}
-  #menu-items {padding: 90px 15px 50px 15px;
-    li { border-top: 1px solid rgba($gleuch-black,.05); padding: 10px 15px;
+#nav-pullout { position: fixed; top: -15px; left: -$gleuch-menu-width; bottom: -15px; padding: 15px 0; z-index: 999999; width: $gleuch-menu-width; background-color: $gleuch-grey-bg; box-shadow: inset 0 4px 18px rgba($gleuch-black, 0.12); @include transition(left .3s ease-out);
+  & > .container-fluid {margin: 0; padding: 0; height: 100%;}
+
+  #menu-items {position: absolute; top: 40px; left: 0; right: 0; bottom: 120px; padding: 0 20px; overflow: hidden; overflow-y: scroll; overflow-x: hidden;
+    li { border-top: 1px solid rgba($gleuch-black,.05); padding: 10px 0;
       a {display: block; color: $gleuch-text-grey; text-transform: lowercase; font-size: 1.8rem; text-indent: -50px; opacity: 0; @include transition(text-indent .2s .1s ease-out, opacity .3s .1s ease-out);
         &:hover, &:focus {color: $gleuch-logo;}
-        body.nav-open & {text-indent: 0; opacity: 1;}
       }
       &:first-child {border-top: none;}
-      body.nav-open & {
-        &:nth-child(1) a {@include transition-delay(.3s);}
-        &:nth-child(2) a {@include transition-delay(.35s);}
-        &:nth-child(3) a {@include transition-delay(.4s);}
-        &:nth-child(4) a {@include transition-delay(.45s);}
-        &:nth-child(5) a {@include transition-delay(.5s);}
-        &:nth-child(6) a {@include transition-delay(.55s);}
-        &:nth-child(7) a {@include transition-delay(.6s);}
+      ul { padding: 3px 0 0 10px;
+        li { padding: 0; border: none;
+          a {font-size: 1.3rem; line-height: 1.54em;}
+        }
+      }
+      @media (max-height: 600px) {
+        ul {display: none;}
       }
     }
   }
-  #nav-footer { position: absolute; bottom: 30px; left: 15px; right: 15px;
+
+  #nav-footer { position: absolute; bottom: 0; left: 15px; right: 15px;
     ul {display: block; margin: 0; padding: 0;
       li {display: inline-block;
         a {color: $gleuch-text-grey; font-size: 1.6rem;
@@ -93,11 +106,24 @@ body {background-color: $gleuch-white; overflow-x: hidden;}
       }
     }
   }
+
+  body.nav-open & {left: 0;
+    #menu-items li {
+      a {text-indent: 0; opacity: 1;}
+      &:nth-child(1) a {@include transition-delay(.3s);}
+      &:nth-child(2) a {@include transition-delay(.35s);}
+      &:nth-child(3) a {@include transition-delay(.4s);}
+      &:nth-child(4) a {@include transition-delay(.45s);}
+      &:nth-child(5) a {@include transition-delay(.5s);}
+      &:nth-child(6) a {@include transition-delay(.55s);}
+      &:nth-child(7) a {@include transition-delay(.6s);}
+    }
+  }
 }
 
 // SEARCH OVERLAY FORM
-aside#search-overlay {opacity: 0; @include transition(opacity .2s ease-out);
-  &.open {position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999990; opacity: 1;
+aside#search-overlay {display: none; opacity: 0; @include transition(opacity .2s ease-out);
+  &.open {display: block; position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999990; opacity: 1;
     &:before {content: ""; display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 9999991; background: rgba($gleuch-black,.12);}
     a.search-close {position: fixed; display: block; top: 30px; right: 30px; color: $gleuch-logo; font-weight: 700; font-size: 4.2rem; z-index: 9999992;}
     #search-form {position: fixed; top: 35%; left: 0; right: 0; margin: 0 auto; max-width: 500px; z-index: 9999992;}
@@ -121,10 +147,14 @@ aside#search-overlay {opacity: 0; @include transition(opacity .2s ease-out);
 
 // TABLET RESPONSIVE
 @media ($tablet-max-size) {
+  body.unload {
+    #header #breadcrumbs {left: $gleuch-sm-frame-padding !important;}
+  }
+
   #header, #container {padding: 0 $gleuch-sm-frame-padding;}
   #header {
     #breadcrumbs {left: $gleuch-sm-frame-padding;
-      body.nav-open & {left: $gleuch-sm-frame-padding + 170px + 15px;}
+      body.nav-open & {left: $gleuch-menu-width + 15px;}
     }
   }
   #container {
@@ -136,13 +166,17 @@ aside#search-overlay {opacity: 0; @include transition(opacity .2s ease-out);
 
 // MOBILE RESPONSIVE
 @media ($mobile-max-size) {
+  body.unload {
+    #header #breadcrumbs {left: $gleuch-xs-frame-padding !important;}
+    #nav-pullout {left: -$gleuch-xs-frame-padding !important;}
+  }
+  
   #header, #container {padding: 0 $gleuch-xs-frame-padding;}
   #header { border-top-width: 5px; min-height: 55px;
     #brand { margin-top: 10px;
       a {width: 75px; height: 28px;}
     }
     #breadcrumbs {left: $gleuch-xs-frame-padding; bottom: 15px;
-      body.nav-open & {left: $gleuch-xs-frame-padding;}
       .divider {margin: 0 10px;}
       ul {
         li {display: none;
@@ -153,8 +187,10 @@ aside#search-overlay {opacity: 0; @include transition(opacity .2s ease-out);
         }
       }
     }
-    a.close-menu, ul {height: 17px; overflow-x: hidden; @include transition(color .1s ease-out, text-indent .3s ease-out, opacity .1s ease-out);
-      body.nav-open & {@include transition(color .1s ease-out, text-indent .3s .2s ease-out, opacity .1s .3s ease-out);}
+    a.close-menu, ul {height: 17px; overflow-x: hidden; @include transition(color .1s ease-out, text-indent .3s ease-out, opacity .1s ease-out);}
+    body.nav-open & {
+      #breadcrumbs {left: $gleuch-xs-frame-padding;}
+      a.close-menu, ul {@include transition(color .1s ease-out, text-indent .3s .2s ease-out, opacity .1s .3s ease-out);}
     }
   }
   // NAV PULLOUT
@@ -185,12 +221,14 @@ aside#search-overlay {opacity: 0; @include transition(opacity .2s ease-out);
       }
     }
   }
+
   #wrapper {margin-top: 55px;}
   #container {
     #content {
       body.nav-open & {left: auto;}
     }
   }
+
   footer#mobile-footer {margin: 0 $gleuch-xs-frame-padding; padding: $gleuch-xs-frame-padding; background-color: $gleuch-grey-bg;
     .container-fluid {margin: 0; padding: $gleuch-xs-frame-padding 0 0 0; border-top: 1px solid rgba($gleuch-black,.05);}
     p {padding: 0; margin: 0; font-size: 0.9rem; line-height: 1.25em; text-align: left; color: $gleuch-text-grey;

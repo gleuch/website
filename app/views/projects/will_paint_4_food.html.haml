@@ -16,7 +16,7 @@
 - # Page Content
 %article
   = render 'projects/intro_area', heading: t('.heading'), carousel_images: carousel_images
-  = #render 'projects/exhibitions', exhibitions: t('.exhibitions')
-  = #render 'projects/awards', awards: t('.awards')
+  = #render 'projects/exhibitions', exhibitions: t('.exhibitions', default: '')
+  = #render 'projects/awards', awards: t('.awards', default: '')
 
   = render 'projects/footer'

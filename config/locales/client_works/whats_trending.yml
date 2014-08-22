@@ -1,0 +1,29 @@
+en:
+  client_works:
+    whats_trending:
+      page_title:           "What's Trending"
+      meta:
+        description:        
+        keywords:           
+
+      heading:              "What's Trending"
+      subheading:           
+
+      about: |
+
+      solution: |
+
+      content_rails:
+        - # Column 1
+          -
+            title:          Tasks
+            content:        'project managment, design, develop'
+          -
+            title:          Client
+            content:        "What's Trending"
+          -
+            title:          Firm
+            content:        XOlator
+          -
+            title:          Launched
+            content:        Sept 2014<br><a href="http://whatstrending.com" target="_blank">whatstrending.com</a>

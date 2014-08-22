@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
 
   # Initialize variables and other items for use on page.
   def app_init
-    @body_classes, @breadcrumbs = [], []
+    @body_classes, @breadcrumbs = ['unload'], []
     @_static_page_options = {cache: true}.with_indifferent_access
     @page_title = t(:name)
   end

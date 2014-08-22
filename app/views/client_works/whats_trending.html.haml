@@ -16,16 +16,13 @@
 - # Page Content
 - content_opts = {}
 - content_opts[:subheading] = t('.subheading', default: '')
-- content_opts[:statement] = t('.statement', default: '')
-- content_opts[:explanation] = t('.explanation')
+- content_opts[:about] = t('.about', default: '')
+- content_opts[:solution] = t('.solution', default: '')
 - content_opts[:content_rails] = t('.content_rails', default: '')
 - content_opts[:share_link] = @canonical_url
-- content_opts[:github_link] = 'https://github.com/gleuch/shaved-bieber'
 
 %article
-  = render 'projects/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images
-  = render 'projects/content', content_opts
-  = render 'projects/exhibitions', exhibitions: t('.exhibitions', default: '')
-  = render 'projects/press', press: t('.press', default: '')
+  = render 'client_works/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images
+  = render 'client_works/content', content_opts
 
-  = render 'projects/footer'
+= render 'client_works/footer'

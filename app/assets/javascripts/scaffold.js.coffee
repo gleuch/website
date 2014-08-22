@@ -4,7 +4,13 @@ $ ->
     window.console.log "\n\nHi!\n\nIf you like what you see, I'd be happy to talk more with you.\n\nSend me an email at contact@gleu.ch or tweet me @gleuch.\n\n"
 
 
+  $(window).on 'beforeunload', (e)->
+    $('body').removeClass('nav-open').addClass('unload')
+    return
+
   $(document).ready ->
+    $('body').removeClass('unload')
+
     menu_toggle = (r) ->
       $(this).trigger('mouseout')
       $('body').toggleClass 'nav-open', r

@@ -10,7 +10,7 @@
         = content_tag((article[:url].present? ? :a : :div), {class: 'col-md-3 col-sm-4 col-xs-6'}.merge(article[:url].present? ? {href: article[:url], target: '_blank'} : {}) ) do
           %dl
             - unless article[:name].blank?
-              %dt= article[:name].html_safe
+              %dd= article[:name].html_safe
             - [:category, :place, :date].each do |type|
               - next if article[type].blank?
               %dd.hidden-xs= article[type]

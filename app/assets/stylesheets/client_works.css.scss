@@ -39,7 +39,16 @@
     p {font-size: 1.7rem; line-height: 1.41em; padding: 0 0 8px 0;}
     & + #examples {margin-top: -30px; padding-top: 0;}
   }
-
+  #awards, #exhibitions, #press {padding: 0 30px;
+    h3 {}
+    a:hover {
+      dt, dd {color: $gleuch-logo;}
+    }
+    dl { padding: 0; margin: 0 0 5px 0;
+      dt {}
+      dd {}
+    }
+  }
 
   @media ($tablet-max-size) {
   

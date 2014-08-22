@@ -9,9 +9,9 @@ en:
       heading:              'FFFFFartsy'
       subheading:           'Open access & open-source public virtual art gallery.'
 
-      statement:            TODO
+      #statement:            TODO
 
-      explanation:          TODO
+      #explanation:          TODO
 
       carousel:
         captions:

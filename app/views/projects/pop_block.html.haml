@@ -16,12 +16,12 @@
 - # Page Content
 - content_opts = {}
 - content_opts[:subheading] = t('.subheading', default: '')
-- content_opts[:statement] = t('.statement')
+- content_opts[:statement] = t('.statement', default: '')
 - content_opts[:share_link] = @canonical_url
 
 %article
   = render 'projects/intro_area', heading: t('.heading'), carousel_images: carousel_images
   = render 'projects/content', content_opts
-  = render 'projects/press', press: t('.press')
+  = render 'projects/press', press: t('.press', default: '')
 
   = render 'projects/footer'

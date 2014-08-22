@@ -27,6 +27,35 @@ en:
     art:          'Art & Research'
     about:        'About'
     contact:      'Contact'
+    search:       'Search'
+
+    featured:
+      client_works:
+        -
+          name:   "What's Trending"
+          slug:   whats-trending
+        -
+          name:   BuzzFeed
+          slug:   buzzfeed
+        -
+          name:   Heineken Fever Keeper
+          slug:   heineken-fever-keeper
+        -
+          name:   Know Your Meme
+          slug:   know-your-meme
+      projects:
+        -
+          name:   WhatColor.IsTheInter.net/?
+          slug:   what-color-is-the-internet
+        -
+          name:   Wayback WiFi
+          slug:   wayback-wifi
+        -
+          name:   FFFFFartsy
+          slug:   fffffartsy
+        -
+          name:   Shaved Bieber
+          slug:   shaved-bieber
 
   meta:
     name:         'Greg Leuch : Creative & Interactive'
@@ -48,6 +77,8 @@ en:
 
   open:           'Open'
   close:          'Close'
+
+  more_hellip:    'More…'
 
   short_count:
     thousand: 'K'

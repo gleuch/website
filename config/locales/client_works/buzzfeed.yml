@@ -1,0 +1,29 @@
+en:
+  client_works:
+    buzzfeed:
+      page_title:           BuzzFeed
+      meta:
+        description:        
+        keywords:           
+
+      heading:              BuzzFeed
+      subheading:           
+
+      # about: |
+      #   The Heineken Fever Keeper was a novel approach to blocking game-revealing spoilers for tape-delayed UEFA soccer matches. As Heineken's target audience was American, often times soccer matches would be aired three to six hours after game play in Europe. Social media and online news can reveal the outcomes of the games, it was a no-brainer to discover a way to hide the outcome. By doing so, Heineken helped preserve the excitement of game watching for American UEFA fans.
+      # 
+      # solution: |
+      #   A unique system was engineered to allow Heineken and The Vidal Partnership to manage a lengthy set of keywords remotely, in which a browser extension could retrieve this list of keywords to block. Doing so allowed for updates to be made mid-season without having to re-build and publish new extensions.
+      #   
+      #   The final extensions and serving platform for the Fever Keeper were published in both English and Spanish for Chrome, Firefox, Safari, and Internet Explorer.
+
+      content_rails:
+        - # Column 1
+          -
+            title:          Tasks
+            content:        'design, develop'
+          -
+            title:          Client
+            content:        BuzzFeed
+          -
+            content:        <a href="http://buzzfeed.com" target="_blank">buzzfeed.com</a>
