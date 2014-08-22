@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # --- CORE REQUIREMENTS ---
-gem 'rails',                          '4.1.4'
+gem 'rails',                          '4.1.5'
 gem 'therubyracer',                   '0.12.1',       platforms: :ruby
-gem 'turbolinks',                     '2.2.2'
+gem 'turbolinks',                     '2.3.0'
 gem 'jbuilder',                       '2.1.3'
 gem 'unf',                            '0.1.4'
 # gem 'asset_sync',                     '1.0.0'
@@ -23,7 +23,7 @@ gem 'authlogic',                      '3.4.2'         #branch: 'master',   git: 
 gem 'cancan',                         '1.6.10'
 gem 'wilson_score',                   '0.1.0'
 gem 'sanitize',                       '3.0.0'
-gem 'awesome_nested_set',             '3.0.0.rc.5'
+# gem 'awesome_nested_set',             '3.0.0.rc.5'
 gem 'remotipart',                     '1.2.1'
 gem 'addressable',                    '2.3.6'
 
@@ -34,7 +34,7 @@ gem 'sass-rails',                     '4.0.3'
 gem 'uglifier',                       '2.5.3'
 gem 'coffee-rails',                   '4.0.1'
 gem 'jquery-rails',                   '3.1.1'
-gem 'jquery-ui-rails',                '4.2.1'
+gem 'jquery-ui-rails',                '5.0.0'
 gem 'will_paginate-bootstrap',        '1.0.1'
 gem 'bootstrap-sass',                 '3.2.0.1'
 gem 'bourbon',                        '3.1.8'
@@ -60,7 +60,7 @@ gem 'rails-timeago',                  '2.11.0'
 gem 'momentjs-rails',                 '2.5.0'
 gem 'chartkick',                      '1.3.2'
 # gem 'bootstrap3-datetimepicker-rails','3.0.0.1'
-gem 'sitemap_generator',              '5.0.4',        require: false
+gem 'sitemap_generator',              '5.0.5',        require: false
 gem 'split',                          '0.7.2'
 
 
@@ -72,8 +72,8 @@ gem 'whenever',                       '0.9.2',        require: false
 
 
 # --- OAUTH / APIS ---
-gem 'aws-sdk',                        '1.49.0'
-gem 'github_api',                     '0.12.0'
+# gem 'aws-sdk',                        '1.49.0'
+gem 'github_api',                     '0.12.1'
 # gem 'gibbon',                         '1.1.3'
 # gem 'omniauth-facebook',              '1.6.0'
 # gem 'omniauth-twitter',               '1.0.1'
@@ -88,7 +88,7 @@ gem 'twitter',                        '5.11.0'
 
 group :development do
   gem 'unicorn',                      '4.8.3'
-  gem 'bullet',                       '4.10.0'
+  gem 'bullet',                       '4.13.1'
 
   # Capistrano deployment
   gem 'capistrano',                   '3.2.1'
@@ -113,7 +113,7 @@ end
 group :development, :test do
   gem 'rspec-rails',                  '3.0.2'
   gem 'database_cleaner',             '1.3.0'
-  gem 'ffaker',                       '1.24.0'
+  gem 'ffaker',                       '1.25.0'
   gem 'factory_girl_rails',           '4.4.1'
 end
 

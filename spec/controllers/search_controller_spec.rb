@@ -25,7 +25,7 @@ RSpec.describe SearchController, type: :controller do
     end
 
     describe "query with result" do
-      {bieber: 4, all: 13}.each do |query,ct|
+      {bieber: 3, all: 13}.each do |query,ct|
         it "GET should succeed" do
           get :index, q: query
           expect(response).to be_successful
