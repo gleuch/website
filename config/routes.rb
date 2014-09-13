@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :client_works, path: 'work', only: [:index, :show]
 
   # Contact ---
-  resources :contact_messages, path: 'contact', only: [:index, :new, :create]
+  resources :contact_messages, path: 'contact', as: :contacts, only: [:index, :new, :create]
 
   # Search & Tags ---
   match '/search' => 'search#index', as: :search, via: [:get, :post]

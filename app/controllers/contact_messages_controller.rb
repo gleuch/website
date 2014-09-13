@@ -22,7 +22,7 @@ class ContactMessagesController < ApplicationController
     @contact_message.assign_attributes(contact_messages_params)
     if @contact_message.save
       session[:contacted] = Time.now.to_i
-      redirect_to contact_messages_url
+      redirect_to contacts_url
     else
       render :index
     end

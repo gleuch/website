@@ -24,7 +24,7 @@
   #contact-form {
     form {padding: 15px 0 0 0; margin: 0;}
     p {font-size: 1.9rem; line-height: 1.42em;}
-    select {
+    select { height: 44px; border-radius: 0;
       &, option {text-transform: lowercase;}
     }
     label {display: none; text-transform: lowercase;

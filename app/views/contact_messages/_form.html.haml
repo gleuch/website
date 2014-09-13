@@ -1,7 +1,7 @@
 - contact_message ||= ContactMessage.new(referrer: request.referrer)
 
 
-= simple_form_for @contact_message, wrapper: :vertical_form, html: {class: 'form-vertical'} do |f|
+= simple_form_for @contact_message, url: :contacts, wrapper: :vertical_form, html: {class: 'form-vertical'} do |f|
   = f.error_notification
   = f.input :subject, collection: ContactMessage.subjects_text, include_blank: t('.placeholder.subject')
   = f.input :referrer, as: :hidden

@@ -23,6 +23,7 @@ en:
 
     footer:
       footer:               '<a href="%{works_url}">Return to featured work</a> or <a href="%{works_list_url}">view a list of all work</a>.'
+      contact:              'Like what you see? <a href="%{contacts_url}">Get in touch with me.</a>'
       disclaimer:           'Work listed with a firm indicates work done as an employee or under contract with the firm listed. All other work is considered freelanced.'
 
     featured_list:
@@ -63,6 +64,15 @@ en:
     # Full list of client work, by year
     full_list:
       2014:
+        - # nike2
+          name:             'Nike - Digital Sports Team'
+          client:           'XOlator'
+          role:             'develop'
+          media:            'data analytics, interactive presentations'
+        - # film_presence
+          name:             'Film Presence'
+          client:           'XOlator'
+          role:             'design, develop'
         - # whatstrending
           name:             "What's Trending"
           client:           'XOlator'
