@@ -7,12 +7,13 @@
     %h3= heading
     .row
       - presentations.each_with_index do |presentation,i|
-        %dl.col-md-3.col-sm-4.col-xs-6
-          - unless presentation[:name].blank?
-            %dt= presentation[:name]
-          - [:category, :place, :date].each do |type|
-            - next if presentation[type].blank?
-            %dd= presentation[type]
+        .col-md-3.col-sm-4.col-xs-6
+          %dl
+            - unless presentation[:name].blank?
+              %dt= presentation[:name]
+            - [:category, :place, :date].each do |type|
+              - next if presentation[type].blank?
+              %dd= presentation[type]
 
         - if (i+1) % 4 == 0
           .clearfix.visible-md-block.visible-lg-block

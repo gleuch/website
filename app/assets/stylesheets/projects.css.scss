@@ -35,17 +35,22 @@
   #statement, #examples {margin: 15px 0 30px -30px; padding: 30px 30px 22px 30px; background-color: $gleuch-white;}
   #statement {
     h3 {display: none;}
-    p {font-size: 1.7rem; line-height: 1.41em; padding: 0 0 8px 0;}
     & + #examples {margin-top: -30px; padding-top: 0;}
   }
-  #explanation {padding-right: 30px;}
-  #awards, #exhibitions, #press {padding: 0 30px;
-    h3 {}
+  #explanation, #statement {
+    p {font-size: 1.7rem; line-height: 1.41em; padding: 0 0 8px 0; font-family: $gleuch-webfont-serif; letter-spacing: $gleuch-webfont-serif-letterspacing;}
+  }
+  #explanation {padding-right: 30px;
+    h3 {margin-bottom: 12px;}
+  }
+  #awards, #exhibitions, #press, #presentations {padding: 0 30px;
+    &:before {content: ""; clear: both; display: block; border-top: 1px dotted rgba($gleuch-black,.12); margin-top: 18px; margin-bottom: 18px;}
+    h3 {margin-bottom: 8px;}
     a:hover {
       dt, dd {color: $gleuch-logo;}
     }
     dl { padding: 0; margin: 0 0 5px 0;
-      dt {}
+      dt {line-height: 1.3em; margin-bottom: 2px;}
       dd {}
     }
   }

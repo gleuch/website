@@ -34,8 +34,9 @@
     %section#projects-list
       - unless @projects_list.blank?
         - @projects_list.each do |yr,list|
-          .container-fluid
-            - unless list.blank?
+          - list.reject!{|v| v[:hidden]} # remove any that are marked as hidden
+          - unless list.blank?
+            .container-fluid
               %h2= yr
               - list.each_with_index do |project,i|
                 .item.col-md-3.col-sm-4.col-xs-6

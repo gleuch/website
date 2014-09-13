@@ -42,6 +42,9 @@ $mobile-max-size: 'max-width: ' + $mobile-width;
 // WEB FONTS
 $gleuch-webfont-social: 'Mono Social Icons Font';
 $gleuch-webfont-sans:   Adrianna,Helvetica,Arial,sans-serif;
+$gleuch-webfont-serif:  Georgia,Times,'Times New Roman',serif;
+$gleuch-webfont-serif-letterspacing: -.02em;
+$gleuch-webfont-mono:   'Courier New',Courier,monospace;
 
 // Mono Social Icons
 @font-face {

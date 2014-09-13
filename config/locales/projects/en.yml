@@ -59,6 +59,12 @@ en:
     # Full list of projects, by year
     full_list:
       2014:
+        - # before_you
+          hidden:           true
+          name:             'Before You'
+          category:         'net art'
+          media:            'HTML, Ruby'
+          # url:              '#'
         - # dood_remove
           name:             'DOOD Remove'
           partners:         'Aram Bartholl'
