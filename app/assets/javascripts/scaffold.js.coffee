@@ -1,4 +1,15 @@
 $ -> 
+  @YoDawgIHeardYouLiekIncrements = 0
+  @YoDawgIHeardYouLiekTheInternet = ->
+    if @YoDawgIHeardYouLiekIncrements >= 2
+      alert("Yo dawg, I heard you liek browsers, but browsing in a browser in a browser in a browser might be a little too much, ya think???")
+
+    $('body').wrapInner("<div class='yodawgbrowser-viewport'></div>")
+    $('body > .yodawgbrowser-viewport').before("<div class='yodawgbrowser-header'><div class='yodawgbrowser-buttons'><a class='yodawgbrowser-close' href='javascript:;'>Close</a><a class='yodawgbrowser-minimize' href='javascript:;'>Minimize</a><a class='yodawgbrowser-maximize' href='javascript:;'>Maximize</a></div><div class='yodawgbrowser-settings'>[x]</div><div class='yodawgbrowser-addressbar'><div class='yodawgbrowser-addressbar-bar' contenteditable>" + window.location.href + "</div></div></div>")
+    $('body').wrapInner("<div class='yodawgbrowser'><div class='yodawgbrowser-window'></div></div>")
+
+    @YoDawgIHeardYouLiekIncrements++
+
   if window.console
     # TODO : MAKE COOLER
     window.console.log "\n\nHi!\n\nIf you like what you see, I'd be happy to talk more with you.\n\nSend me an email at contact@gleu.ch or tweet me @gleuch.\n\n"
@@ -51,7 +62,7 @@ $ ->
           @gleuch_haha.keys.push(e.keyCode)
           if @gleuch_haha.keys.toString().indexOf(@gleuch_haha.code) >= 0
             @gleuch_haha.keys = []
-            alert('Eep! You caught me with my code down.')
+            @YoDawgIHeardYouLiekTheInternet()
         catch e
           #
 
