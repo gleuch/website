@@ -8,7 +8,7 @@ gem 'jbuilder',                       '2.1.3'
 gem 'unf',                            '0.1.4'
 # gem 'asset_sync',                     '1.0.0'
 gem 'mysql2',                         '0.3.16'
-gem 'scrypt',                         '1.2.1'
+gem 'scrypt',                         '2.0.0'
 
 
 # --- MODELS & CONTROLLERS ---
@@ -27,7 +27,7 @@ gem 'haml',                           '4.0.5'
 gem 'sass-rails',                     '4.0.3'
 gem 'uglifier',                       '2.5.3'
 gem 'coffee-rails',                   '4.0.1'
-gem 'jquery-rails',                   '3.1.1'
+gem 'jquery-rails',                   '3.1.2'
 gem 'jquery-ui-rails',                '5.0.0'
 gem 'will_paginate-bootstrap',        '1.0.1'
 gem 'bootstrap-sass',                 '3.2.0.2'
@@ -50,7 +50,7 @@ gem 'rails-timeago',                  '2.11.1'
 gem 'momentjs-rails',                 '2.5.0'
 gem 'chartkick',                      '1.3.2'
 gem 'sitemap_generator',              '5.0.5',        require: false
-gem 'split',                          '0.7.2'
+gem 'split',                          '0.8.0'
 
 
 # --- MONITORING / PERFORMANCE ---
@@ -88,19 +88,13 @@ group :test do
   gem 'capybara',                     '2.4.1'
   gem 'capybara-webkit',              '1.1.0'
   gem 'simplecov',                    '0.9.0',        require: false
-  gem 'selenium-webdriver',           '2.42.0'
+  gem 'selenium-webdriver',           '2.43.0'
   gem 'sqlite3',                      '1.3.9'
 end
 
 group :development, :test do
-  gem 'rspec-rails',                  '3.0.2'
+  gem 'rspec-rails',                  '3.1.0'
   gem 'database_cleaner',             '1.3.0'
   gem 'ffaker',                       '1.25.0'
   gem 'factory_girl_rails',           '4.4.1'
-end
-
-
-group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc',                                       require: false
 end
