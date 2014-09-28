@@ -10,7 +10,7 @@ class ProjectsController < ApplicationController
   def index
     load_resource(id: 'home', format: request.format.symbol.to_s)
     impressionist(@project) unless request_is_self?
-    @body_classes << 'project' << 'project-home'
+    @body_classes << 'work' << 'project' << 'work-home'
     @featured_projects = t('projects.featured_list')
     show_static_page(@project)
   end
@@ -35,7 +35,7 @@ protected
   end
 
   def project_init
-    @body_classes << 'project'
+    @body_classes << 'work' << 'project'
     @canonical_url = project_url(@project.slug, host: 'gleu.ch', port: nil)
   end
 

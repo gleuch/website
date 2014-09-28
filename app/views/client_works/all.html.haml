@@ -34,7 +34,7 @@
           &hellip;
     .clearfix
 
-    %section#projects-list
+    %section#works-list
       - unless @client_works_list.blank?
         - @client_works_list.each do |yr,list|
           - list.reject!{|v| v[:hidden]} # remove any that are marked as hidden

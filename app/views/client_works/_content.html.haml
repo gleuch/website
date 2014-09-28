@@ -17,7 +17,7 @@
       %h2= subheading
 
   - if website_link.present? || github_link.present? || share_link.present?
-    #client_work-links.col-md-4.col-xs-12.pull-right
+    #work-links.col-md-4.col-xs-12.pull-right
       - if website_link.present? || github_link.present?
         %ul.link-buttons.list-unstyled.pull-left
           - unless website_link.blank?
@@ -44,7 +44,7 @@
             &hellip;
         .clearfix
 
-  #client_work-info.col-md-8.col-xs-12
+  #work-info.col-md-8.col-xs-12
     - unless about.blank?
       %section#statement.feature-box
         %h3= t('client_works.headings.about')
@@ -71,7 +71,7 @@
         = simple_format( result )
 
   - unless content_rails.blank?
-    #client_work-details.col-md-4.col-xs-12
+    #work-details.col-md-4.col-xs-12
       .row
         - content_rails.each do |col|
           - next if col.blank?

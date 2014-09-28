@@ -10,7 +10,7 @@ class ClientWorksController < ApplicationController
   def index
     load_resource(id: 'home', format: request.format.symbol.to_s)
     impressionist(@client_work) unless request_is_self?
-    @body_classes << 'client-work' << 'client-work-home'
+    @body_classes << 'work' << 'client-work' << 'work-home'
     @featured_works = t('client_works.featured_list')
     show_static_page(@client_work)
   end
@@ -35,7 +35,7 @@ protected
   end
 
   def client_work_init
-    @body_classes << 'client-work'
+    @body_classes << 'work' << 'client-work'
     @canonical_url = client_work_url(@client_work.slug, host: 'gleu.ch', port: nil)
   end
 

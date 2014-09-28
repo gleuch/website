@@ -6,29 +6,30 @@
 
 
 %header.page-header
-  .col-sm-9.col-xs-12
-    %h1= t('.heading')
-    %h4= t('.subheading')
-  .col-sm-3.col-xs-12
+  %h1= t('.heading')
+  %h4= t('.subheading')
+  %p
     = link_to client_work_url(:all) do
-      .text-right.hidden-xs= t('.list')
+      .hidden-xs= t('.list')
       .visible-xs-inline= t('.list_mobile')
+
+#works-area
+  %ul#works-list.list-unstyled
+    - @featured_works.each_with_index do |work,i|
+      %li
+        = link_to client_work_url( work[:slug] ) do
+          %h1= work[:name]
   .clearfix
 
-%ul#client-works-list.list-unstyled
-  - @featured_works.each_with_index do |work,i|
-    %li{class: (i > 0 ? 'col-sm-6 col-xs-12' : 'col-xs-12')}
-      = link_to client_work_url( work[:slug] ) do
-        %h1= work[:name]
-.clearfix
+  %footer
+    [more clients button]
 
 
 
+- if false
+  %hr
 
-
-%hr
-
-%h3 TMP, FOR TESTING PAGES
-%ul
-  - %w(heineken-fever-keeper whats-trending buzzfeed know-your-meme zagat-food-trucks magma politics4all thesa-me auburn-art-college-football-art).each do |page|
-    %li= link_to page.humanize.titleize, client_work_url(page)
+  %h3 TMP, FOR TESTING PAGES
+  %ul
+    - %w(heineken-fever-keeper whats-trending buzzfeed know-your-meme zagat-food-trucks magma politics4all thesa-me auburn-art-college-football-art).each do |page|
+      %li= link_to page.humanize.titleize, client_work_url(page)
