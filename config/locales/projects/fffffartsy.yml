@@ -7,7 +7,7 @@ en:
         keywords:           ''
 
       heading:              'FFFFFartsy'
-      subheading:           'Open access & open-source public virtual art gallery.'
+      subheading:           'Open-access & open-source public virtual art gallery.'
 
       #statement:            TODO
 
@@ -19,6 +19,11 @@ en:
           -                 'Caption 2'
 
       exhibitions:
+        -
+          name:             Festival GAMERZ 10
+          place:            Patio du Bois de l’Aune
+          location:         Aix en Provence, France
+          date:             Oct 2014
         -
           name:             'FAT GOLD Europe'
           place:            'MU'
