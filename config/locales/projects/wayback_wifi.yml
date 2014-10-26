@@ -7,11 +7,15 @@ en:
         keywords:           
 
       heading:              Wayback WiFi
-      subheading:           
+      subheading:           Browse the Internet like it is 1991!
 
-      # statement:            TODO
+      statement: |
+        New technology, faster Interent connections, and constant marking towards consumers alters the web pages we see daily. And in this digital landscape, in what many still consider new, is nearly two decades of web sites, pages, and content that likely does not exist today.
+        
+        Wayback WiFi bridges the past with the present though a WiFi time portal, allowing the user to browse the old Internet they remember.
 
-      # explanation:          TODO
+      explanation: |
+        In collaboration with <a href="http://fromjia.com" target="_blank">Jiashan Wu</a>. With support from <a href="http://eyebeam.org" target="_blank">Eyebeam</a>.
 
       exhibitions:
         -

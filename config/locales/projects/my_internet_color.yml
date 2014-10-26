@@ -1,0 +1,20 @@
+en:
+  projects:
+    my_internet_color:
+      page_title:           My Internet Color
+      meta:
+        description:        
+        keywords:           
+
+      heading:              My Internet Color
+      subheading:           An experiment in quantified self, browsing history, and color data.
+
+      statement: |
+        Is there a correlation of our Internet browsing habits and the average color of a web page? Are there visual trends we partake throughout the day? What do we ultimately look at online?
+
+      explanation: |
+        After the <a href="http://whatcolor.istheinter.net">WhatColor.IsTheInter.net/?</a> piece, I became curious in my browsing habits and wanted to partake on a visual representation of my daily browsing history. More surprising for me is not the daily visual imagery that is created from the project, but the quantity of pages I view daily. Although our generation skims more than reads, averaging over 300 pages daily is a quite a lot of clicks and scanning of information.
+
+        Following a similar process used for WhatColor.IsTheInter.net/?, I created a small app that is run locally on my laptop. A listener script waits for connections from a Chrome browser extension that updates the database with the latest pages I have visited. This extension also shows me the current day's average color and stats in the toolbar. A process job then goes through the queue, loads the page I visited, snapshots it, and determines the average pixel color. This information is then saved back into the database. At the end of each night, another script generated a SVG image of the day's browsing history, which is then posted manually to Instagram and shared among other social networks.
+
+        This project, a work in progress, is evolving from a personal capture of information. Perhaps this will become an interactive piece accessible and useable by many others, however until then, you can continue to view the latest images on <a href="https://instagram.com/gleuch" target="_blank">my Instagram</a>.
