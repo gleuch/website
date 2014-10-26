@@ -3,6 +3,14 @@ en:
     home:
       title:                'Greg Leuch'
       breadcrumb_title:     'Hello!'
+      intro:
+        text:               'some intro about me here'
+      projects:
+        title:              'Projects'
+        description:        'Creative & artistic projects with technology & design'
+      works:
+        title:              'Client Work'
+        description:        "Varied list of creative, <br class='hidden-xs' /> design, & development work"
 
     about:
       page_title:           'About Greg Leuch'

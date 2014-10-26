@@ -7,8 +7,6 @@ class ContactMessagesController < ApplicationController
   before_filter :contact_messages_init
   after_filter  :clear_session, only: [:index, :new]
 
-  # layout 'post'
-
 
   def index
     render :index

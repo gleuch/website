@@ -1,21 +1,28 @@
 - #@breadcrumbs << {name: t('.breadcrumb_title')}
 
-:css
-  .col-md-8 {height: 400px;}
-  .col-md-4 {height: 200px;}
-  .col-md-8, .col-md-4 {background: #ccc}
-
 
 .container-fluid
-  .col-md-8.col-xs-12
-    [0]
-  .col-md-4.col-xs-6
-    [1]
-  .col-md-4.col-xs-6
-    [2]
-  .col-xs-4
-    [0]
-  .col-xs-4
-    [1]
-  .col-xs-4
-    [2]
+  #intro.col-xs-12
+    %h1.text-center= t('.intro.text')
+
+  #projects.col-xs-12.col-sm-6
+    %a{href: projects_url}
+      %h1= t('.projects.title')
+      %h4= t('.projects.description').html_safe
+
+    %ul.list-unstyled
+      - @featured_projects.each_with_index do |project,i|
+        %li.col-xs-6.col-sm-3{style: "background-color: #{project[:color] || 'transparent'};"}
+          = link_to project_url( project[:slug] ) do
+            %h4= project[:name]
+
+  #client-work.col-xs-12.col-sm-6
+    %a{href: client_works_url}
+      %h1= t('.works.title')
+      %h4= t('.works.description').html_safe
+
+    %ul.list-unstyled
+      - @featured_works.each_with_index do |work,i|
+        %li.col-xs-6.col-sm-3{style: "background-color: #{work[:color] || 'transparent'};"}
+          = link_to client_work_url( work[:slug] ) do
+            %h4= work[:name]
