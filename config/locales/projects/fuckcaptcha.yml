@@ -6,6 +6,11 @@ en:
         description:        
         keywords:           
 
+      tags:
+        -   privacy
+        -   diy
+        -   photos
+
       heading:              fuckCAPTCHA
       subheading:           fuckCAPTCHA, an open-source alternative to the spam prevention and evil humanization of human brain cycles for corporate pet projects.
 

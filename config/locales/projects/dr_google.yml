@@ -6,6 +6,12 @@ en:
         description:        
         keywords:           
 
+      tags:
+        -   health
+        -   parody
+        -   google
+        -   c&d
+
       heading:              Dr. Google
       subheading:           Feeling sick? Not sure what you've come down with? Let Google diagnose you!
 

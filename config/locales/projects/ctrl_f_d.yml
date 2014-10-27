@@ -6,6 +6,10 @@ en:
         description:        
         keywords:           
 
+      tags:
+        -   browser extensions
+        -   censorship
+
       heading:              "Ctrl+F'd"
       subheading:           A playful experiment in "censoring" a web page by hiding text and images behind blocks.
 

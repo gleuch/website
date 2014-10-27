@@ -6,6 +6,11 @@ en:
         description:        
         keywords:           
 
+      tags:
+        -   privacy
+        -   money
+        -   browser extensions
+
       heading:              G.R.E.E.D.
       subheading:           Greed powers our economy through restrictive licensing deals and claims of copyright.
 

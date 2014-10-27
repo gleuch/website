@@ -6,6 +6,10 @@ en:
         description:        
         keywords:           
 
+      tags:
+        -   community
+        -   interactive
+
       heading:              Projections of Hurtsboro Identity
       subheading:           'An interactive community event in Russell County, Alabama.'
 

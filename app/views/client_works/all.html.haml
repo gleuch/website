@@ -37,6 +37,7 @@
     %section#works-list
       - unless @client_works_list.blank?
         - @client_works_list.each do |yr,list|
+          - next if list.blank?
           - list.reject!{|v| v[:hidden]} # remove any that are marked as hidden
           - unless list.blank?
             .container-fluid

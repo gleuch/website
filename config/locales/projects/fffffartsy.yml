@@ -6,6 +6,11 @@ en:
         description:        ''
         keywords:           ''
 
+      tags:
+        -   gallery
+        -   internet
+        -   ruby
+
       heading:              'FFFFFartsy'
       subheading:           'Open-access & open-source public virtual art gallery.'
 

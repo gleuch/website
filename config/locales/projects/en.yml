@@ -26,15 +26,18 @@ en:
       disclaimer:           ''
 
     featured_list:
+      - # my internet color
+        slug:               'my-internet-color'
+        name:               'My Internet Color'
       - # pop_block
         slug:               'pop-block'
         name:               'Pop Block'
       - # fffffartsy
         slug:               'fffffartsy'
         name:               'Fffffartsy'
-      - # shaved_bieber
-        slug:               'shaved-bieber'
-        name:               'Shaved Bieber'
+      # - # shaved_bieber
+      #   slug:               'shaved-bieber'
+      #   name:               'Shaved Bieber'
       - # wayback_wifi
         slug:               'wayback-wifi'
         name:               'Wayback WiFi'
@@ -59,6 +62,12 @@ en:
     # Full list of projects, by year
     full_list:
       2014:
+        - # my_internet_color
+          hidden:           true
+          name:             'My Internet Color'
+          category:         'net art'
+          media:            'Internet'
+          # url:              '#'
         - # before_you
           hidden:           true
           name:             'Before You'

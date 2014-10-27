@@ -6,6 +6,11 @@ en:
         description:        
         keywords:           
 
+      tags:
+        -   censorship
+        -   internet
+        -   browser extensions
+
       heading:              Pop Block
       subheading:           
 

@@ -6,6 +6,11 @@ en:
         description:        
         keywords:           
 
+      tags:
+        -   ruby
+        -   html
+        -   color
+
       heading:              WhatColor.IsTheInter.net/?
       subheading:           
 
