@@ -18,6 +18,17 @@ en:
       heading:              My Internet Color
       subheading:           An experiment in quantified self, browsing history, and color data.
 
+      carousel:
+        -
+          image:            '/projects/my-internet-color/carousel-3.png'
+          caption:          ''
+        -
+          image:            '/projects/my-internet-color/carousel-2.png'
+          caption:          'My Internet color, 21-28 Oct 2014. Average color: #D3D3D2. Pages browsed: 3838.'
+        -
+          image:            '/projects/my-internet-color/carousel-1.png'
+          caption:          'My Internet color, 28 Oct 2014. Average color: #D5D3C4. Pages browsed: 343.'
+
       statement: |
         Is there a correlation of our Internet browsing habits and the average color of a web page? Are there visual trends we partake throughout the day? What do we ultimately look at online?
 

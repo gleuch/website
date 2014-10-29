@@ -7,13 +7,6 @@
 - @breadcrumbs << {name: t('.heading')}
 
 
-- # Carousel Images
-- carousel_images = []
-- carousel_images << {vimeo: 'https://player.vimeo.com/video/11800814'}
-- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-1.jpg', alt: ''), caption: t('.carousel.captions')[0]}
-- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-2.jpg', alt: ''), caption: t('.carousel.captions')[1]}
-
-
 - # Page Content
 - content_opts = {}
 - content_opts[:subheading] = t('.subheading', default: '')
@@ -24,7 +17,7 @@
 - content_opts[:github_link] = 'https://github.com/gleuch/shaved-bieber'
 
 %article
-  = render 'projects/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images
+  = render 'projects/intro_area', heading: t('.heading', default: ''), carousel_images: t('.carousel')
   = render 'projects/content', content_opts
   = render 'projects/exhibitions', exhibitions: t('.exhibitions', default: '')
   = render 'projects/awards', awards: t('.awards', default: '')

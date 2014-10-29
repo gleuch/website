@@ -14,6 +14,10 @@ en:
       heading:              Shaved Bieber
       subheading:           An innovative tool to clean up the lower regions of web pages from unwanted Justin Bieber mentions.
 
+      carousel:
+        -
+          vimeo:            'https://player.vimeo.com/video/11800814'
+
       statement: |
         Shaved Bieber is a JavaScript project converted into a browser bookmarklet and Firefox Add-on. This project, capitalizing on the success of Ctrl+F'd, and aims to provide tools to consumers to control, adapt, and modify the contents of the internet from their browser, allowing individuals them to hide content they choose not to see.
         

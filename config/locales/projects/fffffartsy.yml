@@ -14,14 +14,21 @@ en:
       heading:              'FFFFFartsy'
       subheading:           'Open-access & open-source public virtual art gallery.'
 
-      #statement:            TODO
+      carousel:
+        -
+          image:            '/projects/fffffartsy/carousel-1.png'
+        -
+          image:            '/projects/fffffartsy/carousel-2.png'
+
+      statement:            FFFFFartsy brings the ability for any artist to showcase their work in a respectable online gallery. An assistive technology for the conservative contemporary, if you prefer. Simply paste in an image, video, or web page to showcase the media in the finest form possible.
 
       #explanation:          TODO
 
-      carousel:
-        captions:
-          -                 'Caption 1'
-          -                 'Caption 2'
+      content_rails:
+        - # Column 1
+          -
+            content: |
+              Concept by <a href="http://evan-roth.com/" target="_blank">Evan Roth</a>.
 
       exhibitions:
         -
@@ -34,3 +41,8 @@ en:
           place:            'MU'
           location:         'Eindhoven, Netherlands'
           date:             'Nov 2013'
+
+      press:
+        -
+          name:             Animal NY
+          url:              http://animalnewyork.com/2013/fffffartsy-put-your-art-into-this-very-very-irl-ish-gallery-online/
