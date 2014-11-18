@@ -8,6 +8,6 @@ FactoryGirl.define do
     message             { Faker::Lorem.sentence }
     ip_address          { Faker::Internet.ip_v4_address }
     browser             { 'Fake User Agent by gleu.ch' }
-    referrer            { 'http://gleu.ch' }
+    referrer            { 'https://gleu.ch' }
   end
 end

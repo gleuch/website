@@ -1,7 +1,7 @@
 - #@breadcrumbs << {name: t('.breadcrumb_title')}
 
 
-.container-fluid
+.work.work-home.container-fluid
   #intro.col-xs-12
     %h1.text-center= t('.intro.text')
 
@@ -10,19 +10,32 @@
       %h1= t('.projects.title')
       %h4= t('.projects.description').html_safe
 
-    %ul.list-unstyled
+    %ul.works-list.list-unstyled
       - @featured_projects.each_with_index do |project,i|
-        %li.col-xs-6.col-sm-3{style: "background-color: #{project[:color] || 'transparent'};"}
+        %li
           = link_to project_url( project[:slug] ) do
-            %h4= project[:name]
+            .image-area
+              - if project[:image].present?
+                .image{style: "background-image: url('#{project[:image]}')"}
+            %h1= project[:name]
+            - if project[:description].present?
+              .description= project[:description]
+    .clearfix
+
 
   #client-work.col-xs-12.col-sm-6
     %a{href: client_works_url}
       %h1= t('.works.title')
       %h4= t('.works.description').html_safe
 
-    %ul.list-unstyled
+    %ul.works-list.list-unstyled
       - @featured_works.each_with_index do |work,i|
-        %li.col-xs-6.col-sm-3{style: "background-color: #{work[:color] || 'transparent'};"}
+        %li
           = link_to client_work_url( work[:slug] ) do
-            %h4= work[:name]
+            .image-area
+              - if work[:image].present?
+                .image{style: "background-image: url('#{work[:image]}')"}
+            %h1= work[:name]
+            - if work[:description].present?
+              .description= work[:description]
+    .clearfix

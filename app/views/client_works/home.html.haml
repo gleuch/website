@@ -14,11 +14,17 @@
       .visible-xs-inline= t('.list_mobile')
 
 #works-area
-  %ul#works-list.list-unstyled
+  %ul.works-list.list-unstyled
     - @featured_works.each_with_index do |work,i|
       %li
         = link_to client_work_url( work[:slug] ) do
+          .image-area
+            - if work[:image].present?
+              .image{style: "background-image: url('#{work[:image]}')"}
           %h1= work[:name]
+          - if work[:description].present?
+            .description= work[:description]
+
   .clearfix
 
   %footer

@@ -20,6 +20,8 @@ en:
       breadcrumbs:          'Projects'
       heading:              'Projects'
       subheading:           'Creative & artistic projects combining technology and design.'
+      footer:
+        more:               'View more projects'
 
     footer:
       footer:               '<a href="%{projects_url}">Return to featured projects</a> or <a href="%{projects_list_url}">view a list of all project</a>.'
@@ -29,18 +31,24 @@ en:
       - # my internet color
         slug:               'my-internet-color'
         name:               'My Internet Color'
+        image:              '/projects/my-internet-color/carousel-3.png'
+        description:        'An experiment in quantified self, browsing history, and color data.'
       - # pop_block
         slug:               'pop-block'
         name:               'Pop Block'
       - # fffffartsy
         slug:               'fffffartsy'
         name:               'Fffffartsy'
+        image:              '/projects/fffffartsy/carousel-1.png'
+        description:        'Open-access & open-source public virtual art gallery.'
       # - # shaved_bieber
       #   slug:               'shaved-bieber'
       #   name:               'Shaved Bieber'
       - # wayback_wifi
         slug:               'wayback-wifi'
         name:               'Wayback WiFi'
+        image:              ''
+        description:        'Browse the Internet like it is 1996!'
 
     # Project full list
     all:

@@ -14,15 +14,20 @@
       .visible-xs-inline= t('.list_mobile')
 
 #works-area
-  %ul#works-list.list-unstyled
+  %ul.works-list.list-unstyled
     - @featured_projects.each_with_index do |project,i|
       %li
         = link_to project_url( project[:slug] ) do
+          .image-area
+            - if project[:image].present?
+              .image{style: "background-image: url('#{project[:image]}')"}
           %h1= project[:name]
+          - if project[:description].present?
+            .description= project[:description]
   .clearfix
 
   %footer
-    [more projects button]
+    %a.btn.btn-more{href: project_url(:all)}= t('.footer.more')
 
 
 
