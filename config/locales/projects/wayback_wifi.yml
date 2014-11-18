@@ -14,6 +14,11 @@ en:
       heading:              Wayback WiFi
       subheading:           Browse the Internet like it is 1996!
 
+      carousel:
+        -
+          image:            '/projects/wayback-wifi/carousel-1.jpg'
+
+
       statement: |
         New technology, faster Interent connections, and constant marking towards consumers alters the web pages we see daily. And in this digital landscape, in what many still consider new, is nearly two decades of web sites, pages, and content that likely does not exist today.
         

@@ -26,16 +26,5 @@
             .description.hidden-xs= project[:description]
   .clearfix
 
-  %footer
+  %footer.works-footer
     %a.btn.btn-more{href: project_url(:all)}= t('.footer.more')
-
-
-
-- if false
-  %hr
-
-  %h3 TMP, FOR TESTING PAGES
-  %ul
-    - %w(what-color-is-the-internet wayback-wifi fffffartsy shaved-bieber pop-block greed twitter-fileshare dr-google ctrl-f-d fuckCAPTCHA projections-of-hurtsboro-identity will-paint-4-food).each do |page|
-      %li.col-xs-4= link_to page.humanize.titleize, project_url(page)
-  .clearfix

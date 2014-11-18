@@ -9,8 +9,8 @@ class StaticPagesController < ApplicationController
   def index
     load_resource(id: 'home', format: request.format.symbol.to_s)
     impressionist(@static_page) unless request_is_self?
-    @featured_projects = t('projects.featured_list')
-    @featured_works = t('client_works.featured_list')
+    @featured_projects = t('projects.featured_list').reject{|v| v[:skip_homepage]}
+    @featured_works = t('client_works.featured_list').reject{|v| v[:skip_homepage]}
     show_static_page(@static_page)
   end
 

@@ -1,9 +1,9 @@
-@-webkit-keyframes fader {
-  0% {opacity: 0; transform: rotateZ(90deg); color: yellow;}
+@-webkit-keyframes construction {
+  0% {opacity: 0; transform: rotateZ(90deg) rotateX(90deg); color: yellow;}
   33% {opacity: 1;}
   50% {color: white;}
   66% {opacity: 1;}
-  100% {opacity: 0; transform: rotateZ(-90deg); color: yellow;}
+  100% {opacity: 0; transform: rotateZ(-90deg) rotateX(-90deg); color: yellow;}
 }
 
 body {background-color: $gleuch-white; overflow-x: hidden;
@@ -296,10 +296,15 @@ aside#search-overlay {display: none; opacity: 0; @include transition(opacity .2s
 }
 
 .CodeLikeItIs1995 {position: fixed; top: 38px; z-index: 900001; right: 28px; display: block; width: 30px; height: 30px; opacity: 1; background-image: image-url('construction.gif'); background-position: center center; background-size: contain; background-repeat: no-repeat; -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -ms-filter: grayscale(1); filter: grayscale(1);
-  &:hover {cursor: pointer;}
-  &:hover, & + .CodeLikeItIs1995 {-webkit-filter: grayscale(0); -moz-filter: grayscale(0); -ms-filter: grayscale(0); filter: grayscale(0);}
-  & + .CodeLikeItIs1995 {display: none; z-index: 900000; background-repeat: repeat; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background-size: 30px 30px;}
-  &:hover + .CodeLikeItIs1995 {display: block;
-    &:before {content: "Under Construction!"; position: fixed; display: inline-block; text-align: center; top: 40%; left: 0; right: 0; width: auto; overflow: visible;margin: 0 auto;padding: 30px;font-size: 7.4rem;font-weight: 600;color: yellow;white-space: nowrap;text-transform: uppercase;text-shadow: 0 4px 50px rgba(0,0,0,1), 0 -4px 50px rgba(0,0,0,1); -webkit-animation: fader 1s linear infinite;}
+  @media (min-width: $mobile-width) {
+    &:hover {cursor: pointer;}
+    &:hover, & + .CodeLikeItIs1995 {-webkit-filter: grayscale(0); -moz-filter: grayscale(0); -ms-filter: grayscale(0); filter: grayscale(0);}
+    & + .CodeLikeItIs1995 {display: none; z-index: 900000; background-repeat: repeat; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background-size: 30px 30px;}
+    &:hover + .CodeLikeItIs1995 {display: block;
+      &:before {content: "Under Construction!"; position: fixed; display: inline-block; text-align: center; top: 40%; left: 0; right: 0; width: auto; overflow: visible;margin: 0 auto;padding: 30px;font-size: 7.4rem;font-weight: 600;color: yellow;white-space: nowrap;text-transform: uppercase;text-shadow: 0 4px 50px rgba(0,0,0,1), 0 -4px 50px rgba(0,0,0,1); -webkit-animation: construction 1s linear infinite;}
+    }
+  }
+  @media ($mobile-max-size) {
+    & {right: 6px; top: 40px;}
   }
 }

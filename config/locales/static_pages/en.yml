@@ -1,16 +1,28 @@
 en:
   static_pages:
     home:
+      page_title:           'Greg Leuch'
+      meta:
+        description:        'Greg Leuch is a creative designer, develoepr, and new media artist.'
+        keywords:           ''
       title:                'Greg Leuch'
-      breadcrumb_title:     'Hello!'
+      breadcrumbs:          
+        - 'Welcome!'
+        - 'Hello!'
+        - 'Nǐ hǎo!'
+        - 'Bonjour!'
+        - 'Hallo!'
       intro:
-        text:               'some intro about me here'
+        title:              'Design, web, technology, and art'
+        text:               'Portfolio of Greg Leuch, a creative designer, develoepr, and new media artist.'
       projects:
         title:              'Projects'
         description:        'Creative & artistic projects with technology & design'
+        more:               'View more creative projects'
       works:
         title:              'Client Work'
         description:        "Varied list of creative, design, & development work"
+        more:               'View more client work'
 
     about:
       page_title:           'About Greg Leuch'

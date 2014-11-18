@@ -20,6 +20,8 @@ en:
       breadcrumbs:          'Client Work'
       heading:              'Client Work'
       subheading:           'A varied list of creative, design, & development work.'
+      footer:
+        more:               'View list of all client work'
 
     footer:
       footer:               '<a href="%{works_url}">Return to featured work</a> or <a href="%{works_list_url}">view a list of all work</a>.'
@@ -27,19 +29,42 @@ en:
       disclaimer:           'Work listed with a firm indicates work done as an employee or under contract with the firm listed. All other work is considered freelanced.'
 
     featured_list:
+      # - #
+      #   slug:               'whats-trending'
+      #   name:               "What's Trending"
+      #   description:        ''
       - # buzzfeed
         slug:               'buzzfeed'
         name:               'BuzzFeed'
+        description:        ''
       - # fever_keeper
         slug:               'heineken-fever-keeper'
         name:               'Heineken Fever Keeper'
+        description:        'Block the spoilers from tape-delayed UEFA soccer matches.'
       - # zagat_food_trucks
         slug:               'zagat-food-trucks'
         name:               'Zagat Food Trucks'
+        description:        'Interactive maps for Zagat-rated food trucks.'
       - # know_your_meme
         slug:               'know-your-meme'
         name:               'Know Your Meme'
-        
+        description:        'Documenting Internet phenomena: viral videos, image macros, catchphrases, web celebs and more.'
+      - #
+        slug:               'magma'
+        name:               'Magma'
+        description:        ''
+      - #
+        slug:               'politics4all'
+        name:               'Politics4All'
+        description:        ''
+      - #
+        slug:               'thesa-me'
+        name:               'Thesa.me'
+        description:        ''
+      - #
+        slug:               'auburn-art-college-football-art'
+        name:               'Auburn Art & College Football Art'
+        description:        ''        
 
     # Client works full list
     all:
@@ -50,8 +75,8 @@ en:
       breadcrumbs:          'List'
       heading:              'All Client Work'
       copy:                 
-        zero:               'Nothing better explains the skills and expertise of a true professional then by the quality of work they produce and a willingness to share it.'
-        other:              'Nothing better explains the %{years} years of skills and expertise on more than %{count} projects then by the quality of work they produce and a willingness to share it.'
+        zero:               'Nothing better explains the skills and expertise of a true professional then by the quality of work produced and a willingness to share it.'
+        other:              'Nothing better explains the %{years}+ years of skills and expertise on more than %{count} projects then by the quality of work produced and a willingness to share it.'
       disclaimer:           'Some employed and contract work have been omitted from this list due to disclosure agreements, lack of substantial work, employment situations, or other various reasons. Work listed with a company underneath the title indicates work done as an employee, company member/owner, or under contract with the company listed. All other work is considered freelanced.'
 
 

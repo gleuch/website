@@ -1,41 +1,53 @@
-- #@breadcrumbs << {name: t('.breadcrumb_title')}
+- @breadcrumbs << {name: t('.breadcrumbs').sample}
 
 
-.work.work-home.container-fluid
-  #intro.col-xs-12
-    %h1.text-center= t('.intro.text')
+%header.page-header
+  %h1= t('.intro.title')
+  %h4= t('.intro.text')
 
-  #projects.col-xs-12.col-sm-6
-    %a{href: projects_url}
-      %h1= t('.projects.title')
-      %h4= t('.projects.description').html_safe
+.work.work-home
+  #home-works-area
+    #projects.col-xs-12.col-sm-6
+      %a{href: projects_url}
+        %h1= t('.projects.title')
+        - # %h4= t('.projects.description').html_safe
 
-    %ul.works-list.list-unstyled
-      - @featured_projects.each_with_index do |project,i|
-        %li
-          = link_to project_url( project[:slug] ) do
-            .image-area
-              - if project[:image].present?
-                .image{style: "background-image: url('#{project[:image]}')"}
-            %h1= project[:name]
-            - if project[:description].present?
-              .description.hidden-xs= project[:description]
-    .clearfix
+      %ul.works-list.list-unstyled
+        - @featured_projects.take(4).each_with_index do |project,i|
+          - next if project.blank?
+          %li{class: (i > 2 ? 'hidden-xs' : nil)}
+            = link_to project_url( project[:slug] ) do
+              .image-area
+                - if project[:image].present?
+                  .image{style: "background-image: url('#{project[:image]}')"}
+              %h1= project[:name]
+              - if project[:description].present?
+                .description.hidden-xs= project[:description]
+      .clearfix
+    
+      %footer.works-footer
+        %a.btn.btn-more{href: projects_url}= t('.projects.more')
 
 
-  #client-work.col-xs-12.col-sm-6
-    %a{href: client_works_url}
-      %h1= t('.works.title')
-      %h4= t('.works.description').html_safe
+    #client-work.col-xs-12.col-sm-6
+      %a{href: client_works_url}
+        %h1= t('.works.title')
+        - # %h4= t('.works.description').html_safe
 
-    %ul.works-list.list-unstyled
-      - @featured_works.each_with_index do |work,i|
-        %li
-          = link_to client_work_url( work[:slug] ) do
-            .image-area
-              - if work[:image].present?
-                .image{style: "background-image: url('#{work[:image]}')"}
-            %h1= work[:name]
-            - if work[:description].present?
-              .description= work[:description]
+      %ul.works-list.list-unstyled
+        - @featured_works.take(4).each_with_index do |work,i|
+          - next if work.blank?
+          %li{class: (i > 2 ? 'hidden-xs' : nil)}
+            = link_to client_work_url( work[:slug] ) do
+              .image-area
+                - if work[:image].present?
+                  .image{style: "background-image: url('#{work[:image]}')"}
+              %h1= work[:name]
+              - if work[:description].present?
+                .description= work[:description]
+      .clearfix
+
+      %footer.works-footer
+        %a.btn.btn-more{href: client_works_url}= t('.works.more')
+
     .clearfix

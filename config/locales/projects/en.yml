@@ -21,7 +21,7 @@ en:
       heading:              'Projects'
       subheading:           'Creative & artistic projects combining technology and design.'
       footer:
-        more:               'View more projects'
+        more:               'View list of all projects'
 
     footer:
       footer:               '<a href="%{projects_url}">Return to featured projects</a> or <a href="%{projects_list_url}">view a list of all project</a>.'
@@ -42,14 +42,42 @@ en:
         name:               'Fffffartsy'
         image:              '/projects/fffffartsy/carousel-1.png'
         description:        'Open-access & open-source public virtual art gallery.'
-      # - # shaved_bieber
-      #   slug:               'shaved-bieber'
-      #   name:               'Shaved Bieber'
       - # wayback_wifi
         slug:               'wayback-wifi'
         name:               'Wayback WiFi'
-        image:              ''
+        image:              '/projects/wayback-wifi/carousel-1.jpg'
         description:        'Browse the Internet like it is 1996!'
+      - # shaved_bieber
+        slug:               'shaved-bieber'
+        name:               'Shaved Bieber'
+        description:        'Clean up the lower regions of web pages from unwanted Justin Bieber mentions.'
+      - # twitter_fileshare
+        slug:               'twitter-fileshare'
+        name:               'Twitter Fileshare'
+        description:        "Why shouldn't Twitter be used today for file sharing?"
+      - # dr_google
+        slug:               'dr-google'
+        name:               'Dr. Google'
+        description:        'Feeling sick? Let Google diagnose you!'
+      - # ctrl_f_d
+        slug:               'ctrl-f-d'
+        name:               "Ctrl F'd"
+        description:        'An experiment in "censoring" a web page by hiding text and images behind blocks.'
+      - # fuck_captcha
+        slug:               'fuckcaptcha'
+        name:               'fuckCAPTCHA'
+        description:        'Alternative to the humanization of human brain cycles for corporate pet projects'
+      - # greed
+        slug:               'greed'
+        name:               'G.R.E.E.D.'
+        description:        'Greed powers our economy through restrictive licensing deals and claims of copyright.'
+      - # projections_of_hurtsboro_identity
+        slug:               'projections-of-hurtsboro-identity'
+        name:               'Projections of Hurtsboro Identity'
+        description:        'An interactive community event in Russell County, Alabama'
+      # - # will_paint_4_food
+      #   slug:               'will-paint-4-food'
+      #   name:               'Will Paint 4 Food'
 
     # Project full list
     all:

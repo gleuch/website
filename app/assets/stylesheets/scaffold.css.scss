@@ -55,6 +55,10 @@ form {
     &:focus {box-shadow: 0 0 8px rgba($gleuch-black,.32);}
     &:active {background-color: rgba($gleuch-mid-black,.5);}
   }
+  &.btn-more {background-color: $gleuch-mid-grey-bg; border-radius: 0; border: 1px solid transparent; text-transform: lowercase; color: $gleuch-text-grey; font-weight: 700; text-shadow: none; @include transition(background-color .2s ease-out);
+    &:hover, &:focus {background-color: $gleuch-grey-bg; outline: none; box-shadow: none;}
+    &:focus {box-shadow: 0 0 8px rgba($gleuch-black,.32);}
+  }
   &[disabled], &.disabled {opacity: .5; @include transition(none); box-shadow: none;
     &, &:hover, &:focus, &:active {background-color: rgba($gleuch-mid-black,.5) !important;}
   }
