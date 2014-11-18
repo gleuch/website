@@ -1,3 +1,11 @@
+@-webkit-keyframes fader {
+  0% {opacity: 0; transform: rotateZ(90deg); color: yellow;}
+  33% {opacity: 1;}
+  50% {color: white;}
+  66% {opacity: 1;}
+  100% {opacity: 0; transform: rotateZ(-90deg); color: yellow;}
+}
+
 body {background-color: $gleuch-white; overflow-x: hidden;
   &.unload {
     #header #breadcrumbs {left: $gleuch-lg-frame-padding !important;  @include transition(left .1s ease-out !important);
@@ -23,8 +31,6 @@ body {background-color: $gleuch-white; overflow-x: hidden;
 //    .flash {background-color: rgba($gleuch-text-grey,.12); text-align: center; padding: 8px 20px; font-size: 1.6rem;}
 //  }
   #brand {position: relative; margin-top: 25px;
-    &:before {content: ""; position: absolute; top: 3px; right: -43px; display: block; width: 30px; height: 30px; opacity: .5; background-image: asset-url('construction.gif'); background-position: center center; background-size: contain; background-repeat: no-repeat; -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -ms-filter: grayscale(1); filter: grayscale(1);}
-    &:hover:before {-webkit-filter: grayscale(0); -moz-filter: grayscale(0); -ms-filter: grayscale(0); filter: grayscale(0);}
     a {display: block; width: 105px; height: 40px; text-indent:-999px; background: image-url('logo.png') center center no-repeat; background-size: 100% 100%; overflow: hidden; -webkit-transition: opacity .2s ease-out, -webkit-filter .2s ease-out; -moz-transition: opacity .2s ease-out, -moz-filter .2s ease-out; -ms-transition: opacity .2s ease-out, -ms-filter .2s ease-out; transition: opacity .2s ease-out, filter .2s ease-out;
       @include hidpi(1.5) { background-image: image-url('logo@2x.png');}
       
@@ -176,7 +182,6 @@ aside#search-overlay {display: none; opacity: 0; @include transition(opacity .2s
   #header, #container {padding: 0 $gleuch-xs-frame-padding;}
   #header { border-top-width: 5px; min-height: 55px;
     #brand { margin-top: 10px;
-      &:before {right: auto; left: -33px; top: 0; width: 25px; height: 25px; opacity: .5;}
       a {width: 75px; height: 28px;}
     }
     #breadcrumbs {left: $gleuch-xs-frame-padding; bottom: 15px;
@@ -287,5 +292,14 @@ aside#search-overlay {display: none; opacity: 0; @include transition(opacity .2s
     #container #content {
       body.nav-open &:after {right: 10em; bottom: 10em; top: 18em; left: 10em; margin: 2px 0 2px 2px;}
     }
+  }
+}
+
+.CodeLikeItIs1995 {position: fixed; top: 38px; z-index: 900001; right: 28px; display: block; width: 30px; height: 30px; opacity: 1; background-image: image-url('construction.gif'); background-position: center center; background-size: contain; background-repeat: no-repeat; -webkit-filter: grayscale(1); -moz-filter: grayscale(1); -ms-filter: grayscale(1); filter: grayscale(1);
+  &:hover {cursor: pointer;}
+  &:hover, & + .CodeLikeItIs1995 {-webkit-filter: grayscale(0); -moz-filter: grayscale(0); -ms-filter: grayscale(0); filter: grayscale(0);}
+  & + .CodeLikeItIs1995 {display: none; z-index: 900000; background-repeat: repeat; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background-size: 30px 30px;}
+  &:hover + .CodeLikeItIs1995 {display: block;
+    &:before {content: "Under Construction!"; position: fixed; display: inline-block; text-align: center; top: 40%; left: 0; right: 0; width: auto; overflow: visible;margin: 0 auto;padding: 30px;font-size: 7.4rem;font-weight: 600;color: yellow;white-space: nowrap;text-transform: uppercase;text-shadow: 0 4px 50px rgba(0,0,0,1), 0 -4px 50px rgba(0,0,0,1); -webkit-animation: fader 1s linear infinite;}
   }
 }

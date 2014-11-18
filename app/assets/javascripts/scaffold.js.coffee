@@ -10,6 +10,13 @@ $ ->
 
     @YoDawgIHeardYouLiekIncrements++
 
+  @CodeLikeItIs1995 = ->
+    i = 0
+    for i in [0..1] by 1
+      n = $('<div></div>').addClass('CodeLikeItIs1995')
+      $('body').append n
+    
+
   if window.console
     # TODO : MAKE COOLER
     window.console.log "\n\nHi!\n\nIf you like what you see, I'd be happy to talk more with you.\n\nSend me an email at contact@gleu.ch or tweet me @gleuch.\n\n"
@@ -21,6 +28,8 @@ $ ->
 
   $(document).ready ->
     $('body').removeClass('unload')
+
+    @CodeLikeItIs1995()
 
     menu_toggle = (r) ->
       $(this).trigger('mouseout')

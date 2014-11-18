@@ -75,7 +75,7 @@
             .image {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-repeat: no-repeat; background-position: center center;}
           }
           h1 {position: absolute; z-index: 30; bottom: 30px; left: -30px; padding: 20px; margin: 0; background-color: $gleuch-logo; font-size: 2.4rem; line-height: 1.0em; text-transform: uppercase; color: $gleuch-white; @include transition(opacity .2s ease-out);}
-          .description {position: absolute; z-index: 25; top: 15px; left: 30px; right: 55%; opacity: 0; bottom: 100%; overflow: hidden; @include transition(opacity .2s ease-out, bottom .2s 0s ease-out);
+          .description {position: absolute; z-index: 25; top: 15px; left: 30px; right: 45%; opacity: 0; bottom: 100%; overflow: hidden; @include transition(opacity .2s ease-out, bottom .2s 0s ease-out);
             padding: 25px 30px 170px 30px; background-color: rgba($gleuch-mid-black,.6); color: $gleuch-white; font-weight: 500; font-size: 2.2rem; line-height: 1.2em; text-shadow: 0 1px 1px rgba($gleuch-black,.12);
           }
           &:hover {background-color: $gleuch-mid-grey-bg;
@@ -89,7 +89,7 @@
 
 
   @media ($tablet-max-size) {
-
+    &.work-home .works-list li a .description {right: 30px;}
   }
 
   @media ($mobile-max-size) {

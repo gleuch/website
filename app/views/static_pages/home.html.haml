@@ -19,7 +19,7 @@
                 .image{style: "background-image: url('#{project[:image]}')"}
             %h1= project[:name]
             - if project[:description].present?
-              .description= project[:description]
+              .description.hidden-xs= project[:description]
     .clearfix
 
 

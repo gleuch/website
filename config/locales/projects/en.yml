@@ -36,6 +36,7 @@ en:
       - # pop_block
         slug:               'pop-block'
         name:               'Pop Block'
+        description:        'Manage your content bubble by controlling aspects of your online experience.'
       - # fffffartsy
         slug:               'fffffartsy'
         name:               'Fffffartsy'
@@ -71,11 +72,10 @@ en:
     full_list:
       2014:
         - # my_internet_color
-          hidden:           true
           name:             'My Internet Color'
           category:         'net art'
           media:            'Internet'
-          # url:              '#'
+          # url:              '/'
         - # before_you
           hidden:           true
           name:             'Before You'
