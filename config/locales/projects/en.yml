@@ -28,11 +28,17 @@ en:
       disclaimer:           ''
 
     featured_list:
-      - # my internet color
+      - # my_internet_color
         slug:               'my-internet-color'
         name:               'My Internet Color'
         image:              '/projects/my-internet-color/carousel-3.png'
         description:        'An experiment in quantified self, browsing history, and color data.'
+      - # what_color_is_the_internet
+        skip_homepage:      true
+        slug:               'what-color-is-the-internet'
+        name:               'WhatColor.IsTheInter.net/?'
+        # image:              '/projects/my-internet-color/carousel-3.png'
+        # description:        'An experiment in quantified self, browsing history, and color data.'
       - # pop_block
         slug:               'pop-block'
         name:               'Pop Block'
