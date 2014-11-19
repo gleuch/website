@@ -23,7 +23,7 @@
 - content_opts[:github_link] = 'http://github.com/gleuch/Dr.-Google'
 
 %article
-  = render 'projects/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images
+  = render 'projects/intro_area', heading: t('.heading', default: ''), carousel_images: t('.carousel')
   %section#announcement= simple_format( t('.announcement') )
   = render 'projects/content', content_opts
   = render 'projects/exhibitions', exhibitions: t('.exhibitions', default: '')

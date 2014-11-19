@@ -58,6 +58,7 @@ en:
       - # dr_google
         slug:               'dr-google'
         name:               'Dr. Google'
+        image:              '/projects/dr-google/carousel-1.png'
         description:        'Feeling sick? Let Google diagnose you!'
       - # ctrl_f_d
         slug:               'ctrl-f-d'

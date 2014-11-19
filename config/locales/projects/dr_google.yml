@@ -15,6 +15,16 @@ en:
       heading:              Dr. Google
       subheading:           Feeling sick? Not sure what you've come down with? Let Google diagnose you!
 
+      carousel:
+        -
+          image:            '/projects/dr-google/carousel-1.png'
+        -
+          image:            '/projects/dr-google/carousel-2.png'
+        -
+          image:            '/projects/dr-google/carousel-3.png'
+        -
+          image:            '/projects/dr-google/carousel-4.png'
+
       announcement: |
         <em>UPDATE</em> On October 1st, 2013, The Google Trademark team send FAT Lab a cease and desist letter on use of logo, trademark, and likeness of the site. To comply with the request, the Dr. Google site has been taken down and replaced with the contents of the C&D letter.
 

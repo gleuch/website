@@ -17,6 +17,10 @@ en:
       carousel:
         -
           image:            '/projects/wayback-wifi/carousel-1.jpg'
+        -
+          image:            '/projects/wayback-wifi/carousel-2.png'
+        -
+          image:            '/projects/wayback-wifi/carousel-3.png'
 
 
       statement: |
