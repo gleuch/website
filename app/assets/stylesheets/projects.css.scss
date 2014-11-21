@@ -87,7 +87,7 @@
     .works-list {
       li {padding: 25px 0; margin: 0;
         a {position: relative; clear: both; display: block; background-color: $gleuch-grey-bg; @include transition(background-color .2s ease-out);
-          .image-area {position: relative; padding: 325px 0 0 0; background-image: asset-url('construction-grey.gif'); background-position: center center; background-repeat: no-repeat;
+          .image-area {position: relative; padding: 45% 0 0 0; background-image: asset-url('construction-grey.gif'); background-position: center center; background-repeat: no-repeat;
             .image {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-repeat: no-repeat; background-position: center center;}
           }
           h1 {position: absolute; z-index: 30; bottom: 30px; left: -30px; padding: 20px; margin: 0; background-color: $gleuch-logo; font-size: 2.4rem; line-height: 1.0em; text-transform: uppercase; color: $gleuch-white; @include transition(opacity .2s ease-out);}
@@ -119,6 +119,11 @@
         & + hr {bottom: -50px; height: 50px;}
       }
       #intro-carousel {
+        .carousel-control {display: none;
+          &.btn {position: absolute; display: block; bottom: 50%; line-height: 35px; padding: 0; margin: 0 0 -16px 0; font-size: 1.6rem; top: auto; left: auto; right: 0; width: 28px; height: 35px; opacity: .5;
+            &.left {right: auto; left: 0;}
+          }
+        }
         .item {
           .item-container { padding-top: 50%;
             .item-content.video iframe {padding: 0;}
@@ -132,6 +137,24 @@
     }
     #announcement {margin-left: -$gleuch-xs-frame-padding; margin-right: -$gleuch-xs-frame-padding; padding: 25px $gleuch-xs-frame-padding;
       p {font-size: 1.4rem; line-height: 1.5em;}
+    }
+
+    // HOME
+    &.work-home {
+      .page-header { position: relative; top: auto; left: auto; right: auto; border: none; margin: 20px 0 5px 0;
+        h1 {font-size: 3.2rem; margin: 0; padding: 0; text-transform: normal;}
+        h4 {width: auto; margin: 10px 0 0 0;}
+      }
+
+      #works-area {margin: 0; padding: 0;}
+
+      .works-list {
+        li {padding: 10px 0;
+          a {
+            h1 {left: -15px; font-size: 2.0rem; padding: 10px 15px; bottom: 10px;}
+          }
+        }
+      }
     }
   }
 }

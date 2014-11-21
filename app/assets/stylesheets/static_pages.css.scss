@@ -14,6 +14,19 @@
     h1.text-center {display: none;}
     footer {border-top: none; margin-top: 0;}
   }
+
+  // MOBILE
+  @media ($mobile-max-size) {
+    #wrapper {margin-top: 55px;}
+    .big-intro {padding: 20px 0 0 0; margin: 0; background: none;
+      &:after {display: none;}
+      .page-header {position: relative; padding: 0; margin: 0; top: auto; left: auto; right: auto; bottom: auto; background: none;
+        h1, h4 {color: $gleuch-mid-black; text-shadow: none;}
+        h1 {font-size: 3.2rem;}
+        h4 {font-size: 1.8rem;}
+      }
+    }
+  }
 }
 
 // ABOUT PAGE
@@ -22,16 +35,16 @@
     .feature-item {position: relative; padding-top: 40%;
       .feature-content {position: absolute; top: 0; left: 0; right: 0; bottom: 0; overflow: hidden; background: rgba($gleuch-black,.05);
         img, video {width: 100%; height: auto; display: block;}
-        video {background: #ff0;}
+        .image {position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-size: cover; background-position: center 70%;}
       }
     }
   }
-  .intro-box { position: absolute; z-index: 20; left: 25px; bottom: 100%; margin-bottom: -95px; width: 375px; padding: 25px 30px 170px 30px; background-color: rgba($gleuch-mid-black,.6);
+  .intro-box { position: absolute; z-index: 20; left: 25px; bottom: 100%; margin-bottom: -95px; width: 375px; padding: 25px 30px 210px 30px; background-color: rgba($gleuch-mid-black,.6);
     h1 {position: absolute; z-index: 30; bottom: 50px; left: -55px; width: 345px; padding: 30px; margin: 0; background-color: $gleuch-logo; font-size: 3.6rem; line-height: 1.0em; text-transform: uppercase; color: $gleuch-white;}
     h3, h4, q, blockquote {color: $gleuch-white; font-weight: 500; font-size: 2.2rem; line-height: 1.2em; text-shadow: 0 1px 1px rgba($gleuch-black,.12);}
     h3 {font-weight: 700; text-transform: uppercase;}
   }
-  #biography_content { margin-bottom: 30px;
+  #biography_content { margin-bottom: 0;
     #biography {position: relative; z-index: 30; background: $gleuch-white; padding: 30px; margin: -100px 30px 0 315px;
       p {font-size: 1.9rem; line-height: 1.42em;}
     }
@@ -52,12 +65,18 @@
     & + hr {margin: 15px 30px 15px; height: 0px; border-width: 0px; border-color: transparent; background: $gleuch-text-grey;}
   }
 
-  .social-links {
-    & + hr {margin: 45px 30px 30px; height: 15px; border-width: 15px; border-color: transparent; background: $gleuch-text-grey;}
+  .social-links { margin-left: 315px; padding: 0 7px;
+    li {padding: 0 8px;
+      a {color: $gleuch-text-grey; font-size: 1.6rem;
+        span {padding-left: 2px;}
+        &:hover {color: $gleuch-logo;}
+      }
+    }
+    & + hr {margin: 45px 30px 30px; height: 3px; border-width: 3px; border-color: transparent; background: $gleuch-text-grey;}
   }
 
   #info-list {padding: 0 0 15px 0;
-    section {padding: 25px 30px; margin: 0 30px 15px 30px; background-color: $gleuch-white;
+    section {padding: 25px 0; margin: 0 30px 15px 30px; background-color: $gleuch-white;
       h3 {padding: 0 0 10px 0; margin: 0;}
       .item {padding-bottom: 5px;}
     }
@@ -90,10 +109,12 @@
       & + hr {border-width: 8px; height: 8px; margin: 0;}
     }
     #info-list {margin-top: 15px;
-      section {margin: 0; padding: 15px 15px; background-color: transparent; //margin: 0 15px 15px 15px; padding: 15px;
+      section {margin: 0; padding: 15px 0; background-color: transparent; //margin: 0 15px 15px 15px; padding: 15px;
 //        &:before {content: ""; display: block; background: $gleuch-text-grey; height: 8px; margin: -15px -15px 15px -15px;};
         h3 {font-size: 1.8rem; line-height: 1.1em; padding: 0 0 10px 0;}
       }
     }
+    .social-links + hr {margin-top: 15px; margin-left: 0; margin-right: 0;}
+
   }
 }

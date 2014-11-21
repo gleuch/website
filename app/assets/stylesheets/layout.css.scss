@@ -104,7 +104,7 @@ body {background-color: $gleuch-white; overflow-x: hidden;
     }
   }
 
-  #nav-footer { position: absolute; bottom: 0; left: 15px; right: 15px;
+  #nav-footer { position: absolute; bottom: 15px; left: 15px; right: 15px;
     ul {display: block; margin: 0; padding: 0;
       li {display: inline-block;
         a {color: $gleuch-text-grey; font-size: 1.6rem;
@@ -113,6 +113,7 @@ body {background-color: $gleuch-white; overflow-x: hidden;
         }
       }
     }
+    p {font-size: 1.1rem; padding: 15px 3px 0 3px;}
   }
 
   body.nav-open & {left: 0;
@@ -237,7 +238,7 @@ aside#search-overlay {display: none; opacity: 0; @include transition(opacity .2s
     }
   }
 
-  footer#mobile-footer {margin: 0 $gleuch-xs-frame-padding; padding: $gleuch-xs-frame-padding; background-color: $gleuch-grey-bg;
+  footer#mobile-footer {margin: 0; padding: $gleuch-xs-frame-padding; background-color: $gleuch-grey-bg;
     .container-fluid {margin: 0; padding: $gleuch-xs-frame-padding 0 0 0; border-top: 1px solid rgba($gleuch-black,.05);}
     p {padding: 0; margin: 0; font-size: 0.9rem; line-height: 1.25em; text-align: left; color: $gleuch-text-grey;
       a {color: $gleuch-text-grey;

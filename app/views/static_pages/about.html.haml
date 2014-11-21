@@ -25,14 +25,17 @@
   .feature-area
     .feature-item
       .feature-content
-        .hidden-xs
-          %video
-            - # We do not want to keep videos in the repo, so these are hosted on CDN.
-            / %source{src: '', type: "video/mp4"}
-            / %source{src: '', type: "video/ogg"}
-            = image_tag 'static_pages/about/me_mobile.png', title: '', alt: '' # Unsupported video
-        .visible-xs-block
-          = image_tag 'static_pages/about/me_mobile.png', title: '', alt: ''
+        - if true
+          .image{style: "background-image: url('#{asset_path 'static_pages/about/me.jpg'}');"}
+        - else
+          .hidden-xs
+            %video
+              - # We do not want to keep videos in the repo, so these are hosted on CDN.
+              / %source{src: '', type: "video/mp4"}
+              / %source{src: '', type: "video/ogg"}
+              = image_tag 'static_pages/about/me_mobile.png', title: '', alt: '' # Unsupported video
+          .visible-xs-block
+            = image_tag 'static_pages/about/me_mobile.png', title: '', alt: ''
 
 - # Page Content
 %article
@@ -66,14 +69,13 @@
             %dt= number_to_human(num, precision: 1, significant: false, units: :short_count, format: '%n%u')
             %dd{'data-stat-value' => "#{number_with_delimiter(num)} #{stat}"}= t(".bio_stats.#{stat}", count: val[:stat_count])
 
-  %hr
-
-  %aside.social-links
+  %aside.social-links.hidden-xs
     %ul.list-unstyled.col-md-9.col-xs-12
       - {twitter: twitter_url, github: github_url, linkedin: linkedin_url, instagram: instagram_url, email: email_url}.each do |name,url|
-        %li{'data-platform' => name}
+        %li.pull-left{'data-platform' => name}
           = link_to url, class: "socialicon socialicon-#{name}", title: t(name), target: '_blank' do
             %span= t(name)
+    .clearfix
     - if false
       %ul.list-unstyled.col-md-3.col-xs-12
         %li{'data-link' => 'resume'}
