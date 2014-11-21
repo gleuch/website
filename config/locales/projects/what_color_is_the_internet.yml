@@ -12,9 +12,21 @@ en:
         -   color
 
       heading:              WhatColor.IsTheInter.net/?
-      subheading:           
+      subheading:           "Discovering a visual landscape of the billions of updates, posts, images, and videos encountered on the Internet."
 
-      # statement:            TODO
+      carousel:
+        -
+          image:            '/projects/whatcoloristheinternet/carousel-4.jpg'
+          caption:          'Photo by Christine Butler'
+        -
+          image:            '/projects/whatcoloristheinternet/carousel-1.png'
+        -
+          image:            '/projects/whatcoloristheinternet/carousel-2.png'
+        -
+          image:            '/projects/whatcoloristheinternet/carousel-3.jpg'
+
+      statement: |
+        WhatColor.IsTheInter.net/? is the first exploration of What.IsTheInter.net/?, a series that examines through code and design what knowledge we wish to learn about the Internet. Color is important in how it conveys and alters emotions. By mapping and indexing large swaths of the Internet to construct visual landscapes, allowing segmenting of various communities and formats for web sites, and determining the single, average color for how the Internet appears to us on the screen will aid in demonstrating that the Internet is an ever-changing, humanized idea of ourselves. WhatColor.IsTheInter.net/? will be published on it's namesake URL, providing color information, documentation, and project research. As web sites are indexed, color information and imagery will be pieced together into large visual landscapes also available for viewing. These landscapes will be be searchable by dates, categories, and formats, producing a myriad of visual pieces that can be transferred to other media, showing us the differences in color between desktop and mobile views, news and social media, and more.
 
       # explanation:          TODO
 

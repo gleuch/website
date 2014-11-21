@@ -24,7 +24,7 @@ en:
         more:               'View list of all projects'
 
     footer:
-      footer:               '<a href="%{projects_url}">Return to featured projects</a> or <a href="%{projects_list_url}">view a list of all project</a>.'
+      footer:               '<a href="%{projects_url}">Return to featured projects</a> or <a href="%{projects_list_url}">view a list of all projects</a>.'
       disclaimer:           ''
 
     featured_list:
@@ -37,11 +37,12 @@ en:
         skip_homepage:      true
         slug:               'what-color-is-the-internet'
         name:               'WhatColor.IsTheInter.net/?'
-        # image:              '/projects/my-internet-color/carousel-3.png'
-        # description:        'An experiment in quantified self, browsing history, and color data.'
+        image:              '/projects/whatcoloristheinternet/carousel-4.jpg'
+        # description:        'Discovering a visual landscape of the billions of updates, posts, images, and videos encountered on the Internet.'
       - # pop_block
         slug:               'pop-block'
         name:               'Pop Block'
+        image:              '/projects/pop-block/carousel-1.png'
         description:        'Manage your content bubble by controlling aspects of your online experience.'
       - # fffffartsy
         slug:               'fffffartsy'
@@ -57,27 +58,32 @@ en:
         slug:               'shaved-bieber'
         name:               'Shaved Bieber'
         description:        'Clean up the lower regions of web pages from unwanted Justin Bieber mentions.'
-      - # twitter_fileshare
-        slug:               'twitter-fileshare'
-        name:               'Twitter Fileshare'
-        description:        "Why shouldn't Twitter be used today for file sharing?"
+      - # greed
+        slug:               'greed'
+        name:               'G.R.E.E.D.'
+        description:        'Greed powers our economy through restrictive licensing deals and claims of copyright.'
       - # dr_google
         slug:               'dr-google'
         name:               'Dr. Google'
         image:              '/projects/dr-google/carousel-1.png'
         description:        'Feeling sick? Let Google diagnose you!'
+      - # twitter_fileshare
+        slug:               'twitter-fileshare'
+        name:               'Twitter Fileshare'
+        description:        "Why shouldn't Twitter be used today for file sharing?"
+      - # fuck_captcha
+        slug:               'fuckcaptcha'
+        name:               'fuckCAPTCHA'
+        image:              '/projects/fuckflickr/carousel-1.jpg'
+        description:        'Alternative to the humanization of human brain cycles for corporate pet projects'
       - # ctrl_f_d
         slug:               'ctrl-f-d'
         name:               "Ctrl F'd"
         description:        'An experiment in "censoring" a web page by hiding text and images behind blocks.'
       - # fuck_captcha
-        slug:               'fuckcaptcha'
-        name:               'fuckCAPTCHA'
-        description:        'Alternative to the humanization of human brain cycles for corporate pet projects'
-      - # greed
-        slug:               'greed'
-        name:               'G.R.E.E.D.'
-        description:        'Greed powers our economy through restrictive licensing deals and claims of copyright.'
+        slug:               'fuckflickr'
+        name:               'FuckFlickr'
+        description:        "Open-source image gallery software that won't narc on you."
       - # projections_of_hurtsboro_identity
         slug:               'projections-of-hurtsboro-identity'
         name:               'Projections of Hurtsboro Identity'
@@ -117,6 +123,10 @@ en:
           category:         'net art'
           media:            'HTML, Ruby'
           # url:              '#'
+        - # macchange
+          name:             'MACchange'
+          category:         'diy'
+          url:              'https://gist.github.com/gleuch/6a7a2011b585fe168a54'
         - # dood_remove
           name:             'DOOD Remove'
           partners:         'Aram Bartholl'

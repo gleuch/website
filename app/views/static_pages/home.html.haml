@@ -1,15 +1,21 @@
+- @page_title = t('.page_title', default: '')
+- @page_meta_description = t('.meta.description', default: '')
+- @page_meta_keywords = t('.meta.keywords', default: '')
+- @page_share_title = t('.page_title', default: '')
+- @page_share_description = t('.meta.description', default: '')
 - @breadcrumbs << {name: t('.breadcrumbs').sample}
 
 
-%header.page-header
-  %h1= t('.intro.title')
-  %h4= t('.intro.text')
+.big-intro
+  %header.page-header
+    %h1= t('.intro.title')
+    %h4= t('.intro.text')
 
 .work.work-home
   #home-works-area
     #projects.col-xs-12.col-sm-6
       %a{href: projects_url}
-        %h1= t('.projects.title')
+        %h1.text-center= t('.projects.title')
         - # %h4= t('.projects.description').html_safe
 
       %ul.works-list.list-unstyled
@@ -31,7 +37,7 @@
 
     #client-work.col-xs-12.col-sm-6
       %a{href: client_works_url}
-        %h1= t('.works.title')
+        %h1.text-center= t('.works.title')
         - # %h4= t('.works.description').html_safe
 
       %ul.works-list.list-unstyled

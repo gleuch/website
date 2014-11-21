@@ -1,0 +1,45 @@
+en:
+  projects:
+    fuckflickr:
+      page_title:           'FuckFlickr '
+      meta:
+        description:        "Open-source image gallery software that won't narc on you."
+        keywords:           ''
+
+      tags:
+        -   gallery
+        -   internet
+        -   php
+
+      heading:              'FuckFlickr'
+      subheading:           "Open-source image gallery software that won't narc on you."
+
+      carousel:
+        -
+          image:            '/projects/fuckflickr/carousel-1.png'
+
+      statement: |
+        FuckFlickr is open-source image gallery software that won't narc you out. It created it as an alternative to hosting photos on a certain narc-owned photo sharing site.
+
+        No database required; just upload it and put images in the data directory. FuckFlickr will automatically create thumbnails, including animated GIFs and supports themes. Titles and descriptions are easily changed with a single text file in each folder. FuckFlickr also offers RSS feeds, toggleable lightbox, sorting, pagination, caching, and more
+
+      explanation: |
+        <a href="http://www.cpj.org/awards05/shi_tao.html" target="_blank">Shi Tao</a> is serving a 10-year sentence in prison for writing articles calling for political reform in China, and <a href="http://news.bbc.co.uk/1/hi/world/asia-pacific/4221538.stm" target="_blank">Yahoo helped put him there</a>. It is our duty to provide open-source programs that don't narc you out.
+
+      content_rails:
+        - # Column 1
+          -
+            content: |
+              Made with <a href="http://theowatson.com/" target="_blank">Theo Watson</a> and <a href="http://jamiewilkinson.com" target="_blank">Jamie Wilkinson</a>.
+
+      exhibitions:
+        -
+          name:             'Versions'
+          place:            'Netherlands Media Arts Institute'
+          location:         'Amsterdam, Netherlands'
+          date:             'Nov 2009'
+        -
+          name:             'Futurity Now!, transmediale.10'
+          place:            'Haus der Kulturen der Welt'
+          location:         'Berlin, Germany'
+          date:             'Feb 2010'

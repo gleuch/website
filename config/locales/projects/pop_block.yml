@@ -14,6 +14,10 @@ en:
       heading:              Pop Block
       subheading:           Manage your content bubble by controlling aspects of your online experience.     
 
+      carousel:
+        -
+          image:            '/projects/pop-block/carousel-1.png'
+
       statement: |
         <a href="https://pop-block.com" target="_blank">Pop Block</a> wants to help users manage their content bubble, by allowing them to control content visibility while browsing the web. Blocking and hiding content is notably achieved through advertising blocking extensions, but the everyday web content we consume contains many more things we may not wish to see.
         

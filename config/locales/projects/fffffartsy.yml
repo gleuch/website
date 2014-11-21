@@ -41,8 +41,18 @@ en:
           place:            'MU'
           location:         'Eindhoven, Netherlands'
           date:             'Nov 2013'
+        -
+          name:             The Wrong
+          place:            Internet
+          date:             Dec 2013
 
       press:
         -
           name:             Animal NY
           url:              http://animalnewyork.com/2013/fffffartsy-put-your-art-into-this-very-very-irl-ish-gallery-online/
+        -
+          name:             Hyperallergic
+          url:              http://hyperallergic.com/100112/a-deep-dive-into-digital-art/
+        -
+          name:             Artsy
+          url:              https://twitter.com/artsy/status/395980522339696640

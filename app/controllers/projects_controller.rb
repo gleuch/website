@@ -11,7 +11,7 @@ class ProjectsController < ApplicationController
     load_resource(id: 'home', format: request.format.symbol.to_s)
     impressionist(@project) unless request_is_self?
     @body_classes << 'work' << 'project' << 'work-home'
-    @featured_projects = t('projects.featured_list')
+    @featured_projects = t('projects.featured_list').reject{|v| v[:hide]}
     show_static_page(@project)
   end
 

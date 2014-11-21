@@ -8,6 +8,7 @@
     }
     #intro-carousel { background-color: rgba($gleuch-black,.05);
       .carousel-indicators {display: none;}
+      .carousel-control {background: none;}
       .item {
         .item-container {position: relative; padding-top: 46%;
           .item-content {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-position: center center; background-repeat: no-repeat; background-size: cover;
@@ -21,19 +22,21 @@
     &.no-carousel {min-height: 72px;}
   }
 
-  #announcement { background-color: $gleuch-mid-grey-bg; padding: 30px 30px; margin: 15px -15px; font-weight: 500; border-bottom: 5px solid rgba($gleuch-mid-black,.12);
+  .project-info {padding-left: 0; padding-right: 0;}
+
+  #announcement { background-color: $gleuch-mid-grey-bg; padding: 30px 30px; margin: 15px 0; font-weight: 500; border-bottom: 5px solid rgba($gleuch-mid-black,.12);
     p { padding: 8px 0 0 0; margin: 0; color: $gleuch-mid-black; font-size: 1.8rem; line-height: 1.33em;
       em {font-style: normal; font-weight: 700; display: inline-block; color: $gleuch-white; background-color: $gleuch-mid-black; padding: 3px 8px; margin: -3px 2px -3px 0; line-height: 1em; overflow: visible;}
       &:first-child {padding-top: 0;}
     }
   }
 
-  #description { padding: 15px 0; margin: 0 -15px;
+  #description { padding: 15px 0; margin: 0;
     h2 {font-weight: 500; color: $gleuch-mid-black; font-size: 2.6rem; line-height: 1.23em; margin: 0; padding: 0;}
   }
 
   #work-info {padding-left: 0; padding-right: 0;}
-  #statement, #examples {margin: 15px -15px 30px -15px; padding: 30px 0 22px 0; background-color: $gleuch-white;}
+  #statement, #examples {margin: 15px 0 30px 0; padding: 30px 0 22px 0; background-color: $gleuch-white;}
   #statement {
     h3 {display: none;}
     & + #examples {margin-top: -30px; padding-top: 0;}
@@ -55,6 +58,14 @@
       dd {}
     }
   }
+
+  footer.works-footer {text-align: center; border-top: 1px solid rgba($gleuch-mid-black, .2); padding: 20px 0; margin: 50px 0 0 0;
+    p {font-size: 1.3rem;
+      &.disclaimer {font-size: 1.1rem; font-style: italic; font-family: $gleuch-webfont-serif;}
+      a {font-weight: 600;}
+    }
+  }
+  
 
   // Homepage
   &.work-home { position: relative; height: 100%;

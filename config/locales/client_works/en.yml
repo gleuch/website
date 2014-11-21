@@ -33,10 +33,10 @@ en:
       #   slug:               'whats-trending'
       #   name:               "What's Trending"
       #   description:        ''
-      - # buzzfeed
-        slug:               'buzzfeed'
-        name:               'BuzzFeed'
-        description:        ''
+      # - # buzzfeed
+      #   slug:               'buzzfeed'
+      #   name:               'BuzzFeed'
+      #   description:        ''
       - # fever_keeper
         slug:               'heineken-fever-keeper'
         name:               'Heineken Fever Keeper'
