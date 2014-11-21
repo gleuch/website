@@ -3,17 +3,19 @@
 - @page_meta_keywords = t('.meta.keywords', default: '')
 - @page_share_title = t('.page_title', default: '')
 - @page_share_description = t('.meta.description', default: '')
-- @breadcrumbs << {name: t('.breadcrumbs').sample}
+- @breadcrumbs << {name: 'Greg Leuch'}
+- @breadcrumbs << {name: t('.breadcrumbs')}#.sample}
 - @body_classes << 'homepage'
 
 
 .big-intro
-  %header.page-header
+  %header.page-header.hidden
     %h1= t('.intro.title')
     %h4= t('.intro.text')
 
 .work.work-home
   #home-works-area
+    %h1.title.text-center.hidden-xs= t('.featured_items')
     #projects.col-xs-12.col-sm-6
       %a{href: projects_url}
         %h1.text-center= t('.projects.title')
