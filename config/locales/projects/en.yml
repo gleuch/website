@@ -38,7 +38,7 @@ en:
         slug:               'what-color-is-the-internet'
         name:               'WhatColor.IsTheInter.net/?'
         image:              '/projects/whatcoloristheinternet/carousel-4.jpg'
-        # description:        'Discovering a visual landscape of the billions of updates, posts, images, and videos encountered on the Internet.'
+        description:        'Discovering a visual landscape of the billions of updates, posts, images, and videos encountered on the Internet.'
       - # pop_block
         slug:               'pop-block'
         name:               'Pop Block'
@@ -57,6 +57,7 @@ en:
       - # shaved_bieber
         slug:               'shaved-bieber'
         name:               'Shaved Bieber'
+        image:              '/projects/shaved-bieber/carousel-1.jpg'
         description:        'Clean up the lower regions of web pages from unwanted Justin Bieber mentions.'
       - # greed
         slug:               'greed'
@@ -70,11 +71,11 @@ en:
       - # twitter_fileshare
         slug:               'twitter-fileshare'
         name:               'Twitter Fileshare'
+        image:              '/projects/twitter-fileshare/carousel-1.png'
         description:        "Why shouldn't Twitter be used today for file sharing?"
       - # fuck_captcha
         slug:               'fuckcaptcha'
         name:               'fuckCAPTCHA'
-        image:              '/projects/fuckflickr/carousel-1.jpg'
         description:        'Alternative to the humanization of human brain cycles for corporate pet projects'
       - # ctrl_f_d
         slug:               'ctrl-f-d'
@@ -83,6 +84,7 @@ en:
       - # fuck_captcha
         slug:               'fuckflickr'
         name:               'FuckFlickr'
+        image:              '/projects/fuckflickr/carousel-1.jpg'
         description:        "Open-source image gallery software that won't narc on you."
       - # projections_of_hurtsboro_identity
         slug:               'projections-of-hurtsboro-identity'

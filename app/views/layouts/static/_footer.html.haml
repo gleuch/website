@@ -15,9 +15,10 @@
                 - t('nav.featured.projects').each do |v|
                   %li= link_to v[:name], project_url(v[:slug])
                 %li= link_to t(:more_hellip), projects_url
-      %li
-        = link_to search_url, id: 'nav-search' do
-          = t('search', scope: [:nav])
+      - if false
+        %li
+          = link_to search_url, id: 'nav-search' do
+            = t('search', scope: [:nav])
     
     %footer#nav-footer
       %ul.list-unstyled

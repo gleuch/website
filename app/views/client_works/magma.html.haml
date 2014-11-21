@@ -7,12 +7,6 @@
 - @breadcrumbs << {name: t('.heading')}
 
 
-- # Carousel Images
-- carousel_images = []
-- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-1.jpg', alt: ''), caption: t('.carousel.captions')[0]}
-- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-2.jpg', alt: ''), caption: t('.carousel.captions')[1]}
-
-
 - # Page Content
 - content_opts = {}
 - content_opts[:subheading] = t('.subheading', default: '')
@@ -22,7 +16,7 @@
 - content_opts[:share_link] = @canonical_url
 
 %article
-  = render 'client_works/intro_area', heading: t('.heading', default: ''), carousel_images: carousel_images
+  = render 'client_works/intro_area', heading: t('.heading', default: ''), carousel_images: t('.carousel')
   = render 'client_works/content', content_opts
   = render 'client_works/awards', awards: t('.awards', default: '')
   = render 'client_works/press', press: t('.press', default: '')

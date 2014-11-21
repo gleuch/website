@@ -9,6 +9,10 @@ en:
       heading:              Magma
       subheading:           An entry point for online videos.
 
+      carousel:
+        -
+          image:            '/client-works/magma/carousel-1.jpg'
+
       about: |
         Magma is an online video statistic aggregator and entry point for online video.
         

@@ -7,11 +7,6 @@
 - @breadcrumbs << {name: t('.heading')}
 
 
-- # Carousel Images
-- carousel_images = []
-- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-1.jpg', alt: ''), caption: t('.carousel.captions')[0]}
-- #carousel_images << {img: image_tag('projects/shaved-bieber/carousel-2.jpg', alt: ''), caption: t('.carousel.captions')[1]}
-
 
 - # Page Content
 - content_opts = {}
@@ -20,7 +15,7 @@
 - content_opts[:share_link] = @canonical_url
 
 %article
-  = render 'projects/intro_area', heading: t('.heading'), carousel_images: carousel_images
+  = render 'projects/intro_area', heading: t('.heading'), carousel_images: t('.carousel')
   = render 'projects/content', content_opts
 
   = render 'projects/footer'

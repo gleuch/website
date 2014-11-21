@@ -8,7 +8,12 @@
     }
     #intro-carousel { background-color: rgba($gleuch-black,.05);
       .carousel-indicators {display: none;}
-      .carousel-control {background: none;}
+      .carousel-control {background: none;
+        &.btn {position: absolute; z-index: 100; bottom: -30px; line-height: 65px; padding: 0; font-size: 3.2rem; text-shadow: none; font-weight: 600; top: auto; left: auto; right: 25px; display: block; width: 65px; height: 65px; background: rgba($gleuch-mid-black,1); border-radius: 0; opacity: .8; @include transition(opacity .2s ease-out, background-color .2s ease-out);
+          &.left {right: 100px;}
+          &:hover {opacity: 1;}
+        }
+      }
       .item {
         .item-container {position: relative; padding-top: 46%;
           .item-content {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-position: center center; background-repeat: no-repeat; background-size: cover;
@@ -35,9 +40,11 @@
     h2 {font-weight: 500; color: $gleuch-mid-black; font-size: 2.6rem; line-height: 1.23em; margin: 0; padding: 0;}
   }
 
+  #work-links {padding-top: 20px;}
+
   #work-info {padding-left: 0; padding-right: 0;}
   #statement, #examples {margin: 15px 0 30px 0; padding: 30px 0 22px 0; background-color: $gleuch-white;}
-  #statement {
+  #statement { margin-top: 0;
     h3 {display: none;}
     & + #examples {margin-top: -30px; padding-top: 0;}
   }
@@ -70,8 +77,9 @@
   // Homepage
   &.work-home { position: relative; height: 100%;
     .page-header { position: fixed; top: 40%; left: $gleuch-lg-frame-padding; right: 55%; border: none;
-      h1 {margin: 0 0 25px 0; padding: 0 0 15px 0; font-size: 6.4rem; line-height: 1.0em; font-weight: 600; text-transform: lowercase; border-bottom: 1px solid rgba($gleuch-mid-black, .2);}
+      h1 {margin: 0 0 25px 0; padding: 0 0 15px 0; font-size: 6.4rem; line-height: 1.0em; font-weight: 600; text-transform: lowercase; border-bottom: 0px solid rgba($gleuch-mid-black, .2);}
       h4 {width: 65%; margin: 65px 0 0 0; padding: 0; font-weight: 300; font-size: 1.8rem; line-height: 1.33em;}
+      h4 {margin-top: 35px;}
     }
 
     #works-area {margin: 0 0 0 40%; padding: 0 0 30px 0;}
@@ -79,7 +87,7 @@
     .works-list {
       li {padding: 25px 0; margin: 0;
         a {position: relative; clear: both; display: block; background-color: $gleuch-grey-bg; @include transition(background-color .2s ease-out);
-          .image-area {position: relative; padding: 325px 0 0 0;
+          .image-area {position: relative; padding: 325px 0 0 0; background-image: asset-url('construction-grey.gif'); background-position: center center; background-repeat: no-repeat;
             .image {position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-size: cover; background-repeat: no-repeat; background-position: center center;}
           }
           h1 {position: absolute; z-index: 30; bottom: 30px; left: -30px; padding: 20px; margin: 0; background-color: $gleuch-logo; font-size: 2.4rem; line-height: 1.0em; text-transform: uppercase; color: $gleuch-white; @include transition(opacity .2s ease-out);}

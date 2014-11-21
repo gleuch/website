@@ -9,6 +9,10 @@ en:
       heading:              Know Your Meme
       subheading:           'Documenting Internet phenomena: viral videos, image macros, catchphrases, web celebs and more.'
 
+      carousel:
+        -
+          image:            '/client-works/know-your-meme/carousel-1.jpg'
+
       about: |
         Started as a side project by Kenyatta Cheese, Elspeth Rountree, and Jamie Wilkinson, Know Your Meme has grown from a wiki and a few funny videos to a large video and site property of Rocketboom. In a few short months, Know Your Meme has become an important tool for the documentation of internet memes and culture through the use of user-generated content. With the help of a two staff editors and numerous user moderators, the site now features over 2,000 meme entries, nearly 40,000 images, and an enormous user population. Daily traffic now exceeded 100,000 unique daily visitors, over 12.5 million monthly page views, and over 30TB monthly bandwidth, and is ranked around 3,500 by Quantcast (Feb 2010)
         

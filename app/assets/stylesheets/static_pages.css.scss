@@ -1,15 +1,16 @@
 // HOME PAGE
-.page-home {
-  #header {background-color: rgba($gleuch-white,.85);}
+.homepage.page-home {
+//  #header {background-color: rgba($gleuch-white,.85);}
   #wrapper {margin-top: 10px;}
-  .big-intro {position: relative; padding: 40% 0 0 0; margin: 0 0 25px 0; margin-left: -$gleuch-lg-frame-padding; margin-right: -$gleuch-lg-frame-padding; background-color: $gleuch-grey-bg;  background-image: asset-url('home-splash.png'); background-size: cover; background-repeat: no-repeat; background-repeat: center center;
-    .page-header {position: absolute; bottom: -25px; left: $gleuch-lg-frame-padding - 25px; border-bottom: none; margin: 0; padding: 25px 25px 25px 25px; background-color: rgba($gleuch-logo,1);
+  .big-intro {position: relative; padding: 36% 0 0 0; margin: 0 0 25px 0; margin-left: -$gleuch-lg-frame-padding; margin-right: -$gleuch-lg-frame-padding; background-color: $gleuch-grey-bg;  background-image: asset-url('home-splash.png'); background-size: cover; background-repeat: no-repeat; background-repeat: center center;
+    &:after {content: ""; position: relative; display: block; z-index: 10; left: 0; bottom: 0; right: 0; height: 28px; background: image-url('bg/pixel-bg-bar.png') top right repeat;}
+    .page-header {position: absolute; z-index: 20; bottom: -25px; left: $gleuch-lg-frame-padding - 25px; border-bottom: none; margin: 0; padding: 25px 25px 25px 25px; background-color: rgba($gleuch-mid-black,.82);
       h1 {padding: 0 0 4px 0; color: $gleuch-white; text-shadow: 0 1px 1px rgba($gleuch-black,.12);}
       h4 {font-weight: 500; padding: 0 0 4px 0; color: $gleuch-white; text-shadow: 0 1px 1px rgba($gleuch-black,.12);}
     }
   }
   .work.work-home .works-list li a h1 {left: -15px;}
-  #home-works-area {padding: 0 0 70px 0; margin: 0 -15px;
+  #home-works-area {padding: 20px 0 70px 0; margin: 0 -15px;
     h1.text-center {display: none;}
     footer {border-top: none; margin-top: 0;}
   }

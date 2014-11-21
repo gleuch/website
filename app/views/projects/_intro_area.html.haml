@@ -34,6 +34,9 @@
 
       - if carousel_images.size > 1
         %a.left.carousel-control{href: '#intro-carousel', role: :button, 'data-slide' => :prev}
-          [<]
         %a.right.carousel-control{href: '#intro-carousel', role: :button, 'data-slide' => :next}
-          [>]
+
+        %a.btn.left.carousel-control{href: '#intro-carousel', role: :button, 'data-slide' => :prev}
+          &lt;
+        %a.btn.right.carousel-control{href: '#intro-carousel', role: :button, 'data-slide' => :next}
+          &gt;

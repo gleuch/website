@@ -31,18 +31,21 @@ en:
 
     featured:
       client_works:
-        -
-          name:   "What's Trending"
-          slug:   whats-trending
-        -
-          name:   BuzzFeed
-          slug:   buzzfeed
+        # -
+        #   name:   "What's Trending"
+        #   slug:   whats-trending
+        # -
+        #   name:   BuzzFeed
+        #   slug:   buzzfeed
         -
           name:   Heineken Fever Keeper
           slug:   heineken-fever-keeper
         -
           name:   Know Your Meme
           slug:   know-your-meme
+        -
+          name:   Magma
+          slug:   magma
       projects:
         -
           name:   WhatColor.IsTheInter.net/?

@@ -40,23 +40,26 @@ en:
       - # fever_keeper
         slug:               'heineken-fever-keeper'
         name:               'Heineken Fever Keeper'
+        image:              '/client-works/heineken-fever-keeper/carousel-1.jpg'
         description:        'Block the spoilers from tape-delayed UEFA soccer matches.'
-      - # zagat_food_trucks
-        slug:               'zagat-food-trucks'
-        name:               'Zagat Food Trucks'
-        description:        'Interactive maps for Zagat-rated food trucks.'
       - # know_your_meme
         slug:               'know-your-meme'
         name:               'Know Your Meme'
+        image:              '/client-works/know-your-meme/carousel-1.jpg'
         description:        'Documenting Internet phenomena: viral videos, image macros, catchphrases, web celebs and more.'
       - #
         slug:               'magma'
         name:               'Magma'
-        description:        ''
+        image:              '/client-works/magma/carousel-1.jpg'
+        description:        'An entry point for online videos.'
+      - # zagat_food_trucks
+        slug:               'zagat-food-trucks'
+        name:               'Zagat Food Trucks'
+        description:        'Interactive maps for Zagat-rated food trucks.'
       - #
         slug:               'politics4all'
         name:               'Politics4All'
-        description:        ''
+        description:        'A social network for politics.'
       - #
         slug:               'thesa-me'
         name:               'Thesa.me'
