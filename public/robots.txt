@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:   /files/2014/resume.pdf
-Disallow:    /search
-Disallow    /tag/*
+Disallow:   /search
+Disallow    /tag/
