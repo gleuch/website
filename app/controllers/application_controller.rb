@@ -10,7 +10,7 @@ class ApplicationController < ActionController::Base
   # Initialize variables and other items for use on page.
   def app_init
     @body_classes, @breadcrumbs = ['unload'], []
-    @_static_page_options = {cache: true}.with_indifferent_access
+    @_static_page_options = {cache: true, cache_control_expires: 1.hour, cache_control_public: true, cache_control_revalidate: true}.with_indifferent_access
     @page_title = t(:name)
   end
 
@@ -80,6 +80,11 @@ private
           html = cache(cache_key, expires_in: @_static_page_options[:cache_expires_in]) { results.call }
         else
           html = results.call
+        end
+
+        # HTTP Cache-control
+        unless @_static_page_options[:no_cache_control]
+          expires_in (@_static_page_options[:cache_control_expires] || 0), public: @_static_page_options[:cache_control_public], must_revalidate: @_static_page_options[:cache_control_revalidate]
         end
 
         render text: html, layout: false
