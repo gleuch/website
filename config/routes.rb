@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  # Hack (tmp)
+  match '/_betaworks/:id' => 'tmp_log#create', via: [:get]
+
+
   # Projects ---
   resources :projects, only: [:index, :show]
 
