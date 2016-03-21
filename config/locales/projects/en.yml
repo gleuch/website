@@ -113,12 +113,29 @@ en:
 
     # Full list of projects, by year
     full_list:
-      2014:
-        - # my_internet_color
-          name:             'My Internet Color'
-          category:         'net art'
+      2016:
+        - #
+          name:             'Hitler Wears a Toupee'
+          category:         'dumb, browser extension'
           media:            'Internet'
-          # url:              '/'
+          url:              'https://chrome.google.com/webstore/detail/hitler-has-a-toupee/fhgapkffpmcgfaopnkcjamblnnfignma?hl=en-US'
+        - # marcobot
+          name:             'Marcobot'
+          category:         'dumb'
+          media:            'slack'
+          url:              'https://marcobot.us'
+      2015:
+        - # my_internet_color_book
+          name:             'What Color Is My Internet?'
+          category:         'net art, bool'
+          media:            'Internet'
+          url:              'https://www.lulu.com/shop/greg-leuch/what-color-is-my-internet/paperback/product-22415462.html'
+        - # my_internet_color_book
+          name:             'My Internet Color'
+          category:         'net art, web site'
+          media:            'Internet'
+          url:              'https://mycolor.today'
+      2014:
         - # before_you
           hidden:           true
           name:             'Before You'

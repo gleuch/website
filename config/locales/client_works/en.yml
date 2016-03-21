@@ -29,6 +29,11 @@ en:
       disclaimer:           'Work listed with a firm indicates work done as an employee or under contract with the firm listed. All other work is considered freelanced.'
 
     featured_list:
+      - # plusplus
+        slug:               'plusplus'
+        name:               'PlusPlus++'
+        image:              '/client-works/plusplus/carousel-1.jpg'
+        description:        'Keep score of all the good things your friends say and do on Slack.'
       # - #
       #   slug:               'whats-trending'
       #   name:               "What's Trending"
@@ -91,6 +96,58 @@ en:
 
     # Full list of client work, by year
     full_list:
+      2016:
+        - # ponchobot
+          name:             'Poncho'
+          client:           'betaworks'
+          role:             'product, development'
+          media:            'chat bot'
+          url:              'http://poncho.is'
+        - # parcel
+          name:             'Parcel'
+          client:           'betaworks'
+          role:             'product, development'
+          media:            'audio, podocast, mvp'
+      2015:
+        - # plusplus
+          name:             'PlusPlus++'
+          client:           'betaworks'
+          role:             'product advisor, designer, developer'
+          media:            'slack'
+          url:              'https://plusplus.chat'
+        - # speed dial
+          name:             'Speed Dial'
+          client:           'betaworks'
+          role:             'product advisor'
+          media:            'curated news'
+        - # marx
+          name:             'Marx'
+          client:           'betaworks'
+          role:             'product advisor'
+          media:            'augmented reality'
+          url:              'https://makemarx.com'
+        - # dexter
+          name:             'Dexter'
+          client:           'betaworks'
+          role:             'product advisor'
+          media:            'web tools'
+          url:              'https://rundexter.com'
+        - # glitter
+          name:             'Glitter'
+          client:           'betaworks'
+          role:             'product advisor'
+          url:              'https://glitter.club'
+        - # cashay
+          name:             'Scale Model'
+          client:           'betaworks'
+          role:             'logo design, mvp product'
+          media:            'data analytics, social media'
+          url:              'https://scalemodel.com'
+        - # cashay
+          name:             'Cashay'
+          client:           'betaworks'
+          role:             'product advisor'
+          media:            'chat bot, finance'
       2014:
         - # nike2
           name:             'Nike - Digital Sports Team'

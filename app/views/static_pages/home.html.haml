@@ -15,7 +15,9 @@
 
 .work.work-home
   #home-works-area
-    %h1.title.text-center.hidden-xs= t('.featured_items')
+    %h1.title.text-center= t('.intro.title')
+    %h4.subtitle.text-center= t('.intro.text')
+
     #projects.col-xs-12.col-sm-6
       %a{href: projects_url}
         %h1.text-center= t('.projects.title')

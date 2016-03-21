@@ -3,7 +3,7 @@ en:
     home:
       page_title:           'Greg Leuch: Creative + User Interaction'
       meta:
-        description:        'Greg Leuch is a creative designer, developer, and new media artist.'
+        description:        'Greg Leuch is a creative designer, developer, and new media artist. Head of Product at betaworks.'
         keywords:           ''
       title:                'Greg Leuch'
       breadcrumbs:          'design, web, tech, art'
@@ -14,8 +14,8 @@ en:
       #   - 'Bonjour!'
       #   - 'Hallo!'
       intro:
-        title:              'Design, web, technology, and art'
-        text:               'Portfolio of Greg Leuch, a creative designer, developer, and new media artist.'
+        title:              'Web, technology, startups, and art'
+        text:               'Portfolio of Greg Leuch, a creative designer, developer, and new media artist.Head of Product at betaworks.'
       featured_items:       'A sample of projects and client works by Greg Leuch'
       projects:
         title:              'Projects'
@@ -37,11 +37,11 @@ en:
       latest:
         twitter:            'From the Fingertips'
       bio: |
-        Greg Leuch is a creative & user interaction designer, specializing in user interface design, usability, front-end development, and feature research. He has worked on a variety of projects in the past, large and small, with emphasis on web startups and e-commerce. He was previously Senior Designer at BuzzFeed and Director of Research & Development at Rocketboom, working on such projects like Know Your Meme and Magma. He was also a freelance creative with JESS3.
+        Greg Leuch is a creative product designer & developer, specializing in user interface design, usability, front-end development. He has worked on a variety of projects in the past, large and small, with emphasis on web startups and e-commerce. He was previously Senior Designer at BuzzFeed and Director of Research & Development at Rocketboom, working on such projects like Know Your Meme and Magma. He was also a virtual research fellow of <a href="http://fffff.at" target="_blank">Free Art and Technology Lab (F.A.T. Lab)</a> and a freelance creative with JESS3.
         
-        Presently, Greg is Lead Product Designer at <a href="http://betaworks.com" target="_blank" rel="follow">betaworks</a>, a VC start-up studio, and co-owner of <a href="http://xolator.com" target="_blank" rel="follow">XOlator</a>, a creative engagement team. He is a virtual research fellow of <a href="http://fffff.at" target="_blank">Free Art and Technology Lab (F.A.T. Lab)</a>.
+        Presently, Greg is Head That Wears Many Hats (Product) at <a href="http://betaworks.com" target="_blank" rel="follow">betaworks</a>, a startup studio & incubator. He is also the co-owner of <a href="http://xolator.com" target="_blank" rel="follow">XOlator</a>, a creative engagement team.
         
-        He is fluent in XHTML/CSS, Ruby (Rails), JavaScript, and PHP, with extensive experience with browser extension development.
+        He is currently exploring bots, chat interfaces, thin media clients, augmeted reality, and creative applications.
         
         Greg currently resides in Brooklyn, NY.
       bio_stats:
@@ -59,11 +59,11 @@ en:
       exhibitions:
         title:              'Major Exhibitions'
         list:
-          # -
-          #   name:           'F.A.T. Gold'
-          #   place:          'Gray Area'
-          #   location:       'San Francisco'
-          #   date:           'May 2015'
+          -
+            name:           'F.A.T. Gold'
+            place:          'Gray Area'
+            location:       'San Francisco'
+            date:           'May 2015'
           -
             name:           '"Eyebeam Annual Showcase"'
             place:          'Eyebeam'
@@ -132,6 +132,11 @@ en:
       awards:
         title:              'Awards, Highlights, & Distinctions'
         list:
+          - 
+            name:           'What Color Is My Internet? (book)'
+            year:           '2015'
+            url:            'https://www.lulu.com/shop/greg-leuch/what-color-is-my-internet/paperback/product-22415462.html'
+            url_text:       'Purchase Book'
           - 
             name:           'Interactive Award – Social, Communication Arts'
             year:           '2013'

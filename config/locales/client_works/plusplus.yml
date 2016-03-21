@@ -1,0 +1,43 @@
+en:
+  client_works:
+    plusplus:
+      page_title:           PlusPlus++
+      meta:
+        description:        Keep score of all the good things your friends say and do on Slack.
+        keywords:           "slack, plusplus, betaworks, bots"
+
+      heading:              PlusPlus++
+      subheading:           'Keep score of all the good things your friends say and do on Slack.'
+
+      carousel:
+        -
+          image:            '/client-works/plusplus/carousel-1.jpg'
+
+      about: |
+        PlusPlus++ is a Slack bot that allows users to give out and take points from users and things, an experiement by betaworks to explore Slack's growth an opportunity. The concept came from our desire to expand upon an existing open-source karmabot developed by Brian Donohue, CEO of Instapaper (a betaworks company).
+        
+        Within 45 days, we built, tested, and rebuilt a real-time messaging client on Slack that would be scalable to serve thousand of teams and users, using Python, PostgresSQL, and Redis. Shortly after launch, we incoporated new features a functionality.
+        
+        As of March 2015, PlusPlus++ has over 80,000 active users across 1,500 active teams. With growth rate of 15-25 teams per day and 30-60-90 day retention around 45%, it has been a quiet hit for a company experiment.
+        
+        Developed with help from <a href="https://twitter.com/lachhall" target="_blank">Lach Hall</a> and <a href="https://twitter.com/mtermoul" target="_blank">Mohamed Termoul</a>.
+        
+        You can install it at <a href="https://plusplus.chat" target="_blank">plusplus.chat</a>, and can read more about stats and development on <a href="https://medium.com/@gleuch/quietly-growing-users-5f80e7c5ca0c" target="_blank">Medium</a>.
+        
+
+      content_rails:
+        - # Column 1
+          -
+            title:          Tasks
+            content:        'product advisor, designer, developer'
+          -
+            title:          Client
+            content:        betaworks
+          -
+            title:          Launched
+            content:        Dec 2015<br><a href="https://plusplus.chat" target="_blank">plusplus.chat</a>
+
+      press:
+        -
+          name:             ProductHunt
+          url:              https://www.producthunt.com/tech/plusplus

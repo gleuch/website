@@ -31,6 +31,9 @@ en:
 
     featured:
       client_works:
+        -
+          name:   PlusPlus++
+          slug:   plusplus
         # -
         #   name:   "What's Trending"
         #   slug:   whats-trending
